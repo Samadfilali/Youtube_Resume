@@ -1,0 +1,8 @@
+google-api-python-client
+gradio
+langchain_ollama
+langchain_openai
+langgraph
+pytube
+python-dotenv
+youtube_transcript_api
