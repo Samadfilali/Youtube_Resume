@@ -1,0 +1,17 @@
+Le retour d'expérience des utilisateurs concernant la création et l'utilisation de systèmes d'IA locaux, notamment avec Supabase et d'autres outils, met en avant plusieurs thèmes clés :
+
+1. **Satisfaction Générale** : Les utilisateurs expriment une appréciation globale pour le contenu proposé, mentionnant des explications claires et des détails pratiques qui facilitent la compréhension.
+
+2. **Préférences de Développement Local** : Un nombre significatif d'utilisateurs évoque leur préférence pour le développement local plutôt que sur le cloud, en soulignant des solutions telles que Supabase, n8n et d'autres outils d'IA. Il y a des discussions sur les avantages de l'hébergement local par rapport à l'utilisation de services cloud.
+
+3. **Critiques sur la Longueur des Tutoriels** : Certains commentaires signalent que les vidéos pourraient être plus concises, avec des appels à aller plus directement à l’essentiel pour maintenir l'attention.
+
+4. **Problèmes Techniques et Solutions** : Plusieurs utilisateurs rencontrent des difficultés techniques (problèmes de mot de passe, erreurs lors de l'initialisation des conteneurs Docker, erreurs dans les configurations de Supabase, etc.) et échangent des solutions potentielles. L'importance de vérifier les configurations et de suivre des étapes de dépannage est souvent mentionnée.
+
+5. **Suggestions d'Amélioration** : Les suggestions incluent des demandes pour des vidéos sur des sujets comme le déploiement sur le cloud, le fine-tuning de modèles d'IA, et l'amélioration de l'intégration d'outils comme Open-WebUI avec n8n.
+
+6. **Interopérabilité et Outils Alternatifs** : Des discussions sur l'utilisation d'alternatives à Docker, comme Podman, et sur des outils concurrents (par exemple Qdrant vs Supabase) montrent un intérêt pour la flexibilité et les différents choix disponibles pour les systèmes d'IA.
+
+7. **Écoute des Retours** : Les créateurs de contenu sont encouragés à continuer d'inclure les retours et commentaires des utilisateurs pour améliorer et adapter leurs tutoriels aux besoins de la communauté.
+
+En somme, les utilisateurs partagent leur enthousiasme et leur engagement dans le développement d'IA locale, tandis qu'ils se heurtent à des défis techniques, appellent à des instructions plus claires et suggèrent des sujets futurs à explorer.

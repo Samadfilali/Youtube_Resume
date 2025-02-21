@@ -1,0 +1,6 @@
+L'auteur de la vidéo discute sur les progrès de l'intelligence artificielle (IA) et ses implications potentielles. Il aborde plusieurs sujets tels que :
+
+*   L'IA pourrait bientôt surpasser les capacités humaines dans certains domaines, notamment le jeu d'échecs avec AlphaGo.
+*   Les principes de renforcement ou de réflexes pavloviens ne viennent pas de l'IA mais de l'intelligence humaine.
+*   L'auteur suggère que pour donner à une IA une pseudo-conscience, il faudrait intégrer des questions dans le programme de l'IA basées sur des données humaines, afin qu'elle puisse s'optimiser elle-même et se poser constamment des questions.
+*   Il exprime également ses inquiétudes concernant le futur entre humain/IA, robot, internet, etc.

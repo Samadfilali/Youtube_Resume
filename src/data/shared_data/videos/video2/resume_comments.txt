@@ -1,0 +1,30 @@
+**Critiques de la synthèse de contenu**
+
+Les commentaires expriment une certaine méfiance envers les outils de synthèse de contenu, comme Deep Research, qui sont considérés comme incapables d'identifier des sources pertinentes pour un sujet spécifique. Les utilisateurs soulignent l'importance de l'expérience dans le domaine du sujet et la nécessité de vérifier les informations avant de les accepter.
+
+**Problèmes de fiabilité**
+
+Les commentaires mettent en évidence les problèmes de fiabilité des outils de synthèse de contenu, notamment :
+
+* La capacité à répéter des informations sans les vérifier
+* L'absence de sources fiables pour étayer les affirmations
+* La possibilité d'omission intentionnelle d'informations
+
+**Nécessité d'une approche critique**
+
+Les commentaires soulignent la nécessité d'une approche critique lors de l'utilisation des outils de synthèse de contenu, notamment :
+
+* La nécessité de vérifier les sources et les informations
+* L'importance de comprendre le processus de pensée derrière les résultats
+
+**Propositions pour améliorer les outils**
+
+Les commentaires proposent plusieurs idées pour améliorer les outils de synthèse de contenu, notamment :
+
+* La création d'un "contra agent" qui pourrait contredire les résultats du research agent
+* L'implémentation d'une règle de 10ème homme (comme en Israël) pour garantir la vérification des informations
+* La possibilité de suivre le processus de pensée derrière les résultats ou de travailler avec l'utilisateur pour fournir des instructions
+
+**Conclusion**
+
+Les commentaires expriment une certaine méfiance envers les outils de synthèse de contenu, mais proposent également plusieurs idées pour améliorer leur fiabilité et leur efficacité.

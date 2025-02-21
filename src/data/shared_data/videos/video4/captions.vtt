@@ -1,0 +1,4339 @@
+WEBVTT
+
+00:00:00.040 --> 00:00:01.920
+when it comes to building AI agents the
+
+00:00:01.920 --> 00:00:04.080
+internet is filled with guides but the
+
+00:00:04.080 --> 00:00:05.920
+problem is most of them just get you
+
+00:00:05.920 --> 00:00:07.680
+started with the bare bones and nothing
+
+00:00:07.680 --> 00:00:09.519
+more and don't get me wrong these kind
+
+00:00:09.519 --> 00:00:12.000
+of guides are really useful and valuable
+
+00:00:12.000 --> 00:00:13.240
+especially if you are just getting
+
+00:00:13.240 --> 00:00:15.160
+started with a topic I mean I make them
+
+00:00:15.160 --> 00:00:17.560
+myself all the time but I just know that
+
+00:00:17.560 --> 00:00:19.439
+you are looking for more you want to
+
+00:00:19.439 --> 00:00:21.320
+know how to build the best of the best
+
+00:00:21.320 --> 00:00:23.359
+when it comes to AI agents and you don't
+
+00:00:23.359 --> 00:00:25.400
+want it to be overly complex either if
+
+00:00:25.400 --> 00:00:27.279
+that is you then you are in luck cuz I
+
+00:00:27.279 --> 00:00:28.960
+have something very special for you
+
+00:00:28.960 --> 00:00:31.080
+today over the past few days I've been
+
+00:00:31.080 --> 00:00:33.600
+pouring my heart and soul into building
+
+00:00:33.600 --> 00:00:35.760
+an AI agent that I honestly think is the
+
+00:00:35.760 --> 00:00:37.559
+most powerful one that I've shared on my
+
+00:00:37.559 --> 00:00:39.480
+channel yet we're going to be doing a
+
+00:00:39.480 --> 00:00:42.079
+deep dive into using pantic AI my
+
+00:00:42.079 --> 00:00:44.239
+favorite agent framework with Lang graph
+
+00:00:44.239 --> 00:00:46.760
+an incredible agentic workflow tool to
+
+00:00:46.760 --> 00:00:48.559
+unlock an infinite number of
+
+00:00:48.559 --> 00:00:51.039
+possibilities building AI agent systems
+
+00:00:51.039 --> 00:00:53.120
+that can really do anything I mean in
+
+00:00:53.120 --> 00:00:54.680
+this video we are literally going to be
+
+00:00:54.680 --> 00:00:57.160
+building an agent that can make other AI
+
+00:00:57.160 --> 00:00:59.640
+agents it's pretty insane also in my
+
+00:00:59.640 --> 00:01:02.960
+last video on agentic workflows I teased
+
+00:01:02.960 --> 00:01:04.479
+an implementation that I wanted to do
+
+00:01:04.479 --> 00:01:07.080
+with pantic AI and Lang graph and a ton
+
+00:01:07.080 --> 00:01:09.400
+of you said it was a really good idea so
+
+00:01:09.400 --> 00:01:12.159
+here it is in my mind using pantic AI
+
+00:01:12.159 --> 00:01:14.280
+with Lang graph together is an absolute
+
+00:01:14.280 --> 00:01:16.320
+GameChanger and over the course of this
+
+00:01:16.320 --> 00:01:18.439
+video and future ones I'm going to be
+
+00:01:18.439 --> 00:01:19.920
+breaking it down for you to make it
+
+00:01:19.920 --> 00:01:21.920
+super clear both why we're doing it this
+
+00:01:21.920 --> 00:01:24.079
+way and also how we can use these
+
+00:01:24.079 --> 00:01:26.119
+Frameworks together I'll also be
+
+00:01:26.119 --> 00:01:28.079
+covering a fair warning with using these
+
+00:01:28.079 --> 00:01:30.479
+kind of setups why this matters you even
+
+00:01:30.479 --> 00:01:32.360
+if you're not a coder how we can do
+
+00:01:32.360 --> 00:01:34.040
+everything locally with these agentic
+
+00:01:34.040 --> 00:01:36.360
+flows and I want to share with you some
+
+00:01:36.360 --> 00:01:38.000
+big plans that I got coming up in the
+
+00:01:38.000 --> 00:01:40.680
+near future I have not had this much fun
+
+00:01:40.680 --> 00:01:43.560
+building AI agents in a long time now
+
+00:01:43.560 --> 00:01:45.560
+super exciting stuff so let's go ahead
+
+00:01:45.560 --> 00:01:47.640
+and dive right into it okay so before we
+
+00:01:47.640 --> 00:01:49.240
+get way ahead of ourselves and start
+
+00:01:49.240 --> 00:01:51.320
+building an AI agent let's get grounded
+
+00:01:51.320 --> 00:01:53.600
+into what pedantic Ai and L graph do for
+
+00:01:53.600 --> 00:01:56.399
+us and why they work so well together so
+
+00:01:56.399 --> 00:01:58.840
+starting here with pantic AI it is a
+
+00:01:58.840 --> 00:02:00.560
+python agent from framework that makes
+
+00:02:00.560 --> 00:02:03.159
+it super easy to build AI agents while
+
+00:02:03.159 --> 00:02:04.399
+still giving us all of the
+
+00:02:04.399 --> 00:02:06.560
+customizability and control that we need
+
+00:02:06.560 --> 00:02:08.560
+to manage everything with our agents
+
+00:02:08.560 --> 00:02:10.720
+like the testing the function calling
+
+00:02:10.720 --> 00:02:13.040
+and the chat history and really with
+
+00:02:13.040 --> 00:02:15.800
+pantic AI you're able to build any AI
+
+00:02:15.800 --> 00:02:18.200
+agent that you could possibly want and
+
+00:02:18.200 --> 00:02:20.599
+So within their documentation here they
+
+00:02:20.599 --> 00:02:22.120
+have a really good example that I
+
+00:02:22.120 --> 00:02:23.800
+reference a lot with their weather agent
+
+00:02:23.800 --> 00:02:24.760
+right here so I'll have the
+
+00:02:24.760 --> 00:02:26.360
+documentation Linked In the description
+
+00:02:26.360 --> 00:02:28.400
+you can check out this agent yourself CU
+
+00:02:28.400 --> 00:02:30.440
+it really breaks down in a clear way
+
+00:02:30.440 --> 00:02:32.200
+the three different parts that go into
+
+00:02:32.200 --> 00:02:34.480
+building any agent with pantic AI and
+
+00:02:34.480 --> 00:02:36.120
+honestly these three parts could be
+
+00:02:36.120 --> 00:02:38.440
+applied to any framework as well and so
+
+00:02:38.440 --> 00:02:40.480
+you start off with your dependencies and
+
+00:02:40.480 --> 00:02:41.760
+so these are the things that your agent
+
+00:02:41.760 --> 00:02:43.959
+needs like API keys or database
+
+00:02:43.959 --> 00:02:46.879
+connections to do things on your behalf
+
+00:02:46.879 --> 00:02:48.800
+and then the part number two is the
+
+00:02:48.800 --> 00:02:51.000
+definition of the agent itself including
+
+00:02:51.000 --> 00:02:52.959
+things like the system prompt and the
+
+00:02:52.959 --> 00:02:54.760
+large language model that you are using
+
+00:02:54.760 --> 00:02:57.360
+for your agent and then the last part of
+
+00:02:57.360 --> 00:02:59.480
+every agent you build with pantic AI and
+
+00:02:59.480 --> 00:03:01.519
+this is what takes up most of your code
+
+00:03:01.519 --> 00:03:04.360
+is the functions for the actual tools
+
+00:03:04.360 --> 00:03:05.959
+that allow your agent to do things on
+
+00:03:05.959 --> 00:03:08.239
+your behalf like query a database use
+
+00:03:08.239 --> 00:03:09.959
+your Gmail or in this case get the
+
+00:03:09.959 --> 00:03:12.440
+weather for a specific location so that
+
+00:03:12.440 --> 00:03:15.640
+is pantic AI our AI agent Builder now
+
+00:03:15.640 --> 00:03:18.560
+moving on to Lang graph Lang graph is
+
+00:03:18.560 --> 00:03:21.480
+not a framework to build AI agents that
+
+00:03:21.480 --> 00:03:23.280
+would overlap way too much with pantic
+
+00:03:23.280 --> 00:03:25.519
+AI there be no reason to use both
+
+00:03:25.519 --> 00:03:27.760
+instead it is an orchestrator it is a
+
+00:03:27.760 --> 00:03:30.640
+way to take AI agents that you've built
+
+00:03:30.640 --> 00:03:32.840
+with something like pantic Ai and
+
+00:03:32.840 --> 00:03:34.599
+combine them together in a workflow so
+
+00:03:34.599 --> 00:03:36.560
+that they can actually work together and
+
+00:03:36.560 --> 00:03:38.680
+reason together about the same problem
+
+00:03:38.680 --> 00:03:40.280
+that they are tackling or the same
+
+00:03:40.280 --> 00:03:42.400
+conversation with a user so if you
+
+00:03:42.400 --> 00:03:43.480
+scroll down a little bit in their
+
+00:03:43.480 --> 00:03:45.680
+homepage here they explain it very well
+
+00:03:45.680 --> 00:03:47.799
+it's an expressive and customizable
+
+00:03:47.799 --> 00:03:50.280
+agent workflow Builder and the very
+
+00:03:50.280 --> 00:03:52.360
+important thing with Lang graph here is
+
+00:03:52.360 --> 00:03:54.680
+they have lowlevel abstractions and
+
+00:03:54.680 --> 00:03:56.439
+essentially all that means is they don't
+
+00:03:56.439 --> 00:03:58.480
+try to do way too much for you there are
+
+00:03:58.480 --> 00:04:00.680
+Frameworks out there like crew AI that
+
+00:04:00.680 --> 00:04:02.760
+are really cool because they have high
+
+00:04:02.760 --> 00:04:05.280
+level abstractions they do a ton for you
+
+00:04:05.280 --> 00:04:07.120
+so that in the end you write a lot less
+
+00:04:07.120 --> 00:04:09.079
+code but the problem with that is you
+
+00:04:09.079 --> 00:04:10.799
+will hit a wall using those kind of
+
+00:04:10.799 --> 00:04:12.159
+Frameworks where you don't have the
+
+00:04:12.159 --> 00:04:14.720
+controller customizability to really get
+
+00:04:14.720 --> 00:04:17.079
+into the intricate developments of the
+
+00:04:17.079 --> 00:04:19.120
+AI agents that you are building and this
+
+00:04:19.120 --> 00:04:20.280
+kind of ties into what I was talking
+
+00:04:20.280 --> 00:04:22.759
+about pantic AI as well cuz both Lang
+
+00:04:22.759 --> 00:04:25.400
+graph and pantic AI they have these
+
+00:04:25.400 --> 00:04:27.520
+low-level abstractions you still have
+
+00:04:27.520 --> 00:04:29.000
+all of the control that you need and
+
+00:04:29.000 --> 00:04:31.199
+that's what is so important about using
+
+00:04:31.199 --> 00:04:33.320
+both of these tools and also using them
+
+00:04:33.320 --> 00:04:34.680
+together because you have all your
+
+00:04:34.680 --> 00:04:36.960
+agents built with pantic AI and then you
+
+00:04:36.960 --> 00:04:39.000
+connect them together with Lang graph
+
+00:04:39.000 --> 00:04:40.039
+and that's what we're going to be doing
+
+00:04:40.039 --> 00:04:41.880
+in this video and I even have a quick
+
+00:04:41.880 --> 00:04:44.160
+example to show you here right from the
+
+00:04:44.160 --> 00:04:46.160
+Lang chain blog so they have this
+
+00:04:46.160 --> 00:04:48.440
+research agent that can generate charts
+
+00:04:48.440 --> 00:04:50.639
+that is using Lang graph under the hood
+
+00:04:50.639 --> 00:04:52.800
+to basically connect all of these nodes
+
+00:04:52.800 --> 00:04:54.759
+together so I have a more zoomed in view
+
+00:04:54.759 --> 00:04:56.080
+that we can take a look at right here
+
+00:04:56.080 --> 00:04:57.880
+you can think about it as these agents
+
+00:04:57.880 --> 00:05:00.320
+like the researcher the chart generator
+
+00:05:00.320 --> 00:05:01.919
+the router these can all be large
+
+00:05:01.919 --> 00:05:04.240
+language models that are each agents
+
+00:05:04.240 --> 00:05:06.400
+built with pantic AI and then Lang graph
+
+00:05:06.400 --> 00:05:08.080
+is the orchestrator it's what connects
+
+00:05:08.080 --> 00:05:09.680
+all these things together so it defines
+
+00:05:09.680 --> 00:05:11.680
+all the rules for all these arrows that
+
+00:05:11.680 --> 00:05:14.360
+you see that are determining the flow of
+
+00:05:14.360 --> 00:05:16.560
+this agentic workflow so the user comes
+
+00:05:16.560 --> 00:05:18.120
+in with their requests like generate a
+
+00:05:18.120 --> 00:05:19.520
+chart of the average temperature in
+
+00:05:19.520 --> 00:05:22.160
+Alaska over the past decade there is a
+
+00:05:22.160 --> 00:05:24.160
+lot that has to go into this for both
+
+00:05:24.160 --> 00:05:26.120
+research and generating the chart so the
+
+00:05:26.120 --> 00:05:27.880
+first message goes to the researcher
+
+00:05:27.880 --> 00:05:29.919
+this is where it does things like get
+
+00:05:29.919 --> 00:05:32.120
+temperature data for Alaska and then the
+
+00:05:32.120 --> 00:05:35.000
+router decides if it has to do more
+
+00:05:35.000 --> 00:05:37.520
+research or if it can go on to generate
+
+00:05:37.520 --> 00:05:39.639
+the chart and then give the final answer
+
+00:05:39.639 --> 00:05:41.440
+to the user and you can see here that
+
+00:05:41.440 --> 00:05:42.680
+this whole flow is very
+
+00:05:42.680 --> 00:05:44.759
+non-deterministic it's not always the
+
+00:05:44.759 --> 00:05:47.960
+case that the researcher is going to get
+
+00:05:47.960 --> 00:05:50.000
+exactly what it needs in the first try
+
+00:05:50.000 --> 00:05:51.319
+and then it'll go to the chart generator
+
+00:05:51.319 --> 00:05:52.840
+and that'll generate the chart perfectly
+
+00:05:52.840 --> 00:05:54.520
+in the first try and then it's sent to
+
+00:05:54.520 --> 00:05:56.120
+the user that's not going to happen most
+
+00:05:56.120 --> 00:05:57.800
+of the time a lot of time there has to
+
+00:05:57.800 --> 00:05:59.759
+be some iteration where Maybe you
+
+00:05:59.759 --> 00:06:01.120
+research a couple times or you
+
+00:06:01.120 --> 00:06:02.759
+regenerate the chart a couple of times
+
+00:06:02.759 --> 00:06:04.840
+and the llm has that intelligence to
+
+00:06:04.840 --> 00:06:07.240
+determine if that is necessary and all
+
+00:06:07.240 --> 00:06:10.440
+that kind of non-deterministic flow in a
+
+00:06:10.440 --> 00:06:12.039
+workflow combining these different
+
+00:06:12.039 --> 00:06:14.440
+agents together is not easy to do
+
+00:06:14.440 --> 00:06:16.680
+without something like L graph and then
+
+00:06:16.680 --> 00:06:18.919
+creating these individual agents that
+
+00:06:18.919 --> 00:06:20.919
+have the tools to do things like
+
+00:06:20.919 --> 00:06:22.880
+research or generate charts that is not
+
+00:06:22.880 --> 00:06:26.039
+easy without pantic AI or some other
+
+00:06:26.039 --> 00:06:27.720
+similar framework and so this is how you
+
+00:06:27.720 --> 00:06:29.720
+can kind of start to see the power of
+
+00:06:29.720 --> 00:06:31.360
+combining these tools together to have
+
+00:06:31.360 --> 00:06:33.759
+agents that are built very easily with a
+
+00:06:33.759 --> 00:06:36.039
+flow that is managed very easily cuz all
+
+00:06:36.039 --> 00:06:38.120
+of these connections are set up as
+
+00:06:38.120 --> 00:06:40.120
+different nodes and edges in Lang graph
+
+00:06:40.120 --> 00:06:41.199
+that's what we're going to dive into and
+
+00:06:41.199 --> 00:06:42.840
+I'm going to make it super super clear
+
+00:06:42.840 --> 00:06:45.000
+for you last thing before we dive into
+
+00:06:45.000 --> 00:06:46.240
+what we're going to be building today
+
+00:06:46.240 --> 00:06:48.120
+with pantic AI and L graph I want to
+
+00:06:48.120 --> 00:06:50.080
+give you a fair warning for building
+
+00:06:50.080 --> 00:06:52.599
+these kind of graph agent workflows so
+
+00:06:52.599 --> 00:06:54.639
+we're over here back in the pantic AI
+
+00:06:54.639 --> 00:06:56.240
+documentation they actually have
+
+00:06:56.240 --> 00:06:58.039
+something similar to Lang graph they
+
+00:06:58.039 --> 00:07:00.160
+have a dedicated page for this and they
+
+00:07:00.160 --> 00:07:02.680
+have a warning for these kind of flows
+
+00:07:02.680 --> 00:07:04.960
+and essentially it's just don't over
+
+00:07:04.960 --> 00:07:07.199
+engineer there is a risk using these
+
+00:07:07.199 --> 00:07:08.919
+kind of agentic workflows built as
+
+00:07:08.919 --> 00:07:11.120
+graphs that you are over engineering and
+
+00:07:11.120 --> 00:07:12.960
+it's overkill for what you are actually
+
+00:07:12.960 --> 00:07:14.319
+trying to build and that's kind of what
+
+00:07:14.319 --> 00:07:16.160
+they're saying here with don't use a
+
+00:07:16.160 --> 00:07:18.800
+nail gun unless you actually need a nail
+
+00:07:18.800 --> 00:07:20.919
+gun so they're powerful tools but
+
+00:07:20.919 --> 00:07:23.199
+they're not the right tool for every job
+
+00:07:23.199 --> 00:07:24.840
+what we're going to be building today I
+
+00:07:24.840 --> 00:07:27.319
+do firmly believe is a powerful tool and
+
+00:07:27.319 --> 00:07:29.080
+in general when you want to build super
+
+00:07:29.080 --> 00:07:31.199
+robust agentic workflows with a lot of
+
+00:07:31.199 --> 00:07:32.800
+Agents working together in
+
+00:07:32.800 --> 00:07:35.319
+non-deterministic ways it is a really
+
+00:07:35.319 --> 00:07:37.599
+good tool but I don't want to sit here
+
+00:07:37.599 --> 00:07:39.280
+and try to tell you that this is the end
+
+00:07:39.280 --> 00:07:41.599
+all be all when a lot of times it can be
+
+00:07:41.599 --> 00:07:44.159
+Overkill I want to really emphasize that
+
+00:07:44.159 --> 00:07:45.520
+and by the way if you're curious why I'm
+
+00:07:45.520 --> 00:07:47.919
+not using graphs instead of L graph it's
+
+00:07:47.919 --> 00:07:50.039
+simply because L graph is way more
+
+00:07:50.039 --> 00:07:52.039
+evolved and has a lot more features some
+
+00:07:52.039 --> 00:07:53.479
+of which we're going to be using today
+
+00:07:53.479 --> 00:07:55.000
+so maybe at some point graphs will
+
+00:07:55.000 --> 00:07:56.800
+evolve into something I can switch to I
+
+00:07:56.800 --> 00:07:58.080
+mean in the end I'm just teaching
+
+00:07:58.080 --> 00:07:59.680
+principles here I'm not getting tied to
+
+00:07:59.680 --> 00:08:01.680
+one framework but right now we are using
+
+00:08:01.680 --> 00:08:03.960
+Lane graph so that's everything for a
+
+00:08:03.960 --> 00:08:05.919
+fair warning here um but don't get too
+
+00:08:05.919 --> 00:08:08.120
+scared I mean graphs and agentic
+
+00:08:08.120 --> 00:08:10.120
+workflows with graphs are still super
+
+00:08:10.120 --> 00:08:12.240
+powerful for a ton of use cases so let's
+
+00:08:12.240 --> 00:08:14.479
+dive into that now all right welcome to
+
+00:08:14.479 --> 00:08:17.479
+archon this is an AI agent that builds
+
+00:08:17.479 --> 00:08:20.039
+other AI agents all powered by you
+
+00:08:20.039 --> 00:08:23.080
+guessed it pantic Ai and L graph and I'm
+
+00:08:23.080 --> 00:08:25.080
+building this completely free and open
+
+00:08:25.080 --> 00:08:27.879
+source for you for two big reasons the
+
+00:08:27.879 --> 00:08:30.319
+first one is that this agent literally
+
+00:08:30.319 --> 00:08:33.000
+builds other AI agents that use Lang
+
+00:08:33.000 --> 00:08:35.320
+graph and pantic Ai and so you can use
+
+00:08:35.320 --> 00:08:37.360
+this as a resource even if you are not a
+
+00:08:37.360 --> 00:08:39.839
+coder to work with these Frameworks and
+
+00:08:39.839 --> 00:08:41.919
+build everything that I'm teaching here
+
+00:08:41.919 --> 00:08:43.440
+and so I'm actually going to be building
+
+00:08:43.440 --> 00:08:45.240
+this out over time into something that
+
+00:08:45.240 --> 00:08:47.240
+is super powerful and that gets into the
+
+00:08:47.240 --> 00:08:48.800
+second reason that I'm building this in
+
+00:08:48.800 --> 00:08:50.640
+the end pantic Ai and Lane graph are
+
+00:08:50.640 --> 00:08:52.680
+both pretty easy to work with but the
+
+00:08:52.680 --> 00:08:54.480
+kinds of things that you can build
+
+00:08:54.480 --> 00:08:56.519
+combining them together in very powerful
+
+00:08:56.519 --> 00:08:58.720
+ways are also going to be a bit more
+
+00:08:58.720 --> 00:09:00.680
+complicated so it's not easy for me in
+
+00:09:00.680 --> 00:09:02.760
+just a single YouTube video to create
+
+00:09:02.760 --> 00:09:04.920
+some masterful agentic workflow and
+
+00:09:04.920 --> 00:09:06.760
+share it with you using these two
+
+00:09:06.760 --> 00:09:09.399
+Frameworks so instead archon is
+
+00:09:09.399 --> 00:09:10.120
+something that I'm going to be
+
+00:09:10.120 --> 00:09:12.399
+developing in iterations as a way to
+
+00:09:12.399 --> 00:09:15.120
+teach you pantic Ai and Lang graph
+
+00:09:15.120 --> 00:09:17.040
+starting with something more simple and
+
+00:09:17.040 --> 00:09:18.760
+getting more complicated overtime in
+
+00:09:18.760 --> 00:09:21.160
+future videos so you can follow along
+
+00:09:21.160 --> 00:09:23.040
+starting simple and getting to the point
+
+00:09:23.040 --> 00:09:24.880
+where you are a master at these two
+
+00:09:24.880 --> 00:09:27.200
+Frameworks and using them together and
+
+00:09:27.200 --> 00:09:29.040
+So currently we're on version two that's
+
+00:09:29.040 --> 00:09:29.880
+what I'm going to going to show you how
+
+00:09:29.880 --> 00:09:31.600
+to build today with Lang graph and
+
+00:09:31.600 --> 00:09:34.760
+pantic AI version one that I have right
+
+00:09:34.760 --> 00:09:38.040
+here is just a pantic AI agent so no l
+
+00:09:38.040 --> 00:09:40.680
+graph and it can only build other pantic
+
+00:09:40.680 --> 00:09:42.320
+AI agents and then we'll get into
+
+00:09:42.320 --> 00:09:44.360
+version two in this video that actually
+
+00:09:44.360 --> 00:09:46.600
+leverages an agentic workflow built with
+
+00:09:46.600 --> 00:09:48.640
+both Frameworks that can build just
+
+00:09:48.640 --> 00:09:50.959
+pantic AI agents so we're still getting
+
+00:09:50.959 --> 00:09:52.839
+pretty simple here but starting to get
+
+00:09:52.839 --> 00:09:54.399
+into agentic workflows and then we'll
+
+00:09:54.399 --> 00:09:56.079
+get into one that can build both pantic
+
+00:09:56.079 --> 00:09:58.720
+Ai and L graph agents and then a ton of
+
+00:09:58.720 --> 00:10:00.279
+other ideas that I have here in my
+
+00:10:00.279 --> 00:10:02.839
+vision for future iterations like self
+
+00:10:02.839 --> 00:10:05.000
+feedback loops tool library integration
+
+00:10:05.000 --> 00:10:06.399
+supporting other Frameworks like Lane
+
+00:10:06.399 --> 00:10:09.120
+chain llama index and crew AI autonomous
+
+00:10:09.120 --> 00:10:10.839
+framework learning oh there's so many
+
+00:10:10.839 --> 00:10:12.959
+ideas that I have eventually I want to
+
+00:10:12.959 --> 00:10:14.839
+turn this into something that can
+
+00:10:14.839 --> 00:10:17.360
+actually be in an IDE like wind surf or
+
+00:10:17.360 --> 00:10:19.680
+cursor I think that'd be so cool because
+
+00:10:19.680 --> 00:10:21.320
+in the end using those tools right now
+
+00:10:21.320 --> 00:10:23.880
+to build with pantic AI they completely
+
+00:10:23.880 --> 00:10:25.959
+hallucinate because llms by themselves
+
+00:10:25.959 --> 00:10:28.040
+when they're not in an agent like archon
+
+00:10:28.040 --> 00:10:30.120
+that has access to the pantic AI
+
+00:10:30.120 --> 00:10:32.519
+documentation they do not know how to
+
+00:10:32.519 --> 00:10:34.399
+code with these Frameworks and so that
+
+00:10:34.399 --> 00:10:36.200
+is the value of archon that I want to
+
+00:10:36.200 --> 00:10:37.800
+turn into something in the end that'd be
+
+00:10:37.800 --> 00:10:40.279
+super easy uh to use and very robust and
+
+00:10:40.279 --> 00:10:41.680
+then even integrate with other things as
+
+00:10:41.680 --> 00:10:43.399
+well in the future like Docker for
+
+00:10:43.399 --> 00:10:46.360
+deployments Langs Smith mCP other
+
+00:10:46.360 --> 00:10:48.279
+Frameworks other Vector databases
+
+00:10:48.279 --> 00:10:50.760
+besides superbase a ton of ideas I'm
+
+00:10:50.760 --> 00:10:52.880
+just so excited for this both for what
+
+00:10:52.880 --> 00:10:55.560
+it can do for us helping us build agents
+
+00:10:55.560 --> 00:10:57.399
+but also how it can allow me to teach
+
+00:10:57.399 --> 00:10:59.360
+you in a very clear and concise
+
+00:10:59.360 --> 00:11:01.240
+interative way how to work with these
+
+00:11:01.240 --> 00:11:03.079
+two Frameworks and do some incredible
+
+00:11:03.079 --> 00:11:05.320
+things all right let's get into the code
+
+00:11:05.320 --> 00:11:07.600
+for archon and build some awesome things
+
+00:11:07.600 --> 00:11:11.160
+with pantic AI and L graph so all of the
+
+00:11:11.160 --> 00:11:12.440
+code that we're going to be going over
+
+00:11:12.440 --> 00:11:14.360
+here and that I'll create with you I'll
+
+00:11:14.360 --> 00:11:16.680
+have in that Aron GitHub repository that
+
+00:11:16.680 --> 00:11:18.399
+I just showed you and of course I
+
+00:11:18.399 --> 00:11:19.720
+wouldn't miss it I'll have a link to it
+
+00:11:19.720 --> 00:11:21.560
+in the description as well and as
+
+00:11:21.560 --> 00:11:23.279
+promised we're going to go iteratively
+
+00:11:23.279 --> 00:11:25.399
+through building archon so you can
+
+00:11:25.399 --> 00:11:28.000
+understand foundationally how pantic Ai
+
+00:11:28.000 --> 00:11:29.600
+and L graph work how they work work
+
+00:11:29.600 --> 00:11:31.480
+together and also so that you can
+
+00:11:31.480 --> 00:11:33.440
+understand why you'd want to use these
+
+00:11:33.440 --> 00:11:36.000
+more complex agentic workflow approaches
+
+00:11:36.000 --> 00:11:37.920
+with graphs versus when you might
+
+00:11:37.920 --> 00:11:40.360
+actually want to stay simple as well and
+
+00:11:40.360 --> 00:11:42.360
+so version one we're going to start with
+
+00:11:42.360 --> 00:11:44.320
+this here so I'm not getting right into
+
+00:11:44.320 --> 00:11:46.519
+the meat of pantic AI and Lane graph cuz
+
+00:11:46.519 --> 00:11:48.440
+I really want you to understand this
+
+00:11:48.440 --> 00:11:50.920
+because version one is going to first of
+
+00:11:50.920 --> 00:11:52.720
+all be a very good demonstration of how
+
+00:11:52.720 --> 00:11:55.240
+to create an agent with just pantic AI
+
+00:11:55.240 --> 00:11:56.519
+but then more importantly we're going to
+
+00:11:56.519 --> 00:11:58.519
+look at its shortcomings and that will
+
+00:11:58.519 --> 00:12:00.480
+help us understand understand why we'd
+
+00:12:00.480 --> 00:12:03.079
+want to graduate into the more complex
+
+00:12:03.079 --> 00:12:05.040
+other iterations of archon that'll be
+
+00:12:05.040 --> 00:12:07.079
+continuing to build over time that will
+
+00:12:07.079 --> 00:12:09.560
+leverage Lang graph as well so in the
+
+00:12:09.560 --> 00:12:11.360
+folder right here for version one of
+
+00:12:11.360 --> 00:12:13.199
+archon I have this readme which shows
+
+00:12:13.199 --> 00:12:15.600
+you exactly how to get started with
+
+00:12:15.600 --> 00:12:17.760
+specifically this version of archon and
+
+00:12:17.760 --> 00:12:19.920
+it talks to what exactly is implemented
+
+00:12:19.920 --> 00:12:22.000
+in this version as well and I'm going to
+
+00:12:22.000 --> 00:12:23.839
+do that for every single version I have
+
+00:12:23.839 --> 00:12:25.399
+in the iterations folder right here
+
+00:12:25.399 --> 00:12:28.120
+going forward and all the code at this
+
+00:12:28.120 --> 00:12:30.360
+point in time as well so that no matter
+
+00:12:30.360 --> 00:12:32.040
+where you jump in in this journey of
+
+00:12:32.040 --> 00:12:33.920
+archon even if it's version six you can
+
+00:12:33.920 --> 00:12:35.480
+still go through all of the versions
+
+00:12:35.480 --> 00:12:37.839
+iteratively to build on that Foundation
+
+00:12:37.839 --> 00:12:39.839
+start very simple and then get more
+
+00:12:39.839 --> 00:12:41.839
+complex as you work up to what version
+
+00:12:41.839 --> 00:12:43.959
+we're actually on so that way you don't
+
+00:12:43.959 --> 00:12:45.519
+have to jump in the deep and I mean
+
+00:12:45.519 --> 00:12:46.959
+that's the point of me building this
+
+00:12:46.959 --> 00:12:48.680
+iteratively in the first place here and
+
+00:12:48.680 --> 00:12:50.160
+so that's why we're going to be starting
+
+00:12:50.160 --> 00:12:52.639
+with version one right here and this is
+
+00:12:52.639 --> 00:12:55.120
+actually based on the crawl for AI rag
+
+00:12:55.120 --> 00:12:56.839
+agent that I've already built on my
+
+00:12:56.839 --> 00:12:58.519
+channel so I'm going to go through that
+
+00:12:58.519 --> 00:13:00.279
+pretty quickly here with version one
+
+00:13:00.279 --> 00:13:01.440
+since I've already built it on my
+
+00:13:01.440 --> 00:13:02.839
+channel so definitely check out that
+
+00:13:02.839 --> 00:13:04.240
+video you certainly don't have to I'll
+
+00:13:04.240 --> 00:13:06.720
+talk about it a little bit right here um
+
+00:13:06.720 --> 00:13:08.839
+but it is pretty basic overall it's a
+
+00:13:08.839 --> 00:13:11.360
+good idea for how to build a pantic AI
+
+00:13:11.360 --> 00:13:13.360
+agent and so setting up the knowledge
+
+00:13:13.360 --> 00:13:15.560
+base here all I do just like I did in
+
+00:13:15.560 --> 00:13:17.519
+the other video on my channel is I fetch
+
+00:13:17.519 --> 00:13:19.959
+the pantic AI documentation Pages using
+
+00:13:19.959 --> 00:13:22.360
+the sitemap build that up as a list that
+
+00:13:22.360 --> 00:13:24.480
+I then pass into crawl 4 AI to get the
+
+00:13:24.480 --> 00:13:26.880
+contents for all of them in markdown and
+
+00:13:26.880 --> 00:13:29.199
+then I chunk them all up and I put them
+
+00:13:29.199 --> 00:13:31.360
+into super base so that I have it in my
+
+00:13:31.360 --> 00:13:34.160
+knowledge base for rag using PG Vector
+
+00:13:34.160 --> 00:13:35.639
+so I've really changed nothing for this
+
+00:13:35.639 --> 00:13:37.800
+script at all and the readme talks about
+
+00:13:37.800 --> 00:13:39.279
+running this and getting the database
+
+00:13:39.279 --> 00:13:41.360
+set up and everything too and then for
+
+00:13:41.360 --> 00:13:43.639
+the pantic AI agent again there are
+
+00:13:43.639 --> 00:13:46.160
+three parts for any pantic AI agent you
+
+00:13:46.160 --> 00:13:48.360
+have the dependencies which in this case
+
+00:13:48.360 --> 00:13:50.399
+we just need superbase for Rag and then
+
+00:13:50.399 --> 00:13:52.160
+the open AI client to create our
+
+00:13:52.160 --> 00:13:55.240
+embeddings for rag then you have your
+
+00:13:55.240 --> 00:13:57.600
+actual agent creation like I have right
+
+00:13:57.600 --> 00:13:59.480
+here and then the rest of this code is
+
+00:13:59.480 --> 00:14:00.720
+the third part which is just all the
+
+00:14:00.720 --> 00:14:02.880
+tools that we want to give to our agent
+
+00:14:02.880 --> 00:14:04.079
+um so that it can do things on our
+
+00:14:04.079 --> 00:14:05.720
+behalf which in this case is looking up
+
+00:14:05.720 --> 00:14:07.759
+things in the database and Performing
+
+00:14:07.759 --> 00:14:10.079
+rag as well the other big thing that I
+
+00:14:10.079 --> 00:14:12.759
+have right here is this massive system
+
+00:14:12.759 --> 00:14:14.160
+prompt so this was the big thing that I
+
+00:14:14.160 --> 00:14:16.480
+did to refactor because originally my
+
+00:14:16.480 --> 00:14:19.279
+crawl for AI rag agent was just an agent
+
+00:14:19.279 --> 00:14:20.800
+that could answer questions on the
+
+00:14:20.800 --> 00:14:23.320
+pantic AI docs but I want to actually
+
+00:14:23.320 --> 00:14:25.600
+leverage the docs now to build other
+
+00:14:25.600 --> 00:14:27.639
+pantic AI agents and that's what I'm
+
+00:14:27.639 --> 00:14:29.480
+telling it that it is in the system
+
+00:14:29.480 --> 00:14:31.680
+prompt now and so I give it a a nice
+
+00:14:31.680 --> 00:14:34.160
+goal here of creating pantic AI agents
+
+00:14:34.160 --> 00:14:35.839
+using the documentations that it can
+
+00:14:35.839 --> 00:14:38.040
+fetch with the tools that I give it I
+
+00:14:38.040 --> 00:14:39.600
+Define a general structure for the
+
+00:14:39.600 --> 00:14:42.040
+different files to create for each agent
+
+00:14:42.040 --> 00:14:43.320
+that it makes and then a lot of
+
+00:14:43.320 --> 00:14:45.440
+miscellaneous instructions just to make
+
+00:14:45.440 --> 00:14:46.759
+sure that it's not hallucinating in
+
+00:14:46.759 --> 00:14:48.079
+certain ways and that it's following
+
+00:14:48.079 --> 00:14:50.000
+using the tools that I give it um so
+
+00:14:50.000 --> 00:14:51.800
+it's actually grounding its truth in the
+
+00:14:51.800 --> 00:14:53.839
+documentation instead of just making up
+
+00:14:53.839 --> 00:14:56.519
+random stuff for pantic AI and so it can
+
+00:14:56.519 --> 00:14:58.160
+perform rag with this function right
+
+00:14:58.160 --> 00:15:00.399
+here uh to match with certain chunks in
+
+00:15:00.399 --> 00:15:02.600
+the vector database and then we also
+
+00:15:02.600 --> 00:15:04.160
+have a tool to list all the
+
+00:15:04.160 --> 00:15:06.360
+documentation Pages available to it so
+
+00:15:06.360 --> 00:15:07.880
+if it doesn't just want to perform rag
+
+00:15:07.880 --> 00:15:09.720
+but actually read an entire
+
+00:15:09.720 --> 00:15:12.040
+documentation page it can use this tool
+
+00:15:12.040 --> 00:15:14.040
+to figure out which pages are available
+
+00:15:14.040 --> 00:15:16.160
+to it and then use our third and final
+
+00:15:16.160 --> 00:15:18.240
+tool right here to get the contents of
+
+00:15:18.240 --> 00:15:19.759
+specific Pages like maybe it wants to
+
+00:15:19.759 --> 00:15:22.320
+read up on an example in the pantic AI
+
+00:15:22.320 --> 00:15:23.839
+docs or the page that talks about
+
+00:15:23.839 --> 00:15:25.399
+defining tools whatever it might be it
+
+00:15:25.399 --> 00:15:27.279
+can use this function to actually do
+
+00:15:27.279 --> 00:15:29.600
+that so this agent will intell ently use
+
+00:15:29.600 --> 00:15:32.000
+these three tools together to get all
+
+00:15:32.000 --> 00:15:33.639
+the documentation that it thinks it
+
+00:15:33.639 --> 00:15:36.480
+needs to then give us all of this code
+
+00:15:36.480 --> 00:15:37.720
+right here that we have defined in this
+
+00:15:37.720 --> 00:15:40.680
+structure to produce that pantic AI
+
+00:15:40.680 --> 00:15:42.959
+agent for us now to actually run this
+
+00:15:42.959 --> 00:15:45.120
+agent again going back to the readme I
+
+00:15:45.120 --> 00:15:47.240
+have a streamlet interface that I set up
+
+00:15:47.240 --> 00:15:48.839
+I'm not going to go over this in detail
+
+00:15:48.839 --> 00:15:51.319
+right now just a very basic streamlet
+
+00:15:51.319 --> 00:15:54.399
+interface to work with I pantic AI agent
+
+00:15:54.399 --> 00:15:55.839
+which by the way you can use this as a
+
+00:15:55.839 --> 00:15:57.240
+reference point if you want to use
+
+00:15:57.240 --> 00:15:59.920
+streamlit for pantic AI so another nice
+
+00:15:59.920 --> 00:16:02.399
+little resource for you there but yeah
+
+00:16:02.399 --> 00:16:03.720
+we just will run this Command right here
+
+00:16:03.720 --> 00:16:05.360
+to spin up our interface I actually
+
+00:16:05.360 --> 00:16:07.360
+already have it up and running here um
+
+00:16:07.360 --> 00:16:09.480
+because I'm going to show you an example
+
+00:16:09.480 --> 00:16:12.319
+run of when I was using archon V1 just
+
+00:16:12.319 --> 00:16:14.959
+to show again the shortcomings of this
+
+00:16:14.959 --> 00:16:17.079
+so that we can talk about why we want to
+
+00:16:17.079 --> 00:16:18.959
+graduate to version two and then I'll
+
+00:16:18.959 --> 00:16:20.880
+show you how to build that with pantic
+
+00:16:20.880 --> 00:16:23.240
+AI and Lane graph together so for the
+
+00:16:23.240 --> 00:16:25.399
+example for this agent I'm just asking
+
+00:16:25.399 --> 00:16:27.240
+it to build me an agent that can answer
+
+00:16:27.240 --> 00:16:29.360
+questions about code in a GitHub repo
+
+00:16:29.360 --> 00:16:31.560
+that I give a URL to so essentially just
+
+00:16:31.560 --> 00:16:33.440
+the GitHub agent that I've been building
+
+00:16:33.440 --> 00:16:35.319
+as a part of my series on YouTube
+
+00:16:35.319 --> 00:16:37.519
+showing you how to build AI agents and
+
+00:16:37.519 --> 00:16:39.720
+the results that we get from this are
+
+00:16:39.720 --> 00:16:41.600
+okay I mean it's still actually probably
+
+00:16:41.600 --> 00:16:44.160
+better than if we were to ask wind surf
+
+00:16:44.160 --> 00:16:46.800
+or GPT or deep seek or something to
+
+00:16:46.800 --> 00:16:49.560
+build an AI agent with pantic AI cuz
+
+00:16:49.560 --> 00:16:51.959
+those guys they have no context over
+
+00:16:51.959 --> 00:16:53.519
+pantic AI they don't understand the
+
+00:16:53.519 --> 00:16:55.800
+documentation at all at least this agent
+
+00:16:55.800 --> 00:16:58.079
+does and you can definitely tell by the
+
+00:16:58.079 --> 00:17:00.120
+way that it set things up and used
+
+00:17:00.120 --> 00:17:01.600
+function decorators and things like that
+
+00:17:01.600 --> 00:17:04.280
+that it does understand pantic AI though
+
+00:17:04.280 --> 00:17:06.120
+I will say that the results they're not
+
+00:17:06.120 --> 00:17:07.280
+going to run right out the gate it
+
+00:17:07.280 --> 00:17:09.400
+didn't Define the agent correctly the
+
+00:17:09.400 --> 00:17:12.679
+tools don't look optimal to me I guess
+
+00:17:12.679 --> 00:17:14.400
+the dependencies are okay but then one
+
+00:17:14.400 --> 00:17:15.919
+big thing is it didn't say I need any
+
+00:17:15.919 --> 00:17:17.480
+environment variables even though I very
+
+00:17:17.480 --> 00:17:21.039
+much do need my open AI API key if I
+
+00:17:21.039 --> 00:17:22.439
+were to use actually it doesn't even
+
+00:17:22.439 --> 00:17:24.720
+tell me the model so that's certainly
+
+00:17:24.720 --> 00:17:27.520
+broken and then also we' probably need a
+
+00:17:27.520 --> 00:17:29.559
+g API key as well unless we're only
+
+00:17:29.559 --> 00:17:31.840
+going to be cloning public repos so
+
+00:17:31.840 --> 00:17:33.799
+definitely not an ideal implementation
+
+00:17:33.799 --> 00:17:37.120
+overall it kind of works and if you have
+
+00:17:37.120 --> 00:17:39.919
+specific use cases for your AI agents
+
+00:17:39.919 --> 00:17:42.400
+that might be simple and something like
+
+00:17:42.400 --> 00:17:45.440
+just pantic AI would suffice you don't
+
+00:17:45.440 --> 00:17:47.840
+need the added complexity of building
+
+00:17:47.840 --> 00:17:50.360
+with Lang graph as well but you can see
+
+00:17:50.360 --> 00:17:53.480
+for this use case specifically without
+
+00:17:53.480 --> 00:17:55.640
+optimizing a lot more with the system
+
+00:17:55.640 --> 00:17:57.280
+prompt or better tools anything like
+
+00:17:57.280 --> 00:17:59.600
+that I definitely need more and that's
+
+00:17:59.600 --> 00:18:01.280
+where a graph approach an a gentic
+
+00:18:01.280 --> 00:18:03.320
+workflow to actually make sure that it's
+
+00:18:03.320 --> 00:18:04.840
+reading through the pantic AI
+
+00:18:04.840 --> 00:18:06.720
+documentation correctly and using it
+
+00:18:06.720 --> 00:18:10.120
+correctly is super super important and
+
+00:18:10.120 --> 00:18:11.600
+so I really do want to preface what I'm
+
+00:18:11.600 --> 00:18:13.440
+about to show you by saying like maybe
+
+00:18:13.440 --> 00:18:15.640
+there are other ways to optimize besides
+
+00:18:15.640 --> 00:18:18.520
+moving to a graph approach um like maybe
+
+00:18:18.520 --> 00:18:20.559
+like I said better system prompts or
+
+00:18:20.559 --> 00:18:22.120
+different tools to analyze the
+
+00:18:22.120 --> 00:18:24.480
+documentation differently um maybe even
+
+00:18:24.480 --> 00:18:26.159
+bringing in the ptic AI GitHub
+
+00:18:26.159 --> 00:18:27.559
+repository right now it's just the
+
+00:18:27.559 --> 00:18:30.280
+documentation pages but like overall
+
+00:18:30.280 --> 00:18:32.000
+that might take just as much work as it
+
+00:18:32.000 --> 00:18:34.080
+is to move to this graph approach and
+
+00:18:34.080 --> 00:18:35.520
+I'm getting some really good results
+
+00:18:35.520 --> 00:18:37.960
+with version two of archon so with this
+
+00:18:37.960 --> 00:18:40.039
+kind of as the context as to why we'd
+
+00:18:40.039 --> 00:18:42.480
+really need that let's go on to building
+
+00:18:42.480 --> 00:18:44.919
+version two with pantic AI and Lang
+
+00:18:44.919 --> 00:18:47.720
+graph together so this is the graph for
+
+00:18:47.720 --> 00:18:49.440
+the agentic workflow that we're about to
+
+00:18:49.440 --> 00:18:52.240
+make for archon using pantic Ai and L
+
+00:18:52.240 --> 00:18:53.480
+graph together and that's one of the
+
+00:18:53.480 --> 00:18:55.640
+beauties of using Lang grath is you can
+
+00:18:55.640 --> 00:18:57.919
+visualize your workflows without having
+
+00:18:57.919 --> 00:18:59.840
+to put in any extra work I did not
+
+00:18:59.840 --> 00:19:01.640
+create this myself all I did and you can
+
+00:19:01.640 --> 00:19:03.720
+do this too you can go to version two of
+
+00:19:03.720 --> 00:19:05.679
+archon in the GitHub repo or it's at the
+
+00:19:05.679 --> 00:19:07.440
+root of the repo at the time of
+
+00:19:07.440 --> 00:19:09.200
+recording set everything up with the
+
+00:19:09.200 --> 00:19:10.799
+readme get your python environment set
+
+00:19:10.799 --> 00:19:12.600
+up and then run the command Lang graph
+
+00:19:12.600 --> 00:19:15.159
+Dev and that'll spin up this studio UI
+
+00:19:15.159 --> 00:19:17.080
+open in your browser automatically and
+
+00:19:17.080 --> 00:19:18.919
+then boom you'll have this there where
+
+00:19:18.919 --> 00:19:20.640
+you can visualize all the nodes in the
+
+00:19:20.640 --> 00:19:22.559
+workflow that I'm about to show you how
+
+00:19:22.559 --> 00:19:24.720
+to create from scratch and so you can
+
+00:19:24.720 --> 00:19:26.400
+already see that there's a lot more
+
+00:19:26.400 --> 00:19:28.200
+going on essentially version one was
+
+00:19:28.200 --> 00:19:30.159
+just the code coder agent right here so
+
+00:19:30.159 --> 00:19:31.559
+a request would come through to build an
+
+00:19:31.559 --> 00:19:34.120
+agent and this guy would perform regag
+
+00:19:34.120 --> 00:19:36.120
+look at specific documentation Pages
+
+00:19:36.120 --> 00:19:38.559
+whatever to actually produce the final
+
+00:19:38.559 --> 00:19:40.440
+agent for you but now with version two
+
+00:19:40.440 --> 00:19:43.240
+with lra we have a few different pantic
+
+00:19:43.240 --> 00:19:45.919
+AI agents involved first of all we are
+
+00:19:45.919 --> 00:19:48.400
+using a reasoning llm at the start of
+
+00:19:48.400 --> 00:19:50.720
+the workflow something like deep seek R1
+
+00:19:50.720 --> 00:19:53.480
+or open aai 03 mini and this guy is
+
+00:19:53.480 --> 00:19:55.240
+going to take the requirements from the
+
+00:19:55.240 --> 00:19:56.720
+user like the agent that they want to
+
+00:19:56.720 --> 00:19:59.280
+build and create a full scope document
+
+00:19:59.280 --> 00:20:00.640
+outlining everything that needs to be
+
+00:20:00.640 --> 00:20:02.880
+created and it's going to pick out
+
+00:20:02.880 --> 00:20:05.600
+certain pantic AI documentation pages
+
+00:20:05.600 --> 00:20:07.559
+that it thinks the primary coder agent
+
+00:20:07.559 --> 00:20:10.120
+should use rag to look up to actually
+
+00:20:10.120 --> 00:20:11.559
+have the right context to build the
+
+00:20:11.559 --> 00:20:13.440
+agent and that alone improves the
+
+00:20:13.440 --> 00:20:15.640
+results a lot and then we have this Loop
+
+00:20:15.640 --> 00:20:18.480
+here where the agent is going to code up
+
+00:20:18.480 --> 00:20:20.720
+another pantic AI agent and then get
+
+00:20:20.720 --> 00:20:22.520
+feedback from the user and then iterate
+
+00:20:22.520 --> 00:20:24.039
+on that and we could go through this
+
+00:20:24.039 --> 00:20:26.080
+forever until the user finally decides
+
+00:20:26.080 --> 00:20:28.039
+yep it created a good agent let's move
+
+00:20:28.039 --> 00:20:30.039
+on this is using a really important
+
+00:20:30.039 --> 00:20:32.200
+Concept in Lang graph and other agentic
+
+00:20:32.200 --> 00:20:34.679
+workflow tools called human in the loop
+
+00:20:34.679 --> 00:20:36.159
+and that's something I really want to
+
+00:20:36.159 --> 00:20:38.039
+demonstrate here because llms
+
+00:20:38.039 --> 00:20:39.559
+hallucinate all the time and so
+
+00:20:39.559 --> 00:20:41.760
+practically any AI agent you would ever
+
+00:20:41.760 --> 00:20:44.159
+want to make you want some sort of human
+
+00:20:44.159 --> 00:20:46.840
+improval involved to approve certain
+
+00:20:46.840 --> 00:20:48.799
+actions before you go on to the next
+
+00:20:48.799 --> 00:20:51.120
+stage in a workflow to give feedback
+
+00:20:51.120 --> 00:20:52.400
+whatever it might be and so I'm going to
+
+00:20:52.400 --> 00:20:54.080
+show you how to do that right here and
+
+00:20:54.080 --> 00:20:56.320
+then once the user says that the AI
+
+00:20:56.320 --> 00:20:58.600
+agent is good then we have this final
+
+00:20:58.600 --> 00:20:59.760
+agent that kind of wraps up the
+
+00:20:59.760 --> 00:21:01.679
+conversation by summarizing everything
+
+00:21:01.679 --> 00:21:04.159
+into the final AI agent for you and
+
+00:21:04.159 --> 00:21:06.159
+instructions to run it as well and
+
+00:21:06.159 --> 00:21:08.280
+overall this is a pretty basic
+
+00:21:08.280 --> 00:21:10.640
+implementation in Lang graph but that's
+
+00:21:10.640 --> 00:21:12.640
+where I want to start with version two
+
+00:21:12.640 --> 00:21:14.279
+of archon and a lot of the things that I
+
+00:21:14.279 --> 00:21:16.880
+chose for the general structure of this
+
+00:21:16.880 --> 00:21:19.039
+graph is more just to teach you all the
+
+00:21:19.039 --> 00:21:21.039
+concepts that I really want to focus on
+
+00:21:21.039 --> 00:21:22.760
+like human in the loop and then through
+
+00:21:22.760 --> 00:21:24.360
+future iterations of Aron that's when
+
+00:21:24.360 --> 00:21:26.400
+we're really going to hone in on the
+
+00:21:26.400 --> 00:21:28.240
+things that actually make it work the
+
+00:21:28.240 --> 00:21:30.159
+best and really start to build this out
+
+00:21:30.159 --> 00:21:32.600
+into a full workflow that'll avoid a ton
+
+00:21:32.600 --> 00:21:33.760
+of different hallucinations with
+
+00:21:33.760 --> 00:21:35.960
+creating agents and and things like that
+
+00:21:35.960 --> 00:21:37.880
+right now starting simple but we still
+
+00:21:37.880 --> 00:21:39.960
+get a lot better results so let me show
+
+00:21:39.960 --> 00:21:42.320
+you this really quick so exact same
+
+00:21:42.320 --> 00:21:44.400
+question that I asked version one of
+
+00:21:44.400 --> 00:21:47.640
+Arcon and this time we definitely get
+
+00:21:47.640 --> 00:21:49.840
+some better results so first of all we
+
+00:21:49.840 --> 00:21:50.880
+even get like a little bit of a
+
+00:21:50.880 --> 00:21:52.600
+breakdown initially I mean just the fact
+
+00:21:52.600 --> 00:21:54.640
+that we give this scope document from
+
+00:21:54.640 --> 00:21:57.559
+the Reasoner into the coder means that
+
+00:21:57.559 --> 00:21:59.279
+it just has so much more information to
+
+00:21:59.279 --> 00:22:01.600
+pull from to give us a more robust
+
+00:22:01.600 --> 00:22:03.640
+response so we get a file breakdown here
+
+00:22:03.640 --> 00:22:05.679
+then we get the code implementation the
+
+00:22:05.679 --> 00:22:07.320
+tools are looking a lot better it
+
+00:22:07.320 --> 00:22:09.720
+defines the agent and actually specifies
+
+00:22:09.720 --> 00:22:11.679
+in llm now I mean maybe not the choice
+
+00:22:11.679 --> 00:22:14.360
+we'd want necessarily with GPT 40 but it
+
+00:22:14.360 --> 00:22:16.679
+defines it correctly and then we have
+
+00:22:16.679 --> 00:22:19.520
+the tools populated the prompts file
+
+00:22:19.520 --> 00:22:21.120
+populated the environment variables
+
+00:22:21.120 --> 00:22:23.240
+actually make sense this time and it's
+
+00:22:23.240 --> 00:22:26.000
+not all perfect right now but it still
+
+00:22:26.000 --> 00:22:27.880
+looks so much better and even gives us
+
+00:22:27.880 --> 00:22:30.279
+some additional instructions as well
+
+00:22:30.279 --> 00:22:32.919
+just like you can tell that there is a
+
+00:22:32.919 --> 00:22:34.480
+lot more involved in giving me this
+
+00:22:34.480 --> 00:22:37.080
+response compared to archon V1 and it's
+
+00:22:37.080 --> 00:22:39.720
+all thanks to this agentic flow that has
+
+00:22:39.720 --> 00:22:42.120
+a Reasoner a feedback loop and then it's
+
+00:22:42.120 --> 00:22:43.679
+got an agent at the end that can help
+
+00:22:43.679 --> 00:22:45.559
+summarize everything with instructions
+
+00:22:45.559 --> 00:22:47.880
+as well so with that in mind we can
+
+00:22:47.880 --> 00:22:50.120
+really start to see the power of using
+
+00:22:50.120 --> 00:22:52.480
+pantic Ai and laying graph together now
+
+00:22:52.480 --> 00:22:53.960
+let's actually go and implement this
+
+00:22:53.960 --> 00:22:56.159
+graph from scratch here we go let's get
+
+00:22:56.159 --> 00:22:58.600
+into building archon V2 together we're
+
+00:22:58.600 --> 00:23:00.720
+going to do it completely from scratch
+
+00:23:00.720 --> 00:23:02.840
+because as I promised earlier I want
+
+00:23:02.840 --> 00:23:04.679
+this to be a true Deep dive into
+
+00:23:04.679 --> 00:23:06.919
+building with L graph and integrating it
+
+00:23:06.919 --> 00:23:09.279
+with pantic AI as well so just like with
+
+00:23:09.279 --> 00:23:11.400
+V1 we have this read me here that shows
+
+00:23:11.400 --> 00:23:13.440
+you how to get everything set up
+
+00:23:13.440 --> 00:23:16.200
+including running things locally as well
+
+00:23:16.200 --> 00:23:17.559
+so just to make things quick right now
+
+00:23:17.559 --> 00:23:19.440
+I'm going to be using open AI but I've
+
+00:23:19.440 --> 00:23:21.279
+actually tested this agent with deep
+
+00:23:21.279 --> 00:23:24.520
+seek R1 distill 7B for my Reasoner model
+
+00:23:24.520 --> 00:23:28.000
+and quen 2.5 instruct 14b for my coding
+
+00:23:28.000 --> 00:23:29.919
+model and and it actually kicked butt I
+
+00:23:29.919 --> 00:23:31.400
+got some really good results using those
+
+00:23:31.400 --> 00:23:33.640
+local llms the only thing I will say is
+
+00:23:33.640 --> 00:23:35.880
+you still need open AI for the
+
+00:23:35.880 --> 00:23:38.159
+embeddings model that's a dependency
+
+00:23:38.159 --> 00:23:39.559
+that I'm going to get rid of in future
+
+00:23:39.559 --> 00:23:41.279
+versions of archon so that you can do
+
+00:23:41.279 --> 00:23:43.799
+things entirely locally but you can have
+
+00:23:43.799 --> 00:23:45.279
+your agents be local and I got some
+
+00:23:45.279 --> 00:23:46.799
+really good results with that so follow
+
+00:23:46.799 --> 00:23:48.480
+along with this Remy to get everything
+
+00:23:48.480 --> 00:23:50.360
+set up just like you would with V1
+
+00:23:50.360 --> 00:23:51.760
+couple of other things to get set up as
+
+00:23:51.760 --> 00:23:52.679
+well but the thing that we're going to
+
+00:23:52.679 --> 00:23:55.480
+be building from scratch here is our
+
+00:23:55.480 --> 00:23:57.480
+graph that will actually tie all these
+
+00:23:57.480 --> 00:24:00.039
+agents together including the pantic AI
+
+00:24:00.039 --> 00:24:02.320
+coder agent that we still have as the
+
+00:24:02.320 --> 00:24:05.000
+core agent within this workflow here and
+
+00:24:05.000 --> 00:24:06.840
+as we're building out this graph I'm
+
+00:24:06.840 --> 00:24:09.080
+going to be showing this UI pointing out
+
+00:24:09.080 --> 00:24:10.720
+the different nodes that we're building
+
+00:24:10.720 --> 00:24:12.679
+just to use this as a visual reference
+
+00:24:12.679 --> 00:24:15.200
+to make this entire walkthrough as clear
+
+00:24:15.200 --> 00:24:17.559
+as I possibly can because even though
+
+00:24:17.559 --> 00:24:19.520
+this is a more simple L graph
+
+00:24:19.520 --> 00:24:21.360
+implementation there are still a lot of
+
+00:24:21.360 --> 00:24:22.840
+moving Parts here and different agents
+
+00:24:22.840 --> 00:24:24.480
+that we have to build and work with and
+
+00:24:24.480 --> 00:24:25.760
+so I'm going to be using this a lot to
+
+00:24:25.760 --> 00:24:27.360
+make that pretty nice and clear and so
+
+00:24:27.360 --> 00:24:29.039
+yeah let's go ahead and start building
+
+00:24:29.039 --> 00:24:31.440
+our graph for archon v2 now if you bet a
+
+00:24:31.440 --> 00:24:33.480
+100 bucks that at the start of all of my
+
+00:24:33.480 --> 00:24:35.360
+Python scripts I import my packages as
+
+00:24:35.360 --> 00:24:37.679
+my first step you're going to get $100
+
+00:24:37.679 --> 00:24:39.480
+every single tutorial that I have here
+
+00:24:39.480 --> 00:24:41.559
+so yeah first thing importing all the
+
+00:24:41.559 --> 00:24:43.480
+packages that we need for things like
+
+00:24:43.480 --> 00:24:46.559
+Lang graph and pantic AI as well then
+
+00:24:46.559 --> 00:24:48.120
+we'll load in some of our configuration
+
+00:24:48.120 --> 00:24:49.679
+like our environment variables which you
+
+00:24:49.679 --> 00:24:51.679
+can set all that up before you run this
+
+00:24:51.679 --> 00:24:53.480
+so be sure to create your own version
+
+00:24:53.480 --> 00:24:56.360
+ofv based on the example here fill in
+
+00:24:56.360 --> 00:24:58.720
+Things based on if you want to use llama
+
+00:24:58.720 --> 00:25:00.760
+for local llms go through open AI
+
+00:25:00.760 --> 00:25:02.000
+whatever it might be and then hook in
+
+00:25:02.000 --> 00:25:04.720
+your super base as well and then we're
+
+00:25:04.720 --> 00:25:07.559
+also going to not use log fire for our
+
+00:25:07.559 --> 00:25:09.559
+loging monitoring that you can use with
+
+00:25:09.559 --> 00:25:11.480
+pantic AI it's built in I'm going to
+
+00:25:11.480 --> 00:25:13.039
+turn this off for now but we'll
+
+00:25:13.039 --> 00:25:15.679
+configure this later for archon as well
+
+00:25:15.679 --> 00:25:17.120
+then we're going to pull in our
+
+00:25:17.120 --> 00:25:19.399
+environment variables and so we have our
+
+00:25:19.399 --> 00:25:21.880
+base URL this is how we can configure if
+
+00:25:21.880 --> 00:25:24.200
+we want to go through open AI or olama
+
+00:25:24.200 --> 00:25:26.960
+or open router and then we have our llm
+
+00:25:26.960 --> 00:25:28.559
+API key that we're going to need need
+
+00:25:28.559 --> 00:25:30.559
+for anything except for olama obviously
+
+00:25:30.559 --> 00:25:32.240
+with AMA we don't need that because it's
+
+00:25:32.240 --> 00:25:34.640
+running entirely locally on our machine
+
+00:25:34.640 --> 00:25:36.919
+and then we also want to determine if we
+
+00:25:36.919 --> 00:25:39.679
+are running olama based on if Local Host
+
+00:25:39.679 --> 00:25:42.520
+is in our base URL and the reason that
+
+00:25:42.520 --> 00:25:45.000
+I'm doing this is because olama within
+
+00:25:45.000 --> 00:25:47.440
+pantic AI doesn't support streaming like
+
+00:25:47.440 --> 00:25:48.880
+the other providers do I'm not really
+
+00:25:48.880 --> 00:25:51.640
+sure why I think it's a bug in pantic AI
+
+00:25:51.640 --> 00:25:53.559
+that I really hope they fix because
+
+00:25:53.559 --> 00:25:55.520
+right now when you use AMA you have to
+
+00:25:55.520 --> 00:25:58.320
+wait for the entire output from the LM
+
+00:25:58.320 --> 00:25:59.919
+before you can display it to the screen
+
+00:25:59.919 --> 00:26:01.720
+instead of having it type out the
+
+00:26:01.720 --> 00:26:04.039
+characters as it is producing them and
+
+00:26:04.039 --> 00:26:05.360
+so we'll just see a little bit of a
+
+00:26:05.360 --> 00:26:07.200
+difference there in how we call our
+
+00:26:07.200 --> 00:26:09.679
+pantic AI agents if we're using olama or
+
+00:26:09.679 --> 00:26:12.640
+not the next thing that we want to do is
+
+00:26:12.640 --> 00:26:15.120
+Define our Reasoner agent and so this is
+
+00:26:15.120 --> 00:26:17.840
+our first pantic AI agent that is going
+
+00:26:17.840 --> 00:26:20.840
+to be responsible for basically managing
+
+00:26:20.840 --> 00:26:22.679
+this first node here that we have in our
+
+00:26:22.679 --> 00:26:24.679
+workflow to actually create the scope
+
+00:26:24.679 --> 00:26:26.880
+for the AI agent that we are building
+
+00:26:26.880 --> 00:26:29.200
+and so it's going to be an open AI model
+
+00:26:29.200 --> 00:26:30.840
+but we're going to override the base URL
+
+00:26:30.840 --> 00:26:33.080
+which is how we can use a local llm or
+
+00:26:33.080 --> 00:26:35.520
+not and same with the API key and then
+
+00:26:35.520 --> 00:26:37.520
+the model we're fetching this from our
+
+00:26:37.520 --> 00:26:38.760
+environment variable and we're just
+
+00:26:38.760 --> 00:26:41.320
+going to be defaulting to 03 mini if
+
+00:26:41.320 --> 00:26:43.640
+nothing is specified but you can set up
+
+00:26:43.640 --> 00:26:45.960
+a custom AMA model that you've created
+
+00:26:45.960 --> 00:26:47.480
+like I built this one that also has a
+
+00:26:47.480 --> 00:26:49.720
+larger context link so it doesn't mess
+
+00:26:49.720 --> 00:26:51.720
+things up a bunch and that's this is
+
+00:26:51.720 --> 00:26:54.039
+where you set up your Reasoner model and
+
+00:26:54.039 --> 00:26:55.919
+then we create our actual pantic AI
+
+00:26:55.919 --> 00:26:57.559
+agent with the system prompt as well
+
+00:26:57.559 --> 00:27:00.159
+just keeping it super super simple and
+
+00:27:00.159 --> 00:27:02.880
+then we want to create our router agent
+
+00:27:02.880 --> 00:27:04.640
+and so this guy is just going to use the
+
+00:27:04.640 --> 00:27:06.440
+same llm as whatever we use for our
+
+00:27:06.440 --> 00:27:10.000
+coder agent like GPT 4 mini uh quen 2.5
+
+00:27:10.000 --> 00:27:12.159
+instruct whatever it might be and the
+
+00:27:12.159 --> 00:27:14.480
+reason that we need this agent here is
+
+00:27:14.480 --> 00:27:16.159
+because we have to determine within this
+
+00:27:16.159 --> 00:27:18.399
+Loop when we want to break out and
+
+00:27:18.399 --> 00:27:20.159
+actually end the conversation so the
+
+00:27:20.159 --> 00:27:21.960
+router is going to take the latest user
+
+00:27:21.960 --> 00:27:24.080
+request and determine are they saying
+
+00:27:24.080 --> 00:27:26.120
+the agent is good and we can continue to
+
+00:27:26.120 --> 00:27:28.360
+finish the conversation or do I have to
+
+00:27:28.360 --> 00:27:30.720
+go through another loop here and go back
+
+00:27:30.720 --> 00:27:32.520
+to the coder agent so that's what this
+
+00:27:32.520 --> 00:27:34.440
+guy is going to be responsible for we'll
+
+00:27:34.440 --> 00:27:37.440
+build that node later as well and then
+
+00:27:37.440 --> 00:27:39.120
+we have our final agent when the
+
+00:27:39.120 --> 00:27:41.880
+conversation is ended this agent its
+
+00:27:41.880 --> 00:27:43.720
+only job is just to kind of summarize a
+
+00:27:43.720 --> 00:27:45.720
+conversation give the code for the agent
+
+00:27:45.720 --> 00:27:47.440
+and then instructions for running it as
+
+00:27:47.440 --> 00:27:49.080
+well so the user can take the end of
+
+00:27:49.080 --> 00:27:51.320
+that conversation and just copy those
+
+00:27:51.320 --> 00:27:53.159
+commands to execute the agent on their
+
+00:27:53.159 --> 00:27:55.720
+computer so that's everything for our
+
+00:27:55.720 --> 00:27:58.480
+agents and now we just needed to find
+
+00:27:58.480 --> 00:28:01.120
+dependencies for all of these pantic AI
+
+00:28:01.120 --> 00:28:03.000
+agents so we have our open AI client
+
+00:28:03.000 --> 00:28:05.600
+which we need for the embeddings for Rag
+
+00:28:05.600 --> 00:28:07.640
+and then our superbase client as well to
+
+00:28:07.640 --> 00:28:10.440
+actually perform rag in our superbase
+
+00:28:10.440 --> 00:28:12.559
+database and then the first thing that
+
+00:28:12.559 --> 00:28:15.360
+we need in Lang graph whenever we Define
+
+00:28:15.360 --> 00:28:18.240
+any graph here we can't just go right
+
+00:28:18.240 --> 00:28:19.720
+into defining all these nodes and
+
+00:28:19.720 --> 00:28:21.840
+connecting them together we have to
+
+00:28:21.840 --> 00:28:24.519
+manage the state for our graph and so
+
+00:28:24.519 --> 00:28:26.440
+let me actually show this here all the
+
+00:28:26.440 --> 00:28:28.120
+different items that we have right here
+
+00:28:28.120 --> 00:28:30.360
+here that we can see in the Lang graph
+
+00:28:30.360 --> 00:28:33.080
+UI these are all pieces of information
+
+00:28:33.080 --> 00:28:35.240
+that we want to keep track of throughout
+
+00:28:35.240 --> 00:28:38.159
+the entire execution of the graph like
+
+00:28:38.159 --> 00:28:39.840
+the messages for example it doesn't
+
+00:28:39.840 --> 00:28:42.720
+matter which node we are in we need this
+
+00:28:42.720 --> 00:28:45.880
+more Global state that keeps track of
+
+00:28:45.880 --> 00:28:47.799
+things that the entire conversation
+
+00:28:47.799 --> 00:28:49.919
+cares about like the scope that the
+
+00:28:49.919 --> 00:28:51.559
+Reasoner creates that we might want to
+
+00:28:51.559 --> 00:28:54.240
+use in any of these uh nodes or the
+
+00:28:54.240 --> 00:28:55.480
+message history that we're going to use
+
+00:28:55.480 --> 00:28:56.919
+in pretty much every single one of these
+
+00:28:56.919 --> 00:28:58.559
+except this guy right here
+
+00:28:58.559 --> 00:29:00.840
+and so all that is defined in global
+
+00:29:00.840 --> 00:29:02.960
+state for our graph and so for a
+
+00:29:02.960 --> 00:29:05.480
+specific execution of our graph like
+
+00:29:05.480 --> 00:29:08.159
+creating a single AI agent these things
+
+00:29:08.159 --> 00:29:10.720
+are going to be set up individually for
+
+00:29:10.720 --> 00:29:14.159
+each execution of our graph and so you
+
+00:29:14.159 --> 00:29:15.919
+have something like maybe a conversation
+
+00:29:15.919 --> 00:29:18.880
+ID or a thread ID you pass that into
+
+00:29:18.880 --> 00:29:20.799
+Lang graph and it's going to manage the
+
+00:29:20.799 --> 00:29:22.720
+state independently for each one of
+
+00:29:22.720 --> 00:29:25.000
+those conversation IDs essentially so
+
+00:29:25.000 --> 00:29:27.159
+you can have multiple executions of the
+
+00:29:27.159 --> 00:29:29.320
+graph all on at the same time and
+
+00:29:29.320 --> 00:29:30.919
+they're all going to manage separate
+
+00:29:30.919 --> 00:29:32.320
+State and that's how you can have these
+
+00:29:32.320 --> 00:29:34.720
+different conversations happening all at
+
+00:29:34.720 --> 00:29:37.200
+once um so that's our state now we can
+
+00:29:37.200 --> 00:29:39.679
+Define our first node and this is going
+
+00:29:39.679 --> 00:29:42.679
+to be the defined scope with Reasoner so
+
+00:29:42.679 --> 00:29:44.679
+this first guy right here we are now
+
+00:29:44.679 --> 00:29:47.080
+creating the actual node that's going to
+
+00:29:47.080 --> 00:29:49.279
+use the Reasoner agent that we already
+
+00:29:49.279 --> 00:29:51.799
+set up and this one is going to be
+
+00:29:51.799 --> 00:29:53.519
+pretty simple first of all we're going
+
+00:29:53.519 --> 00:29:55.440
+to use this function that we have from
+
+00:29:55.440 --> 00:29:57.640
+the pantic AI coder I'll just show this
+
+00:29:57.640 --> 00:29:58.919
+right here
+
+00:29:58.919 --> 00:30:00.880
+let me scroll down this one right here
+
+00:30:00.880 --> 00:30:03.720
+this function to fetch all of the pantic
+
+00:30:03.720 --> 00:30:06.159
+AI documentation pages that are
+
+00:30:06.159 --> 00:30:07.399
+available in
+
+00:30:07.399 --> 00:30:10.320
+superbase and then we're going to Define
+
+00:30:10.320 --> 00:30:12.600
+our prompt which is going to ex include
+
+00:30:12.600 --> 00:30:15.159
+all these documentation Pages as well so
+
+00:30:15.159 --> 00:30:17.519
+we're telling the Reasoner model that we
+
+00:30:17.519 --> 00:30:20.480
+want to create a scope a document that
+
+00:30:20.480 --> 00:30:22.000
+outlines everything that we have to
+
+00:30:22.000 --> 00:30:24.320
+create for our AI agent and we're also
+
+00:30:24.320 --> 00:30:25.919
+telling it to pick out a few
+
+00:30:25.919 --> 00:30:27.640
+documentation pages that it thinks are
+
+00:30:27.640 --> 00:30:30.360
+relevant for creating this agent this is
+
+00:30:30.360 --> 00:30:32.320
+a little rudimentary there's probably
+
+00:30:32.320 --> 00:30:34.519
+much better ways to use a Reasoner to
+
+00:30:34.519 --> 00:30:36.720
+set the stage for this graph um but
+
+00:30:36.720 --> 00:30:39.039
+still a really solid example here and so
+
+00:30:39.039 --> 00:30:41.519
+now to actually leverage this Reasoner
+
+00:30:41.519 --> 00:30:43.360
+it's very simple with pantic AI just
+
+00:30:43.360 --> 00:30:45.360
+Reasoner do run we get the scope from
+
+00:30:45.360 --> 00:30:47.240
+the result we'll even write it out to a
+
+00:30:47.240 --> 00:30:50.000
+file here so we can see the results um
+
+00:30:50.000 --> 00:30:51.720
+after it executes I'll show this right
+
+00:30:51.720 --> 00:30:52.760
+here we'll get something that kind of
+
+00:30:52.760 --> 00:30:54.760
+looks like this I'll just kind of open
+
+00:30:54.760 --> 00:30:56.159
+that preview for the read me here so
+
+00:30:56.159 --> 00:30:59.200
+this is a scope um that g gbt 40 mini
+
+00:30:59.200 --> 00:31:01.799
+actually produced um so when I showed
+
+00:31:01.799 --> 00:31:03.919
+you that example earlier with version
+
+00:31:03.919 --> 00:31:06.360
+two of archon I actually used 40 mini
+
+00:31:06.360 --> 00:31:09.360
+for my Reasoner just to not be kind of
+
+00:31:09.360 --> 00:31:12.559
+unfair to version one because 03 mini is
+
+00:31:12.559 --> 00:31:15.639
+so powerful that 40 mini is a much
+
+00:31:15.639 --> 00:31:17.960
+fairer comparison to use for Reasoner LM
+
+00:31:17.960 --> 00:31:20.320
+When comparing to V1 but anyway so that
+
+00:31:20.320 --> 00:31:22.080
+that's the scope document right
+
+00:31:22.080 --> 00:31:25.200
+here and then we're just going to return
+
+00:31:25.200 --> 00:31:27.679
+the scope of scope so in Lang graph when
+
+00:31:27.679 --> 00:31:30.279
+you want to update the state the global
+
+00:31:30.279 --> 00:31:31.840
+state that we're tracking for this
+
+00:31:31.840 --> 00:31:34.440
+execution of the graph at the end of Any
+
+00:31:34.440 --> 00:31:36.799
+Given node you just have to return an
+
+00:31:36.799 --> 00:31:39.159
+object where you have the key that maps
+
+00:31:39.159 --> 00:31:41.080
+to the specific value that you want to
+
+00:31:41.080 --> 00:31:42.799
+update and then the value that you
+
+00:31:42.799 --> 00:31:44.960
+actually want to update it to so when we
+
+00:31:44.960 --> 00:31:47.960
+first execute our graph we're at the
+
+00:31:47.960 --> 00:31:50.159
+starting point right here the scope
+
+00:31:50.159 --> 00:31:52.120
+value is just going to be undefined or
+
+00:31:52.120 --> 00:31:54.880
+maybe whatever we start the graph with
+
+00:31:54.880 --> 00:31:57.919
+but once we Define the scope with
+
+00:31:57.919 --> 00:32:00.279
+Reasoner we actually have this state
+
+00:32:00.279 --> 00:32:02.399
+updated so then scope is going to
+
+00:32:02.399 --> 00:32:04.799
+permanently have this value that the
+
+00:32:04.799 --> 00:32:07.159
+Reasoner defined unless we change it in
+
+00:32:07.159 --> 00:32:08.840
+some other node in the graph and so
+
+00:32:08.840 --> 00:32:10.519
+that's how we update the state and
+
+00:32:10.519 --> 00:32:11.960
+that's going to stick with us forever so
+
+00:32:11.960 --> 00:32:14.919
+we can now use this scope as a value
+
+00:32:14.919 --> 00:32:16.600
+that we put into another prompt in
+
+00:32:16.600 --> 00:32:18.320
+another node for example that's actually
+
+00:32:18.320 --> 00:32:19.559
+what we're going to do in a little bit
+
+00:32:19.559 --> 00:32:22.880
+here so that is our very first node next
+
+00:32:22.880 --> 00:32:24.880
+up we want to create the node for our
+
+00:32:24.880 --> 00:32:26.919
+coder agent and again as promised just
+
+00:32:26.919 --> 00:32:29.200
+going through this as our visual
+
+00:32:29.200 --> 00:32:31.440
+constantly here we're creating our coder
+
+00:32:31.440 --> 00:32:33.919
+agent now so this is the main guy in
+
+00:32:33.919 --> 00:32:35.200
+this workflow it's going to be doing
+
+00:32:35.200 --> 00:32:37.000
+most of the work pretty much especially
+
+00:32:37.000 --> 00:32:39.200
+if the user has a lot of feedback they
+
+00:32:39.200 --> 00:32:41.240
+want to give to the coder agent and this
+
+00:32:41.240 --> 00:32:43.480
+is going to be using our primary pantic
+
+00:32:43.480 --> 00:32:46.120
+AI Cod or agent that we're using in V1
+
+00:32:46.120 --> 00:32:47.720
+but this time we're giving it a lot of
+
+00:32:47.720 --> 00:32:50.159
+extra context as well that the Reasoner
+
+00:32:50.159 --> 00:32:52.760
+gave in the scope and so we're creating
+
+00:32:52.760 --> 00:32:55.320
+our dependencies here which is going to
+
+00:32:55.320 --> 00:32:57.039
+be the superbase client and the open a
+
+00:32:57.039 --> 00:32:59.720
+client just like with with V1 of arcom
+
+00:32:59.720 --> 00:33:01.760
+but now we have this third dependency
+
+00:33:01.760 --> 00:33:04.840
+here because we want to inject the scope
+
+00:33:04.840 --> 00:33:07.360
+that the Reasoner created dynamically
+
+00:33:07.360 --> 00:33:10.480
+into the system prompt for our pantic AI
+
+00:33:10.480 --> 00:33:12.559
+coder agent and so I added this third
+
+00:33:12.559 --> 00:33:16.240
+dependency here so pantic AI coder dopy
+
+00:33:16.240 --> 00:33:18.240
+it's exactly the same as what we have
+
+00:33:18.240 --> 00:33:21.840
+for the same file in V1 except I have
+
+00:33:21.840 --> 00:33:24.080
+this third dependency here and the way
+
+00:33:24.080 --> 00:33:26.720
+that you can dynamically inject things
+
+00:33:26.720 --> 00:33:28.360
+into the system prompt
+
+00:33:28.360 --> 00:33:31.360
+is in pantic AI you can reference at and
+
+00:33:31.360 --> 00:33:33.679
+then the name of the agent like at
+
+00:33:33.679 --> 00:33:37.639
+pantic AI coder do system prompt and
+
+00:33:37.639 --> 00:33:40.159
+just like the tools like we have the
+
+00:33:40.159 --> 00:33:42.399
+retrieve relevant documentation tool we
+
+00:33:42.399 --> 00:33:45.159
+have this context that pantic AI
+
+00:33:45.159 --> 00:33:47.639
+automatically passes in as a parameter
+
+00:33:47.639 --> 00:33:50.320
+to the function and it does that for
+
+00:33:50.320 --> 00:33:52.360
+these dynamic system prompt functions as
+
+00:33:52.360 --> 00:33:54.480
+well and so we can reference the
+
+00:33:54.480 --> 00:33:57.840
+Reasoner output from the context and add
+
+00:33:57.840 --> 00:33:59.440
+add that into the system prompt so
+
+00:33:59.440 --> 00:34:02.159
+whatever we return from this function is
+
+00:34:02.159 --> 00:34:04.320
+added onto the primary system prompt
+
+00:34:04.320 --> 00:34:05.919
+that we have right here and so that is
+
+00:34:05.919 --> 00:34:08.720
+how we are able to dynamically add
+
+00:34:08.720 --> 00:34:11.399
+whatever scope the Reasoner puts out
+
+00:34:11.399 --> 00:34:13.720
+into the system prompt for our coder
+
+00:34:13.720 --> 00:34:15.839
+agent and the reason we want to add it
+
+00:34:15.839 --> 00:34:17.919
+into the system prompt is the system
+
+00:34:17.919 --> 00:34:20.159
+prompt is where you define the behavior
+
+00:34:20.159 --> 00:34:23.599
+and the general rules for your agent and
+
+00:34:23.599 --> 00:34:24.960
+definitely the scope of what we are
+
+00:34:24.960 --> 00:34:27.079
+creating is more of a overarching thing
+
+00:34:27.079 --> 00:34:28.399
+that we want to have have in the system
+
+00:34:28.399 --> 00:34:29.879
+prompt instead of somewhere in the
+
+00:34:29.879 --> 00:34:31.879
+conversation history so I hope that
+
+00:34:31.879 --> 00:34:33.280
+makes sense you can look at the pantic
+
+00:34:33.280 --> 00:34:35.679
+AI documentation for dynamic system
+
+00:34:35.679 --> 00:34:36.960
+prompts if you want to dive into it
+
+00:34:36.960 --> 00:34:38.919
+anymore but that is why we are adding
+
+00:34:38.919 --> 00:34:41.520
+this as a third dependency for our
+
+00:34:41.520 --> 00:34:44.240
+pantic AI agent and then we're going to
+
+00:34:44.240 --> 00:34:46.399
+get all of the conversation history that
+
+00:34:46.399 --> 00:34:49.119
+we currently have in the state right
+
+00:34:49.119 --> 00:34:51.040
+here I mean when we first execute it's
+
+00:34:51.040 --> 00:34:53.440
+going to be an empty list but as we're
+
+00:34:53.440 --> 00:34:55.159
+getting feedback from the user this
+
+00:34:55.159 --> 00:34:56.720
+message state is going to be built up
+
+00:34:56.720 --> 00:34:58.160
+over time and I'll show how we do that
+
+00:34:58.160 --> 00:35:00.560
+in a little bit as well so we have to
+
+00:35:00.560 --> 00:35:03.000
+fetch this and then we're um using this
+
+00:35:03.000 --> 00:35:05.480
+model messages type adapter from pantic
+
+00:35:05.480 --> 00:35:08.599
+AI to turn this into the format that we
+
+00:35:08.599 --> 00:35:11.560
+can actually pass into a pantic AI agent
+
+00:35:11.560 --> 00:35:13.079
+so that's really important to keep in
+
+00:35:13.079 --> 00:35:16.839
+mind that the format that we store the
+
+00:35:16.839 --> 00:35:19.480
+state in for the messages this is a
+
+00:35:19.480 --> 00:35:20.880
+different format than what we actually
+
+00:35:20.880 --> 00:35:23.640
+need to give to a pantic AI agent so we
+
+00:35:23.640 --> 00:35:26.040
+have to do a little bit of conversion
+
+00:35:26.040 --> 00:35:28.280
+when we get the results from the agent
+
+00:35:28.280 --> 00:35:31.079
+and also when we refetch the message
+
+00:35:31.079 --> 00:35:33.680
+history to pass back into the agent and
+
+00:35:33.680 --> 00:35:35.320
+I'll show more what that looks like in a
+
+00:35:35.320 --> 00:35:37.280
+little bit as well so we get our message
+
+00:35:37.280 --> 00:35:39.560
+history and then if we are running with
+
+00:35:39.560 --> 00:35:42.119
+olama we can't actually stream the
+
+00:35:42.119 --> 00:35:44.640
+output to our interface and so we have
+
+00:35:44.640 --> 00:35:47.800
+to use this concept of a writer which we
+
+00:35:47.800 --> 00:35:50.079
+can pass into any function that we want
+
+00:35:50.079 --> 00:35:51.280
+in Lane graph this is given
+
+00:35:51.280 --> 00:35:53.119
+automatically into any function that we
+
+00:35:53.119 --> 00:35:54.839
+want and we're just going to call our
+
+00:35:54.839 --> 00:35:58.560
+agents so pantic AIC coder run we give
+
+00:35:58.560 --> 00:36:01.480
+it the latest message from the user as
+
+00:36:01.480 --> 00:36:03.640
+the current prompt pass in our
+
+00:36:03.640 --> 00:36:05.720
+dependencies and then we pass in the
+
+00:36:05.720 --> 00:36:07.760
+message history that we created right
+
+00:36:07.760 --> 00:36:09.599
+here as well so that's how we call our
+
+00:36:09.599 --> 00:36:11.680
+agent by the way the way that we get the
+
+00:36:11.680 --> 00:36:14.160
+latest user message from the state this
+
+00:36:14.160 --> 00:36:16.640
+is actually passed into the graph
+
+00:36:16.640 --> 00:36:19.000
+through whatever user interface we are
+
+00:36:19.000 --> 00:36:21.680
+using so again to explain this clearly
+
+00:36:21.680 --> 00:36:24.040
+I'll go back to my graph right here when
+
+00:36:24.040 --> 00:36:26.400
+we execute our graph for the first time
+
+00:36:26.400 --> 00:36:28.400
+latest user message
+
+00:36:28.400 --> 00:36:31.599
+is what we pass in so I'd say like hello
+
+00:36:31.599 --> 00:36:32.880
+and then that goes through the graph
+
+00:36:32.880 --> 00:36:35.400
+here the scope is defined maybe a better
+
+00:36:35.400 --> 00:36:38.119
+example I can say build me a weather
+
+00:36:38.119 --> 00:36:40.680
+agent so this is going to be our first
+
+00:36:40.680 --> 00:36:42.480
+message from the user so that scope is
+
+00:36:42.480 --> 00:36:45.599
+defined and then we go into coder agent
+
+00:36:45.599 --> 00:36:47.200
+where the scope this is going to be
+
+00:36:47.200 --> 00:36:49.040
+defined as whatever the Reasoner
+
+00:36:49.040 --> 00:36:50.680
+specified and then the latest user
+
+00:36:50.680 --> 00:36:52.560
+message is going to be whatever we
+
+00:36:52.560 --> 00:36:55.400
+specified when we started the graph um
+
+00:36:55.400 --> 00:36:56.920
+and so the way that we do that in Lang
+
+00:36:56.920 --> 00:36:58.920
+graph I'll just show that really quickly
+
+00:36:58.920 --> 00:37:02.400
+here when we execute a lang graph graph
+
+00:37:02.400 --> 00:37:05.000
+in streamlet we just pass in this object
+
+00:37:05.000 --> 00:37:06.319
+right here where we say that the latest
+
+00:37:06.319 --> 00:37:08.920
+user message is whatever they inputed
+
+00:37:08.920 --> 00:37:12.160
+into the streamlet UI and so we leverage
+
+00:37:12.160 --> 00:37:15.440
+this within our node right here the
+
+00:37:15.440 --> 00:37:16.960
+state within the state we're getting the
+
+00:37:16.960 --> 00:37:18.520
+latest user message and again this is
+
+00:37:18.520 --> 00:37:19.920
+one of the things that we have defined
+
+00:37:19.920 --> 00:37:21.880
+right here in our Global State for the
+
+00:37:21.880 --> 00:37:24.280
+graph that's how we get the message from
+
+00:37:24.280 --> 00:37:27.240
+the user so we rely on the interface
+
+00:37:27.240 --> 00:37:31.040
+right here here our UI to pass in this
+
+00:37:31.040 --> 00:37:33.440
+value to the start of our graph so I
+
+00:37:33.440 --> 00:37:34.599
+hope that makes sense and then we just
+
+00:37:34.599 --> 00:37:37.079
+write out the results this is kind of
+
+00:37:37.079 --> 00:37:39.400
+mocking a stream right here because we
+
+00:37:39.400 --> 00:37:42.079
+want streamlet to be able to expect
+
+00:37:42.079 --> 00:37:43.800
+things to be streamed out in case we
+
+00:37:43.800 --> 00:37:46.200
+aren't using AMA um but we also don't
+
+00:37:46.200 --> 00:37:48.839
+want to we we can't use pantic AI
+
+00:37:48.839 --> 00:37:50.599
+streaming with AMA for some reason so
+
+00:37:50.599 --> 00:37:52.359
+that's just kind of a little thing I
+
+00:37:52.359 --> 00:37:54.760
+hope that they fix here but anyway if we
+
+00:37:54.760 --> 00:37:57.040
+are not using olama then we can actually
+
+00:37:57.040 --> 00:37:59.440
+use the run stream command to stream out
+
+00:37:59.440 --> 00:38:01.880
+the output get the chunks one at a time
+
+00:38:01.880 --> 00:38:05.160
+to put out to the front end in real time
+
+00:38:05.160 --> 00:38:07.160
+so again we're using the latest user
+
+00:38:07.160 --> 00:38:09.119
+message State the dependencies and the
+
+00:38:09.119 --> 00:38:11.520
+message history and then as we are
+
+00:38:11.520 --> 00:38:13.920
+receiving the chunks asynchronously we
+
+00:38:13.920 --> 00:38:16.000
+are going to write them out to the front
+
+00:38:16.000 --> 00:38:18.520
+end and that is it and now we have our
+
+00:38:18.520 --> 00:38:20.680
+result from our pantic AI coder so at
+
+00:38:20.680 --> 00:38:23.680
+this point we have version one of our AI
+
+00:38:23.680 --> 00:38:26.720
+agent that it's created in this node
+
+00:38:26.720 --> 00:38:28.119
+right here
+
+00:38:28.119 --> 00:38:29.760
+so at this point we've executed these
+
+00:38:29.760 --> 00:38:33.119
+two now it is time to get feedback from
+
+00:38:33.119 --> 00:38:34.960
+the user whether or not we want to
+
+00:38:34.960 --> 00:38:37.359
+continue on to finish the conversation
+
+00:38:37.359 --> 00:38:40.599
+or iterate more on the agent and so
+
+00:38:40.599 --> 00:38:42.839
+first of all we want to take the
+
+00:38:42.839 --> 00:38:45.359
+messages that we got back all of the new
+
+00:38:45.359 --> 00:38:47.040
+messages that we got from this
+
+00:38:47.040 --> 00:38:48.839
+conversation which will include any tool
+
+00:38:48.839 --> 00:38:50.800
+calls as well this is super important
+
+00:38:50.800 --> 00:38:52.839
+this will include all the results from
+
+00:38:52.839 --> 00:38:54.560
+Rag and everything that we can add into
+
+00:38:54.560 --> 00:38:56.119
+the conversation history so that the
+
+00:38:56.119 --> 00:38:58.400
+agent retains that cont context that's
+
+00:38:58.400 --> 00:39:00.920
+super important we're adding these on to
+
+00:39:00.920 --> 00:39:03.720
+the messages so now the messages state
+
+00:39:03.720 --> 00:39:06.640
+is going to include all the old messages
+
+00:39:06.640 --> 00:39:08.640
+the user prompt and all the new messages
+
+00:39:08.640 --> 00:39:10.319
+and Tool calls and stuff as well so
+
+00:39:10.319 --> 00:39:11.400
+that's how we're building up the
+
+00:39:11.400 --> 00:39:14.200
+conversation history over
+
+00:39:14.200 --> 00:39:16.319
+time so now the next thing that we want
+
+00:39:16.319 --> 00:39:19.720
+to do is add in this human in the loop
+
+00:39:19.720 --> 00:39:21.920
+interrupt because now it's time to
+
+00:39:21.920 --> 00:39:24.960
+return to our streamlet interface or
+
+00:39:24.960 --> 00:39:27.000
+whatever interface that we are using for
+
+00:39:27.000 --> 00:39:29.720
+our us Y and get the next message from
+
+00:39:29.720 --> 00:39:31.560
+the user conversation and another way
+
+00:39:31.560 --> 00:39:33.319
+that you can do this is you could just
+
+00:39:33.319 --> 00:39:35.079
+end the graph and then have a complete
+
+00:39:35.079 --> 00:39:37.359
+reentry when the user's next message
+
+00:39:37.359 --> 00:39:39.359
+comes in I just wanted to set it up this
+
+00:39:39.359 --> 00:39:41.400
+way to show you human in the loop
+
+00:39:41.400 --> 00:39:42.680
+because essentially what we're going to
+
+00:39:42.680 --> 00:39:45.280
+do is we use this concept in L graph
+
+00:39:45.280 --> 00:39:46.800
+called an interrupt that's essentially
+
+00:39:46.800 --> 00:39:49.760
+their way to do human in the loop so we
+
+00:39:49.760 --> 00:39:51.599
+have this interrupt and this object
+
+00:39:51.599 --> 00:39:53.359
+right here is how you can pass certain
+
+00:39:53.359 --> 00:39:55.560
+values into the front end like maybe the
+
+00:39:55.560 --> 00:39:57.800
+agent is requesting a certain kind of
+
+00:39:57.800 --> 00:39:59.880
+feedback so you would add that into the
+
+00:39:59.880 --> 00:40:01.400
+object here to display in the front end
+
+00:40:01.400 --> 00:40:02.680
+in this case I don't actually have
+
+00:40:02.680 --> 00:40:05.160
+anything extra that I want to display so
+
+00:40:05.160 --> 00:40:07.480
+I just have an empty bracket here and so
+
+00:40:07.480 --> 00:40:08.680
+it's going to essentially on the front
+
+00:40:08.680 --> 00:40:10.400
+end just look like it's time for the
+
+00:40:10.400 --> 00:40:12.079
+user to enter in their message so they
+
+00:40:12.079 --> 00:40:13.839
+type in whatever they want and then I'm
+
+00:40:13.839 --> 00:40:16.000
+setting the latest user message to
+
+00:40:16.000 --> 00:40:17.680
+whatever that value is that comes
+
+00:40:17.680 --> 00:40:20.319
+through when I call the graph again
+
+00:40:20.319 --> 00:40:22.839
+after that human in the loop interrupt
+
+00:40:22.839 --> 00:40:25.720
+and so in my streamlet code right here
+
+00:40:25.720 --> 00:40:27.359
+you can see that if I'm starting the
+
+00:40:27.359 --> 00:40:31.119
+conversation I invoke the graph this way
+
+00:40:31.119 --> 00:40:33.599
+but then if it is a continued
+
+00:40:33.599 --> 00:40:36.160
+conversation I use this command
+
+00:40:36.160 --> 00:40:38.079
+narrative right here and I'm resuming
+
+00:40:38.079 --> 00:40:40.520
+with the value of user input and so I'm
+
+00:40:40.520 --> 00:40:41.880
+not going to get too technical in
+
+00:40:41.880 --> 00:40:43.599
+explaining exactly how this works but
+
+00:40:43.599 --> 00:40:45.800
+essentially using this Command right
+
+00:40:45.800 --> 00:40:48.359
+here is how you resume the graph at the
+
+00:40:48.359 --> 00:40:50.760
+current execution and whatever you pass
+
+00:40:50.760 --> 00:40:53.880
+in right here for resume equal is what
+
+00:40:53.880 --> 00:40:55.839
+is given as the value and then we're
+
+00:40:55.839 --> 00:40:57.800
+returning this object right here
+
+00:40:57.800 --> 00:40:59.480
+because now we are updating the user
+
+00:40:59.480 --> 00:41:01.839
+messages state with whatever they typed
+
+00:41:01.839 --> 00:41:04.680
+in when we have that interrupt so I hope
+
+00:41:04.680 --> 00:41:06.640
+that makes sense that is this node right
+
+00:41:06.640 --> 00:41:08.240
+here so now we're going to resume
+
+00:41:08.240 --> 00:41:10.920
+execution back to the coder agent and
+
+00:41:10.920 --> 00:41:12.520
+I'll show you at the end of this code
+
+00:41:12.520 --> 00:41:15.119
+how we actually set up all of these
+
+00:41:15.119 --> 00:41:17.040
+different nodes and their connections as
+
+00:41:17.040 --> 00:41:19.000
+well U but let's actually finish
+
+00:41:19.000 --> 00:41:21.359
+defining all of these nodes here um
+
+00:41:21.359 --> 00:41:23.200
+because the next one that we need to
+
+00:41:23.200 --> 00:41:26.400
+Define is our router and this is the
+
+00:41:26.400 --> 00:41:28.560
+agent that is going to to determine did
+
+00:41:28.560 --> 00:41:30.480
+the user say that the agent is good and
+
+00:41:30.480 --> 00:41:32.560
+we can finish the conversation or do we
+
+00:41:32.560 --> 00:41:36.079
+have to go back to the coder agent and
+
+00:41:36.079 --> 00:41:38.400
+so this is my prompt for that based on
+
+00:41:38.400 --> 00:41:40.440
+the latest message from the user that we
+
+00:41:40.440 --> 00:41:42.800
+just set right here I'm going to see if
+
+00:41:42.800 --> 00:41:44.400
+we want to end the conversation or
+
+00:41:44.400 --> 00:41:46.040
+continue and I could use structured
+
+00:41:46.040 --> 00:41:47.400
+output there definitely is a better way
+
+00:41:47.400 --> 00:41:48.680
+I could do this but this works pretty
+
+00:41:48.680 --> 00:41:50.480
+well haven't had an issue with this
+
+00:41:50.480 --> 00:41:51.839
+we're just going to run the router agent
+
+00:41:51.839 --> 00:41:53.480
+with this prompt and then the next
+
+00:41:53.480 --> 00:41:55.119
+action is either going to be finish
+
+00:41:55.119 --> 00:41:57.599
+conversation or it's going to be coder
+
+00:41:57.599 --> 00:42:00.319
+agent so if it's finished conversation
+
+00:42:00.319 --> 00:42:03.000
+then we're going to move on to the last
+
+00:42:03.000 --> 00:42:04.920
+node in the graph otherwise we're going
+
+00:42:04.920 --> 00:42:06.839
+to loop back so that's what this does
+
+00:42:06.839 --> 00:42:09.560
+right here all you have to do with Lang
+
+00:42:09.560 --> 00:42:12.440
+graph for your router nodes is just
+
+00:42:12.440 --> 00:42:14.359
+return the name of the node that you
+
+00:42:14.359 --> 00:42:16.720
+want to go to when you have a choice
+
+00:42:16.720 --> 00:42:18.720
+between going to one or the other and
+
+00:42:18.720 --> 00:42:20.319
+we'll see that in a little bit when we
+
+00:42:20.319 --> 00:42:22.640
+actually Define the connections between
+
+00:42:22.640 --> 00:42:25.920
+our nodes at the end of this file here
+
+00:42:25.920 --> 00:42:27.680
+all right so now very last node that we
+
+00:42:27.680 --> 00:42:29.440
+got here this is the one to finish a
+
+00:42:29.440 --> 00:42:31.720
+conversation and so just like the other
+
+00:42:31.720 --> 00:42:34.160
+coder agent node we create the
+
+00:42:34.160 --> 00:42:35.960
+conversation history that we want to
+
+00:42:35.960 --> 00:42:39.599
+pass into pantic Ai and then if it's AMA
+
+00:42:39.599 --> 00:42:42.119
+we just call the end conversation agent
+
+00:42:42.119 --> 00:42:43.839
+again just kind of mocking the stream
+
+00:42:43.839 --> 00:42:45.559
+here we're just running synchronously in
+
+00:42:45.559 --> 00:42:47.599
+this case everything else is kind of uh
+
+00:42:47.599 --> 00:42:50.200
+set up the same here um and then
+
+00:42:50.200 --> 00:42:53.119
+otherwise we're going to call our run
+
+00:42:53.119 --> 00:42:55.720
+stream on our end conversation agent and
+
+00:42:55.720 --> 00:42:57.640
+so again with the system prompt we're
+
+00:42:57.640 --> 00:42:59.839
+telling the end conversation agent to
+
+00:42:59.839 --> 00:43:01.359
+just kind of summarize the conversation
+
+00:43:01.359 --> 00:43:02.960
+give the final code for the agent and
+
+00:43:02.960 --> 00:43:04.960
+then the instructions to run it as well
+
+00:43:04.960 --> 00:43:06.040
+so we're just going to stream this out
+
+00:43:06.040 --> 00:43:08.640
+to the front end all the chunks for that
+
+00:43:08.640 --> 00:43:11.359
+last message there uh finally update the
+
+00:43:11.359 --> 00:43:13.319
+messages in our state so that the
+
+00:43:13.319 --> 00:43:15.640
+conversation history is updated again
+
+00:43:15.640 --> 00:43:17.720
+just like we did with our coder agent a
+
+00:43:17.720 --> 00:43:20.800
+very similar setup here and we're using
+
+00:43:20.800 --> 00:43:23.640
+Json for the message State here so again
+
+00:43:23.640 --> 00:43:26.040
+we're turning this into a format that we
+
+00:43:26.040 --> 00:43:28.000
+actually want to store so it's actually
+
+00:43:28.000 --> 00:43:29.960
+binary Json it's kind of weird that
+
+00:43:29.960 --> 00:43:31.720
+pantic AI does it this way but when you
+
+00:43:31.720 --> 00:43:34.480
+fetch the Json from the new messages
+
+00:43:34.480 --> 00:43:36.960
+from calling a pantic AI agent it turns
+
+00:43:36.960 --> 00:43:38.760
+it into binary Json that's what we're
+
+00:43:38.760 --> 00:43:40.480
+putting into this messages state right
+
+00:43:40.480 --> 00:43:42.880
+here and then when we convert it back
+
+00:43:42.880 --> 00:43:44.920
+into the what we want to pass into
+
+00:43:44.920 --> 00:43:47.119
+pantic AI using the model messages
+
+00:43:47.119 --> 00:43:49.960
+adapter we're turning it into um
+
+00:43:49.960 --> 00:43:52.559
+whatever format like the objects that
+
+00:43:52.559 --> 00:43:54.440
+pantic AI uses to represent the
+
+00:43:54.440 --> 00:43:57.160
+different messages from that binary Json
+
+00:43:57.160 --> 00:44:00.040
+on so that is it so now we can create
+
+00:44:00.040 --> 00:44:02.040
+this Builder right here based on the
+
+00:44:02.040 --> 00:44:04.160
+state that we have defined for our graph
+
+00:44:04.160 --> 00:44:06.160
+and we can add in all of our nodes so we
+
+00:44:06.160 --> 00:44:09.280
+have our scope definer with the Reasoner
+
+00:44:09.280 --> 00:44:11.920
+llm our coder agent the one that has the
+
+00:44:11.920 --> 00:44:14.720
+interrupt to get the messages from um us
+
+00:44:14.720 --> 00:44:16.040
+and then finally our finished
+
+00:44:16.040 --> 00:44:18.839
+conversation agent and now we get to set
+
+00:44:18.839 --> 00:44:20.839
+our edges and so what we just defined
+
+00:44:20.839 --> 00:44:22.760
+here is all these individual nodes but
+
+00:44:22.760 --> 00:44:24.720
+now we have to Define how they all
+
+00:44:24.720 --> 00:44:27.599
+connect together and so first up
+
+00:44:27.599 --> 00:44:29.200
+the start of our graph is going to
+
+00:44:29.200 --> 00:44:32.280
+immediately connect to the Reasoner node
+
+00:44:32.280 --> 00:44:33.559
+then we're going to connect the Reasoner
+
+00:44:33.559 --> 00:44:36.160
+to the coder agent there's no routing at
+
+00:44:36.160 --> 00:44:38.280
+this point it's just straight shot that
+
+00:44:38.280 --> 00:44:40.079
+goes right to the Reasoner then right to
+
+00:44:40.079 --> 00:44:42.359
+the coding agent and then the coding
+
+00:44:42.359 --> 00:44:44.599
+agent goes right to that node that gets
+
+00:44:44.599 --> 00:44:47.280
+the next message from the user and then
+
+00:44:47.280 --> 00:44:49.280
+this is where we get into a conditional
+
+00:44:49.280 --> 00:44:51.480
+Edge because now we're finally at the
+
+00:44:51.480 --> 00:44:52.839
+point where we have a decision to be
+
+00:44:52.839 --> 00:44:56.319
+made this blue node right here can
+
+00:44:56.319 --> 00:44:58.079
+either follow this this blue arrow or
+
+00:44:58.079 --> 00:44:59.440
+this blue arrow and we have to figure
+
+00:44:59.440 --> 00:45:00.839
+out what that is and the way that we do
+
+00:45:00.839 --> 00:45:03.520
+that is we use the route user message
+
+00:45:03.520 --> 00:45:05.800
+function so that's this one right here
+
+00:45:05.800 --> 00:45:07.839
+this one that we defined that Returns
+
+00:45:07.839 --> 00:45:11.440
+the name of the next node to go to so if
+
+00:45:11.440 --> 00:45:13.960
+we return coder agent we're going to go
+
+00:45:13.960 --> 00:45:16.520
+to this node right here otherwise if we
+
+00:45:16.520 --> 00:45:17.960
+return finish conversation we're going
+
+00:45:17.960 --> 00:45:20.720
+to go to finish conversation very nice
+
+00:45:20.720 --> 00:45:22.400
+and easy to understand how these
+
+00:45:22.400 --> 00:45:24.400
+conditional edges work in Lan graph
+
+00:45:24.400 --> 00:45:25.960
+these are the kind of things that Lan
+
+00:45:25.960 --> 00:45:27.079
+graph really helps you with like
+
+00:45:27.079 --> 00:45:30.000
+wouldn't be easy to Define all of these
+
+00:45:30.000 --> 00:45:32.720
+pantic AI agents and start connecting
+
+00:45:32.720 --> 00:45:34.960
+them together without having a tool like
+
+00:45:34.960 --> 00:45:37.000
+Lang graph to orchestrate it all
+
+00:45:37.000 --> 00:45:38.760
+together have these simple routing
+
+00:45:38.760 --> 00:45:40.440
+functions have all this Global State
+
+00:45:40.440 --> 00:45:42.160
+defined that you can update super easily
+
+00:45:42.160 --> 00:45:44.160
+I mean I hope you can really see how
+
+00:45:44.160 --> 00:45:46.040
+using a tool like glang graph is so
+
+00:45:46.040 --> 00:45:48.200
+powerful and then using pantic AI to
+
+00:45:48.200 --> 00:45:49.839
+create all these individual agents that
+
+00:45:49.839 --> 00:45:52.000
+are super easy to run I hope that you
+
+00:45:52.000 --> 00:45:54.200
+can just see the power of using these
+
+00:45:54.200 --> 00:45:55.760
+together and then we just have our final
+
+00:45:55.760 --> 00:45:57.559
+edge here which finished conversation
+
+00:45:57.559 --> 00:46:00.079
+just goes to end and then we add in our
+
+00:46:00.079 --> 00:46:02.400
+memory so that we can actually have chat
+
+00:46:02.400 --> 00:46:04.440
+persistence for L graph and then we
+
+00:46:04.440 --> 00:46:06.319
+compile our graph and that's it it is
+
+00:46:06.319 --> 00:46:08.960
+that easy and also this is using
+
+00:46:08.960 --> 00:46:11.920
+inmemory uh for storing all of the state
+
+00:46:11.920 --> 00:46:14.160
+for each execution of the graph I would
+
+00:46:14.160 --> 00:46:17.240
+highly recommend using a sqlite or
+
+00:46:17.240 --> 00:46:19.800
+postgress memory saver um which you can
+
+00:46:19.800 --> 00:46:21.559
+look at the L graph documentation for
+
+00:46:21.559 --> 00:46:23.480
+that definitely going to be adding that
+
+00:46:23.480 --> 00:46:25.400
+in for future iterations of archon but
+
+00:46:25.400 --> 00:46:27.160
+just keep things simple right now
+
+00:46:27.160 --> 00:46:29.319
+everything is just running in memory so
+
+00:46:29.319 --> 00:46:31.480
+when I execute my python script and I've
+
+00:46:31.480 --> 00:46:33.240
+just got it running in the terminal here
+
+00:46:33.240 --> 00:46:34.440
+it's going to just be storing all the
+
+00:46:34.440 --> 00:46:36.319
+things in my Ram for um you know the
+
+00:46:36.319 --> 00:46:38.160
+chat histories and the scope and
+
+00:46:38.160 --> 00:46:39.559
+everything that I have defined in the
+
+00:46:39.559 --> 00:46:41.960
+state right here so that is everything
+
+00:46:41.960 --> 00:46:44.319
+for our graph took a little bit to go
+
+00:46:44.319 --> 00:46:46.079
+through that that was yeah like a solid
+
+00:46:46.079 --> 00:46:47.800
+20 minutes of walking through everything
+
+00:46:47.800 --> 00:46:50.079
+with L graph but I really did want this
+
+00:46:50.079 --> 00:46:53.240
+to be a super comprehensive overview of
+
+00:46:53.240 --> 00:46:54.400
+everything that goes into this and if
+
+00:46:54.400 --> 00:46:55.800
+you have any questions at all for
+
+00:46:55.800 --> 00:46:57.720
+anything that I might have explain the
+
+00:46:57.720 --> 00:47:00.240
+best and maybe the visual didn't really
+
+00:47:00.240 --> 00:47:01.839
+help you understand how something might
+
+00:47:01.839 --> 00:47:03.040
+have worked just let me know in the
+
+00:47:03.040 --> 00:47:05.079
+comments I love to help you understand
+
+00:47:05.079 --> 00:47:07.800
+anything that I didn't do a deep enough
+
+00:47:07.800 --> 00:47:10.400
+dive into here but I'm going to continue
+
+00:47:10.400 --> 00:47:12.160
+to on my channel just keep doing deeper
+
+00:47:12.160 --> 00:47:14.440
+and deeper Dives in a l graph and pantic
+
+00:47:14.440 --> 00:47:16.680
+AI because it is really incredible the
+
+00:47:16.680 --> 00:47:17.960
+kind of things that you can build with
+
+00:47:17.960 --> 00:47:19.400
+this and then I'm not going to go over
+
+00:47:19.400 --> 00:47:21.960
+the streamlet interface a ton right here
+
+00:47:21.960 --> 00:47:23.920
+but like you can see it's only like 115
+
+00:47:23.920 --> 00:47:25.960
+lines of code like overall setting up an
+
+00:47:25.960 --> 00:47:28.200
+entire chat interface to work with a
+
+00:47:28.200 --> 00:47:31.359
+lang graph implementation is super easy
+
+00:47:31.359 --> 00:47:32.559
+and the way that you call it right here
+
+00:47:32.559 --> 00:47:33.800
+I went over this a little bit already
+
+00:47:33.800 --> 00:47:35.760
+but you just run this a stream command
+
+00:47:35.760 --> 00:47:38.640
+on the agentic flow so what I created at
+
+00:47:38.640 --> 00:47:40.480
+the very bottom right here is what I'm
+
+00:47:40.480 --> 00:47:43.559
+importing in my streamlet UI this right
+
+00:47:43.559 --> 00:47:45.800
+here and that's all I'm using right here
+
+00:47:45.800 --> 00:47:47.160
+so let me go back down to it so I'm
+
+00:47:47.160 --> 00:47:49.280
+calling a stream again passing in the
+
+00:47:49.280 --> 00:47:51.440
+latest user message either when I'm
+
+00:47:51.440 --> 00:47:52.880
+continuing from a human in the loop or
+
+00:47:52.880 --> 00:47:55.240
+at the very start of the conversation
+
+00:47:55.240 --> 00:47:57.040
+and then the way that I get this custom
+
+00:47:57.040 --> 00:47:58.920
+writer that's the kind of the last thing
+
+00:47:58.920 --> 00:48:00.800
+that I want to cover right here when you
+
+00:48:00.800 --> 00:48:03.280
+see that I have the uh writer that's
+
+00:48:03.280 --> 00:48:06.760
+passed in to coder agent and also passed
+
+00:48:06.760 --> 00:48:09.960
+in to finish conversation this is
+
+00:48:09.960 --> 00:48:12.839
+automatically injected when I tell
+
+00:48:12.839 --> 00:48:15.440
+stream or tell Lang graph that I want my
+
+00:48:15.440 --> 00:48:18.440
+stream mode to be custom so there's a
+
+00:48:18.440 --> 00:48:20.280
+lot of little things that took me a bit
+
+00:48:20.280 --> 00:48:21.880
+to figure out for you so I hope this
+
+00:48:21.880 --> 00:48:23.319
+gives you a lot of value not having to
+
+00:48:23.319 --> 00:48:25.280
+go through the pain that I had to just
+
+00:48:25.280 --> 00:48:27.119
+to work through a couple of the the
+
+00:48:27.119 --> 00:48:28.839
+little glitches to make sure that Lang
+
+00:48:28.839 --> 00:48:30.640
+graph and pantic AI could actually work
+
+00:48:30.640 --> 00:48:32.240
+really well together so I hope that you
+
+00:48:32.240 --> 00:48:34.240
+find that super helpful um so that
+
+00:48:34.240 --> 00:48:35.720
+that's that and now let's just go go
+
+00:48:35.720 --> 00:48:36.880
+through another Quick Test here and just
+
+00:48:36.880 --> 00:48:37.960
+have fun with this now that we have a
+
+00:48:37.960 --> 00:48:40.000
+build if you have made it this far
+
+00:48:40.000 --> 00:48:42.319
+congratulations this was not a super
+
+00:48:42.319 --> 00:48:44.040
+simple implementation but I hope that
+
+00:48:44.040 --> 00:48:46.720
+you can see how powerful this really is
+
+00:48:46.720 --> 00:48:48.319
+and I hope I made it very clear for you
+
+00:48:48.319 --> 00:48:49.920
+as well and that those graph
+
+00:48:49.920 --> 00:48:51.599
+visualization helped too but now we get
+
+00:48:51.599 --> 00:48:53.200
+to actually play around with this and
+
+00:48:53.200 --> 00:48:54.960
+have fun I know that we tried it out
+
+00:48:54.960 --> 00:48:56.359
+already earlier when I was comparing it
+
+00:48:56.359 --> 00:48:58.400
+to V one but let's just have some fun
+
+00:48:58.400 --> 00:49:00.280
+with this so I'm going to use the full
+
+00:49:00.280 --> 00:49:02.520
+power now with 03 mini for my Reasoner
+
+00:49:02.520 --> 00:49:05.359
+and gbt 40 for the main Cod agent just
+
+00:49:05.359 --> 00:49:07.400
+going to build the example that I have
+
+00:49:07.400 --> 00:49:09.280
+right here just a simple web search
+
+00:49:09.280 --> 00:49:11.680
+agent let's see how it does and so yeah
+
+00:49:11.680 --> 00:49:13.000
+we got the terminal right here we can
+
+00:49:13.000 --> 00:49:15.000
+watch things come in in real time first
+
+00:49:15.000 --> 00:49:16.960
+we have 03 mini that's going to create
+
+00:49:16.960 --> 00:49:19.640
+that scope document for context for our
+
+00:49:19.640 --> 00:49:22.440
+coding agent and 03 mini is not the
+
+00:49:22.440 --> 00:49:24.359
+fastest because it's a Reasoner model
+
+00:49:24.359 --> 00:49:25.400
+but I mean actually that was pretty
+
+00:49:25.400 --> 00:49:27.480
+quick so we're already going over to our
+
+00:49:27.480 --> 00:49:30.119
+pantic AI coder agent that is performing
+
+00:49:30.119 --> 00:49:32.280
+rag looking at the documentation pages
+
+00:49:32.280 --> 00:49:34.359
+and now also getting those pages for
+
+00:49:34.359 --> 00:49:36.720
+extra context right here from the pantic
+
+00:49:36.720 --> 00:49:39.359
+AI docs and look at this this is so cool
+
+00:49:39.359 --> 00:49:42.079
+so all right we got our dependencies
+
+00:49:42.079 --> 00:49:44.520
+right here which is our HTTP client and
+
+00:49:44.520 --> 00:49:47.240
+our brave API key we're using open AI
+
+00:49:47.240 --> 00:49:49.559
+gbt 40 for our model it's got a system
+
+00:49:49.559 --> 00:49:51.119
+prompt it's defining the dependencies
+
+00:49:51.119 --> 00:49:53.480
+correctly this is looking really really
+
+00:49:53.480 --> 00:49:55.400
+good then we've got our tool that's got
+
+00:49:55.400 --> 00:49:57.440
+The Decorator this is looking good we
+
+00:49:57.440 --> 00:50:00.440
+got our brave API from the pantic AI
+
+00:50:00.440 --> 00:50:03.160
+context this is looking incredible
+
+00:50:03.160 --> 00:50:05.200
+Perfect Tool implementation main
+
+00:50:05.200 --> 00:50:07.760
+function looks good and then it tells us
+
+00:50:07.760 --> 00:50:09.079
+that we don't need anything in the tools
+
+00:50:09.079 --> 00:50:10.440
+and prompts because it has it defined
+
+00:50:10.440 --> 00:50:13.440
+all right here and then for our. example
+
+00:50:13.440 --> 00:50:15.799
+file it looks like it missed the open AI
+
+00:50:15.799 --> 00:50:18.359
+API key I think we would probably need
+
+00:50:18.359 --> 00:50:20.200
+that but at least it has the brave API
+
+00:50:20.200 --> 00:50:21.960
+key so not perfect I mean you can
+
+00:50:21.960 --> 00:50:23.440
+definitely see why we're going to need
+
+00:50:23.440 --> 00:50:26.359
+future iterations of archon um but this
+
+00:50:26.359 --> 00:50:30.040
+is looking so good compared to archon V1
+
+00:50:30.040 --> 00:50:31.520
+trying to build this kind of agent with
+
+00:50:31.520 --> 00:50:34.200
+GPT or cursor or any kind of AI coding
+
+00:50:34.200 --> 00:50:36.480
+assistant this absolutely knocks it out
+
+00:50:36.480 --> 00:50:38.599
+of the park just so cool to see the kind
+
+00:50:38.599 --> 00:50:40.400
+of things that it can build so
+
+00:50:40.400 --> 00:50:42.319
+absolutely phenomenal all right that is
+
+00:50:42.319 --> 00:50:44.920
+a wrap for our Deep dive into pantic Ai
+
+00:50:44.920 --> 00:50:48.000
+langra and archon and trust me I have
+
+00:50:48.000 --> 00:50:50.240
+some big plans with archon I really want
+
+00:50:50.240 --> 00:50:52.559
+to turn this into a revolutionary open-
+
+00:50:52.559 --> 00:50:54.680
+Source agent that can completely change
+
+00:50:54.680 --> 00:50:56.880
+the way that we build agents and and
+
+00:50:56.880 --> 00:50:58.680
+make these coding Frameworks accessible
+
+00:50:58.680 --> 00:51:01.280
+to non-coders as well so definitely
+
+00:51:01.280 --> 00:51:03.119
+stick around and tune in future content
+
+00:51:03.119 --> 00:51:05.599
+as well if you are interested in archon
+
+00:51:05.599 --> 00:51:07.559
+or just interested in using pantic Ai
+
+00:51:07.559 --> 00:51:08.880
+and L graph because I'm going to keep
+
+00:51:08.880 --> 00:51:11.200
+using archon as a way to teach all this
+
+00:51:11.200 --> 00:51:13.960
+stuff in a very clear and concise way so
+
+00:51:13.960 --> 00:51:15.559
+if you appreciated this content and
+
+00:51:15.559 --> 00:51:16.920
+you're looking forward to more things
+
+00:51:16.920 --> 00:51:18.920
+with pantic AI and Lang graph I would
+
+00:51:18.920 --> 00:51:20.839
+really appreciate a like and a subscribe
+
+00:51:20.839 --> 00:51:22.520
+and with that I will see you in the next
+
+00:51:22.520 --> 00:51:24.920
+video

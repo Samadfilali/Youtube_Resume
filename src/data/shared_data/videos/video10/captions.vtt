@@ -1,0 +1,1726 @@
+WEBVTT
+
+00:00:00.240 --> 00:00:03.040
+hello Community let's have a look what
+
+00:00:03.040 --> 00:00:06.359
+happened in eii just last week something
+
+00:00:06.359 --> 00:00:08.960
+really nice and I want this to be for
+
+00:00:08.960 --> 00:00:11.920
+everybody for beginner for experts we
+
+00:00:11.920 --> 00:00:14.200
+have here our large language mall and
+
+00:00:14.200 --> 00:00:15.559
+you know we have the pre-training the
+
+00:00:15.559 --> 00:00:18.240
+superb fine tuning the DPO alignment and
+
+00:00:18.240 --> 00:00:20.880
+then we have a simple query and model
+
+00:00:20.880 --> 00:00:22.519
+answers and we have here the Lama model
+
+00:00:22.519 --> 00:00:25.119
+the anthropic models and our jet GPD for
+
+00:00:25.119 --> 00:00:27.439
+Omni and ansers are generated in
+
+00:00:27.439 --> 00:00:30.560
+milliseconds in the inference run but
+
+00:00:30.560 --> 00:00:33.000
+last week we focused on another kind of
+
+00:00:33.000 --> 00:00:36.520
+L language model and there is here we
+
+00:00:36.520 --> 00:00:39.800
+have here an inference compute or test
+
+00:00:39.800 --> 00:00:41.960
+time compute and you know the modes this
+
+00:00:41.960 --> 00:00:45.600
+is the open AI 01 the O3 the Deep seek
+
+00:00:45.600 --> 00:00:49.239
+R1 and the new Gemini 2.0 the thinking
+
+00:00:49.239 --> 00:00:52.399
+models where we have
+
+00:00:52.399 --> 00:00:56.199
+explicit thinking time that takes 2 to 5
+
+00:00:56.199 --> 00:00:59.519
+minutes so we divide now this in a pure
+
+00:00:59.519 --> 00:01:02.039
+training time compute
+
+00:01:02.039 --> 00:01:04.879
+optimization and then a test time
+
+00:01:04.879 --> 00:01:07.360
+compute optimization and you might ask
+
+00:01:07.360 --> 00:01:09.840
+why why do we need this well it all
+
+00:01:09.840 --> 00:01:12.960
+depends here of course on the query if I
+
+00:01:12.960 --> 00:01:16.280
+have a very specific query then the
+
+00:01:16.280 --> 00:01:18.439
+model here in the first place here a
+
+00:01:18.439 --> 00:01:21.320
+llama model for example just generate an
+
+00:01:21.320 --> 00:01:24.159
+answer that's the model learned this is
+
+00:01:24.159 --> 00:01:28.360
+it but if I have a real complex query
+
+00:01:28.360 --> 00:01:31.320
+now in the second kind of llm with the
+
+00:01:31.320 --> 00:01:34.240
+inference compute I can give now the
+
+00:01:34.240 --> 00:01:38.640
+model time to think about my query learn
+
+00:01:38.640 --> 00:01:41.720
+something new and yeah it is not just a
+
+00:01:41.720 --> 00:01:44.119
+rag system that it retrieves from a
+
+00:01:44.119 --> 00:01:46.799
+database no no we are going here and
+
+00:01:46.799 --> 00:01:49.479
+Next Step level because what we're going
+
+00:01:49.479 --> 00:01:53.399
+to do also here now we have an inference
+
+00:01:53.399 --> 00:01:55.560
+supervised fine tuning and inferenced
+
+00:01:55.560 --> 00:01:58.479
+reinforcement learning happening now in
+
+00:01:58.479 --> 00:02:01.680
+this phase because given my specific
+
+00:02:01.680 --> 00:02:04.119
+variant we here about reasoning causal
+
+00:02:04.119 --> 00:02:07.000
+reasoning logic and everything we have
+
+00:02:07.000 --> 00:02:10.000
+now the chance here to further learn and
+
+00:02:10.000 --> 00:02:13.319
+fine-tune and align here the model for
+
+00:02:13.319 --> 00:02:15.879
+this particular query so we have a
+
+00:02:15.879 --> 00:02:18.440
+better performance and just to show you
+
+00:02:18.440 --> 00:02:21.120
+just 8 days ago I had this video here
+
+00:02:21.120 --> 00:02:23.239
+about the test time preference
+
+00:02:23.239 --> 00:02:25.560
+optimization and you say hey this is
+
+00:02:25.560 --> 00:02:28.760
+exactly what we have here on the normal
+
+00:02:28.760 --> 00:02:32.239
+training time of optimization now we go
+
+00:02:32.239 --> 00:02:36.160
+from DPO to the TPO the test time
+
+00:02:36.160 --> 00:02:38.239
+preference optimization and if you want
+
+00:02:38.239 --> 00:02:40.440
+to see how we perform here the latest
+
+00:02:40.440 --> 00:02:43.239
+nii research here on reinforcement
+
+00:02:43.239 --> 00:02:45.599
+learning this is the video for
+
+00:02:45.599 --> 00:02:48.319
+you so in general we can say the second
+
+00:02:48.319 --> 00:02:51.440
+type of reasoning llms they have here
+
+00:02:51.440 --> 00:02:53.400
+the goal of advanced reasoning
+
+00:02:53.400 --> 00:02:55.440
+performance either in mathematic in
+
+00:02:55.440 --> 00:02:58.080
+logic in finance whatever you're looking
+
+00:02:58.080 --> 00:03:01.319
+for and I showed you here 7 days ago
+
+00:03:01.319 --> 00:03:05.280
+here that I examined here the 03 mini
+
+00:03:05.280 --> 00:03:08.879
+High model by open ey and I was really
+
+00:03:08.879 --> 00:03:10.640
+Amazed by the reasoning
+
+00:03:10.640 --> 00:03:13.200
+capabilities but right the next day I
+
+00:03:13.200 --> 00:03:16.480
+did this video about how stupid and 01
+
+00:03:16.480 --> 00:03:20.040
+model is and I focused here on the R1
+
+00:03:20.040 --> 00:03:22.480
+because this is open source and we could
+
+00:03:22.480 --> 00:03:25.200
+have a look at the reasoning process but
+
+00:03:25.200 --> 00:03:28.120
+the same is true for the 01 kind of
+
+00:03:28.120 --> 00:03:31.040
+models now if we try to understand it is
+
+00:03:31.040 --> 00:03:34.120
+rather easy if the model tries to find
+
+00:03:34.120 --> 00:03:37.120
+your solution it tries you different PA
+
+00:03:37.120 --> 00:03:39.680
+phrs in the reasoning process but as you
+
+00:03:39.680 --> 00:03:43.280
+can see this depth here of the reasoning
+
+00:03:43.280 --> 00:03:46.519
+argumentation is rather limited as it
+
+00:03:46.519 --> 00:03:48.400
+turns out and this is why I called the
+
+00:03:48.400 --> 00:03:51.720
+video stupid they were trained here to
+
+00:03:51.720 --> 00:03:54.799
+find a multitude of possible solution
+
+00:03:54.799 --> 00:03:58.079
+but they were not trained to go here
+
+00:03:58.079 --> 00:04:00.840
+really for a deep reasoning spent here
+
+00:04:00.840 --> 00:04:03.200
+really quite a lot amount of time here
+
+00:04:03.200 --> 00:04:06.439
+into not discovering 100 possible
+
+00:04:06.439 --> 00:04:09.720
+solution but go in depth with the second
+
+00:04:09.720 --> 00:04:13.040
+solution and find the correct solution
+
+00:04:13.040 --> 00:04:16.799
+so we had here that inadequate depth of
+
+00:04:16.799 --> 00:04:19.160
+reasoning happening and this was here
+
+00:04:19.160 --> 00:04:20.759
+the content of the video and the
+
+00:04:20.759 --> 00:04:23.160
+research team showed us that this 01
+
+00:04:23.160 --> 00:04:25.800
+models they are not at their maximum
+
+00:04:25.800 --> 00:04:29.160
+performance there is something to gain
+
+00:04:29.160 --> 00:04:31.759
+well yeah open had the O3 model what a
+
+00:04:31.759 --> 00:04:34.440
+coincidence but in this video I showed
+
+00:04:34.440 --> 00:04:37.400
+you there's a lack of explicit reward
+
+00:04:37.400 --> 00:04:39.440
+here for the depth exploration and the
+
+00:04:39.440 --> 00:04:42.320
+reasoning so models like o1 optimized
+
+00:04:42.320 --> 00:04:45.280
+for The Final Answer correctness but not
+
+00:04:45.280 --> 00:04:48.960
+for the reasoning efficiency or the path
+
+00:04:48.960 --> 00:04:50.919
+coherence and this creates here a
+
+00:04:50.919 --> 00:04:53.800
+disconnect the model knows what to solve
+
+00:04:53.800 --> 00:04:56.240
+but he does not know how to structure
+
+00:04:56.240 --> 00:04:59.039
+the solution in an optimal way this was
+
+00:04:59.039 --> 00:05:01.919
+the inside of this video because as we
+
+00:05:01.919 --> 00:05:04.039
+noticed here in the tests there's an
+
+00:05:04.039 --> 00:05:06.759
+abandonment of the correct solution real
+
+00:05:06.759 --> 00:05:09.000
+early in the phase because the simp the
+
+00:05:09.000 --> 00:05:11.360
+model simply failed to understand that
+
+00:05:11.360 --> 00:05:13.400
+it is on the correct
+
+00:05:13.400 --> 00:05:16.120
+track I showed you a solution by the
+
+00:05:16.120 --> 00:05:18.600
+authors of a research paper called tip
+
+00:05:18.600 --> 00:05:20.720
+where they simply recalibrate the model
+
+00:05:20.720 --> 00:05:24.639
+reasoning process great and then after
+
+00:05:24.639 --> 00:05:28.120
+R1 next day I did a video on the new
+
+00:05:28.120 --> 00:05:31.639
+Stanford S1 large language model that is
+
+00:05:31.639 --> 00:05:34.400
+also a reasoning model and I showed you
+
+00:05:34.400 --> 00:05:36.400
+the plus and the minus of the Stanford
+
+00:05:36.400 --> 00:05:39.080
+model and we went into the process of
+
+00:05:39.080 --> 00:05:41.160
+creating this and I showed you here in
+
+00:05:41.160 --> 00:05:42.960
+this very simple situation uh
+
+00:05:42.960 --> 00:05:46.120
+visualization here we have for example a
+
+00:05:46.120 --> 00:05:49.080
+data set a mathematical data set and now
+
+00:05:49.080 --> 00:05:51.160
+the elegant Solution by Stanford
+
+00:05:51.160 --> 00:05:55.560
+University was to use here 59,000
+
+00:05:55.560 --> 00:05:58.720
+different training examples and Stanford
+
+00:05:58.720 --> 00:06:01.440
+used Gemini 2.0 is sinking here to
+
+00:06:01.440 --> 00:06:04.160
+extract here the correct mathematical
+
+00:06:04.160 --> 00:06:06.960
+reasoning traces for the mathematical
+
+00:06:06.960 --> 00:06:10.120
+solution and then Stanford said okay and
+
+00:06:10.120 --> 00:06:12.960
+now from all of this close to 60,000
+
+00:06:12.960 --> 00:06:17.280
+solution we only take 1,000 because only
+
+00:06:17.280 --> 00:06:20.000
+the best the most beautiful the most
+
+00:06:20.000 --> 00:06:23.160
+efficiently solved the most gorgeous
+
+00:06:23.160 --> 00:06:25.759
+solution and they showed that even with
+
+00:06:25.759 --> 00:06:29.840
+a data set of onek size if the quality
+
+00:06:29.840 --> 00:06:33.240
+is really high you don't need 60,000
+
+00:06:33.240 --> 00:06:36.080
+data sets for your training if you have
+
+00:06:36.080 --> 00:06:39.400
+a high quality 1,000 is absolutely
+
+00:06:39.400 --> 00:06:42.759
+enough so they took this 1K data set on
+
+00:06:42.759 --> 00:06:45.599
+mathematical reasoning and simply took
+
+00:06:45.599 --> 00:06:48.759
+here a model here from China the q1 2.5
+
+00:06:48.759 --> 00:06:53.160
+32b instruct llm and supervised fine
+
+00:06:53.160 --> 00:06:56.160
+tune this Chinese model on this
+
+00:06:56.160 --> 00:06:58.240
+particular data set they extracted with
+
+00:06:58.240 --> 00:07:02.440
+Gemini 2.0 is sinking and then this
+
+00:07:02.440 --> 00:07:04.520
+supervised fine tune model they call now
+
+00:07:04.520 --> 00:07:09.160
+Stanford 1 isn't this beautiful for the
+
+00:07:09.160 --> 00:07:11.319
+time I told you just took about here the
+
+00:07:11.319 --> 00:07:14.160
+supervis fine tuning 26 minutes here on
+
+00:07:14.160 --> 00:07:18.199
+16 h100 Nvidia gpus and the beauty was
+
+00:07:18.199 --> 00:07:20.440
+Stanford could use here utilize the open
+
+00:07:20.440 --> 00:07:24.440
+source Q 2.5 instruct so the training
+
+00:07:24.440 --> 00:07:28.000
+time computer of S1 was beautiful but
+
+00:07:28.000 --> 00:07:30.240
+Stanford had another idea
+
+00:07:30.240 --> 00:07:31.879
+Stanford thought hey if I want to
+
+00:07:31.879 --> 00:07:33.960
+optimize here a test time compute
+
+00:07:33.960 --> 00:07:35.800
+because I have all these beautiful
+
+00:07:35.800 --> 00:07:40.639
+reasoning paths from Gemini 2.0 syncing
+
+00:07:40.639 --> 00:07:43.560
+I have here now for the algorithm side
+
+00:07:43.560 --> 00:07:46.599
+also a brand new idea and Stanford rent
+
+00:07:46.599 --> 00:07:49.840
+here with twostep idea they say hey I
+
+00:07:49.840 --> 00:07:52.120
+just count the internal thinking token
+
+00:07:52.120 --> 00:07:55.520
+here of S1 and I Define a threshold 100
+
+00:07:55.520 --> 00:07:58.199
+token 500 token 10,000 token whatever is
+
+00:07:58.199 --> 00:08:01.680
+adequate and a have a end of thinking a
+
+00:08:01.680 --> 00:08:04.599
+token delimiter and then whenever the
+
+00:08:04.599 --> 00:08:07.159
+system reaches your end of thinking I
+
+00:08:07.159 --> 00:08:09.080
+tell the system hey wherever you are in
+
+00:08:09.080 --> 00:08:11.280
+your reasoning process tell me now the
+
+00:08:11.280 --> 00:08:13.599
+answer the final answer
+
+00:08:13.599 --> 00:08:16.759
+is and this was beautiful because it
+
+00:08:16.759 --> 00:08:19.680
+kept here the llm from running crazy
+
+00:08:19.680 --> 00:08:23.000
+here for some incorrect Solutions
+
+00:08:23.000 --> 00:08:24.840
+however when there was a complex
+
+00:08:24.840 --> 00:08:27.680
+solution there was also that Stanford
+
+00:08:27.680 --> 00:08:29.759
+said hey we introduce now the weight
+
+00:08:29.759 --> 00:08:32.839
+token for the model reasoning Trace to
+
+00:08:32.839 --> 00:08:35.360
+encourage you more
+
+00:08:35.360 --> 00:08:38.519
+exploration so you see beautiful idea
+
+00:08:38.519 --> 00:08:40.800
+optimize the data and optimize here the
+
+00:08:40.800 --> 00:08:43.440
+algorithm and now I showed you what is
+
+00:08:43.440 --> 00:08:46.920
+the effect of both systems now we have
+
+00:08:46.920 --> 00:08:49.160
+here in the video I give you a detail
+
+00:08:49.160 --> 00:08:52.440
+explanation the q1 2.5 and if you take
+
+00:08:52.440 --> 00:08:55.000
+whatever test here let's say
+
+00:08:55.000 --> 00:08:58.720
+26.7% and then we take the S1 model now
+
+00:08:58.720 --> 00:09:01.240
+with the Google Gemini improved
+
+00:09:01.240 --> 00:09:05.360
+reasoning without here the if you would
+
+00:09:05.360 --> 00:09:07.560
+like to call it here this Advanced
+
+00:09:07.560 --> 00:09:10.320
+reasoning and I jump into performance
+
+00:09:10.320 --> 00:09:13.880
+Almost 100% look I go from 26% to
+
+00:09:13.880 --> 00:09:16.800
+50% and then if I activate this
+
+00:09:16.800 --> 00:09:18.839
+algorithm test time computer
+
+00:09:18.839 --> 00:09:22.600
+optimization I just go up 6.7 percentage
+
+00:09:22.600 --> 00:09:25.519
+points if I have an other Benchmark you
+
+00:09:25.519 --> 00:09:27.480
+see I just go up from
+
+00:09:27.480 --> 00:09:32.800
+92.6 to 9 3.0 so 0.4 percentage point if
+
+00:09:32.800 --> 00:09:36.040
+I activate here the test time computer
+
+00:09:36.040 --> 00:09:38.680
+so I think we can clearly see the
+
+00:09:38.680 --> 00:09:41.320
+quality of the supervised fine-tuning
+
+00:09:41.320 --> 00:09:44.839
+data is the most important dominant
+
+00:09:44.839 --> 00:09:47.240
+Factor so the quality of the data set
+
+00:09:47.240 --> 00:09:51.160
+was simply amazing with Stanford
+
+00:09:51.160 --> 00:09:55.279
+S1 so you see two videos on this kind of
+
+00:09:55.279 --> 00:09:57.800
+thing and then I did the right the next
+
+00:09:57.800 --> 00:10:01.200
+video here and I showed you limitting or
+
+00:10:01.200 --> 00:10:05.000
+the llms at their breaking point and I
+
+00:10:05.000 --> 00:10:07.640
+looked here at a very specific case I
+
+00:10:07.640 --> 00:10:11.120
+asked hey when do I have to move my for
+
+00:10:11.120 --> 00:10:13.560
+my entropic model for my llama models
+
+00:10:13.560 --> 00:10:16.480
+for my J gbd4 Omni when do I have to
+
+00:10:16.480 --> 00:10:19.200
+move to these reasoning models that are
+
+00:10:19.200 --> 00:10:21.839
+maybe more expensive or in the case of
+
+00:10:21.839 --> 00:10:24.839
+R1 open source which is beautiful so
+
+00:10:24.839 --> 00:10:27.519
+when to move or and I also explored this
+
+00:10:27.519 --> 00:10:29.720
+in the next video when should should I
+
+00:10:29.720 --> 00:10:32.800
+just increase here the model size so go
+
+00:10:32.800 --> 00:10:36.760
+from a llama 8B to a llama
+
+00:10:36.760 --> 00:10:40.360
+45b is there a limit in the intelligence
+
+00:10:40.360 --> 00:10:43.240
+is there a limit here in the performance
+
+00:10:43.240 --> 00:10:45.839
+that I can achieve well what if I let a
+
+00:10:45.839 --> 00:10:48.800
+llama model Run for the same task 50
+
+00:10:48.800 --> 00:10:50.399
+times and then I just have a majority
+
+00:10:50.399 --> 00:10:54.160
+voting can I come close to open
+
+00:10:54.160 --> 00:10:56.959
+ai1 and this was the content of my next
+
+00:10:56.959 --> 00:10:59.920
+video and we looked here in detail here
+
+00:10:59.920 --> 00:11:02.320
+to want of this question and since this
+
+00:11:02.320 --> 00:11:04.600
+is just a weekly update just want to
+
+00:11:04.600 --> 00:11:08.079
+tell you we had a beautiful idea to have
+
+00:11:08.079 --> 00:11:11.760
+two new complexity measures and one we
+
+00:11:11.760 --> 00:11:14.440
+go we went here with the combinatorial
+
+00:11:14.440 --> 00:11:16.480
+search space that is theoretically
+
+00:11:16.480 --> 00:11:18.279
+available and we looked here at the
+
+00:11:18.279 --> 00:11:20.079
+search space
+
+00:11:20.079 --> 00:11:23.399
+size plus and this was the real Beauty
+
+00:11:23.399 --> 00:11:25.959
+the authors of this study showed us that
+
+00:11:25.959 --> 00:11:29.040
+there's a simple Sabra logic and if we
+
+00:11:29.040 --> 00:11:32.040
+have here the set three conflict count
+
+00:11:32.040 --> 00:11:33.839
+that this captures beautifully The
+
+00:11:33.839 --> 00:11:36.880
+Logical difficulty for particular
+
+00:11:36.880 --> 00:11:40.360
+complex a problem complexities so we had
+
+00:11:40.360 --> 00:11:43.639
+here two if you want metrics for the
+
+00:11:43.639 --> 00:11:46.519
+complexity of the task of my query and
+
+00:11:46.519 --> 00:11:49.040
+then we had all the tools that we need
+
+00:11:49.040 --> 00:11:51.959
+to evaluate the performance and I told
+
+00:11:51.959 --> 00:11:54.920
+you do not make this mistake if you see
+
+00:11:54.920 --> 00:11:57.480
+here an overall performance indicator
+
+00:11:57.480 --> 00:11:59.279
+because look here we have here in the
+
+00:11:59.279 --> 00:12:00.120
+the
+
+00:12:00.120 --> 00:12:03.360
+first part we have all our reasoning
+
+00:12:03.360 --> 00:12:07.760
+llms no the o1 the R1 the o1 mini and
+
+00:12:07.760 --> 00:12:10.880
+they have here great overall performance
+
+00:12:10.880 --> 00:12:14.839
+but this is here an average and then you
+
+00:12:14.839 --> 00:12:18.279
+have your Claud Sonet 3.5 your llama 3.1
+
+00:12:18.279 --> 00:12:23.120
+45 billion your gbd4 Omni and so on and
+
+00:12:23.120 --> 00:12:26.399
+I told you don't look at this look at
+
+00:12:26.399 --> 00:12:28.760
+the complexity of the task and we went
+
+00:12:28.760 --> 00:12:32.680
+here for a small complexity where we
+
+00:12:32.680 --> 00:12:35.279
+only had a logical grid of 2 * 2 or 3 *
+
+00:12:35.279 --> 00:12:38.320
+3 and I showed you look here the
+
+00:12:38.320 --> 00:12:41.680
+classical llms they perform not so bad
+
+00:12:41.680 --> 00:12:44.600
+compared but the moment you move from a
+
+00:12:44.600 --> 00:12:48.600
+2.2 complexity to a 3.4
+
+00:12:48.600 --> 00:12:51.760
+complexity those non reasoning models
+
+00:12:51.760 --> 00:12:54.920
+they fall apart they simply break they
+
+00:12:54.920 --> 00:12:57.000
+are not able to do a logical reasoning
+
+00:12:57.000 --> 00:13:01.360
+anymore of course not but our reasoning
+
+00:13:01.360 --> 00:13:05.160
+llms our o1 our R1 our
+
+00:13:05.160 --> 00:13:07.760
+O3 they keep the
+
+00:13:07.760 --> 00:13:11.279
+performance and I explained in the video
+
+00:13:11.279 --> 00:13:14.519
+why the other question that we answered
+
+00:13:14.519 --> 00:13:17.279
+is hey if I just scale up my non-
+
+00:13:17.279 --> 00:13:19.560
+reasoning model look this here is a
+
+00:13:19.560 --> 00:13:22.760
+llama 3.2 this is a 3 billion this is an
+
+00:13:22.760 --> 00:13:25.160
+8 billion this is a 70 billion and this
+
+00:13:25.160 --> 00:13:29.480
+is a 405 billion yes if you take one
+
+00:13:29.480 --> 00:13:31.760
+complexity matric one complexity
+
+00:13:31.760 --> 00:13:35.040
+indicator like the search space size
+
+00:13:35.040 --> 00:13:37.240
+let's say here at this particular we
+
+00:13:37.240 --> 00:13:40.040
+have here from the 3B and the 8B a
+
+00:13:40.040 --> 00:13:43.279
+performance accuracy of zero maybe we
+
+00:13:43.279 --> 00:13:46.680
+have here 10% accuracy from the 70b and
+
+00:13:46.680 --> 00:13:47.440
+the
+
+00:13:47.440 --> 00:13:51.880
+45b is somewhere a little bit at 21%
+
+00:13:51.880 --> 00:13:56.759
+accuracy so for a certain small search
+
+00:13:56.759 --> 00:13:59.399
+space yes it makes sense that you
+
+00:13:59.399 --> 00:14:03.680
+upgrade here from a 3B 8B 70b to a 400b
+
+00:14:03.680 --> 00:14:07.399
+but look this is converging to Zero
+
+00:14:07.399 --> 00:14:10.040
+Performance real fast if you have more
+
+00:14:10.040 --> 00:14:11.839
+complex
+
+00:14:11.839 --> 00:14:14.600
+tasks and we looked at the scaling gen
+
+00:14:14.600 --> 00:14:17.120
+of Sword tokens that are happening in
+
+00:14:17.120 --> 00:14:19.600
+the hidden reasoning process and we
+
+00:14:19.600 --> 00:14:21.240
+discovered the non- reasoning models
+
+00:14:21.240 --> 00:14:23.519
+they have no chance at all because now
+
+00:14:23.519 --> 00:14:25.240
+if you look at the second complexity
+
+00:14:25.240 --> 00:14:27.079
+metric of the set three conflicts that I
+
+00:14:27.079 --> 00:14:29.800
+explained in my video in detail you saw
+
+00:14:29.800 --> 00:14:31.199
+look this is the performance this is
+
+00:14:31.199 --> 00:14:32.959
+close to 0%
+
+00:14:32.959 --> 00:14:35.320
+immediately and then we had a look at
+
+00:14:35.320 --> 00:14:39.160
+the 01 mini the 01 preview the R1 in
+
+00:14:39.160 --> 00:14:42.160
+Orange and then the o01 here in blue and
+
+00:14:42.160 --> 00:14:44.920
+the 03 mini high would be real similar
+
+00:14:44.920 --> 00:14:48.199
+here to the 01 performance so we
+
+00:14:48.199 --> 00:14:51.800
+understood here okay this is it if we
+
+00:14:51.800 --> 00:14:53.720
+scale up here to token the reasoning
+
+00:14:53.720 --> 00:14:56.560
+tokens for the complexity so we
+
+00:14:56.560 --> 00:15:00.600
+understand when to switch and ship here
+
+00:15:00.600 --> 00:15:04.759
+and move over to the reasoning
+
+00:15:05.560 --> 00:15:08.600
+Alps but if we look at this you
+
+00:15:08.600 --> 00:15:09.720
+understand that this is just the
+
+00:15:09.720 --> 00:15:12.000
+language model and some people call this
+
+00:15:12.000 --> 00:15:14.079
+the plain large language model and some
+
+00:15:14.079 --> 00:15:16.959
+people call this the reasoning llm or I
+
+00:15:16.959 --> 00:15:20.240
+have seen here an inference llm whatever
+
+00:15:20.240 --> 00:15:23.880
+you like to call it it is just an llm
+
+00:15:23.880 --> 00:15:26.360
+but you know if we add now here A Memory
+
+00:15:26.360 --> 00:15:29.600
+a function calling we can build an agent
+
+00:15:29.600 --> 00:15:31.480
+and we can build an agent here from a
+
+00:15:31.480 --> 00:15:33.240
+simple llm and we can build an agent
+
+00:15:33.240 --> 00:15:35.519
+from a reasoning llm and you can call
+
+00:15:35.519 --> 00:15:38.199
+this agent maybe a reasoning agent but I
+
+00:15:38.199 --> 00:15:40.319
+just call it an
+
+00:15:40.319 --> 00:15:43.519
+agent when my next video the real the
+
+00:15:43.519 --> 00:15:46.399
+next day we went now and we jumped from
+
+00:15:46.399 --> 00:15:48.440
+an llm performance to the agent
+
+00:15:48.440 --> 00:15:51.519
+performance and in this video about
+
+00:15:51.519 --> 00:15:54.759
+qet we had a simple goal in the video we
+
+00:15:54.759 --> 00:15:57.079
+wanted to build more intelligent EI
+
+00:15:57.079 --> 00:15:59.480
+agents that are able to solve more
+
+00:15:59.480 --> 00:16:02.360
+complex interactive task so this means
+
+00:16:02.360 --> 00:16:04.399
+if this agent goes on on the internet
+
+00:16:04.399 --> 00:16:06.959
+with your credit card shopping for you
+
+00:16:06.959 --> 00:16:09.199
+you wanted the interactivity here
+
+00:16:09.199 --> 00:16:11.600
+wherever the agent will go in the
+
+00:16:11.600 --> 00:16:14.680
+internet that this is performing and
+
+00:16:14.680 --> 00:16:17.000
+doing a great job and we looked here in
+
+00:16:17.000 --> 00:16:18.560
+particular at the optimization of a
+
+00:16:18.560 --> 00:16:22.079
+process reward model in
+
+00:16:22.079 --> 00:16:25.240
+inference so we had here this new idea
+
+00:16:25.240 --> 00:16:29.279
+of Q L or a a quality guided language
+
+00:16:29.279 --> 00:16:32.839
+agent stepwise search implementation and
+
+00:16:32.839 --> 00:16:34.680
+we found this is perfect to increase the
+
+00:16:34.680 --> 00:16:37.680
+performance in complex interactive task
+
+00:16:37.680 --> 00:16:40.079
+like you go shopping or you do some deep
+
+00:16:40.079 --> 00:16:43.519
+research with this and we had a look at
+
+00:16:43.519 --> 00:16:45.360
+this and I give you this visualization
+
+00:16:45.360 --> 00:16:47.199
+in my video and I explained exactly what
+
+00:16:47.199 --> 00:16:49.600
+we are doing and we found out that there
+
+00:16:49.600 --> 00:16:52.639
+is a benefit because normally in our
+
+00:16:52.639 --> 00:16:54.920
+reinforcement learning in our reward
+
+00:16:54.920 --> 00:16:57.519
+function especially in our quality
+
+00:16:57.519 --> 00:17:00.440
+values nor normally the system would run
+
+00:17:00.440 --> 00:17:02.880
+here through the complete until it
+
+00:17:02.880 --> 00:17:04.600
+generates a final answer and then we
+
+00:17:04.600 --> 00:17:06.520
+have a final reward signal at the end of
+
+00:17:06.520 --> 00:17:09.039
+the sying process and this I told youy
+
+00:17:09.039 --> 00:17:10.760
+it's like your final exam at the end of
+
+00:17:10.760 --> 00:17:13.439
+a semester now you don't really know
+
+00:17:13.439 --> 00:17:16.120
+what you learned during all these
+
+00:17:16.120 --> 00:17:18.760
+months and we found out here in this
+
+00:17:18.760 --> 00:17:21.079
+video that with the help of a monal tree
+
+00:17:21.079 --> 00:17:23.799
+search we could build some trees and
+
+00:17:23.799 --> 00:17:26.600
+those three would be really helpful if
+
+00:17:26.600 --> 00:17:30.039
+we do not rely on a final reward signal
+
+00:17:30.039 --> 00:17:33.240
+but early on we calculate the reward
+
+00:17:33.240 --> 00:17:34.640
+much more
+
+00:17:34.640 --> 00:17:37.120
+earlier and here I showed you that the
+
+00:17:37.120 --> 00:17:39.240
+Stanford model the S1 model the
+
+00:17:39.240 --> 00:17:41.880
+reasoning model had a very simple idea
+
+00:17:41.880 --> 00:17:44.919
+because what it did in fact was just to
+
+00:17:44.919 --> 00:17:48.440
+say at certain times hey stop now tell
+
+00:17:48.440 --> 00:17:51.799
+me the result or tell me the result and
+
+00:17:51.799 --> 00:17:54.120
+you could then argue hey maybe I already
+
+00:17:54.120 --> 00:17:56.520
+reached here the right result or maybe
+
+00:17:56.520 --> 00:17:58.600
+here everything is in red and if I have
+
+00:17:58.600 --> 00:18:01.280
+everything ing in red seven steps in red
+
+00:18:01.280 --> 00:18:03.360
+maybe there's a lower chance that
+
+00:18:03.360 --> 00:18:05.640
+suddenly out of the blue I will find a
+
+00:18:05.640 --> 00:18:08.480
+correct solution so we looked at this I
+
+00:18:08.480 --> 00:18:11.000
+explained this to you in detail and then
+
+00:18:11.000 --> 00:18:14.280
+here from this qet idea I told you we
+
+00:18:14.280 --> 00:18:16.919
+now combine something beautiful so we
+
+00:18:16.919 --> 00:18:18.600
+build our trees with the Monte Caro
+
+00:18:18.600 --> 00:18:21.280
+treesearch algorithm but we also have
+
+00:18:21.280 --> 00:18:24.480
+now a process reward model and the
+
+00:18:24.480 --> 00:18:27.360
+beauty of this process reward model is
+
+00:18:27.360 --> 00:18:31.760
+that now at each step we have an
+
+00:18:31.760 --> 00:18:35.919
+estimated reward function so we have a Q
+
+00:18:35.919 --> 00:18:39.480
+value a q score that tells here exactly
+
+00:18:39.480 --> 00:18:42.840
+the agent hey obious three option I
+
+00:18:42.840 --> 00:18:45.280
+calculated here your future reward your
+
+00:18:45.280 --> 00:18:48.520
+future discounted reward given my own
+
+00:18:48.520 --> 00:18:51.280
+training process and I would recommend
+
+00:18:51.280 --> 00:18:54.600
+you click here on this link in the web
+
+00:18:54.600 --> 00:18:57.039
+page if you want for example to purchase
+
+00:18:57.039 --> 00:18:58.400
+something here on the internet and you
+
+00:18:58.400 --> 00:19:01.880
+send of your AI agent to perform here
+
+00:19:01.880 --> 00:19:03.760
+this
+
+00:19:03.760 --> 00:19:06.760
+buy now we went in detail into the
+
+00:19:06.760 --> 00:19:08.320
+Bellman equation here as a tool that
+
+00:19:08.320 --> 00:19:11.520
+istill here the sparse outcome rewards
+
+00:19:11.520 --> 00:19:13.760
+into another class that we needed a
+
+00:19:13.760 --> 00:19:18.080
+dense stepwise quality value and this
+
+00:19:18.080 --> 00:19:21.159
+opened up here the gate here for the qet
+
+00:19:21.159 --> 00:19:23.600
+and I showed you how we can train the ca
+
+00:19:23.600 --> 00:19:26.000
+this is simply a new network that laws
+
+00:19:26.000 --> 00:19:28.840
+to predict to predict this distill
+
+00:19:28.840 --> 00:19:32.240
+quality values and this is what pushed
+
+00:19:32.240 --> 00:19:36.120
+us further to a better performance so we
+
+00:19:36.120 --> 00:19:37.679
+did this during the inference time
+
+00:19:37.679 --> 00:19:41.280
+search and qet our little companion to
+
+00:19:41.280 --> 00:19:44.080
+the agent combined now guidance for the
+
+00:19:44.080 --> 00:19:48.400
+action selection by the AI agent at each
+
+00:19:48.400 --> 00:19:51.799
+single step during the inference process
+
+00:19:51.799 --> 00:19:54.600
+so you see we had an agent and we had a
+
+00:19:54.600 --> 00:19:57.159
+quality Network also a Transformer
+
+00:19:57.159 --> 00:19:59.720
+Network that was providing here guidance
+
+00:19:59.720 --> 00:20:03.520
+to our agents so if you want we had two
+
+00:20:03.520 --> 00:20:06.880
+agent working on the same
+
+00:20:06.880 --> 00:20:10.240
+topic and wasn't this beautiful and then
+
+00:20:10.240 --> 00:20:13.280
+in my next video I want to go into the
+
+00:20:13.280 --> 00:20:16.559
+real world AI product and I said okay so
+
+00:20:16.559 --> 00:20:19.400
+if we have now the perfect EI agent
+
+00:20:19.400 --> 00:20:22.000
+quotation mark let's have a look of the
+
+00:20:22.000 --> 00:20:24.480
+performance of a perfect EI agent and
+
+00:20:24.480 --> 00:20:28.679
+let's use here science as the sector
+
+00:20:28.679 --> 00:20:30.320
+that we examine
+
+00:20:30.320 --> 00:20:33.600
+this and in my next video I showed you
+
+00:20:33.600 --> 00:20:36.480
+here a product demo on the homepage from
+
+00:20:36.480 --> 00:20:40.280
+openi where they introduce you to the
+
+00:20:40.280 --> 00:20:43.679
+scientific deep research agent and I
+
+00:20:43.679 --> 00:20:46.520
+just looked at their product am by open
+
+00:20:46.520 --> 00:20:50.880
+ey and I yeah I went in detail into
+
+00:20:50.880 --> 00:20:54.440
+whatever went wrong with this a gentic
+
+00:20:54.440 --> 00:20:56.000
+implementation
+
+00:20:56.000 --> 00:20:58.600
+here and I told you there's a be
+
+00:20:58.600 --> 00:21:01.600
+beautiful side also because right the
+
+00:21:01.600 --> 00:21:05.080
+next day here hugging face decided to
+
+00:21:05.080 --> 00:21:08.320
+rebuild this deep research agent as an
+
+00:21:08.320 --> 00:21:11.400
+Open Source by the open source community
+
+00:21:11.400 --> 00:21:13.880
+and if you want you have there the link
+
+00:21:13.880 --> 00:21:16.679
+also to the GitHub and you can see that
+
+00:21:16.679 --> 00:21:19.600
+this is almost ready and finished right
+
+00:21:19.600 --> 00:21:23.760
+now as we speak and day here also showed
+
+00:21:23.760 --> 00:21:26.279
+here to implement here an optimized
+
+00:21:26.279 --> 00:21:28.640
+process reward model so we don't have
+
+00:21:28.640 --> 00:21:30.840
+have to wait for the final reward signal
+
+00:21:30.840 --> 00:21:34.080
+but we can do this at each action that
+
+00:21:34.080 --> 00:21:36.400
+the agent is performing now on the
+
+00:21:36.400 --> 00:21:38.919
+internet in the wild performing the
+
+00:21:38.919 --> 00:21:42.679
+action that you want so my next video I
+
+00:21:42.679 --> 00:21:45.120
+said okay great so we have now here one
+
+00:21:45.120 --> 00:21:47.960
+eii agent that simply fails on the given
+
+00:21:47.960 --> 00:21:50.279
+task because the complexity is too high
+
+00:21:50.279 --> 00:21:53.320
+for this single agent by this product
+
+00:21:53.320 --> 00:21:56.200
+here by openi and then I ask you hey so
+
+00:21:56.200 --> 00:21:58.279
+what we do now what is the next logical
+
+00:21:58.279 --> 00:22:01.279
+step should we increase the complexity
+
+00:22:01.279 --> 00:22:03.720
+maybe not such a good idea or should we
+
+00:22:03.720 --> 00:22:07.039
+go for Pure EI automation should we just
+
+00:22:07.039 --> 00:22:08.799
+let the system run I don't know like
+
+00:22:08.799 --> 00:22:11.520
+crazy should we go for a deep research
+
+00:22:11.520 --> 00:22:15.080
+agent pass at 32 so we let the Deep
+
+00:22:15.080 --> 00:22:18.440
+research Aiden do the same task 32 times
+
+00:22:18.440 --> 00:22:20.320
+and then we just have a majority vote by
+
+00:22:20.320 --> 00:22:22.880
+another agent that says hey this looks
+
+00:22:22.880 --> 00:22:24.640
+like this is the best result here by
+
+00:22:24.640 --> 00:22:26.640
+this particular agent so we would have
+
+00:22:26.640 --> 00:22:28.919
+to pay 33 times here for for the Deep
+
+00:22:28.919 --> 00:22:31.880
+research agent and then we had a
+
+00:22:31.880 --> 00:22:33.440
+beautiful
+
+00:22:33.440 --> 00:22:36.480
+idea we went from a single agent to a
+
+00:22:36.480 --> 00:22:38.400
+multi-agent
+
+00:22:38.400 --> 00:22:41.039
+solution and we said for the next video
+
+00:22:41.039 --> 00:22:43.679
+let's go one step further let's build
+
+00:22:43.679 --> 00:22:47.039
+not just agents but specialized agent
+
+00:22:47.039 --> 00:22:50.120
+for specific task and then then we have
+
+00:22:50.120 --> 00:22:53.200
+a beautiful task because then we have
+
+00:22:53.200 --> 00:22:55.400
+multiple options to configure our
+
+00:22:55.400 --> 00:22:58.600
+multi-agent system with our specialized
+
+00:22:58.600 --> 00:23:00.840
+agents so whatever is the input output
+
+00:23:00.840 --> 00:23:03.039
+of One agent to the other to the next
+
+00:23:03.039 --> 00:23:06.600
+agent we have options how to configure
+
+00:23:06.600 --> 00:23:09.279
+here multi-agent system given we have
+
+00:23:09.279 --> 00:23:12.960
+here oh specialized agents sorry
+
+00:23:12.960 --> 00:23:16.520
+topics and this was then the task for my
+
+00:23:16.520 --> 00:23:20.080
+next video and we went here and we went
+
+00:23:20.080 --> 00:23:22.480
+with an automatization technology that
+
+00:23:22.480 --> 00:23:25.559
+you know here DSP here and we went to
+
+00:23:25.559 --> 00:23:29.400
+extend it to a topology DSP so we went
+
+00:23:29.400 --> 00:23:31.480
+from a single agent to a multi-agent
+
+00:23:31.480 --> 00:23:34.679
+configuration system and we applied the
+
+00:23:34.679 --> 00:23:37.760
+normal DSP the topology dpy and then I
+
+00:23:37.760 --> 00:23:41.080
+showed you that we can see this here as
+
+00:23:41.080 --> 00:23:44.799
+a pure mathematical optimization
+
+00:23:44.799 --> 00:23:47.360
+problem and I told you yes we had a
+
+00:23:47.360 --> 00:23:50.520
+video months ago where I showed you here
+
+00:23:50.520 --> 00:23:52.679
+with addas there was this beautiful
+
+00:23:52.679 --> 00:23:55.799
+publication that EI agent can design
+
+00:23:55.799 --> 00:23:58.720
+themsel but given that we have multi I
+
+00:23:58.720 --> 00:24:01.640
+agents for real complex reasoning task
+
+00:24:01.640 --> 00:24:04.039
+we needed a more advanced mathematical
+
+00:24:04.039 --> 00:24:06.640
+optimization theorem and I told you here
+
+00:24:06.640 --> 00:24:08.760
+in this video about topology DSP
+
+00:24:08.760 --> 00:24:11.440
+prompting the swarm with multi-agents I
+
+00:24:11.440 --> 00:24:13.640
+said imagine if you could Define the
+
+00:24:13.640 --> 00:24:16.520
+complete complexity of a system in a
+
+00:24:16.520 --> 00:24:18.400
+pure mathematical optimization problem
+
+00:24:18.400 --> 00:24:20.799
+and I explained why this is the solution
+
+00:24:20.799 --> 00:24:21.600
+to
+
+00:24:21.600 --> 00:24:24.880
+this so what we ended up with was with a
+
+00:24:24.880 --> 00:24:28.480
+three part process we found out detail
+
+00:24:28.480 --> 00:24:31.120
+in the video that The Prompt
+
+00:24:31.120 --> 00:24:33.799
+optimization was essential as a first
+
+00:24:33.799 --> 00:24:36.200
+step then the second step was a
+
+00:24:36.200 --> 00:24:39.640
+multi-agent design a topology Optimizer
+
+00:24:39.640 --> 00:24:41.640
+of all the different specialized agent
+
+00:24:41.640 --> 00:24:44.080
+that we developed and then the third
+
+00:24:44.080 --> 00:24:48.159
+step was with an optimized topology
+
+00:24:48.159 --> 00:24:52.200
+configuration again do a prompt
+
+00:24:52.200 --> 00:24:54.039
+optimization and I showed you for
+
+00:24:54.039 --> 00:24:56.679
+different task we were able to find with
+
+00:24:56.679 --> 00:24:59.880
+DSP and topology DSP here the perfect
+
+00:24:59.880 --> 00:25:03.080
+multi-agent topology to solve those
+
+00:25:03.080 --> 00:25:05.600
+Benchmark task and you see here for this
+
+00:25:05.600 --> 00:25:07.080
+particular task of mathematical
+
+00:25:07.080 --> 00:25:08.679
+reasoning we found out that this
+
+00:25:08.679 --> 00:25:10.799
+particular configuration here with
+
+00:25:10.799 --> 00:25:13.039
+aggregate reflect and debate agent with
+
+00:25:13.039 --> 00:25:16.000
+a particular number of iteration they
+
+00:25:16.000 --> 00:25:19.960
+performed here their
+
+00:25:20.039 --> 00:25:22.559
+best we came to the conclusion of the
+
+00:25:22.559 --> 00:25:24.200
+video and I explained it over there that
+
+00:25:24.200 --> 00:25:25.960
+the performance variation across
+
+00:25:25.960 --> 00:25:28.320
+different topologies of our special
+
+00:25:28.320 --> 00:25:30.240
+specialized agent underscore the
+
+00:25:30.240 --> 00:25:32.640
+importance of the topology
+
+00:25:32.640 --> 00:25:35.360
+selection we have to build our
+
+00:25:35.360 --> 00:25:39.200
+multi-agent framework in particular ways
+
+00:25:39.200 --> 00:25:42.440
+you just cannot put multiple agent
+
+00:25:42.440 --> 00:25:43.760
+together and saying yeah it doesn't
+
+00:25:43.760 --> 00:25:47.360
+matter how we build them it is really
+
+00:25:47.360 --> 00:25:48.720
+important that you build it in the
+
+00:25:48.720 --> 00:25:52.799
+optimal way so influential topologies
+
+00:25:52.799 --> 00:25:55.240
+And We examined this a little bit detail
+
+00:25:55.240 --> 00:25:57.279
+but what I finished and what I think was
+
+00:25:57.279 --> 00:25:59.520
+really important to show you that the
+
+00:25:59.520 --> 00:26:01.880
+first stop of the optimization with the
+
+00:26:01.880 --> 00:26:04.679
+prompt had the most significant effect
+
+00:26:04.679 --> 00:26:08.080
+to the overall system
+
+00:26:08.080 --> 00:26:11.039
+performance and there we are this is now
+
+00:26:11.039 --> 00:26:13.720
+here the last video from
+
+00:26:13.720 --> 00:26:16.640
+yesterday and I hope I've showed you why
+
+00:26:16.640 --> 00:26:20.000
+I built my videos how I select my topics
+
+00:26:20.000 --> 00:26:22.720
+for my videos and I think yep it was a
+
+00:26:22.720 --> 00:26:24.919
+beautiful week so I tried to give you
+
+00:26:24.919 --> 00:26:28.039
+here an umbrella View and overview of
+
+00:26:28.039 --> 00:26:30.799
+the complexity if you don't follow here
+
+00:26:30.799 --> 00:26:33.600
+in detail here my single videos never
+
+00:26:33.600 --> 00:26:35.760
+mind with this video I just wanted to
+
+00:26:35.760 --> 00:26:38.799
+give you here the 10,000 M view that you
+
+00:26:38.799 --> 00:26:41.880
+understand what is going on in AI in the
+
+00:26:41.880 --> 00:26:44.279
+last days in the last week what you
+
+00:26:44.279 --> 00:26:47.120
+should be aware of where is AI research
+
+00:26:47.120 --> 00:26:50.200
+heading for what are the problems we are
+
+00:26:50.200 --> 00:26:53.840
+absolutely not able to solve yet and
+
+00:26:53.840 --> 00:26:56.240
+where we find solution that are just
+
+00:26:56.240 --> 00:26:59.159
+beautiful to explore
+
+00:26:59.159 --> 00:27:01.360
+if you like this kind of video hey why
+
+00:27:01.360 --> 00:27:04.200
+not subscribe and maybe next week yeah
+
+00:27:04.200 --> 00:27:09.600
+we do another AI just happened

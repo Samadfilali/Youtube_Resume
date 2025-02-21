@@ -1,0 +1,3313 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.589
+j'ai l'immense plaisir d'accueillir
+
+00:00:01.589 --> 00:00:04.410
+alain aspect merci infiniment à l'inde
+
+00:00:04.410 --> 00:00:07.170
+avoir accepté de participer à time world
+
+00:00:07.170 --> 00:00:09.150
+alain aspect que vous avez déjà pu voir
+
+00:00:09.150 --> 00:00:10.889
+ce matin dans la table ronde des
+
+00:00:10.889 --> 00:00:12.660
+académiciens ils étaient aussi présents
+
+00:00:12.660 --> 00:00:14.639
+pendant la conférence détiennent klein
+
+00:00:14.639 --> 00:00:17.580
+et on en a parlé puisque dans l'histoire
+
+00:00:17.580 --> 00:00:19.470
+du hasard et notamment dans l'histoire
+
+00:00:19.470 --> 00:00:20.910
+de la philosophie de la mécanique
+
+00:00:20.910 --> 00:00:21.390
+quantique
+
+00:00:21.390 --> 00:00:23.100
+alain aspect a une importance
+
+00:00:23.100 --> 00:00:25.830
+particulière considérable en réalisant
+
+00:00:25.830 --> 00:00:27.810
+des expériences dont il va sûrement nous
+
+00:00:27.810 --> 00:00:31.439
+parler un peu dans les années 80 et puis
+
+00:00:31.439 --> 00:00:34.170
+je dois dire tout de même que je réalise
+
+00:00:34.170 --> 00:00:36.329
+une thèse en ce moment sous la direction
+
+00:00:36.329 --> 00:00:38.250
+d'alain sur l'histoire de l'optique
+
+00:00:38.250 --> 00:00:39.540
+quantique et que c'est un immense
+
+00:00:39.540 --> 00:00:41.790
+plaisir également en plus de te recevoir
+
+00:00:41.790 --> 00:00:43.170
+effet à taïwan
+
+00:00:43.170 --> 00:00:46.399
+mesdames et messieurs alain aspect
+
+00:00:49.880 --> 00:00:52.880
+c'est un plaisir de se trouver ici c'est
+
+00:00:52.880 --> 00:00:55.130
+un plaisir d'avoir gauthier qui est à la
+
+00:00:55.130 --> 00:00:58.280
+fois physicien et qui fait une une thèse
+
+00:00:58.280 --> 00:00:59.510
+sur l'histoire des sciences
+
+00:00:59.510 --> 00:01:01.910
+le hasard quantique propriétés
+
+00:01:01.910 --> 00:01:03.500
+fondamentales ou ressources
+
+00:01:03.500 --> 00:01:04.640
+technologiques
+
+00:01:04.640 --> 00:01:07.700
+vous verrez que en fait c'est pas tout
+
+00:01:07.700 --> 00:01:10.340
+mais c est vous voyez j'ai déjà donné la
+
+00:01:10.340 --> 00:01:12.980
+réponse propriétés fondamentales et
+
+00:01:12.980 --> 00:01:14.630
+ressources technologiques que ce qui est
+
+00:01:14.630 --> 00:01:17.090
+important c'est surtout que j'explique
+
+00:01:17.090 --> 00:01:20.020
+pourquoi j'arrive à cette conclusion
+
+00:01:20.020 --> 00:01:24.020
+donc juste dix secondes pour dire que
+
+00:01:24.020 --> 00:01:24.590
+rango
+
+00:01:24.590 --> 00:01:27.080
+j'appartiens à l'institut d'optique qui
+
+00:01:27.080 --> 00:01:28.640
+fait partie de l'université paris-x
+
+00:01:28.640 --> 00:01:30.680
+sacré je suis aussi professeur à l'école
+
+00:01:30.680 --> 00:01:33.860
+polytechnique et je suis émérite au cnrs
+
+00:01:33.860 --> 00:01:36.320
+qui m'a gentiment mis à la retraite sans
+
+00:01:36.320 --> 00:01:39.110
+me demander mon avis et puis les 3 les
+
+00:01:39.110 --> 00:01:41.300
+trois qui sont en dessous c'est sont mes
+
+00:01:41.300 --> 00:01:43.100
+sponsors c'est les gens qui contribuent
+
+00:01:43.100 --> 00:01:44.750
+au financement de la chaire qui me
+
+00:01:44.750 --> 00:01:46.820
+permet de continuer à travailler
+
+00:01:46.820 --> 00:01:50.540
+bien qu'étant émérite au cnrs donc je
+
+00:01:50.540 --> 00:01:52.820
+vais vous parler de hasard classique et
+
+00:01:52.820 --> 00:01:56.030
+de hasard quantique et je discuterai
+
+00:01:56.030 --> 00:01:57.679
+c'est un j'ai trouvé c'était un prétexte
+
+00:01:57.679 --> 00:02:00.950
+valable je discuterai du hasard à propos
+
+00:02:00.950 --> 00:02:02.990
+du prétexte des générateurs de nombres
+
+00:02:02.990 --> 00:02:04.880
+aléatoires puisque dès qu'il s'agit de
+
+00:02:04.880 --> 00:02:06.289
+produire des nombres aléatoires bien
+
+00:02:06.289 --> 00:02:08.360
+entendu il s'agit de mettre en jeu le
+
+00:02:08.360 --> 00:02:10.970
+hasard et nous verrons comment séquence
+
+00:02:10.970 --> 00:02:12.410
+est fondamentaux se traduisent
+
+00:02:12.410 --> 00:02:13.790
+aujourd'hui dans un certain nombre de
+
+00:02:13.790 --> 00:02:15.670
+technologies quantiques
+
+00:02:15.670 --> 00:02:18.530
+alors allons-y d'abord le hasard
+
+00:02:18.530 --> 00:02:21.709
+classique donc tout le monde sait tienne
+
+00:02:21.709 --> 00:02:23.959
+l'a bien expliqué ce matin que les
+
+00:02:23.959 --> 00:02:26.060
+équations classique aussi bien pour le
+
+00:02:26.060 --> 00:02:27.590
+champ électromagnétique que pour la
+
+00:02:27.590 --> 00:02:29.569
+mécanique sont parfaitement déterministe
+
+00:02:29.569 --> 00:02:31.850
+et que don si vous connaissez un instant
+
+00:02:31.850 --> 00:02:35.690
+t 0 l'ensemble des positions des
+
+00:02:35.690 --> 00:02:37.700
+diverses particules chargées ou pas
+
+00:02:37.700 --> 00:02:39.380
+ainsi que la valeur des divers champs
+
+00:02:39.380 --> 00:02:41.840
+électromagnétiques à l'instant t 0 les
+
+00:02:41.840 --> 00:02:43.670
+équations de la physique classique vous
+
+00:02:43.670 --> 00:02:45.680
+permettent de déterminer toute
+
+00:02:45.680 --> 00:02:48.110
+l'évolution ultérieure et à magnifique
+
+00:02:48.110 --> 00:02:50.610
+exemple est le cas
+
+00:02:50.610 --> 00:02:53.210
+du système solaire on peut prédire les
+
+00:02:53.210 --> 00:02:56.670
+éclipses des siècles avance alors je
+
+00:02:56.670 --> 00:02:59.250
+sais que dans très très très très
+
+00:02:59.250 --> 00:03:00.660
+longtemps on aura affaire au chaos
+
+00:03:00.660 --> 00:03:02.610
+déterministe nécessite une autre affaire
+
+00:03:02.610 --> 00:03:03.990
+si vous voulez poser de questions sur le
+
+00:03:03.990 --> 00:03:06.090
+chaos déterministe vous serez bien venu
+
+00:03:06.090 --> 00:03:08.160
+mais pour l'instant contentons nous de
+
+00:03:08.160 --> 00:03:10.530
+dire que les équations classique étant
+
+00:03:10.530 --> 00:03:12.720
+déterministe normalement on peut tout
+
+00:03:12.720 --> 00:03:15.060
+calculé sauf que la moindre variation
+
+00:03:15.060 --> 00:03:17.490
+des conditions initiales est susceptible
+
+00:03:17.490 --> 00:03:19.020
+d'aboutir à un état radicalement
+
+00:03:19.020 --> 00:03:21.300
+différents dans un délai plus ou moins
+
+00:03:21.300 --> 00:03:24.150
+grand alors dans le cas du golfeur il
+
+00:03:24.150 --> 00:03:25.500
+suffit qu'ils changent un tout petit peu
+
+00:03:25.500 --> 00:03:27.240
+la position de ses mains ou de quelque
+
+00:03:27.240 --> 00:03:29.160
+chose et au lieu d'aller au milieu il
+
+00:03:29.160 --> 00:03:31.260
+ira à gauche ou à droite dans là ça va
+
+00:03:31.260 --> 00:03:33.989
+vite dans le cas de la deûle à roulettes
+
+00:03:33.989 --> 00:03:37.350
+c'est pareil c'est le temps le temps
+
+00:03:37.350 --> 00:03:39.360
+qu'il faut pour aulas pour la boule de
+
+00:03:39.360 --> 00:03:42.930
+rouler sur la roulette et bien les
+
+00:03:42.930 --> 00:03:44.820
+évolutions sont suffisantes pour que la
+
+00:03:44.820 --> 00:03:46.590
+moindre différence dans la façon de
+
+00:03:46.590 --> 00:03:48.300
+lancer la boule aboutissent à un
+
+00:03:48.300 --> 00:03:51.330
+résultat qui apparaît aléatoire et donc
+
+00:03:51.330 --> 00:03:53.340
+c'est ce que j'appelle le hasard deux
+
+00:03:53.340 --> 00:03:55.620
+faits dé facto un peu comme les juristes
+
+00:03:55.620 --> 00:03:57.810
+defacto et des jurés dont c'est le
+
+00:03:57.810 --> 00:04:00.540
+hasard de fait les équations de base ne
+
+00:04:00.540 --> 00:04:02.880
+le disent pas mais en fait les chaudes
+
+00:04:02.880 --> 00:04:04.709
+état de phénomènes apparaissent
+
+00:04:04.709 --> 00:04:07.440
+aléatoire alors en mécanique quantique
+
+00:04:07.440 --> 00:04:09.450
+c'est tout à fait autre chose en
+
+00:04:09.450 --> 00:04:10.500
+mécanique quantique
+
+00:04:10.500 --> 00:04:14.400
+on nous dit la doctrine nous dit que si
+
+00:04:14.400 --> 00:04:16.650
+par exemple je cherche à décrire dans
+
+00:04:16.650 --> 00:04:18.900
+l'atome d'hydrogène l'électron qui est
+
+00:04:18.900 --> 00:04:19.769
+autour du noyau
+
+00:04:19.769 --> 00:04:22.650
+eh bien j'ai une fonction d'onde si dans
+
+00:04:22.650 --> 00:04:25.410
+le module carré ne donne la densité de
+
+00:04:25.410 --> 00:04:26.700
+probabilité de présence
+
+00:04:26.700 --> 00:04:28.530
+est ce que me dit la petite suri
+
+00:04:28.530 --> 00:04:30.180
+quantique c'est que jusqu'au moment où
+
+00:04:30.180 --> 00:04:34.350
+je vais mesurer la position et bien
+
+00:04:34.350 --> 00:04:36.240
+cette position n'existe pas et je
+
+00:04:36.240 --> 00:04:37.740
+m'appelle je me suis aperçu en mangeant
+
+00:04:37.740 --> 00:04:39.450
+moins braugher là il ya un quart d'heure
+
+00:04:39.450 --> 00:04:42.090
+que le mot révélé n'est pas le bon la
+
+00:04:42.090 --> 00:04:44.880
+position d'électron qui est aléatoire
+
+00:04:44.880 --> 00:04:46.680
+elle est d'après la doctrine classique
+
+00:04:46.680 --> 00:04:49.650
+asie n'en crée déterminé au moment de la
+
+00:04:49.650 --> 00:04:51.060
+mesure c'est au moment où je fais la
+
+00:04:51.060 --> 00:04:53.820
+mesure que cette position cristallise en
+
+00:04:53.820 --> 00:04:55.500
+quelque sorte auparavant il n'existait
+
+00:04:55.500 --> 00:04:57.840
+pas voilà ce qu'on nous dit et donc tant
+
+00:04:57.840 --> 00:04:58.880
+qu'on n'a pas fait la mesure
+
+00:04:58.880 --> 00:05:01.160
+l'électron est partout à la fois alors
+
+00:05:01.160 --> 00:05:02.990
+évidemment la question immédiate c'est
+
+00:05:02.990 --> 00:05:05.990
+le peut-on imaginer que l'électron avait
+
+00:05:05.990 --> 00:05:08.720
+une position pour ne connaissez pas mais
+
+00:05:08.720 --> 00:05:10.220
+qui était quand même là et que la mesure
+
+00:05:10.220 --> 00:05:12.440
+s'est contenté de révéler précisément
+
+00:05:12.440 --> 00:05:15.080
+cette position eh bien on a toutes les
+
+00:05:15.080 --> 00:05:17.360
+raisons de répondre non je vous en
+
+00:05:17.360 --> 00:05:19.670
+donnerai une idée tout à l'heure on a
+
+00:05:19.670 --> 00:05:21.050
+toutes les raisons de penser que le
+
+00:05:21.050 --> 00:05:23.390
+résultat de la mesure a été obtenue de
+
+00:05:23.390 --> 00:05:26.000
+façon complètement aléatoire au dernier
+
+00:05:26.000 --> 00:05:27.650
+moment au moment de la mesure
+
+00:05:27.650 --> 00:05:29.870
+suivant la loi de probabilité psi 2
+
+00:05:29.870 --> 00:05:32.540
+carrés donc vous voyez que ce hasard
+
+00:05:32.540 --> 00:05:33.140
+quantique
+
+00:05:33.140 --> 00:05:35.990
+il est fondamental en ce sens là il
+
+00:05:35.990 --> 00:05:38.600
+n'est pas le fait que l'on contrôle trop
+
+00:05:38.600 --> 00:05:40.100
+mal quelque chose c'est pas une question
+
+00:05:40.100 --> 00:05:42.260
+de mal contrôlé les choses c'est la
+
+00:05:42.260 --> 00:05:44.500
+physique quantique est ainsi fait alors
+
+00:05:44.500 --> 00:05:47.150
+un exemple que je trouve beaucoup plus
+
+00:05:47.150 --> 00:05:49.190
+facile sur le plan pédagogique et en
+
+00:05:49.190 --> 00:05:51.740
+plus on a fait des manips là dessus avec
+
+00:05:51.740 --> 00:05:53.780
+mon premier désert fille début janvier
+
+00:05:53.780 --> 00:05:57.140
+il ya bien longtemps quand j'ai un
+
+00:05:57.140 --> 00:05:59.540
+photon unique qui arrive sur l'homme
+
+00:05:59.540 --> 00:06:00.850
+semi réfléchissantes
+
+00:06:00.850 --> 00:06:04.040
+il a autant de chances d'être transmis
+
+00:06:04.040 --> 00:06:10.160
+que d'être réfléchi et alors on a encore
+
+00:06:10.160 --> 00:06:13.160
+une fois la doctrine classique nous dit
+
+00:06:13.160 --> 00:06:15.700
+que jusqu'au dernier moment c'est-à-dire
+
+00:06:15.700 --> 00:06:18.230
+jusqu'au moment où la détection va se
+
+00:06:18.230 --> 00:06:21.140
+faire au niveau des détecteurs
+
+00:06:21.140 --> 00:06:22.580
+c'est à dire vous imaginez un paquet
+
+00:06:22.580 --> 00:06:23.690
+d'onde dense qu'on sait parfaitement
+
+00:06:23.690 --> 00:06:26.330
+faire un paquet d'onde avec un seul
+
+00:06:26.330 --> 00:06:28.010
+photon dedans qui dure quelques
+
+00:06:28.010 --> 00:06:30.440
+nanosecondes quelques nanosecondes ça
+
+00:06:30.440 --> 00:06:32.569
+veut dire que le paquet dont il fait
+
+00:06:32.569 --> 00:06:34.009
+être on va dire quelque chose comme ça
+
+00:06:34.009 --> 00:06:36.169
+donc si je mets mes détecteur à deux ou
+
+00:06:36.169 --> 00:06:37.909
+trois mètres derrière l'âme soeur mais
+
+00:06:37.909 --> 00:06:38.689
+réfléchissantes
+
+00:06:38.689 --> 00:06:40.580
+c'est vraiment jusqu'au moment où le
+
+00:06:40.580 --> 00:06:42.740
+paquet nombre va arriver aux détecteurs
+
+00:06:42.740 --> 00:06:46.009
+et à ce moment là ça va être soit d'un
+
+00:06:46.009 --> 00:06:47.839
+côté soit de l'autre alors au passage
+
+00:06:47.839 --> 00:06:49.009
+vous voyez que ça met en jeu aussi le
+
+00:06:49.009 --> 00:06:51.889
+nom localité remarque en passant mais
+
+00:06:51.889 --> 00:06:54.639
+c'est ce que nous dit la doctrine
+
+00:06:54.639 --> 00:06:58.399
+classés et donc je reviendrai sur
+
+00:06:58.399 --> 00:07:00.499
+quelles preuves là que cette théorie est
+
+00:07:00.499 --> 00:07:03.469
+bonne mais voyez que ce hasard coin
+
+00:07:03.469 --> 00:07:05.330
+ticket vraiment de caractère fondamental
+
+00:07:05.330 --> 00:07:07.729
+et il est tellement fondamentale car mon
+
+00:07:07.729 --> 00:07:10.369
+avis il peut il permet de faire le
+
+00:07:10.369 --> 00:07:11.930
+meilleur générateur de nombres
+
+00:07:11.930 --> 00:07:14.059
+aléatoires qui existent générateur de
+
+00:07:14.059 --> 00:07:14.809
+nombres aléatoires
+
+00:07:14.809 --> 00:07:17.089
+idéal donc j'ai décidé de parler de
+
+00:07:17.089 --> 00:07:17.930
+générateurs de nombres aléatoires
+
+00:07:17.930 --> 00:07:20.539
+justement pour illustrer ces notions de
+
+00:07:20.539 --> 00:07:21.949
+hasard à quoi ça sert d'abord un
+
+00:07:21.949 --> 00:07:23.479
+générateur de nombres aléatoires on en a
+
+00:07:23.479 --> 00:07:24.169
+parlé ce matin
+
+00:07:24.169 --> 00:07:25.909
+alors ça peut servir pour la
+
+00:07:25.909 --> 00:07:27.740
+cryptographie vous voulez coder un
+
+00:07:27.740 --> 00:07:30.050
+message est donc vous le codé avec une
+
+00:07:30.050 --> 00:07:31.729
+clé qui est une succession de nombres
+
+00:07:31.729 --> 00:07:34.009
+aléatoires et si votre partenaire à la
+
+00:07:34.009 --> 00:07:35.349
+même clé il va pouvoir décoder
+
+00:07:35.349 --> 00:07:37.339
+nécessaire aussi en a parlé ce matin
+
+00:07:37.339 --> 00:07:38.240
+également
+
+00:07:38.240 --> 00:07:40.759
+et c'est très très très utilisé dans les
+
+00:07:40.759 --> 00:07:41.839
+calculs de monte carlo
+
+00:07:41.839 --> 00:07:43.610
+alors j'aime bien cet exemple qui est un
+
+00:07:43.610 --> 00:07:45.740
+exemple assez simpliste mais qui
+
+00:07:45.740 --> 00:07:47.089
+illustre parfaitement les choses
+
+00:07:47.089 --> 00:07:50.360
+imaginez que vous voulez me voulait
+
+00:07:50.360 --> 00:07:53.300
+déterminer le nombre pi et bien vous
+
+00:07:53.300 --> 00:07:55.849
+tracer un cercle à l'intérieur donne
+
+00:07:55.849 --> 00:07:58.519
+carré et vous jeter des points au hasard
+
+00:07:58.519 --> 00:07:59.389
+dans ce cercle
+
+00:07:59.389 --> 00:08:01.519
+et puis vous comptez qu'est la fraction
+
+00:08:01.519 --> 00:08:03.439
+des points qui tombe dans ce cercle et
+
+00:08:03.439 --> 00:08:05.599
+en calcul élémentaire vous permet
+
+00:08:05.599 --> 00:08:07.790
+d'obtenir pis inquiets
+
+00:08:07.790 --> 00:08:10.370
+le rapport du nombre de points de dans
+
+00:08:10.370 --> 00:08:11.960
+des visées par le nombre de points
+
+00:08:11.960 --> 00:08:13.970
+dehors et puis form factor 4 parce que
+
+00:08:13.970 --> 00:08:15.410
+je sais plus pourquoi parce que c'est le
+
+00:08:15.410 --> 00:08:17.060
+rayon ou le diamètre ou quelque chose
+
+00:08:17.060 --> 00:08:19.430
+comme ça alors faut comprendre que là
+
+00:08:19.430 --> 00:08:20.870
+c'est très simple accord que c'est pas
+
+00:08:20.870 --> 00:08:22.460
+si mal comme méthode pour trouver pire
+
+00:08:22.460 --> 00:08:24.770
+mais surtout ça permet de faire des
+
+00:08:24.770 --> 00:08:25.940
+calculs qu'on sait pas faire par
+
+00:08:25.940 --> 00:08:27.620
+ailleurs comme vous avez une intégrale
+
+00:08:27.620 --> 00:08:30.530
+dans un espace à un million de dimension
+
+00:08:30.530 --> 00:08:32.300
+et bien en faire une intégrale
+
+00:08:32.300 --> 00:08:33.979
+mathématiquement dans un espace un
+
+00:08:33.979 --> 00:08:36.530
+million de dimension je crois que la
+
+00:08:36.530 --> 00:08:39.020
+plupart des des possibilités se casse
+
+00:08:39.020 --> 00:08:39.410
+les dents
+
+00:08:39.410 --> 00:08:41.120
+par contre vous jeter des points au
+
+00:08:41.120 --> 00:08:42.950
+hasard quand c'est dedans vous comptez
+
+00:08:42.950 --> 00:08:44.900
+un camp c'est dehors vous comptez 0 vous
+
+00:08:44.900 --> 00:08:46.310
+faites le rapport et vous avez
+
+00:08:46.310 --> 00:08:48.110
+l'intégrale donc c'est très utile
+
+00:08:48.110 --> 00:08:49.520
+les générateurs de nombres aléatoires
+
+00:08:49.520 --> 00:08:51.710
+donc il s'agit de faire un bon
+
+00:08:51.710 --> 00:08:53.390
+générateur de nombres aléatoires
+
+00:08:53.390 --> 00:08:55.130
+alors qu'est ce que c'est un bon
+
+00:08:55.130 --> 00:08:56.810
+générateur de nombres aléatoires
+
+00:08:56.810 --> 00:08:59.660
+alors j'aime beaucoup ça prenez le temps
+
+00:08:59.660 --> 00:09:00.380
+de lire
+
+00:09:00.380 --> 00:09:03.410
+donc vous avez quelqu'un du marketing
+
+00:09:03.410 --> 00:09:05.870
+qui dit on à un générateur de nombres
+
+00:09:05.870 --> 00:09:07.670
+aléatoires alors le générateur de
+
+00:09:07.670 --> 00:09:08.420
+nombres aléatoires
+
+00:09:08.420 --> 00:09:12.970
+c'est l'animal qui répètent 9,9
+
+00:09:13.900 --> 00:09:16.610
+c'est aussi aléatoire et coûteuse de
+
+00:09:16.610 --> 00:09:19.070
+répéter neuf tout le temps est doux la
+
+00:09:19.070 --> 00:09:20.870
+question être vous sûr que c'est
+
+00:09:20.870 --> 00:09:21.530
+aléatoire
+
+00:09:21.530 --> 00:09:24.560
+c'est bien le problème avec
+
+00:09:24.560 --> 00:09:27.920
+le hasard on n'est jamais sûr j'adore
+
+00:09:27.920 --> 00:09:31.700
+ses dessins parce que si je vous dis que
+
+00:09:31.700 --> 00:09:33.740
+9 9 9 9 9 d'octave jeu les tirer de
+
+00:09:33.740 --> 00:09:35.000
+façon aléatoire vous n'allez pas être
+
+00:09:35.000 --> 00:09:36.529
+convaincu et pourtant c'est aussi
+
+00:09:36.529 --> 00:09:37.880
+aléatoire que n'importe quel autre
+
+00:09:37.880 --> 00:09:39.620
+nombre bon bref
+
+00:09:39.620 --> 00:09:41.750
+donc c'est pas facile savoir ce qui est
+
+00:09:41.750 --> 00:09:44.510
+vraiment aléatoire alors vous avez les
+
+00:09:44.510 --> 00:09:46.700
+systèmes commerciaux et les systèmes
+
+00:09:46.700 --> 00:09:48.410
+commerciaux et bien il faut des normes
+
+00:09:48.410 --> 00:09:50.779
+alors il ya des normes aux états unis il
+
+00:09:50.779 --> 00:09:52.730
+ya ce qui s'appelle une suite de tests
+
+00:09:52.730 --> 00:09:54.860
+vous prétendez que vous avez fabriqué un
+
+00:09:54.860 --> 00:09:56.720
+générateur de nombres aléatoires voulais
+
+00:09:56.720 --> 00:09:57.589
+le mettre sur le marché
+
+00:09:57.589 --> 00:10:00.230
+alors il faut que vous alliez passer un
+
+00:10:00.230 --> 00:10:03.290
+test au nist national institute of
+
+00:10:03.290 --> 00:10:05.029
+standards and technology autrefois ça
+
+00:10:05.029 --> 00:10:06.650
+s'appelait le national bureau of land
+
+00:10:06.650 --> 00:10:09.740
+art et donc ils ont une quinzaine de
+
+00:10:09.740 --> 00:10:11.660
+test alors c'est est-ce qu'ils sont très
+
+00:10:11.660 --> 00:10:13.550
+bons si votre générateur est mauvais il
+
+00:10:13.550 --> 00:10:15.830
+va le trouver il va trouver plein de
+
+00:10:15.830 --> 00:10:18.680
+possibilité d'être mauvais mais une fois
+
+00:10:18.680 --> 00:10:20.240
+que vous avez passé tous à tous ces
+
+00:10:20.240 --> 00:10:22.430
+tests il vous dit que votre générateur
+
+00:10:22.430 --> 00:10:24.050
+n'est pas mauvais au sens des caisses de
+
+00:10:24.050 --> 00:10:25.880
+tests qui sont là ça ne prouve pas pour
+
+00:10:25.880 --> 00:10:27.410
+autant que c'est un bon générateur mais
+
+00:10:27.410 --> 00:10:28.670
+on fait ce qu'on peut
+
+00:10:28.670 --> 00:10:30.620
+alors quand on réfléchit bien à ça moi
+
+00:10:30.620 --> 00:10:32.420
+j'y réfléchis en afn comprenez bien que
+
+00:10:32.420 --> 00:10:33.830
+j'ai pas du tout un spécialiste des
+
+00:10:33.830 --> 00:10:35.720
+générateurs de nombres aléatoires mais
+
+00:10:35.720 --> 00:10:37.430
+j'ai essayé d'y réfléchir marc cadre de
+
+00:10:37.430 --> 00:10:39.200
+mon enseignant de physique quantique à
+
+00:10:39.200 --> 00:10:41.690
+propos des technologies quantiques et y
+
+00:10:41.690 --> 00:10:43.100
+réfléchissant naïf
+
+00:10:43.100 --> 00:10:44.690
+alors si elle est spécialiste dans la
+
+00:10:44.690 --> 00:10:46.280
+salle qui sont pas du tout d'accord avec
+
+00:10:46.280 --> 00:10:49.820
+ma définition qu'il le dise anaïs je ne
+
+00:10:49.820 --> 00:10:51.260
+dis que le meilleur générateur de
+
+00:10:51.260 --> 00:10:53.120
+nombres aléatoires du monde c'est celui
+
+00:10:53.120 --> 00:10:55.460
+dont personne ne peut prédire quel va
+
+00:10:55.460 --> 00:10:57.980
+être le nombre qui va sortir même pas
+
+00:10:57.980 --> 00:10:59.480
+l'ingénieur qui a construit la boîte
+
+00:10:59.480 --> 00:11:02.060
+personnes personne ne sait dire ce qui
+
+00:11:02.060 --> 00:11:02.570
+va sortir
+
+00:11:02.570 --> 00:11:05.900
+bon si on admet cette définition est
+
+00:11:05.900 --> 00:11:08.240
+donc on va on veut voir que on va
+
+00:11:08.240 --> 00:11:10.760
+pouvoir aller loin bon vous avez d'abord
+
+00:11:10.760 --> 00:11:12.800
+les générateurs qui dit sandy pseudo
+
+00:11:12.800 --> 00:11:15.080
+aléatoires pourrait acheter ça dans un
+
+00:11:15.080 --> 00:11:15.680
+commerce
+
+00:11:15.680 --> 00:11:17.480
+alors le principe alors je vais le
+
+00:11:17.480 --> 00:11:19.339
+schématiser beaucoup trop mais plus ou
+
+00:11:19.339 --> 00:11:20.810
+moins le principe vous fait faire des
+
+00:11:20.810 --> 00:11:22.640
+calculs avec des nombres qui sombre ans
+
+00:11:22.640 --> 00:11:24.709
+et puis il ya des arrondis et s'est
+
+00:11:24.709 --> 00:11:26.540
+arrondi sont pas contrôlés parce que si
+
+00:11:26.540 --> 00:11:29.000
+vous avez des nombres de plus de 64 bits
+
+00:11:29.000 --> 00:11:31.610
+et que votre calculateur il coupe ah 64
+
+00:11:31.610 --> 00:11:33.620
+bits et dont après à la fin d'un calcul
+
+00:11:33.620 --> 00:11:34.720
+assez compliqué
+
+00:11:34.720 --> 00:11:36.699
+vous dites le dernier but qui est là
+
+00:11:36.699 --> 00:11:37.990
+dessus c'est un nombre aléatoire
+
+00:11:37.990 --> 00:11:40.000
+bon pourquoi pas j'ai schématiser
+
+00:11:40.000 --> 00:11:41.350
+sûrement beaucoup trop mais c'est l'idée
+
+00:11:41.350 --> 00:11:44.500
+donc il est clair que ça c'est quand
+
+00:11:44.500 --> 00:11:47.649
+même bon c'est bon mais c'est pas
+
+00:11:47.649 --> 00:11:48.790
+terrible alors il ya des gens qui disent
+
+00:11:48.790 --> 00:11:50.110
+quand même lancé embêtant parce que
+
+00:11:50.110 --> 00:11:52.449
+effectivement le gars qui a construit la
+
+00:11:52.449 --> 00:11:54.790
+machine normalement s'il a toutes les
+
+00:11:54.790 --> 00:11:56.680
+données il devrait pouvoir prédire ce
+
+00:11:56.680 --> 00:11:57.699
+qui va sortir à la fin
+
+00:11:57.699 --> 00:12:00.610
+pourquoi pas alors on peut faire un peu
+
+00:12:00.610 --> 00:12:01.990
+mieux on peut dire ah oui mais attendez
+
+00:12:01.990 --> 00:12:03.430
+le calculateur peut-être que son
+
+00:12:03.430 --> 00:12:04.930
+fonctionnement va dépendre légèrement
+
+00:12:04.930 --> 00:12:06.850
+dans la température et donc c'est
+
+00:12:06.850 --> 00:12:08.379
+température elle est mal contrôlée dont
+
+00:12:08.379 --> 00:12:10.120
+peut-être en construisant sur cette idée
+
+00:12:10.120 --> 00:12:12.009
+là on se dit ah ben voilà il ya qu à
+
+00:12:12.009 --> 00:12:13.839
+prendre dans l'atmosphère dans la nature
+
+00:12:13.839 --> 00:12:15.189
+quelque chose qui fluctuent beaucoup
+
+00:12:15.189 --> 00:12:17.709
+donc si vous captez le bruit
+
+00:12:17.709 --> 00:12:19.600
+électromagnétiques et qu'il ya de
+
+00:12:19.600 --> 00:12:21.370
+l'orage dans le coin on a vraiment
+
+00:12:21.370 --> 00:12:22.540
+l'impression que c'est très très
+
+00:12:22.540 --> 00:12:24.519
+aléatoires donc vous avez un certain
+
+00:12:24.519 --> 00:12:25.660
+nombre de générateurs de nombres
+
+00:12:25.660 --> 00:12:27.399
+aléatoires qui combine les deux c'est à
+
+00:12:27.399 --> 00:12:29.769
+dire on part sur un signal qu'on croit
+
+00:12:29.769 --> 00:12:32.379
+pris dans la nature est aléatoire et en
+
+00:12:32.379 --> 00:12:34.689
+plus on fait tourner des calculs et puis
+
+00:12:34.689 --> 00:12:35.949
+voilà et à la fin on y voit là on a un
+
+00:12:35.949 --> 00:12:36.759
+nombre aléatoire
+
+00:12:36.759 --> 00:12:38.800
+alors vous voyez quand même que dans les
+
+00:12:38.800 --> 00:12:40.629
+deux cas le concepteur de la machine
+
+00:12:40.629 --> 00:12:42.189
+peut connaître le résultat
+
+00:12:42.189 --> 00:12:44.470
+et dans le cas de la mesure de la nature
+
+00:12:44.470 --> 00:12:46.300
+le point clé c'est que votre adversaire
+
+00:12:46.300 --> 00:12:48.220
+celui qui veut savoir quel nombre vous
+
+00:12:48.220 --> 00:12:50.050
+sortez il lui suffit d'aller mettre le
+
+00:12:50.050 --> 00:12:52.089
+son d'un côté de la vôtre est de savoir
+
+00:12:52.089 --> 00:12:53.800
+comment relie le nombre aléatoire la
+
+00:12:53.800 --> 00:12:55.750
+sonde est lui aussi peut prédire quel
+
+00:12:55.750 --> 00:12:57.699
+nombre que vous allez tirer donc
+
+00:12:57.699 --> 00:12:59.889
+finalement on s'aperçoit que ça passe
+
+00:12:59.889 --> 00:13:02.230
+quand même pas ça ça obéit pas aux
+
+00:13:02.230 --> 00:13:04.750
+critères que j'ai dit est en revanche
+
+00:13:04.750 --> 00:13:07.269
+lazare quantique offre une sécurité
+
+00:13:07.269 --> 00:13:09.910
+absolue et je vais vous donner une idée
+
+00:13:09.910 --> 00:13:12.220
+de la raison pour laquelle ça donne une
+
+00:13:12.220 --> 00:13:13.180
+sécurité absolue
+
+00:13:13.180 --> 00:13:15.459
+le hasard compte x est basé là dessus je
+
+00:13:15.459 --> 00:13:17.589
+prends cet exemple un photon tout seul
+
+00:13:17.589 --> 00:13:19.300
+il arrive sur la dame se met
+
+00:13:19.300 --> 00:13:20.139
+réfléchissantes
+
+00:13:20.139 --> 00:13:22.569
+on peut vérifier qu'il sort soins d'un
+
+00:13:22.569 --> 00:13:25.180
+côté soit de l'autre en constatant que
+
+00:13:25.180 --> 00:13:27.490
+jamais les deux détecteurs ne sont
+
+00:13:27.490 --> 00:13:29.019
+activés en même temps c'est soit l'un
+
+00:13:29.019 --> 00:13:31.149
+soit l'autre et donc on a toutes les
+
+00:13:31.149 --> 00:13:33.459
+raisons de penser que c'est complètement
+
+00:13:33.459 --> 00:13:36.250
+aléatoire et donc on fabrique le nombre
+
+00:13:36.250 --> 00:13:38.589
+0 d'un côté et de nombre et de l'autre
+
+00:13:38.589 --> 00:13:41.470
+donc combat décidé de fabriquer un
+
+00:13:41.470 --> 00:13:42.480
+nombre aléatoire
+
+00:13:42.480 --> 00:13:45.720
+en considérant le détecteur des 4es en
+
+00:13:45.720 --> 00:13:47.850
+prenant la suite des 0 et des 1 qui en
+
+00:13:47.850 --> 00:13:48.329
+sortent
+
+00:13:48.329 --> 00:13:50.310
+voilà si quelqu'un ne pouvait connaître
+
+00:13:50.310 --> 00:13:53.430
+d'avancé le résultat est bien c'est
+
+00:13:53.430 --> 00:13:54.570
+qu'il y aurait une variable
+
+00:13:54.570 --> 00:13:56.779
+supplémentaires associés aux photons
+
+00:13:56.779 --> 00:13:58.860
+déterminant son comportement ce qu'on
+
+00:13:58.860 --> 00:14:01.440
+veut dire c'est que après tout même si
+
+00:14:01.440 --> 00:14:03.360
+le formalisme quantique nous nous dit
+
+00:14:03.360 --> 00:14:05.399
+rien sur le sujet on pourrait imaginer
+
+00:14:05.399 --> 00:14:08.100
+qu'en plus de la fonction d'onde de
+
+00:14:08.100 --> 00:14:10.139
+l'état quantique du photon qui arrive
+
+00:14:10.139 --> 00:14:11.760
+sur le en semi réfléchissantes
+
+00:14:11.760 --> 00:14:13.769
+il ya une propriétaire en plus en
+
+00:14:13.769 --> 00:14:15.720
+dessous et que cette propriété va
+
+00:14:15.720 --> 00:14:17.279
+déterminer le fait qu'il va aller d'un
+
+00:14:17.279 --> 00:14:18.990
+côté ou qui va aller de l'autre
+
+00:14:18.990 --> 00:14:21.000
+alors ça c'était l'idée suggérée par
+
+00:14:21.000 --> 00:14:23.610
+einstein dans son débat avec bord c'est
+
+00:14:23.610 --> 00:14:25.740
+que aïcha ne remettait pas en cause du
+
+00:14:25.740 --> 00:14:27.600
+tout le formalisme quantique mais il
+
+00:14:27.600 --> 00:14:29.790
+disait il est incomplet il faut le
+
+00:14:29.790 --> 00:14:30.420
+compléter
+
+00:14:30.420 --> 00:14:35.579
+alors on a on a cette discussion a été
+
+00:14:35.579 --> 00:14:38.310
+menée suite aux travaux d'einstein et en
+
+00:14:38.310 --> 00:14:40.380
+particulier en considérable des pères de
+
+00:14:40.380 --> 00:14:42.300
+particules intriquées est-ce que je vous
+
+00:14:42.300 --> 00:14:44.130
+affirme ici que je vais vous expliquer
+
+00:14:44.130 --> 00:14:46.139
+en quelques transparent bien sûr je vais
+
+00:14:46.139 --> 00:14:47.760
+pas faire l'ensemble de l' explication
+
+00:14:47.760 --> 00:14:50.100
+parce que ça me prend une heure donc
+
+00:14:50.100 --> 00:14:52.380
+mais vous avez ses compères vous allez
+
+00:14:52.380 --> 00:14:54.569
+sur youtube vont trouver pendant une
+
+00:14:54.569 --> 00:14:56.819
+heure pour vous expliquer le test des
+
+00:14:56.819 --> 00:14:58.829
+inégalités de bell tout ça mais je vais
+
+00:14:58.829 --> 00:15:00.690
+vous donner l'idée de ce qui se passe
+
+00:15:00.690 --> 00:15:01.980
+mais ce que je vous affirme
+
+00:15:01.980 --> 00:15:05.310
+c'est que si un photon qui est là et
+
+00:15:05.310 --> 00:15:07.860
+appartiennent en réalité à une paire de
+
+00:15:07.860 --> 00:15:10.980
+photons intriqués alors on peut vérifier
+
+00:15:10.980 --> 00:15:12.839
+qu'il n'ya pas de variables
+
+00:15:12.839 --> 00:15:14.550
+supplémentaires en testant les
+
+00:15:14.550 --> 00:15:16.260
+inégalités de bell et c'est ce qu'on
+
+00:15:16.260 --> 00:15:19.319
+appelle une sécurité en information
+
+00:15:19.319 --> 00:15:20.610
+quantique c'est ce qu'on appelle une
+
+00:15:20.610 --> 00:15:22.769
+sécurité inconditionnel
+
+00:15:22.769 --> 00:15:25.010
+c'est à dire ça repose sur aucun modèle
+
+00:15:25.010 --> 00:15:29.190
+repose simplement sur le fait que si on
+
+00:15:29.190 --> 00:15:30.930
+viole les inégalités de bell
+
+00:15:30.930 --> 00:15:33.149
+on a une certitude c'est qu'il y avait
+
+00:15:33.149 --> 00:15:35.940
+pas de variables cachées locale donc je
+
+00:15:35.940 --> 00:15:37.380
+reviendrai sur ce à tout à l'heure
+
+00:15:37.380 --> 00:15:39.089
+donc je vous explique comment ça marche
+
+00:15:39.089 --> 00:15:40.769
+donc ici qu'est ce qu'on arrive à une
+
+00:15:40.769 --> 00:15:42.420
+source qui ai mis une paire de photos en
+
+00:15:42.420 --> 00:15:44.399
+photo nue en vue d'un côté photos nues
+
+00:15:44.399 --> 00:15:46.529
+de va de l'autre et sur chacun de ces
+
+00:15:46.529 --> 00:15:47.880
+deux photos on va faire une mesure de
+
+00:15:47.880 --> 00:15:49.529
+polarisation mais finalement c'est un
+
+00:15:49.529 --> 00:15:51.029
+peu comme la lame se met réfléchissantes
+
+00:15:51.029 --> 00:15:52.920
+dont je vous ai parlé ça peut sortir
+
+00:15:52.920 --> 00:15:54.150
+soit dans le produit
+
+00:15:54.150 --> 00:15:56.520
+canal soit dans le deuxième si ça sort
+
+00:15:56.520 --> 00:15:58.050
+dans le premier canal on dit que la
+
+00:15:58.050 --> 00:16:00.660
+polarisation et parallèle un axe rade
+
+00:16:00.660 --> 00:16:02.730
+polariseur si ça sort dans le canal
+
+00:16:02.730 --> 00:16:03.960
+moins jeunes on dit que c'est
+
+00:16:03.960 --> 00:16:06.210
+perpendiculaire à la direction à
+
+00:16:06.210 --> 00:16:08.550
+et puis même chose de l'autre côté alors
+
+00:16:08.550 --> 00:16:09.960
+vous voyez que si vous envoyez des pères
+
+00:16:09.960 --> 00:16:11.370
+et les unes derrière les autres
+
+00:16:11.370 --> 00:16:14.910
+vous pouvez mesurer la fréquence de ces
+
+00:16:14.910 --> 00:16:16.770
+divers événements et ça vous permet de
+
+00:16:16.770 --> 00:16:18.240
+déterminer ce qu'on appelle les
+
+00:16:18.240 --> 00:16:20.670
+probabilités simple c'est à dire combien
+
+00:16:20.670 --> 00:16:22.770
+de fois ça arrive dans plusieurs combien
+
+00:16:22.770 --> 00:16:24.380
+de fois des moines zen dans le premier
+
+00:16:24.380 --> 00:16:27.720
+polariseur et puis même chose pay plus
+
+00:16:27.720 --> 00:16:30.120
+de bp - 2b combien de fois ça arrive
+
+00:16:30.120 --> 00:16:31.890
+dans plusieurs neda moins jeunes
+
+00:16:31.890 --> 00:16:34.440
+lorsqu'on a orienté le polariseur dans
+
+00:16:34.440 --> 00:16:36.210
+la direction b mais ce qui est beaucoup
+
+00:16:36.210 --> 00:16:37.890
+plus intéressant c'est de mesurer les
+
+00:16:37.890 --> 00:16:40.980
+probabilités conjointe dont pay plus + c
+
+00:16:40.980 --> 00:16:43.230
+probabilité d'aller dans plusieurs et
+
+00:16:43.230 --> 00:16:44.940
+d'aller non plus jeunes pour les
+
+00:16:44.940 --> 00:16:46.770
+orientations à mener et je mesure dont
+
+00:16:46.770 --> 00:16:48.750
+les quatre plus plus plus ou moins -
+
+00:16:48.750 --> 00:16:50.280
+plus ou moins - et donc ce qu'a
+
+00:16:50.280 --> 00:16:53.010
+découvert einstein
+
+00:16:53.010 --> 00:16:55.740
+bon je transpose dans le langage moderne
+
+00:16:55.740 --> 00:16:57.420
+mais ce qu'a découvert einstein
+
+00:16:57.420 --> 00:16:59.400
+c'est qu'il existe des états quantiques
+
+00:16:59.400 --> 00:17:01.890
+très particulier qu'on appelle des états
+
+00:17:01.890 --> 00:17:04.830
+intriqués qui sont telles que et bien
+
+00:17:04.830 --> 00:17:07.080
+pour une paire de photons intriqués en
+
+00:17:07.080 --> 00:17:08.190
+polarisation
+
+00:17:08.190 --> 00:17:11.880
+on va avoir les prédictions suivante et
+
+00:17:11.880 --> 00:17:13.470
+dont je les détails un peu pour que vous
+
+00:17:13.470 --> 00:17:15.660
+compreniez bien le fond de la faire
+
+00:17:15.660 --> 00:17:17.450
+parce que tout le fond de l'affairé la
+
+00:17:17.450 --> 00:17:19.890
+d'une part les probabilités simple
+
+00:17:19.890 --> 00:17:22.680
+valent chacune en demie ce qui veut dire
+
+00:17:22.680 --> 00:17:24.660
+que chaque fois qu'un photon arrive sur
+
+00:17:24.660 --> 00:17:26.940
+le polariseur ça apparaît comme un
+
+00:17:26.940 --> 00:17:28.740
+simple jeu de pile ou face ça
+
+00:17:28.740 --> 00:17:30.990
+apparemment c'est totalement aléatoire
+
+00:17:30.990 --> 00:17:32.720
+ça va aussi bien en plusieurs cas - 1
+
+00:17:32.720 --> 00:17:35.460
+mais en revanche quand je regarde les
+
+00:17:35.460 --> 00:17:37.530
+probabilités conjointe et que je me
+
+00:17:37.530 --> 00:17:38.640
+place par exemple dans le cas
+
+00:17:38.640 --> 00:17:40.140
+particulier où les polariseur sont
+
+00:17:40.140 --> 00:17:42.480
+parallèles alors là on s'aperçoit que
+
+00:17:42.480 --> 00:17:43.350
+les dés sont pipés
+
+00:17:43.350 --> 00:17:45.330
+c'est à dire que ici ça avait l'air
+
+00:17:45.330 --> 00:17:47.820
+d'être aléatoire plusieurs et moins
+
+00:17:47.820 --> 00:17:50.070
+jeunes mais de l'autre côté on a le même
+
+00:17:50.070 --> 00:17:50.670
+résultat
+
+00:17:50.670 --> 00:17:52.260
+c est la sienne a eu plus en ici on n'a
+
+00:17:52.260 --> 00:17:54.210
+plus eu de l'autre côté et si on a une -
+
+00:17:54.210 --> 00:17:55.860
+1 ici on a eu moins l'un de l'autre côté
+
+00:17:55.860 --> 00:17:58.320
+et ont vérifié au passage que s'il ya eu
+
+00:17:58.320 --> 00:17:58.800
+plusieurs
+
+00:17:58.800 --> 00:18:01.920
+ici on a zéro en bas et en faire dans la
+
+00:18:01.920 --> 00:18:03.030
+01 - etc
+
+00:18:03.030 --> 00:18:04.980
+c'est ce que vous donne les quatre
+
+00:18:04.980 --> 00:18:06.090
+valeurs
+
+00:18:06.090 --> 00:18:08.010
+à droite on dit qu'il y à une
+
+00:18:08.010 --> 00:18:10.860
+corrélation total donc ici c'est
+
+00:18:10.860 --> 00:18:12.690
+aléatoire là c'est aléatoire mais les
+
+00:18:12.690 --> 00:18:13.830
+deux variables aléatoires sont
+
+00:18:13.830 --> 00:18:15.539
+totalement corrélée alors qu'est ce
+
+00:18:15.539 --> 00:18:16.320
+qu'on fait avec ça
+
+00:18:16.320 --> 00:18:18.299
+avec cette corrélation total entre
+
+00:18:18.299 --> 00:18:20.520
+résultats aléatoires éloignés alors on
+
+00:18:20.520 --> 00:18:23.490
+réfléchit un peu et on se dit la seule
+
+00:18:23.490 --> 00:18:25.919
+possibilité c'est que les deux photons
+
+00:18:25.919 --> 00:18:28.559
+dès le départ ils savaient ils ont été
+
+00:18:28.559 --> 00:18:29.640
+produits dans la même source
+
+00:18:29.640 --> 00:18:31.950
+donc ils ont eu une instruction dès le
+
+00:18:31.950 --> 00:18:33.900
+départ qui leur a dit voilà ce que tu
+
+00:18:33.900 --> 00:18:35.159
+feras quand la révérence sur le
+
+00:18:35.159 --> 00:18:37.289
+polariseur c'est un peu si vous voulez
+
+00:18:37.289 --> 00:18:39.539
+comme deux jumeaux vrais de vrais
+
+00:18:39.539 --> 00:18:41.730
+jumeaux homozygotes qui sont menées de
+
+00:18:41.730 --> 00:18:44.100
+la même mère et des le d dès le départ
+
+00:18:44.100 --> 00:18:46.049
+on savait que leurs yeux serait bleus
+
+00:18:46.049 --> 00:18:48.390
+qu'à l'âge de 25 ans il développerait
+
+00:18:48.390 --> 00:18:50.190
+telle maladie génétique et cetera et
+
+00:18:50.190 --> 00:18:50.610
+cetera
+
+00:18:50.610 --> 00:18:52.679
+voilà l'idée c'est une idée très
+
+00:18:52.679 --> 00:18:54.210
+raisonnable c'était l'idée lancée par
+
+00:18:54.210 --> 00:18:55.370
+einstein
+
+00:18:55.370 --> 00:18:59.580
+voilà donc les corrélations total sont
+
+00:18:59.580 --> 00:19:01.799
+compréhensibles à l'asnl est temps que
+
+00:19:01.799 --> 00:19:03.419
+les photons portes dès le départ une
+
+00:19:03.419 --> 00:19:05.130
+variable supplémentaire et qui
+
+00:19:05.130 --> 00:19:07.590
+déterminera le comportement en revanche
+
+00:19:07.590 --> 00:19:09.090
+vous voyez que si vous adhérez à la
+
+00:19:09.090 --> 00:19:11.010
+doctrine classique de la physique
+
+00:19:11.010 --> 00:19:12.390
+quantique c'est totalement
+
+00:19:12.390 --> 00:19:13.919
+incompréhensible parce qu'à la doctrine
+
+00:19:13.919 --> 00:19:15.510
+classique de la physique quantique
+
+00:19:15.510 --> 00:19:17.700
+elle vous dit les deux photons y partent
+
+00:19:17.700 --> 00:19:19.919
+ils sont dans un état intriqués certes
+
+00:19:19.919 --> 00:19:21.870
+mais ça c'est dans un espace de gilberte
+
+00:19:21.870 --> 00:19:23.640
+abstrait dont j'ai même pas comment vous
+
+00:19:23.640 --> 00:19:25.590
+dire commencée dans l'espace réel parce
+
+00:19:25.590 --> 00:19:27.090
+que c'est un espace de liberté abstrait
+
+00:19:27.090 --> 00:19:29.789
+et puis au moment précis où ils arrivent
+
+00:19:29.789 --> 00:19:32.730
+sur le polariseur d'un seul coup ça se
+
+00:19:32.730 --> 00:19:36.630
+détermine pas plus ici est plus un en
+
+00:19:36.630 --> 00:19:39.870
+même temps bien que ce soit loin mais -1
+
+00:19:39.870 --> 00:19:41.340
+10 6 - 1 là bas
+
+00:19:41.340 --> 00:19:42.750
+vous voyez c'est complètement débile
+
+00:19:42.750 --> 00:19:45.270
+cette affaire là donc évidemment que
+
+00:19:45.270 --> 00:19:48.029
+l'idée d'einstein est la bonne eh bien
+
+00:19:48.029 --> 00:19:52.080
+non et ben non parce que les inégalités
+
+00:19:52.080 --> 00:19:54.840
+de bell permettent de trancher le débat
+
+00:19:54.840 --> 00:19:57.000
+c'est à dire les inégalités de bell vous
+
+00:19:57.000 --> 00:19:59.909
+dise si einstein la raison si vraiment
+
+00:19:59.909 --> 00:20:02.130
+il ya un paramètre supplémentaire qui
+
+00:20:02.130 --> 00:20:04.220
+est porté par les photons dès le départ
+
+00:20:04.220 --> 00:20:06.870
+alors les corrélations que vous
+
+00:20:06.870 --> 00:20:08.279
+observerez alors il faut commencer à
+
+00:20:08.279 --> 00:20:09.990
+être un peu plus subtil faut croiser un
+
+00:20:09.990 --> 00:20:12.179
+peu les polariseur les mettre à 25
+
+00:20:12.179 --> 00:20:15.780
+degrés 45 degrés 60 degrés et belle vous
+
+00:20:15.780 --> 00:20:16.700
+établi
+
+00:20:16.700 --> 00:20:19.310
+une inégalité et vaud d'ici a vraiment
+
+00:20:19.310 --> 00:20:22.070
+un caractère commun une variables
+
+00:20:22.070 --> 00:20:24.110
+cachées commune qui détermine les
+
+00:20:24.110 --> 00:20:24.740
+corrélations
+
+00:20:24.740 --> 00:20:26.600
+alors certes vous pouvez avoir des
+
+00:20:26.600 --> 00:20:29.530
+corrélations forte mais une combinaison
+
+00:20:29.530 --> 00:20:31.760
+de ces corrélations ne peut pas être
+
+00:20:31.760 --> 00:20:34.580
+plus forte qu'une certaine valeur de en
+
+00:20:34.580 --> 00:20:36.770
+l'occurrence or la mécanique quantique
+
+00:20:36.770 --> 00:20:38.630
+vous prédis que vous pouvez choisir des
+
+00:20:38.630 --> 00:20:41.210
+angles pour trouver plus de 2 donc on a
+
+00:20:41.210 --> 00:20:43.130
+fait des expériences aux angles la
+
+00:20:43.130 --> 00:20:44.900
+mécanique quantique prévoit plus de deux
+
+00:20:44.900 --> 00:20:48.050
+et on a trouvé plus de 2 ce qui veut
+
+00:20:48.050 --> 00:20:51.350
+dire que l'image sympathique deux des
+
+00:20:51.350 --> 00:20:52.850
+variables cachées qui aurait déterminé
+
+00:20:52.850 --> 00:20:55.970
+la corrélation des images sympathiques
+
+00:20:55.970 --> 00:20:58.550
+des chromosomes des jumeaux ne marche
+
+00:20:58.550 --> 00:21:01.190
+pas pour des photons intriqués et vous
+
+00:21:01.190 --> 00:21:03.560
+est donc obligé d'admettre que le modèle
+
+00:21:03.560 --> 00:21:08.450
+quantique a raison c'est à dire que le
+
+00:21:08.450 --> 00:21:10.730
+choix est vraiment fait au dernier
+
+00:21:10.730 --> 00:21:12.260
+moment
+
+00:21:12.260 --> 00:21:13.370
+donc après la l'homme semi
+
+00:21:13.370 --> 00:21:15.230
+réfléchissantes si je reviens à mon
+
+00:21:15.230 --> 00:21:16.430
+histoire de générateurs de nombres
+
+00:21:16.430 --> 00:21:19.670
+aléatoires d'accord ben voilà c'est ça
+
+00:21:19.670 --> 00:21:21.140
+le hasard quantique c'est quand même
+
+00:21:21.140 --> 00:21:25.610
+fort de café alors cerise sur le gâteau
+
+00:21:25.610 --> 00:21:29.870
+parce que la conclusion de la violation
+
+00:21:29.870 --> 00:21:31.190
+des inégalités de bell
+
+00:21:31.190 --> 00:21:33.470
+c'est que effectivement en générateur de
+
+00:21:33.470 --> 00:21:35.360
+nombres aléatoires qui serait basée sur
+
+00:21:35.360 --> 00:21:37.700
+une photo unique qui appartiennent à une
+
+00:21:37.700 --> 00:21:39.800
+paire de photons intriqués pour lesquels
+
+00:21:39.800 --> 00:21:41.600
+on vérifie de temps en temps que les
+
+00:21:41.600 --> 00:21:43.280
+inégalités de bell seront sont bien
+
+00:21:43.280 --> 00:21:46.010
+violé là on est certains qui a pas de
+
+00:21:46.010 --> 00:21:48.170
+variables supplémentaires donc mon
+
+00:21:48.170 --> 00:21:50.270
+générateur de nombres aléatoires basé
+
+00:21:50.270 --> 00:21:53.450
+sur un photon appartenant à une paire de
+
+00:21:53.450 --> 00:21:55.490
+photons intriqués c'est moi je vois pas
+
+00:21:55.490 --> 00:21:57.350
+comment on pourrait contester ça bien
+
+00:21:57.350 --> 00:22:00.260
+mais cerise sur le gâteau arthur eckert
+
+00:22:00.260 --> 00:22:02.810
+a eu l'idée géniale de s'en servir
+
+00:22:02.810 --> 00:22:04.520
+instantanément et je veux dire de façon
+
+00:22:04.520 --> 00:22:07.460
+finalement incluse dans le schéma de la
+
+00:22:07.460 --> 00:22:10.450
+manip pour développer une méthode de
+
+00:22:10.450 --> 00:22:14.030
+cryptographie quantique par photo un
+
+00:22:14.030 --> 00:22:16.220
+cric et je vais prendre le temps de vous
+
+00:22:16.220 --> 00:22:19.760
+expliquer d'où sa soeur c'est cette
+
+00:22:19.760 --> 00:22:22.970
+affaire de cryptographie quantique par
+
+00:22:22.970 --> 00:22:25.760
+photons intriqués on sait depuis les
+
+00:22:25.760 --> 00:22:27.640
+années 30 ou 40
+
+00:22:27.640 --> 00:22:30.730
+depuis des travaux de shannon qu' il ya
+
+00:22:30.730 --> 00:22:34.300
+une méthode absolue de cryptographie qui
+
+00:22:34.300 --> 00:22:36.220
+s'appelle one time pad chez même pas
+
+00:22:36.220 --> 00:22:37.360
+comment ils furent le traite ici gérard
+
+00:22:37.360 --> 00:22:39.520
+comme il faut traduire one time bada en
+
+00:22:39.520 --> 00:22:43.300
+français comment l'appeler une fois
+
+00:22:43.300 --> 00:22:45.960
+d'accord alors ces deux clés une fois
+
+00:22:45.960 --> 00:22:48.550
+parce que roanne ipad c'est l'idée qu'on
+
+00:22:48.550 --> 00:22:50.410
+a généré deux clés strictement
+
+00:22:50.410 --> 00:22:53.110
+identiques qui sont une des suites
+
+00:22:53.110 --> 00:22:57.340
+aléatoire de 1 et 2 0 et donc alice
+
+00:22:57.340 --> 00:23:00.610
+sincère pour coder et bob sincère pour
+
+00:23:00.610 --> 00:23:04.330
+décoder et si le message n'est pas plus
+
+00:23:04.330 --> 00:23:07.180
+long que la clé on ne peut démontrer
+
+00:23:07.180 --> 00:23:09.310
+d'une façon mathématique ces
+
+00:23:09.310 --> 00:23:12.640
+démonstrations totalement rigoureuse que
+
+00:23:12.640 --> 00:23:14.890
+7ème violable il n'y a aucune méthode
+
+00:23:14.890 --> 00:23:17.770
+pour déchiffrer on comprend bien la clé
+
+00:23:17.770 --> 00:23:19.330
+vous l'utilisez qu'une fois et le
+
+00:23:19.330 --> 00:23:20.790
+message n'est pas plus long que la clé
+
+00:23:20.790 --> 00:23:25.000
+donc alice et bob veulent échanger leurs
+
+00:23:25.000 --> 00:23:26.950
+messages mais le problème c'est qu'ils
+
+00:23:26.950 --> 00:23:29.380
+sont loin l'un de l'autre et donc il va
+
+00:23:29.380 --> 00:23:31.060
+falloir renouveler la clé parce qu'une
+
+00:23:31.060 --> 00:23:32.980
+fois qui admettons au départ ils sont
+
+00:23:32.980 --> 00:23:35.020
+partis chacun avec leurs clés mais ils
+
+00:23:35.020 --> 00:23:37.450
+l'ont utilisé elle est usée en quelque
+
+00:23:37.450 --> 00:23:38.740
+chose donc
+
+00:23:38.740 --> 00:23:42.010
+l es l et les découvertes où elle peut
+
+00:23:42.010 --> 00:23:43.450
+être découverte il faut donc qu'ils
+
+00:23:43.450 --> 00:23:45.700
+aient une nouvelle clé et donc les
+
+00:23:45.700 --> 00:23:49.150
+photons intriqués présente une manière
+
+00:23:49.150 --> 00:23:54.430
+de leur donner cette c2 copie
+
+00:23:54.430 --> 00:23:57.760
+strictement identique à distance et sans
+
+00:23:57.760 --> 00:23:59.020
+que l'espion puisse en prendre
+
+00:23:59.020 --> 00:24:00.570
+connaissance donc vous voyez l'idée
+
+00:24:00.570 --> 00:24:04.030
+j'aimais photons intriqués ils partent
+
+00:24:04.030 --> 00:24:06.820
+vers alice et vers bob et si alice et
+
+00:24:06.820 --> 00:24:09.250
+bob ont mis leur polariseur suivant la
+
+00:24:09.250 --> 00:24:09.970
+même direction
+
+00:24:09.970 --> 00:24:13.270
+eh bien on sait que quand elle y sera
+
+00:24:13.270 --> 00:24:15.250
+plusieurs bords à plusieurs que quand
+
+00:24:15.250 --> 00:24:16.990
+ali seront moins un beau brin moins
+
+00:24:16.990 --> 00:24:19.060
+jeunes et donc on est sûr d'avoir de
+
+00:24:19.060 --> 00:24:19.810
+claix identique
+
+00:24:19.810 --> 00:24:22.150
+alors après vous pouvez imaginer un tas
+
+00:24:22.150 --> 00:24:24.000
+de raffinement qui marche très bien
+
+00:24:24.000 --> 00:24:26.460
+les raffinements c'est par exemple ah
+
+00:24:26.460 --> 00:24:27.690
+oui mais les détecteurs sont pas
+
+00:24:27.690 --> 00:24:29.130
+parfaits non de temps en temps il rate
+
+00:24:29.130 --> 00:24:30.960
+en photo et ça c'est pas grave ils
+
+00:24:30.960 --> 00:24:32.520
+peuvent communiquer par radio sur un
+
+00:24:32.520 --> 00:24:35.730
+canal public sur un canal ouvert et dire
+
+00:24:35.730 --> 00:24:37.710
+si mettons les photons arriver toutes
+
+00:24:37.710 --> 00:24:39.990
+les micro secondes et dire j'ai rien eu
+
+00:24:39.990 --> 00:24:42.720
+at elle un stand on l'a on ignore etc
+
+00:24:42.720 --> 00:24:44.490
+ils peuvent se mettre d'accord pour dire
+
+00:24:44.490 --> 00:24:46.170
+quelles sont les numéros des événements
+
+00:24:46.170 --> 00:24:48.330
+qu'il garde parce que chacun a eu un bon
+
+00:24:48.330 --> 00:24:50.730
+résultat on peut même faire plus ils
+
+00:24:50.730 --> 00:24:52.140
+peuvent de temps en temps faire des
+
+00:24:52.140 --> 00:24:55.140
+mesure où ils ont choisi les directions
+
+00:24:55.140 --> 00:24:57.210
+des polariseur et donc de temps en temps
+
+00:24:57.210 --> 00:24:58.320
+ils peuvent choisir les bonnes
+
+00:24:58.320 --> 00:25:00.890
+directions qui vont faire les tests
+
+00:25:00.890 --> 00:25:02.730
+d'inégalités de belles nom de temps en
+
+00:25:02.730 --> 00:25:03.930
+temps ils se font un petit test des
+
+00:25:03.930 --> 00:25:05.670
+inégalités de bell pour vérifier qu'ils
+
+00:25:05.670 --> 00:25:07.020
+sont toujours dans les bonnes conditions
+
+00:25:07.020 --> 00:25:09.000
+etc etc d'envoyer on peut faire un tas
+
+00:25:09.000 --> 00:25:10.890
+de raffinement mais l'idée de base que
+
+00:25:10.890 --> 00:25:13.140
+je trouve absolument merveilleuse
+
+00:25:13.140 --> 00:25:14.010
+magique
+
+00:25:14.010 --> 00:25:16.800
+je ne sais pas comment je suis admiratif
+
+00:25:16.800 --> 00:25:18.600
+un point incroyable de cette méthode d
+
+00:25:18.600 --> 00:25:19.080
+kert
+
+00:25:19.080 --> 00:25:21.630
+l'idée de base c'est que tant que les
+
+00:25:21.630 --> 00:25:22.500
+fautes on avance
+
+00:25:22.500 --> 00:25:25.380
+il n'y a rien à espionner dont vous avez
+
+00:25:25.380 --> 00:25:27.450
+l'espion qui s'appelle eve parce que ce
+
+00:25:27.450 --> 00:25:30.150
+sont dix dropper en anglais mais alors
+
+00:25:30.150 --> 00:25:32.520
+ils ont décidé de l'appeler eve après
+
+00:25:32.520 --> 00:25:34.320
+les féministes sont pas contentes dont
+
+00:25:34.320 --> 00:25:35.790
+j'ai mis une moustache à eve comme ça
+
+00:25:35.790 --> 00:25:37.110
+j'espère qu'il n'y a pas de problème
+
+00:25:37.110 --> 00:25:39.450
+mais en fait elle vient de yves joker
+
+00:25:39.450 --> 00:25:41.010
+qui veut dire celui qui écoute aux
+
+00:25:41.010 --> 00:25:43.170
+portes ou fenêtres ce que vous voulez et
+
+00:25:43.170 --> 00:25:45.150
+dont il n'y a rien à espionner puisque
+
+00:25:45.150 --> 00:25:47.730
+encore une fois le choix entre plusieurs
+
+00:25:47.730 --> 00:25:51.570
+mondes 1 sera pris à la fin dont ça
+
+00:25:51.570 --> 00:25:53.400
+c'est tout à fait extraordinaire donc
+
+00:25:53.400 --> 00:25:55.950
+vous voyez que dans ce schéma arthur
+
+00:25:55.950 --> 00:25:56.520
+eckert
+
+00:25:56.520 --> 00:25:58.710
+il utilise toutes les propriétés les
+
+00:25:58.710 --> 00:26:01.770
+plus extraordinaires de du hasard
+
+00:26:01.770 --> 00:26:02.430
+quantique
+
+00:26:02.430 --> 00:26:05.130
+d'une part le fait que ce hasard va se
+
+00:26:05.130 --> 00:26:07.950
+produire au dernier moment et d'autre
+
+00:26:07.950 --> 00:26:09.960
+part le fait qu'il est non locale c'est
+
+00:26:09.960 --> 00:26:12.210
+à dire que le vous le vouliez ou non et
+
+00:26:12.210 --> 00:26:14.670
+bien deux événements à distance au même
+
+00:26:14.670 --> 00:26:16.920
+moment sont quand même corrélés et ça
+
+00:26:16.920 --> 00:26:18.450
+c'est quand même un truc extraordinaire
+
+00:26:18.450 --> 00:26:21.270
+et puis je pense que je vais prendre les
+
+00:26:21.270 --> 00:26:24.690
+questions conclusion bien les concepts
+
+00:26:24.690 --> 00:26:27.000
+fondamentaux conduisent aux technologies
+
+00:26:27.000 --> 00:26:28.650
+quantiques dont vous avez entendu parler
+
+00:26:28.650 --> 00:26:30.169
+avec le fameux plan
+
+00:26:30.169 --> 00:26:32.690
+en tic etc etc s'est basée sur un
+
+00:26:32.690 --> 00:26:36.220
+certain nombre d'idées de ce genre
+
+00:26:36.740 --> 00:26:41.700
+[Applaudissements]
+
+00:26:41.700 --> 00:26:43.529
+ma question c'est est-ce que vous pouvez
+
+00:26:43.529 --> 00:26:46.169
+préciser s'il vous plaît le concept de
+
+00:26:46.169 --> 00:26:48.860
+photons intriqués et plus précisément
+
+00:26:48.860 --> 00:26:51.240
+comment est ce possible en amont de
+
+00:26:51.240 --> 00:26:52.950
+l'expérience de savoir que deux photons
+
+00:26:52.950 --> 00:26:57.269
+intriqués alors ça c'est le travail du
+
+00:26:57.269 --> 00:26:59.940
+physicien qui construit sa source en
+
+00:26:59.940 --> 00:27:03.899
+l'occurrence on se sert du fait qu' on
+
+00:27:03.899 --> 00:27:05.429
+va émettre
+
+00:27:05.429 --> 00:27:07.980
+alors il ya plusieurs technologies moi
+
+00:27:07.980 --> 00:27:09.870
+quand j'ai fait ma thèse c'était il ya
+
+00:27:09.870 --> 00:27:14.190
+quarante ans je me servais du fait que
+
+00:27:14.190 --> 00:27:16.830
+si j'ai xi tatum dans un atome bien
+
+00:27:16.830 --> 00:27:19.320
+choisis dans un niveau atomique bien
+
+00:27:19.320 --> 00:27:21.960
+choisi la seule chose qui puisse faire
+
+00:27:21.960 --> 00:27:24.389
+c'est ceux des excités en émettant deux
+
+00:27:24.389 --> 00:27:26.549
+photons successifs et quand on regarde
+
+00:27:26.549 --> 00:27:28.679
+le détail des niveaux atomique un calcul
+
+00:27:28.679 --> 00:27:31.399
+standard de physique quantique nous
+
+00:27:31.399 --> 00:27:33.809
+montrent que les deux photos doivent
+
+00:27:33.809 --> 00:27:35.850
+être un truc en polarisation après c'est
+
+00:27:35.850 --> 00:27:37.200
+de la technique il faut rentrer dedans
+
+00:27:37.200 --> 00:27:39.570
+alors vous pouvez me dire mais est-ce
+
+00:27:39.570 --> 00:27:41.039
+qu'à la mécanique quantique a raison ben
+
+00:27:41.039 --> 00:27:42.929
+oui puisque à la fin le résultat qu'on
+
+00:27:42.929 --> 00:27:44.159
+observe est en accord avec cette
+
+00:27:44.159 --> 00:27:46.470
+prédiction alors d'un à la fin des
+
+00:27:46.470 --> 00:27:51.630
+années 90 une quinzaine d'années après
+
+00:27:51.630 --> 00:27:52.950
+que j'ai fait ma thèse on a développé
+
+00:27:52.950 --> 00:27:54.299
+une nouvelle technique qui est
+
+00:27:54.299 --> 00:27:55.529
+maintenant une technique qui est
+
+00:27:55.529 --> 00:27:57.269
+utilisée couramment qui est une
+
+00:27:57.269 --> 00:27:58.620
+technique beaucoup moins lourde parce
+
+00:27:58.620 --> 00:27:59.850
+que moi voyez je vais une enceinte à
+
+00:27:59.850 --> 00:28:02.159
+vide avec un g atomique des lasers
+
+00:28:02.159 --> 00:28:04.470
+dessus et c'est maintenant c'est comme
+
+00:28:04.470 --> 00:28:06.419
+toujours on arrive à miniaturiser ça
+
+00:28:06.419 --> 00:28:08.730
+avec un faisceau laser qui passa dans un
+
+00:28:08.730 --> 00:28:10.980
+cristal non linéaire qui a été
+
+00:28:10.980 --> 00:28:14.159
+particulièrement bien choisi coupez
+
+00:28:14.159 --> 00:28:15.870
+suivant le bon angle et caetera et
+
+00:28:15.870 --> 00:28:19.289
+caetera et c'est le processus d'optique
+
+00:28:19.289 --> 00:28:21.720
+non linéaire qui part d'un photon ultra
+
+00:28:21.720 --> 00:28:23.970
+violet et qui le coupe en deux photons
+
+00:28:23.970 --> 00:28:25.769
+qui sont intriqués en polarisation
+
+00:28:25.769 --> 00:28:28.649
+d'onces et je dirais que c'est là c'est
+
+00:28:28.649 --> 00:28:31.500
+la cuisine interne de l'optique
+
+00:28:31.500 --> 00:28:34.260
+quantique dans la physique atomique qui
+
+00:28:34.260 --> 00:28:37.289
+nous permet de choisir des systèmes qui
+
+00:28:37.289 --> 00:28:39.630
+vont envoyer des photos intriqués alors
+
+00:28:39.630 --> 00:28:41.580
+je ne veux pas entendre l'objection
+
+00:28:41.580 --> 00:28:43.230
+kylie a nommé vous trichez pas ce que
+
+00:28:43.230 --> 00:28:44.240
+vous
+
+00:28:44.240 --> 00:28:46.370
+vous prenez quelque chose qui va marcher
+
+00:28:46.370 --> 00:28:48.170
+mais oui je prends pas au hasard et on
+
+00:28:48.170 --> 00:28:50.090
+parle de hasard je fais pas des manips
+
+00:28:50.090 --> 00:28:52.700
+au hasard je construis ma manip en
+
+00:28:52.700 --> 00:28:54.980
+fonction de ce que je sais je pense que
+
+00:28:54.980 --> 00:28:56.900
+ça des chances de marcher et je constate
+
+00:28:56.900 --> 00:28:57.610
+que ça marche
+
+00:28:57.610 --> 00:29:01.490
+voilà mais après le concept de photos
+
+00:29:01.490 --> 00:29:02.960
+intrigué il est un peu compliqué parce
+
+00:29:02.960 --> 00:29:05.179
+que l'idée de photos un traité si vous
+
+00:29:05.179 --> 00:29:06.740
+voulez c'est que vous savez la
+
+00:29:06.740 --> 00:29:08.780
+polarisation d'un photon c'est le il
+
+00:29:08.780 --> 00:29:10.460
+peut être polarisé comme ça où comme ça
+
+00:29:10.460 --> 00:29:12.740
+où comme ça comme ça alors l'idée d'une
+
+00:29:12.740 --> 00:29:15.170
+paire de photons intriqués c'est que la
+
+00:29:15.170 --> 00:29:19.370
+paire est à la fois comme ceux ci et
+
+00:29:19.370 --> 00:29:22.730
+comme cela et ne pensez pas que ça veut
+
+00:29:22.730 --> 00:29:24.050
+dire que c'est 40 scènes non non non
+
+00:29:24.050 --> 00:29:27.710
+c'est ceci et cela
+
+00:29:27.710 --> 00:29:30.290
+alors si c'est ce si j' aurai plus en
+
+00:29:30.290 --> 00:29:34.309
+plus 1,6 et cela j'aurais moins 1 - 1 et
+
+00:29:34.309 --> 00:29:36.500
+donc c'est pas un mélange des deux et
+
+00:29:36.500 --> 00:29:39.440
+quelque part c'est à peu près aussi
+
+00:29:39.440 --> 00:29:41.150
+surprenant que le chat de schrödinger
+
+00:29:41.150 --> 00:29:43.040
+sauf que dans le chat de schrödinger yen
+
+00:29:43.040 --> 00:29:45.380
+a pas 2 mai 10 puissance 23 mai qui est
+
+00:29:45.380 --> 00:29:48.170
+à la fois vivant est mort l'ama père
+
+00:29:48.170 --> 00:29:50.450
+elle est à la fois comme ceux ci et
+
+00:29:50.450 --> 00:29:54.230
+comme cela c'est un gros set je vous
+
+00:29:54.230 --> 00:29:55.790
+avoue que ça fait plus de 40 ans que je
+
+00:29:55.790 --> 00:29:56.420
+travaille dessus
+
+00:29:56.420 --> 00:29:58.700
+je serait présomptueux de vous dire que
+
+00:29:58.700 --> 00:30:00.470
+je les vraiment compris je sais écrire
+
+00:30:00.470 --> 00:30:03.170
+les équations dessus je suis habitué à
+
+00:30:03.170 --> 00:30:06.080
+avoir le résultat des manips de là à
+
+00:30:06.080 --> 00:30:07.730
+dire que je l' ai compris ça dépend du
+
+00:30:07.730 --> 00:30:10.880
+sens qu'on attache aux mots compris on a
+
+00:30:10.880 --> 00:30:13.210
+un professeur qui lèvent le doigt
+
+00:30:13.210 --> 00:30:17.690
+académicien plus s'est il a le droit
+
+00:30:17.690 --> 00:30:19.850
+ils ont le droit les académiciens de bar
+
+00:30:19.850 --> 00:30:26.570
+vers moi j'ai deux questions la première
+
+00:30:26.570 --> 00:30:28.790
+c'est sur la communication qui est
+
+00:30:28.790 --> 00:30:30.860
+évidemment un truc assez facilement on
+
+00:30:30.860 --> 00:30:33.020
+peut quand même attaqué au sens de la
+
+00:30:33.020 --> 00:30:34.940
+sécurité cette communication parce que
+
+00:30:34.940 --> 00:30:37.640
+si on pique les photons certains on ne
+
+00:30:37.640 --> 00:30:40.250
+dévoile pas la clé commune mais on
+
+00:30:40.250 --> 00:30:41.990
+n'empêche la communication ce qui est un
+
+00:30:41.990 --> 00:30:43.910
+déni de service dos ça ça reste possible
+
+00:30:43.910 --> 00:30:46.309
+dans quelle mesure on sait éviter ça
+
+00:30:46.309 --> 00:30:49.400
+alors on ne s'est pas invitée d'abord si
+
+00:30:49.400 --> 00:30:50.500
+quelqu'un coupe
+
+00:30:50.500 --> 00:30:53.240
+si quelqu un couple canal b il coupe le
+
+00:30:53.240 --> 00:30:55.220
+canal donc ça veut dire qu'il faut avoir
+
+00:30:55.220 --> 00:30:56.150
+d'autres
+
+00:30:56.150 --> 00:30:58.900
+autres canaux par contre ce que qui est
+
+00:30:58.900 --> 00:31:00.950
+je n'ai pas parlé parce que ma
+
+00:31:00.950 --> 00:31:01.880
+conférence est courte
+
+00:31:01.880 --> 00:31:03.980
+il ya une attaque possible qui est
+
+00:31:03.980 --> 00:31:05.360
+extrêmement subtile qui serait la
+
+00:31:05.360 --> 00:31:09.380
+suivante le x dropper l'alleud l'espion
+
+00:31:09.380 --> 00:31:12.770
+il détecte le photon il c'est une mesure
+
+00:31:12.770 --> 00:31:15.800
+et renvoie aux tons avec la valeur qu'il
+
+00:31:15.800 --> 00:31:18.560
+a trouvée est bien là il a en quelque
+
+00:31:18.560 --> 00:31:21.140
+sorte concrétiser la variables cachées
+
+00:31:21.140 --> 00:31:23.630
+il a fabriqué de variables cachées et
+
+00:31:23.630 --> 00:31:25.010
+donc c'est pour ça que de temps en temps
+
+00:31:25.010 --> 00:31:26.240
+il faut qu'il fasse un test des
+
+00:31:26.240 --> 00:31:27.680
+inégalités de bell parce que si un petit
+
+00:31:27.680 --> 00:31:29.060
+peu très fort qui est en train de
+
+00:31:29.060 --> 00:31:31.580
+s'amuser à faire ça et bien il y aura
+
+00:31:31.580 --> 00:31:33.500
+pas violation des inégalités de bell et
+
+00:31:33.500 --> 00:31:35.030
+ils sauront qu'il ne faut pas utiliser
+
+00:31:35.030 --> 00:31:37.490
+la clé le point clé c'est que ça c'est
+
+00:31:37.490 --> 00:31:39.710
+de la clé le point majeur c'est que
+
+00:31:39.710 --> 00:31:42.500
+c'est de la distribution de clés et à la
+
+00:31:42.500 --> 00:31:44.690
+fin ils savent qu'ils ont une clé sur
+
+00:31:44.690 --> 00:31:46.850
+c'est ça l'idée de base
+
+00:31:46.850 --> 00:31:48.890
+deuxième question d'en saper le look and
+
+00:31:48.890 --> 00:31:52.180
+i want homme qui distribution mais ça je
+
+00:31:52.180 --> 00:31:54.080
+suis tout à fait d'accord c'est vraiment
+
+00:31:54.080 --> 00:31:54.710
+très important
+
+00:31:54.710 --> 00:31:56.270
+la première question c'est sur la
+
+00:31:56.270 --> 00:31:58.100
+génération de longs mois la toile alors
+
+00:31:58.100 --> 00:32:01.580
+là j'ai un peu plus de deux questions
+
+00:32:01.580 --> 00:32:02.990
+parce que ya deux choses
+
+00:32:02.990 --> 00:32:04.820
+d'habitude on utilise des nombreux lots
+
+00:32:04.820 --> 00:32:07.070
+aléatoires on ne nie pas des mois parce
+
+00:32:07.070 --> 00:32:09.500
+que c'est reproductible est bon et bien
+
+00:32:09.500 --> 00:32:11.180
+donc ça c'est très important pour mettre
+
+00:32:11.180 --> 00:32:11.960
+au point des programmes
+
+00:32:11.960 --> 00:32:13.670
+pas sûr quand on change de programme on
+
+00:32:13.670 --> 00:32:15.050
+veut vérifier que les résultats
+
+00:32:15.050 --> 00:32:17.960
+reproductibles a changé à ce mets
+
+00:32:17.960 --> 00:32:19.730
+peut-être baissez pas la seule méthode
+
+00:32:19.730 --> 00:32:21.560
+mais une autre chose c'est que les
+
+00:32:21.560 --> 00:32:23.630
+jeunes et les clés aléatoire jono
+
+00:32:23.630 --> 00:32:25.280
+aléatoire ça se produit très très vite
+
+00:32:25.280 --> 00:32:27.470
+et avec très peu de ressources
+
+00:32:27.470 --> 00:32:30.740
+quel est le coût actuel de production de
+
+00:32:30.740 --> 00:32:32.930
+nombres aléatoires de débit en bits de
+
+00:32:32.930 --> 00:32:35.750
+ces techniques très très élevé le débit
+
+00:32:35.750 --> 00:32:36.890
+est faible on est bien d'accord
+
+00:32:36.890 --> 00:32:39.890
+non mais y'a aucun doute mais moi je me
+
+00:32:39.890 --> 00:32:41.780
+place plus sur le plan des principes
+
+00:32:41.780 --> 00:32:45.080
+parce que ma pratique de quelques
+
+00:32:45.080 --> 00:32:47.049
+décennies
+
+00:32:47.049 --> 00:32:50.019
+c'est que quand on traite les problèmes
+
+00:32:50.019 --> 00:32:52.330
+sur le plan des principes si ensuite il
+
+00:32:52.330 --> 00:32:54.429
+ya un vrai intérêt et un marché derrière
+
+00:32:54.429 --> 00:32:57.989
+je trouve que la capacité des ingénieurs
+
+00:32:57.989 --> 00:33:00.999
+ensuite à exploiter les principes pour
+
+00:33:00.999 --> 00:33:02.919
+en faire des appareils utile qui marche
+
+00:33:02.919 --> 00:33:05.259
+bien et est infinie dont je pense que
+
+00:33:05.259 --> 00:33:07.480
+c'est essentiel de traiter les principes
+
+00:33:07.480 --> 00:33:08.909
+et moi y'a que ça que je sais faire
+
+00:33:08.909 --> 00:33:11.470
+donc mais je suis tout à fait d'accord
+
+00:33:11.470 --> 00:33:13.899
+avec toi mais je pense que l'idée
+
+00:33:13.899 --> 00:33:16.929
+d'avoir des vrais nombres aléatoires par
+
+00:33:16.929 --> 00:33:18.820
+rapport à des pseudo aléatoires par
+
+00:33:18.820 --> 00:33:20.230
+exemple dans les questions de sécurité
+
+00:33:20.230 --> 00:33:22.210
+c'est quand même essentiel est la
+
+00:33:22.210 --> 00:33:24.369
+question du débit est évidemment quelque
+
+00:33:24.369 --> 00:33:26.169
+chose de fort mais je peux te dire une
+
+00:33:26.169 --> 00:33:28.779
+chose sur la question du débit il ya des
+
+00:33:28.779 --> 00:33:30.100
+gens qui disent mais il n'y a pas besoin
+
+00:33:30.100 --> 00:33:31.570
+de fabriquer des photos uniques
+
+00:33:31.570 --> 00:33:34.179
+il suffit de faire une impulsion faible
+
+00:33:34.179 --> 00:33:37.090
+dans laquelle en moyenne il ya moins
+
+00:33:37.090 --> 00:33:40.480
+grand photon est donc est-ce que c'est
+
+00:33:40.480 --> 00:33:42.220
+pas aussi bon et la réponse est non
+
+00:33:42.220 --> 00:33:44.529
+c'est pas aussi bon parce que si j'ai
+
+00:33:44.529 --> 00:33:45.999
+pris une impulsion et que je les
+
+00:33:45.999 --> 00:33:49.179
+atténuer souvent j'ai zéro photons de
+
+00:33:49.179 --> 00:33:51.190
+temps en temps j'ai un photon et de
+
+00:33:51.190 --> 00:33:52.809
+temps en temps un peu moins mais j'ai
+
+00:33:52.809 --> 00:33:54.639
+aussi deux photons et ces deux photos
+
+00:33:54.639 --> 00:33:57.700
+vont être une voile attaque alors que si
+
+00:33:57.700 --> 00:33:59.619
+j'ai une source qui est mais avec une
+
+00:33:59.619 --> 00:34:01.629
+cadence très élevée un photon est un
+
+00:34:01.629 --> 00:34:03.639
+seul on a fermé cette voie d' attaque
+
+00:34:03.639 --> 00:34:05.590
+donc le fait d'avoir une source à un
+
+00:34:05.590 --> 00:34:08.139
+photon te permet d'augmenter les
+
+00:34:08.139 --> 00:34:10.690
+cadences par rapport à la méthode entre
+
+00:34:10.690 --> 00:34:12.639
+guillemets standard qui consiste à
+
+00:34:12.639 --> 00:34:14.169
+prendre une impulsion et l'atténuer
+
+00:34:14.169 --> 00:34:15.849
+suffisamment pour qui est nettement
+
+00:34:15.849 --> 00:34:18.220
+moins d'un photon dans l'impulsion donc
+
+00:34:18.220 --> 00:34:20.440
+déjà de ce point de vue là la source à
+
+00:34:20.440 --> 00:34:22.419
+un photon efficace comme il y en a par
+
+00:34:22.419 --> 00:34:25.210
+exemple pascal sénat à paris saclay à
+
+00:34:25.210 --> 00:34:27.309
+créer une start up qui fabrique les
+
+00:34:27.309 --> 00:34:31.030
+sources en photo efficace et bien
+
+00:34:31.030 --> 00:34:33.580
+ça a quand même un avantage de principe
+
+00:34:33.580 --> 00:34:34.900
+l'inconvénient c'est que ça coûte un peu
+
+00:34:34.900 --> 00:34:35.290
+plus cher
+
+00:34:35.290 --> 00:34:39.270
+et bien c'est l'heure de la synthèse hu
+
+00:34:39.270 --> 00:34:43.060
+le transparent était prêt merci encore
+
+00:34:43.060 --> 00:34:44.830
+beaucoup à alain aspect pour cet exposé
+
+00:34:44.830 --> 00:34:48.460
+alors tu nous a proposé le titre le
+
+00:34:48.460 --> 00:34:49.570
+hasard quantique propriétés
+
+00:34:49.570 --> 00:34:50.770
+fondamentales ou ressources
+
+00:34:50.770 --> 00:34:54.190
+technologiques et tu as dix déjà ce que
+
+00:34:54.190 --> 00:34:55.720
+ce que j'envisageais c'est qu'en fait
+
+00:34:55.720 --> 00:34:58.240
+les deux sont intriqués quelque part ce
+
+00:34:58.240 --> 00:35:00.010
+n'est pas une propriété fondamentale ou
+
+00:35:00.010 --> 00:35:01.600
+mes propriétés fondamentales et
+
+00:35:01.600 --> 00:35:03.940
+ressources technologiques alors tu as
+
+00:35:03.940 --> 00:35:05.920
+commencé à rappeler ce qui est pour toi
+
+00:35:05.920 --> 00:35:07.600
+le hasard alors il ya de hasard il ya le
+
+00:35:07.600 --> 00:35:10.360
+hasard classique en fait qui est liée
+
+00:35:10.360 --> 00:35:12.220
+aux conditions initiales con con mais
+
+00:35:12.220 --> 00:35:13.840
+sur les systèmes qu'on utilise qu'on
+
+00:35:13.840 --> 00:35:16.810
+étudie en mécanique classique les lois
+
+00:35:16.810 --> 00:35:19.150
+de newton du mouvement sont parfaitement
+
+00:35:19.150 --> 00:35:22.480
+déterministe si je connais les
+
+00:35:22.480 --> 00:35:24.850
+conditions initiales par exemple lorsque
+
+00:35:24.850 --> 00:35:27.400
+je lance une balle de golf
+
+00:35:27.400 --> 00:35:28.660
+et bien je peux connaître exactement
+
+00:35:28.660 --> 00:35:30.790
+l'endroit où va arriver la balle mais en
+
+00:35:30.790 --> 00:35:32.860
+revanche si je mets une petite
+
+00:35:32.860 --> 00:35:34.960
+modification des conditions initiales
+
+00:35:34.960 --> 00:35:37.810
+eh bien il a la balle va peut aller
+
+00:35:37.810 --> 00:35:40.180
+totalement ailleurs et c'est en ça qu'il
+
+00:35:40.180 --> 00:35:42.820
+y à du hasard defacto comme tu l'a
+
+00:35:42.820 --> 00:35:45.220
+appelé et puis il ya un hasard beaucoup
+
+00:35:45.220 --> 00:35:47.440
+plus fondamentale donc c'est celui de la
+
+00:35:47.440 --> 00:35:48.370
+mécanique quantique
+
+00:35:48.370 --> 00:35:50.410
+je reprends l'exemple de l'électron en
+
+00:35:50.410 --> 00:35:52.240
+fait l'électron est décrit par une
+
+00:35:52.240 --> 00:35:55.300
+fonction dont de psy et sa position tant
+
+00:35:55.300 --> 00:35:57.730
+qu'on ne l'a pas mesuré est vraiment
+
+00:35:57.730 --> 00:35:59.680
+indéterminée et c'est en ça qu'on peut
+
+00:35:59.680 --> 00:36:02.380
+dire que le la mécanique quantique est
+
+00:36:02.380 --> 00:36:05.380
+soumise au hasard l'évolution de
+
+00:36:05.380 --> 00:36:06.820
+l'évêque de l'équation de schrödinger
+
+00:36:06.820 --> 00:36:09.640
+donc l'évolution de ces probabilités est
+
+00:36:09.640 --> 00:36:12.400
+totalement déterministe mais la mesure
+
+00:36:12.400 --> 00:36:15.280
+le résultat de la mesure lui est
+
+00:36:15.280 --> 00:36:17.020
+aléatoire alors la question qu'on peut
+
+00:36:17.020 --> 00:36:18.520
+se poser aujourd'hui c'est ce que cette
+
+00:36:18.520 --> 00:36:21.100
+taxe est ce un hasard fondamentale peut
+
+00:36:21.100 --> 00:36:23.470
+être utilisé à des fins technologique
+
+00:36:23.470 --> 00:36:26.020
+alors en fait vous ne nous a parlé des
+
+00:36:26.020 --> 00:36:27.490
+générateur aléatoire c'est très
+
+00:36:27.490 --> 00:36:28.810
+difficile d'avoir un générateur
+
+00:36:28.810 --> 00:36:32.710
+aléatoire pur il ya essentiellement deux
+
+00:36:32.710 --> 00:36:34.240
+problèmes que j'ai noté le problème
+
+00:36:34.240 --> 00:36:36.940
+numéro un c'est que le concepteur du
+
+00:36:36.940 --> 00:36:39.490
+général du générateur puisse connaître à
+
+00:36:39.490 --> 00:36:41.500
+l'avancé le résultat est donc ce n'est
+
+00:36:41.500 --> 00:36:42.280
+pas
+
+00:36:42.280 --> 00:36:45.010
+générateur parfaitement aléatoire ou
+
+00:36:45.010 --> 00:36:46.840
+bien que quelqu'un qui ne soit pas le
+
+00:36:46.840 --> 00:36:49.600
+concepteur mais qui puisse apporter son
+
+00:36:49.600 --> 00:36:51.790
+propre matériel puisse lui-même
+
+00:36:51.790 --> 00:36:56.980
+découvrir le résultat de là dessus du
+
+00:36:56.980 --> 00:36:58.720
+générateur et en ce cas là il n'est pas
+
+00:36:58.720 --> 00:37:01.900
+sécurisé donc la question que tu poses c
+
+00:37:01.900 --> 00:37:03.580
+est ce qu on peut utiliser la mécanique
+
+00:37:03.580 --> 00:37:05.260
+quantique pour créer un système
+
+00:37:05.260 --> 00:37:07.630
+parfaitement inviolable complètement
+
+00:37:07.630 --> 00:37:09.700
+sécurisé alors on peut pousser la
+
+00:37:09.700 --> 00:37:11.230
+question plus loin comme l'a fait hans
+
+00:37:11.230 --> 00:37:14.020
+stein donc dès 1935 avec bord en se
+
+00:37:14.020 --> 00:37:15.070
+demandant si la mécanique quantique
+
+00:37:15.070 --> 00:37:17.290
+n'est pas incomplète si le hasard qu'on
+
+00:37:17.290 --> 00:37:19.630
+lui prête est en fait une illusion et
+
+00:37:19.630 --> 00:37:21.340
+qu'ils soient liés comme on le disait ce
+
+00:37:21.340 --> 00:37:23.950
+matin à notre méconnaissance des causes
+
+00:37:23.950 --> 00:37:25.510
+ça c'est l'idée d'einstein de dire qu'il
+
+00:37:25.510 --> 00:37:28.270
+y a des variables cachées locale donc
+
+00:37:28.270 --> 00:37:30.040
+des éléments que l'on ne connaît pas
+
+00:37:30.040 --> 00:37:32.770
+mais qui en fait détermine prédestine
+
+00:37:32.770 --> 00:37:35.200
+les résultats d'une mesure par exemple
+
+00:37:35.200 --> 00:37:37.930
+sur des photons intriqués donc monsieur
+
+00:37:37.930 --> 00:37:40.090
+dans le public demandait comment on fait
+
+00:37:40.090 --> 00:37:41.230
+des photons intriqués c'est quelque
+
+00:37:41.230 --> 00:37:42.760
+chose qui a été difficile à faire
+
+00:37:42.760 --> 00:37:44.890
+expérimentalement mémé câlins et son
+
+00:37:44.890 --> 00:37:48.790
+équipe ont réussi à faire donc à
+
+00:37:48.790 --> 00:37:51.550
+l'institut d'optique donc pas en
+
+00:37:51.550 --> 00:37:53.260
+utilisant des atomes et des doubles des
+
+00:37:53.260 --> 00:37:56.230
+excitations en l'occurrence et dans le
+
+00:37:56.230 --> 00:37:57.730
+but de pouvoir tester donc ce qu'on
+
+00:37:57.730 --> 00:37:59.410
+appelle les inégalités de bell c'est à
+
+00:37:59.410 --> 00:38:00.940
+dire que ce débat entre bord et einstein
+
+00:38:00.940 --> 00:38:02.860
+entre méconnaissance des causes et
+
+00:38:02.860 --> 00:38:05.800
+hasard pur si on peut dire a été
+
+00:38:05.800 --> 00:38:07.780
+transférée vraiment dans le domaine
+
+00:38:07.780 --> 00:38:10.780
+expérimental et en l'occurrence si ces
+
+00:38:10.780 --> 00:38:13.990
+photons intriqués sont prédestinés si au
+
+00:38:13.990 --> 00:38:15.850
+moment de leur création il ya déjà
+
+00:38:15.850 --> 00:38:18.370
+quelque chose en eux rattaché localement
+
+00:38:18.370 --> 00:38:20.350
+qui les prédestine à une certain
+
+00:38:20.350 --> 00:38:22.270
+certains résultats de mesure et bien on
+
+00:38:22.270 --> 00:38:24.610
+peut prouver ces belles que john bell
+
+00:38:24.610 --> 00:38:25.810
+qui l'a fait qu'il va y avoir des
+
+00:38:25.810 --> 00:38:28.690
+conditions sur les corrélations entre
+
+00:38:28.690 --> 00:38:31.540
+les deux détection des deux photons et
+
+00:38:31.540 --> 00:38:32.560
+ce qui a été montré donc
+
+00:38:32.560 --> 00:38:34.450
+expérimentalement dans les années 80 par
+
+00:38:34.450 --> 00:38:36.610
+alain aspect c'est que ces inégalités de
+
+00:38:36.610 --> 00:38:38.530
+bell sont violés ceux qui montent donc
+
+00:38:38.530 --> 00:38:40.930
+donc là nous avons un véritable pan de
+
+00:38:40.930 --> 00:38:42.700
+l'histoire et de la philosophie de la
+
+00:38:42.700 --> 00:38:44.560
+mécanique quantique avec nous ce qui
+
+00:38:44.560 --> 00:38:46.420
+montre qu'il ya un véritable hasard
+
+00:38:46.420 --> 00:38:48.510
+intrinsèque à la réalité
+
+00:38:48.510 --> 00:38:51.730
+alors je me place dans le cadre disons
+
+00:38:51.730 --> 00:38:53.320
+de l'interprétation standards de la
+
+00:38:53.320 --> 00:38:54.640
+mécanique quantique et je crois qu hervé
+
+00:38:54.640 --> 00:38:55.569
+ce bien
+
+00:38:55.569 --> 00:38:57.369
+tout à l'heure dans un autre amphi dans
+
+00:38:57.369 --> 00:38:59.170
+une heure et quelques nous parlera
+
+00:38:59.170 --> 00:39:00.880
+d'autres interprétations mais en tout
+
+00:39:00.880 --> 00:39:02.380
+cas l'interprétation standard nous dit
+
+00:39:02.380 --> 00:39:04.509
+que ce hasard quantique est pure et qu'à
+
+00:39:04.509 --> 00:39:06.519
+partir de lui donc on peut créer un
+
+00:39:06.519 --> 00:39:09.249
+générateur de hasard pur et ce à de
+
+00:39:09.249 --> 00:39:11.489
+multiples applications technologiques
+
+00:39:11.489 --> 00:39:14.140
+notamment donc la cryptographie qui
+
+00:39:14.140 --> 00:39:15.549
+prendrait effectivement plus de temps à
+
+00:39:15.549 --> 00:39:17.709
+expliquer mais en tout cas on comprend
+
+00:39:17.709 --> 00:39:19.529
+qu'on peut créer des clés de sécurité
+
+00:39:19.529 --> 00:39:22.509
+inviolable grâce au hasard quantique et
+
+00:39:22.509 --> 00:39:24.489
+même un espion donc ne peut que même un
+
+00:39:24.489 --> 00:39:26.619
+espion ne pourrait pas cassé et en cela
+
+00:39:26.619 --> 00:39:29.190
+donc c'est une cryptographie quantique
+
+00:39:29.190 --> 00:39:32.349
+avec qui utilisent le hasard quantique
+
+00:39:32.349 --> 00:39:34.599
+pour être inviolable
+
+00:39:34.599 --> 00:39:36.640
+voilà et puis ça cette ses réflexions
+
+00:39:36.640 --> 00:39:39.459
+ses progrès mène aujourd'hui aussi à
+
+00:39:39.459 --> 00:39:41.140
+d'autres applications en optique
+
+00:39:41.140 --> 00:39:43.299
+l'antique extrêmement importantes par
+
+00:39:43.299 --> 00:39:45.219
+exemple l'ordinateur quantique et comme
+
+00:39:45.219 --> 00:39:47.049
+vous l'avez rappelé tu l'a rappelé comme
+
+00:39:47.049 --> 00:39:49.420
+vous le savez ça a conduit à des
+
+00:39:49.420 --> 00:39:51.819
+financements assez important voilà et un
+
+00:39:51.819 --> 00:39:53.319
+champ de recherche très fort très fécond
+
+00:39:53.319 --> 00:39:55.299
+je laisse maintenant la place donc à
+
+00:39:55.299 --> 00:39:58.949
+raphaël lachièze rey merci
+
+00:40:01.820 --> 00:40:06.210
+[Musique]
+
+00:40:06.210 --> 00:40:08.210
+et

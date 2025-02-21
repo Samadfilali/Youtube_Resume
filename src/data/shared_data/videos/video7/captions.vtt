@@ -1,0 +1,718 @@
+WEBVTT
+
+00:00:00.240 --> 00:00:02.919
+okay so while everyone has been focused
+
+00:00:02.919 --> 00:00:05.920
+on the Deep seek R1 out there and
+
+00:00:05.920 --> 00:00:08.240
+Invidia shares have been crashing and
+
+00:00:08.240 --> 00:00:10.880
+markets have been changing Etc the
+
+00:00:10.880 --> 00:00:12.559
+biggest lesson that should come out of
+
+00:00:12.559 --> 00:00:15.679
+this is the whole thing about open
+
+00:00:15.679 --> 00:00:18.680
+source basically advancing things and
+
+00:00:18.680 --> 00:00:21.600
+not because of any one company doing it
+
+00:00:21.600 --> 00:00:23.680
+because people are able to then take
+
+00:00:23.680 --> 00:00:25.640
+those open source models learn the
+
+00:00:25.640 --> 00:00:28.119
+lessons from them and then often
+
+00:00:28.119 --> 00:00:30.359
+fine-tune them we've seen this recently
+
+00:00:30.359 --> 00:00:32.640
+from Deep seek we've seen this from quen
+
+00:00:32.640 --> 00:00:34.480
+but one of the companies that kicked all
+
+00:00:34.480 --> 00:00:38.120
+of this off really early on was mistr
+
+00:00:38.120 --> 00:00:41.239
+and today mist is back with their M
+
+00:00:41.239 --> 00:00:44.640
+Small 3 this is a brand new model that
+
+00:00:44.640 --> 00:00:46.600
+they're releasing not only are they
+
+00:00:46.600 --> 00:00:48.320
+releasing a fine-tune version they're
+
+00:00:48.320 --> 00:00:51.320
+releasing the bass version and it's all
+
+00:00:51.320 --> 00:00:53.800
+Apache 2 licensed meaning that you can
+
+00:00:53.800 --> 00:00:56.280
+then use it for your fine tunes you can
+
+00:00:56.280 --> 00:00:58.559
+modify it you can serve it on Prem you
+
+00:00:58.559 --> 00:01:01.000
+can do all these things just like back
+
+00:01:01.000 --> 00:01:03.800
+in the days of the mistal 7B when it
+
+00:01:03.800 --> 00:01:06.159
+first came along and really took things
+
+00:01:06.159 --> 00:01:08.439
+like fine tuning base models doing model
+
+00:01:08.439 --> 00:01:10.960
+merges all this stuff at one stage was
+
+00:01:10.960 --> 00:01:13.840
+all the mistr 7B model that people were
+
+00:01:13.840 --> 00:01:17.720
+using the new Mist small is not 7B right
+
+00:01:17.720 --> 00:01:21.119
+this is a 24 billion parameter model and
+
+00:01:21.119 --> 00:01:22.479
+they're claiming that this is
+
+00:01:22.479 --> 00:01:26.520
+competitive with llama 3.3 70b and quen
+
+00:01:26.520 --> 00:01:29.200
+32b and that for its size this is
+
+00:01:29.200 --> 00:01:31.720
+basically a replacement for something
+
+00:01:31.720 --> 00:01:35.320
+like GPT 40 mini and while lately much
+
+00:01:35.320 --> 00:01:37.640
+of the focus has been on the reasoning
+
+00:01:37.640 --> 00:01:41.600
+models that like the R1 the o01 the 03
+
+00:01:41.600 --> 00:01:44.360
+Etc really for most people what they
+
+00:01:44.360 --> 00:01:47.600
+need is a really good Workhorse model
+
+00:01:47.600 --> 00:01:49.880
+that is very powerful but also very
+
+00:01:49.880 --> 00:01:52.840
+quick and mra's 24 billion parameter
+
+00:01:52.840 --> 00:01:56.240
+model here is shaping up to be exactly
+
+00:01:56.240 --> 00:01:58.640
+that so like I mentioned earlier they've
+
+00:01:58.640 --> 00:02:00.600
+released the whole thing this is it up
+
+00:02:00.600 --> 00:02:02.840
+on hugging face we can see that they've
+
+00:02:02.840 --> 00:02:05.320
+released both the base model and the
+
+00:02:05.320 --> 00:02:08.160
+instruct model as we can see here we've
+
+00:02:08.160 --> 00:02:10.440
+got a full Apache 2 license here
+
+00:02:10.440 --> 00:02:12.720
+allowing for usage modification
+
+00:02:12.720 --> 00:02:15.080
+commercial non-commercial we've got a
+
+00:02:15.080 --> 00:02:18.160
+32k context window out of the gate
+
+00:02:18.160 --> 00:02:20.040
+meaning that we don't have to wait for
+
+00:02:20.040 --> 00:02:22.360
+people to fine-tune this themselves with
+
+00:02:22.360 --> 00:02:24.640
+rope or something to get longer context
+
+00:02:24.640 --> 00:02:26.920
+which I'm sure people will do and take
+
+00:02:26.920 --> 00:02:30.200
+it out to 64k or 128k
+
+00:02:30.200 --> 00:02:31.720
+but the really good thing is that from
+
+00:02:31.720 --> 00:02:34.440
+the start they've basically put out this
+
+00:02:34.440 --> 00:02:37.480
+32k version here so while it's not a
+
+00:02:37.480 --> 00:02:40.200
+fully hardcore multilingual model they
+
+00:02:40.200 --> 00:02:42.200
+are supporting dozens of languages
+
+00:02:42.200 --> 00:02:45.239
+mostly Western European languages Etc
+
+00:02:45.239 --> 00:02:47.280
+but you've also got Chinese Japanese
+
+00:02:47.280 --> 00:02:49.040
+Korean in there and some of the things
+
+00:02:49.040 --> 00:02:51.480
+that really make this interesting is
+
+00:02:51.480 --> 00:02:53.680
+that they've also heavily focused on the
+
+00:02:53.680 --> 00:02:56.159
+agentic uses of this so basically this
+
+00:02:56.159 --> 00:02:58.319
+is for having things like native
+
+00:02:58.319 --> 00:03:01.360
+function calling Jon structured outputs
+
+00:03:01.360 --> 00:03:03.959
+Etc all of this sort of baked into the
+
+00:03:03.959 --> 00:03:07.799
+model from the start now 24 billion
+
+00:03:07.799 --> 00:03:10.159
+parameters is a big model right that's
+
+00:03:10.159 --> 00:03:12.400
+not a tiny model by any standards but it
+
+00:03:12.400 --> 00:03:15.159
+does seem that Mr sort of realized that
+
+00:03:15.159 --> 00:03:17.280
+people are going to quantize this and
+
+00:03:17.280 --> 00:03:18.959
+they seem to be going for that sweet
+
+00:03:18.959 --> 00:03:21.519
+spot where a quantized version of this
+
+00:03:21.519 --> 00:03:24.120
+will run on your laptop allowing people
+
+00:03:24.120 --> 00:03:26.400
+to do sort of private chat and private
+
+00:03:26.400 --> 00:03:29.120
+rag Etc without having to send any
+
+00:03:29.120 --> 00:03:31.560
+information at all to the cloud but also
+
+00:03:31.560 --> 00:03:33.360
+this size seems that it can be deployed
+
+00:03:33.360 --> 00:03:35.319
+in the cloud and yet still get a very
+
+00:03:35.319 --> 00:03:37.959
+low latency very high tokens per second
+
+00:03:37.959 --> 00:03:40.120
+out of this another really good thing to
+
+00:03:40.120 --> 00:03:42.239
+see in their blog post is their whole
+
+00:03:42.239 --> 00:03:44.640
+commitment to open- Source models with a
+
+00:03:44.640 --> 00:03:46.519
+lot of companies releasing models that
+
+00:03:46.519 --> 00:03:48.840
+are not open weights models has a lot of
+
+00:03:48.840 --> 00:03:50.640
+people wondering has this been getting
+
+00:03:50.640 --> 00:03:52.760
+towards the end of the open weight sort
+
+00:03:52.760 --> 00:03:55.120
+of movement now clearly deep seek has
+
+00:03:55.120 --> 00:03:57.560
+shown that's not true and mistra is also
+
+00:03:57.560 --> 00:03:59.400
+showing that's not true in here they
+
+00:03:59.400 --> 00:04:01.200
+actually talk in the blog post about
+
+00:04:01.200 --> 00:04:03.120
+renewing their commitment to using
+
+00:04:03.120 --> 00:04:05.760
+Apache 2 licenses perhaps moving away
+
+00:04:05.760 --> 00:04:07.439
+from some of the other licenses that
+
+00:04:07.439 --> 00:04:09.680
+they've used in the past all right let's
+
+00:04:09.680 --> 00:04:11.599
+jump in have a play with the model and
+
+00:04:11.599 --> 00:04:13.799
+see what it can do okay so jumping into
+
+00:04:13.799 --> 00:04:15.879
+the code I'm not going to go hugely into
+
+00:04:15.879 --> 00:04:17.880
+depth testing the model I've just set up
+
+00:04:17.880 --> 00:04:20.919
+a quick collab where we can test out
+
+00:04:20.919 --> 00:04:22.919
+both the quality of the outputs some
+
+00:04:22.919 --> 00:04:24.960
+function calling some structured outputs
+
+00:04:24.960 --> 00:04:27.600
+that kind of thing to see how this goes
+
+00:04:27.600 --> 00:04:29.520
+so you can access the model in two ways
+
+00:04:29.520 --> 00:04:31.039
+you you can either download it from
+
+00:04:31.039 --> 00:04:33.560
+huging face and run it locally or you
+
+00:04:33.560 --> 00:04:35.080
+can do what I'm doing here is running
+
+00:04:35.080 --> 00:04:38.240
+the model via their AP in here so you
+
+00:04:38.240 --> 00:04:39.720
+can see that the way to do this is
+
+00:04:39.720 --> 00:04:41.080
+pretty simple if you want to use the
+
+00:04:41.080 --> 00:04:43.880
+Mistral SDK Etc you can also get this
+
+00:04:43.880 --> 00:04:45.639
+going with Lang chain very easily I've
+
+00:04:45.639 --> 00:04:47.520
+just basically imported this into Lang
+
+00:04:47.520 --> 00:04:49.759
+chain and we can see that we can try it
+
+00:04:49.759 --> 00:04:52.639
+out and it does very well so just
+
+00:04:52.639 --> 00:04:54.840
+quickly going through these definitely
+
+00:04:54.840 --> 00:04:56.240
+see we see that the answers are putting
+
+00:04:56.240 --> 00:04:58.960
+out nice markdown pretty good Chain of
+
+00:04:58.960 --> 00:05:01.479
+Thought stuff like that remember like I
+
+00:05:01.479 --> 00:05:03.560
+said earlier on this is really a more a
+
+00:05:03.560 --> 00:05:06.039
+Workhorse model than like your top tier
+
+00:05:06.039 --> 00:05:08.720
+model the outputs are pretty quick but
+
+00:05:08.720 --> 00:05:11.240
+they're also pretty thorough in here and
+
+00:05:11.240 --> 00:05:12.800
+we can see that the data that the
+
+00:05:12.800 --> 00:05:14.960
+model's been trained on clearly is
+
+00:05:14.960 --> 00:05:17.520
+updated from previous models we've got a
+
+00:05:17.520 --> 00:05:19.280
+lot more detail when we ask these
+
+00:05:19.280 --> 00:05:20.520
+questions of what's the difference
+
+00:05:20.520 --> 00:05:24.479
+between a llama vuna and alpaca Etc the
+
+00:05:24.479 --> 00:05:26.759
+model also does a pretty good job at
+
+00:05:26.759 --> 00:05:29.280
+adapting to other personas Etc here we
+
+00:05:29.280 --> 00:05:31.360
+can see the question I ask about pretend
+
+00:05:31.360 --> 00:05:34.280
+you're a Freddy a young 5-year-old boy
+
+00:05:34.280 --> 00:05:36.880
+it does that no problem interestingly
+
+00:05:36.880 --> 00:05:38.639
+when we ask it to be Kate the vice
+
+00:05:38.639 --> 00:05:40.600
+president it actually signs it off Cala
+
+00:05:40.600 --> 00:05:43.360
+Harris that one's a little bit off there
+
+00:05:43.360 --> 00:05:44.759
+but one of the things I was really
+
+00:05:44.759 --> 00:05:47.520
+impressed is that while it will often
+
+00:05:47.520 --> 00:05:50.800
+give really long answers out when you
+
+00:05:50.800 --> 00:05:53.800
+ask it specifically hey write out your
+
+00:05:53.800 --> 00:05:56.039
+short and succinct answer in here you
+
+00:05:56.039 --> 00:05:58.199
+can see it just gives us a one-word
+
+00:05:58.199 --> 00:05:59.759
+answer for what is the capital of
+
+00:05:59.759 --> 00:06:01.479
+England and I think many of you know
+
+00:06:01.479 --> 00:06:03.120
+that's one of the things that frustrated
+
+00:06:03.120 --> 00:06:04.759
+me with a lot of the models that even
+
+00:06:04.759 --> 00:06:07.440
+when you would tell it be super succinct
+
+00:06:07.440 --> 00:06:09.520
+it would give you out a full sentence
+
+00:06:09.520 --> 00:06:11.560
+response or it would incorporate your
+
+00:06:11.560 --> 00:06:14.039
+question in here so I really like that
+
+00:06:14.039 --> 00:06:16.520
+this is able to just quickly work out
+
+00:06:16.520 --> 00:06:18.400
+that okay we just want this short answer
+
+00:06:18.400 --> 00:06:20.759
+let's just give the one word out there
+
+00:06:20.759 --> 00:06:22.199
+has no problems with things like can
+
+00:06:22.199 --> 00:06:24.440
+Jeffrey Hinton talk to George Washington
+
+00:06:24.440 --> 00:06:26.840
+it also does a nice job on the
+
+00:06:26.840 --> 00:06:29.199
+storytelling being able to get that
+
+00:06:29.199 --> 00:06:31.479
+going as well definitely not as good as
+
+00:06:31.479 --> 00:06:33.560
+something like the Mr Large or other
+
+00:06:33.560 --> 00:06:35.639
+models that are out there for that but
+
+00:06:35.639 --> 00:06:37.319
+like I said don't look at this as being
+
+00:06:37.319 --> 00:06:39.199
+necessarily the best most intelligent
+
+00:06:39.199 --> 00:06:41.199
+model out there this is going to be like
+
+00:06:41.199 --> 00:06:43.880
+your Workhorse that replaces your sort
+
+00:06:43.880 --> 00:06:47.919
+of calls to GPT 40 mini to sort of flash
+
+00:06:47.919 --> 00:06:51.800
+model Etc GSM 8K it handles each of
+
+00:06:51.800 --> 00:06:53.599
+these really nicely gets the correct
+
+00:06:53.599 --> 00:06:55.759
+answer for all of them and gives this
+
+00:06:55.759 --> 00:06:58.319
+nice simple Chain of Thought out for the
+
+00:06:58.319 --> 00:07:00.759
+not overly complex and stuff in there
+
+00:07:00.759 --> 00:07:02.360
+all right if we try it for things like
+
+00:07:02.360 --> 00:07:03.919
+structured outputs I've just taken the
+
+00:07:03.919 --> 00:07:06.680
+Lang chain structured output examples
+
+00:07:06.680 --> 00:07:09.039
+here and you can see that when we run
+
+00:07:09.039 --> 00:07:12.440
+this through it's able to do a very good
+
+00:07:12.440 --> 00:07:14.360
+job at working out pulling out the
+
+00:07:14.360 --> 00:07:15.919
+different things returning the
+
+00:07:15.919 --> 00:07:17.520
+structured output the way that we want
+
+00:07:17.520 --> 00:07:20.120
+it and stuff in there also for function
+
+00:07:20.120 --> 00:07:22.800
+calling it does a nice job as well now
+
+00:07:22.800 --> 00:07:25.120
+i' probably play with the system prompt
+
+00:07:25.120 --> 00:07:27.599
+a little bit more for that I found that
+
+00:07:27.599 --> 00:07:29.840
+if I asked it too easy in a question it
+
+00:07:29.840 --> 00:07:31.840
+tries to just give you the right answer
+
+00:07:31.840 --> 00:07:33.879
+in this case where we've got got adding
+
+00:07:33.879 --> 00:07:36.280
+integers and multiplying integers here
+
+00:07:36.280 --> 00:07:37.280
+but when I give it something a little
+
+00:07:37.280 --> 00:07:39.599
+bit harder sure enough it then is able
+
+00:07:39.599 --> 00:07:41.639
+to call the function it's able to get
+
+00:07:41.639 --> 00:07:44.479
+the arguments right and deal with that
+
+00:07:44.479 --> 00:07:46.879
+the same with multiple function calls
+
+00:07:46.879 --> 00:07:48.400
+here so you can see here we've got what
+
+00:07:48.400 --> 00:07:52.159
+is 3 * 12 also what is 11 and 49 you see
+
+00:07:52.159 --> 00:07:54.360
+this calling the tools it's making the
+
+00:07:54.360 --> 00:07:56.120
+right calls to basically get those
+
+00:07:56.120 --> 00:07:59.080
+things out there so overall I would say
+
+00:07:59.080 --> 00:08:01.240
+this model is definitely worth you
+
+00:08:01.240 --> 00:08:03.800
+checking out I haven't touched anything
+
+00:08:03.800 --> 00:08:06.440
+on the fine tuning and stuff like that
+
+00:08:06.440 --> 00:08:08.360
+but it shows a lot of promise to do fine
+
+00:08:08.360 --> 00:08:10.080
+tuning there my guess is that we're
+
+00:08:10.080 --> 00:08:12.759
+going to see a number of sort of fine
+
+00:08:12.759 --> 00:08:15.319
+tunes of this come out and especially
+
+00:08:15.319 --> 00:08:18.080
+with being able to run this with AMA
+
+00:08:18.080 --> 00:08:19.520
+you're then going to be able to get you
+
+00:08:19.520 --> 00:08:21.560
+know all the benefits out of that as
+
+00:08:21.560 --> 00:08:23.599
+well if you're running it locally if you
+
+00:08:23.599 --> 00:08:26.520
+wanted to do a local rag system or a
+
+00:08:26.520 --> 00:08:30.039
+local chatbot Etc so overall a very
+
+00:08:30.039 --> 00:08:32.519
+promising model from mistra great to see
+
+00:08:32.519 --> 00:08:35.120
+them back releasing you know open-source
+
+00:08:35.120 --> 00:08:37.880
+base models as well as the instruct
+
+00:08:37.880 --> 00:08:40.680
+models and great to see them stepping up
+
+00:08:40.680 --> 00:08:43.279
+and championing the sort of whole open
+
+00:08:43.279 --> 00:08:46.200
+weights movement Again by contributing
+
+00:08:46.200 --> 00:08:48.200
+good base models that people can use for
+
+00:08:48.200 --> 00:08:50.120
+fine-tuning all right I'd love to hear
+
+00:08:50.120 --> 00:08:52.000
+from you guys in the comments what are
+
+00:08:52.000 --> 00:08:53.519
+the key things you would like to use
+
+00:08:53.519 --> 00:08:56.279
+this for I do think we're moving to a
+
+00:08:56.279 --> 00:08:58.920
+world now where you will have expensive
+
+00:08:58.920 --> 00:09:01.680
+models for certain calls and much
+
+00:09:01.680 --> 00:09:03.800
+cheaper models that you will use for
+
+00:09:03.800 --> 00:09:06.120
+sort of 80% of the work that you would
+
+00:09:06.120 --> 00:09:08.440
+do this is something that is becoming
+
+00:09:08.440 --> 00:09:10.440
+clear and I think it's going to become
+
+00:09:10.440 --> 00:09:12.320
+even more prevalent as we see some of
+
+00:09:12.320 --> 00:09:14.360
+these newer bigger models coming out
+
+00:09:14.360 --> 00:09:16.600
+over the next couple of months all right
+
+00:09:16.600 --> 00:09:18.560
+as always if you found the video useful
+
+00:09:18.560 --> 00:09:20.600
+please click like And subscribe and I
+
+00:09:20.600 --> 00:09:22.720
+will talk to you in the next video bye
+
+00:09:22.720 --> 00:09:25.480
+for now

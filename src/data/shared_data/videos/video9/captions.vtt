@@ -1,0 +1,2530 @@
+WEBVTT
+
+00:00:00.120 --> 00:00:02.560
+everyone loves supab base it is an
+
+00:00:02.560 --> 00:00:04.880
+incredible open-source platform that
+
+00:00:04.880 --> 00:00:07.040
+definitely seems to be the most popular
+
+00:00:07.040 --> 00:00:09.679
+database for AI agents right now it's
+
+00:00:09.679 --> 00:00:11.840
+postgress sequel under the hood so not
+
+00:00:11.840 --> 00:00:13.320
+only can you use it to manage the
+
+00:00:13.320 --> 00:00:15.120
+conversation history and state for your
+
+00:00:15.120 --> 00:00:17.400
+agents but you can also use the PG
+
+00:00:17.400 --> 00:00:19.640
+Vector extension to literally turn it
+
+00:00:19.640 --> 00:00:21.840
+into a vector database for rag so it's
+
+00:00:21.840 --> 00:00:24.480
+just the perfect platform for AI agents
+
+00:00:24.480 --> 00:00:25.840
+not to mention all the other awesome
+
+00:00:25.840 --> 00:00:27.599
+features as well like authentication and
+
+00:00:27.599 --> 00:00:29.640
+object storage that you get right out of
+
+00:00:29.640 --> 00:00:32.200
+the box and so to me it definitely seems
+
+00:00:32.200 --> 00:00:33.520
+like no matter what you are building
+
+00:00:33.520 --> 00:00:36.719
+with AI there is a place for super base
+
+00:00:36.719 --> 00:00:38.879
+because super base is so incredibly
+
+00:00:38.879 --> 00:00:41.480
+useful and Powerful it was no surprise
+
+00:00:41.480 --> 00:00:43.280
+to me that many of you asked me to
+
+00:00:43.280 --> 00:00:45.399
+include it in the local AI package that
+
+00:00:45.399 --> 00:00:47.039
+I've been working on and that I've been
+
+00:00:47.039 --> 00:00:49.520
+sharing some on my channel and luckily
+
+00:00:49.520 --> 00:00:51.840
+since superbase is entirely open source
+
+00:00:51.840 --> 00:00:53.079
+and they have instructions for
+
+00:00:53.079 --> 00:00:55.000
+self-hosting it with Docker it's
+
+00:00:55.000 --> 00:00:56.640
+actually pretty easy for us to bring it
+
+00:00:56.640 --> 00:00:59.239
+into the fold of our local AI services
+
+00:00:59.239 --> 00:01:00.640
+and that's exact actly what I'm going to
+
+00:01:00.640 --> 00:01:02.640
+show you how to do in this video now
+
+00:01:02.640 --> 00:01:04.559
+super base was a little bit trickier
+
+00:01:04.559 --> 00:01:05.920
+than the other platforms to get
+
+00:01:05.920 --> 00:01:07.520
+Incorporated but that's why I'm going to
+
+00:01:07.520 --> 00:01:09.400
+walk you through it step by step right
+
+00:01:09.400 --> 00:01:11.759
+now so you can get this revamped local
+
+00:01:11.759 --> 00:01:14.439
+AI package up and running super quickly
+
+00:01:14.439 --> 00:01:16.360
+and the best part is if you've used
+
+00:01:16.360 --> 00:01:18.960
+super base not locally before everything
+
+00:01:18.960 --> 00:01:21.280
+is going to look very familiar to you
+
+00:01:21.280 --> 00:01:23.400
+I'll even show you how to build a rag AI
+
+00:01:23.400 --> 00:01:26.159
+agent in NN that's running 100% local
+
+00:01:26.159 --> 00:01:28.520
+using our superbase instance plus we'll
+
+00:01:28.520 --> 00:01:30.520
+use a local file trigger instead of
+
+00:01:30.520 --> 00:01:32.119
+Google Drive like I've done with other
+
+00:01:32.119 --> 00:01:34.240
+videos on my channel so that it actually
+
+00:01:34.240 --> 00:01:36.159
+is entirely local I know that's a big
+
+00:01:36.159 --> 00:01:38.200
+thing that a lot of you ask for in other
+
+00:01:38.200 --> 00:01:41.159
+videos on my Channel with this package
+
+00:01:41.159 --> 00:01:42.840
+also I just want to say that this local
+
+00:01:42.840 --> 00:01:45.159
+AI package revamp that I'm doing now is
+
+00:01:45.159 --> 00:01:47.040
+just the beginning I really want to turn
+
+00:01:47.040 --> 00:01:49.520
+this into the golden standard for local
+
+00:01:49.520 --> 00:01:51.880
+Ai and also start to incorporate it into
+
+00:01:51.880 --> 00:01:53.399
+other projects than a building like
+
+00:01:53.399 --> 00:01:55.680
+archon so more on that later you know
+
+00:01:55.680 --> 00:01:57.960
+I'm always the guy with big ideas and so
+
+00:01:57.960 --> 00:01:59.880
+with that let's dive into setting up
+
+00:01:59.880 --> 00:02:02.560
+superbase locally so this is the local
+
+00:02:02.560 --> 00:02:05.719
+AI package completely revamped now with
+
+00:02:05.719 --> 00:02:08.280
+superbase and it has its own dedicated
+
+00:02:08.280 --> 00:02:10.679
+GitHub repository now so before I just
+
+00:02:10.679 --> 00:02:12.319
+had it with a bunch of other things in
+
+00:02:12.319 --> 00:02:15.239
+my AI agents masterclass GitHub repo but
+
+00:02:15.239 --> 00:02:17.000
+now since I'm revamping it and doing a
+
+00:02:17.000 --> 00:02:18.959
+lot more with it I have a dedicated
+
+00:02:18.959 --> 00:02:20.400
+place for it so I'm going to have that
+
+00:02:20.400 --> 00:02:22.040
+in a link in the description of this
+
+00:02:22.040 --> 00:02:23.440
+video check it out right here this is
+
+00:02:23.440 --> 00:02:25.160
+the Remy that you'll see at the homepage
+
+00:02:25.160 --> 00:02:27.239
+of the GitHub repo and this local AI
+
+00:02:27.239 --> 00:02:30.040
+package was originally made by the na
+
+00:02:30.040 --> 00:02:31.519
+and team let me zoom in a little bit
+
+00:02:31.519 --> 00:02:33.400
+here so you can see this um so I took
+
+00:02:33.400 --> 00:02:35.160
+what they built and they curated
+
+00:02:35.160 --> 00:02:37.200
+together and I built on top of it in
+
+00:02:37.200 --> 00:02:38.959
+previous videos on my channel to add
+
+00:02:38.959 --> 00:02:41.000
+things into the package so it started
+
+00:02:41.000 --> 00:02:45.159
+out with just n8n olama quadrant and
+
+00:02:45.159 --> 00:02:47.040
+postgress those were the four services
+
+00:02:47.040 --> 00:02:49.519
+in the local AI package and then I added
+
+00:02:49.519 --> 00:02:51.680
+in flow wise for another low code AI
+
+00:02:51.680 --> 00:02:53.879
+agent Builder open web UI so we can have
+
+00:02:53.879 --> 00:02:56.640
+a chat gbt like interface and now I'm
+
+00:02:56.640 --> 00:02:59.239
+adding in super base which I'm replacing
+
+00:02:59.239 --> 00:03:02.159
+postgress entirely since super base is
+
+00:03:02.159 --> 00:03:05.239
+post under the hood and then quadrant is
+
+00:03:05.239 --> 00:03:06.920
+also kind of similar because you can use
+
+00:03:06.920 --> 00:03:08.680
+it as a vector store just like you can
+
+00:03:08.680 --> 00:03:10.799
+use superbase but I'm keeping quadrant
+
+00:03:10.799 --> 00:03:12.120
+in there I kind of have a note on this
+
+00:03:12.120 --> 00:03:13.599
+here just because it's faster than
+
+00:03:13.599 --> 00:03:15.319
+superbase so for some use cases you
+
+00:03:15.319 --> 00:03:17.519
+might actually want quadrant but in
+
+00:03:17.519 --> 00:03:19.840
+general I love using super base just
+
+00:03:19.840 --> 00:03:22.120
+because I can use it as a SQL database
+
+00:03:22.120 --> 00:03:24.840
+and as a vector store for rag as well so
+
+00:03:24.840 --> 00:03:26.519
+this is everything that is now in the
+
+00:03:26.519 --> 00:03:28.239
+local AI package I'm going to show you
+
+00:03:28.239 --> 00:03:30.239
+how to get it all set up right now now
+
+00:03:30.239 --> 00:03:31.920
+all right as I walk you through this
+
+00:03:31.920 --> 00:03:33.840
+guide step by step for installing the
+
+00:03:33.840 --> 00:03:36.000
+revamped local AI package I'm going to
+
+00:03:36.000 --> 00:03:37.439
+be sure to hit on some points that I
+
+00:03:37.439 --> 00:03:39.560
+missed in other videos on my channel for
+
+00:03:39.560 --> 00:03:41.280
+this package things like how do you
+
+00:03:41.280 --> 00:03:43.000
+actually restart and update your local
+
+00:03:43.000 --> 00:03:44.840
+AI stack or how do you exclude things
+
+00:03:44.840 --> 00:03:46.920
+like ama if you're already running it on
+
+00:03:46.920 --> 00:03:48.120
+your computer so you don't want it
+
+00:03:48.120 --> 00:03:50.319
+running in Docker as well so even if
+
+00:03:50.319 --> 00:03:51.959
+you've seen other guides on my channel
+
+00:03:51.959 --> 00:03:54.120
+for this local AI starter kit this is
+
+00:03:54.120 --> 00:03:55.519
+still going to be really helpful for you
+
+00:03:55.519 --> 00:03:57.040
+and then if you haven't I'm still going
+
+00:03:57.040 --> 00:03:58.720
+to be very comprehensive going through
+
+00:03:58.720 --> 00:04:00.959
+this step by step so back to the readme
+
+00:04:00.959 --> 00:04:02.439
+here which again I'll have Linked In the
+
+00:04:02.439 --> 00:04:03.640
+description of this video it's just the
+
+00:04:03.640 --> 00:04:06.519
+homepage of the GitHub repository scroll
+
+00:04:06.519 --> 00:04:08.400
+down till you get to the prerequisite
+
+00:04:08.400 --> 00:04:10.040
+section cuz I want to focus on this
+
+00:04:10.040 --> 00:04:11.799
+first there are a few things that you
+
+00:04:11.799 --> 00:04:13.560
+have to have installed before you can go
+
+00:04:13.560 --> 00:04:15.319
+on to the rest of the installation
+
+00:04:15.319 --> 00:04:17.440
+instructions the first thing is you'll
+
+00:04:17.440 --> 00:04:20.040
+need python here to run a script that
+
+00:04:20.040 --> 00:04:21.560
+does a lot of the superbase setup that
+
+00:04:21.560 --> 00:04:23.479
+I'll show you in a little bit here
+
+00:04:23.479 --> 00:04:25.520
+you'll also want git or GitHub desktop
+
+00:04:25.520 --> 00:04:27.400
+to obviously clone this repository I'd
+
+00:04:27.400 --> 00:04:29.280
+recommend GitHub desktop if it's on your
+
+00:04:29.280 --> 00:04:31.560
+personal machine not on some computer in
+
+00:04:31.560 --> 00:04:33.240
+the cloud if you're hosting local AI
+
+00:04:33.240 --> 00:04:35.680
+there and then also Docker or Docker
+
+00:04:35.680 --> 00:04:37.440
+desktop because all of these local AI
+
+00:04:37.440 --> 00:04:40.120
+Services run as Docker containers and
+
+00:04:40.120 --> 00:04:41.880
+I'd recommend Docker desktop again just
+
+00:04:41.880 --> 00:04:43.800
+like with Git if you're running this on
+
+00:04:43.800 --> 00:04:45.720
+your personal computer and so once you
+
+00:04:45.720 --> 00:04:47.199
+have all these prerequisites installed
+
+00:04:47.199 --> 00:04:48.919
+just using these links right here you're
+
+00:04:48.919 --> 00:04:50.400
+good to move on to the rest of the
+
+00:04:50.400 --> 00:04:51.840
+installation instructions which I'll
+
+00:04:51.840 --> 00:04:53.800
+walk you through step by step right now
+
+00:04:53.800 --> 00:04:54.960
+so the first thing you're going to want
+
+00:04:54.960 --> 00:04:57.400
+to do is clone this GitHub repository so
+
+00:04:57.400 --> 00:04:58.880
+you just take this First Command right
+
+00:04:58.880 --> 00:05:01.360
+here open up a terminal and go ahead and
+
+00:05:01.360 --> 00:05:02.880
+run it and obviously I already have this
+
+00:05:02.880 --> 00:05:04.880
+repo cloned but if you don't then it's
+
+00:05:04.880 --> 00:05:06.560
+going to pull all that from GitHub
+
+00:05:06.560 --> 00:05:08.520
+you'll get a very different output right
+
+00:05:08.520 --> 00:05:10.400
+here running the command and then you go
+
+00:05:10.400 --> 00:05:11.919
+ahead and change your directory into
+
+00:05:11.919 --> 00:05:13.800
+local AI package so now my current
+
+00:05:13.800 --> 00:05:15.880
+directory in my terminal is exactly what
+
+00:05:15.880 --> 00:05:18.560
+I have open up here in my IDE and it's a
+
+00:05:18.560 --> 00:05:20.440
+pretty simple repository overall because
+
+00:05:20.440 --> 00:05:22.440
+it's not like we have to have the code
+
+00:05:22.440 --> 00:05:24.560
+for all the different Services bundled
+
+00:05:24.560 --> 00:05:26.479
+into this repository we just have to
+
+00:05:26.479 --> 00:05:28.919
+reference the docker containers in our
+
+00:05:28.919 --> 00:05:30.720
+primary file right here which is our
+
+00:05:30.720 --> 00:05:34.160
+Docker compose do yaml so this file is
+
+00:05:34.160 --> 00:05:36.319
+responsible for defining all of the
+
+00:05:36.319 --> 00:05:37.680
+different Docker containers that we want
+
+00:05:37.680 --> 00:05:39.880
+to pull together and create for our
+
+00:05:39.880 --> 00:05:41.880
+local AI package and so everything that
+
+00:05:41.880 --> 00:05:44.240
+you saw in the read me right here we
+
+00:05:44.240 --> 00:05:46.199
+have defined in the docker compos file
+
+00:05:46.199 --> 00:05:49.520
+so we've got n8n olama flow wise open
+
+00:05:49.520 --> 00:05:51.800
+web UI all these are defined as the
+
+00:05:51.800 --> 00:05:53.600
+individual containers like this is the
+
+00:05:53.600 --> 00:05:55.919
+open web UI blocked say that we want
+
+00:05:55.919 --> 00:05:58.120
+that as one of the services within our
+
+00:05:58.120 --> 00:05:59.639
+stack and these are the conf
+
+00:05:59.639 --> 00:06:01.160
+configuration items for it like the port
+
+00:06:01.160 --> 00:06:03.080
+that we're hosting it on and the name of
+
+00:06:03.080 --> 00:06:04.400
+our container that we're going to be
+
+00:06:04.400 --> 00:06:07.039
+using in our Docker compos Network and
+
+00:06:07.039 --> 00:06:08.599
+the one thing that is not included in
+
+00:06:08.599 --> 00:06:10.919
+here is superbase I'm going to touch on
+
+00:06:10.919 --> 00:06:12.319
+that in a little bit here because we
+
+00:06:12.319 --> 00:06:14.720
+actually need to clone the superbase
+
+00:06:14.720 --> 00:06:17.560
+repository separately and use a separate
+
+00:06:17.560 --> 00:06:19.759
+Docker compos file combined with this
+
+00:06:19.759 --> 00:06:22.280
+one and the primary reason is actually
+
+00:06:22.280 --> 00:06:24.319
+because superbase runs many different
+
+00:06:24.319 --> 00:06:25.840
+containers together when you host it
+
+00:06:25.840 --> 00:06:28.120
+locally and so it it's kind of a mess if
+
+00:06:28.120 --> 00:06:30.199
+I just dump it all in this ER compos
+
+00:06:30.199 --> 00:06:32.080
+file so more on that later but let's
+
+00:06:32.080 --> 00:06:33.360
+actually get to the next part of the
+
+00:06:33.360 --> 00:06:35.280
+setup and then we'll dive into some of
+
+00:06:35.280 --> 00:06:37.319
+the intricacies of getting superbase
+
+00:06:37.319 --> 00:06:39.960
+specifically installed into this package
+
+00:06:39.960 --> 00:06:41.840
+so yeah after you have everything cloned
+
+00:06:41.840 --> 00:06:43.919
+and you changeed your directory now it's
+
+00:06:43.919 --> 00:06:47.960
+time within an IDE to make your EnV file
+
+00:06:47.960 --> 00:06:50.400
+and to set your environment variables
+
+00:06:50.400 --> 00:06:52.479
+and it's pretty simple overall there's
+
+00:06:52.479 --> 00:06:54.039
+going to be a lot of environment
+
+00:06:54.039 --> 00:06:56.360
+variables that you see in the env.
+
+00:06:56.360 --> 00:06:58.039
+example file open that up right here
+
+00:06:58.039 --> 00:07:00.400
+there is a ton here and this mostly
+
+00:07:00.400 --> 00:07:02.080
+comes from superbase because there are
+
+00:07:02.080 --> 00:07:03.879
+so many different things in superbase
+
+00:07:03.879 --> 00:07:06.160
+that you can configure it looks pretty
+
+00:07:06.160 --> 00:07:09.039
+overwhelming but luckily to get just the
+
+00:07:09.039 --> 00:07:11.240
+foundation of superbase set up you can
+
+00:07:11.240 --> 00:07:12.560
+leave most of these environment
+
+00:07:12.560 --> 00:07:14.479
+variables as their default values there
+
+00:07:14.479 --> 00:07:16.199
+are only a few that you actually have to
+
+00:07:16.199 --> 00:07:17.560
+care about that I have pointed out in
+
+00:07:17.560 --> 00:07:19.400
+the readme here so that is what we're
+
+00:07:19.400 --> 00:07:21.759
+going to set up right now if you want to
+
+00:07:21.759 --> 00:07:24.039
+do more complicated things in superbase
+
+00:07:24.039 --> 00:07:26.360
+like set up their email authentication
+
+00:07:26.360 --> 00:07:27.800
+there are more environment variables and
+
+00:07:27.800 --> 00:07:29.720
+more setup for that but you don't don't
+
+00:07:29.720 --> 00:07:32.039
+need that for most of the AI use cases
+
+00:07:32.039 --> 00:07:33.960
+you'll be building with local AI so we
+
+00:07:33.960 --> 00:07:35.280
+not cover that right now cuz I want to
+
+00:07:35.280 --> 00:07:36.919
+keep that concise but just know that
+
+00:07:36.919 --> 00:07:38.759
+there are a lot of other things um if
+
+00:07:38.759 --> 00:07:40.720
+you want to set up other stuff in super
+
+00:07:40.720 --> 00:07:42.879
+base and they have a guide for that as
+
+00:07:42.879 --> 00:07:44.759
+well so I'll have this Linked In the
+
+00:07:44.759 --> 00:07:46.240
+description of the video as well because
+
+00:07:46.240 --> 00:07:48.800
+superbase put out a very comprehensive
+
+00:07:48.800 --> 00:07:51.479
+guide for self-hosting with Docker and
+
+00:07:51.479 --> 00:07:53.919
+this is actually the resource I used to
+
+00:07:53.919 --> 00:07:55.800
+learn how to incorporate superbase in
+
+00:07:55.800 --> 00:07:57.759
+the local AI package and so a lot of the
+
+00:07:57.759 --> 00:07:59.599
+stuff that'll show you how to do in a
+
+00:07:59.599 --> 00:08:01.599
+little bit is actually going to be using
+
+00:08:01.599 --> 00:08:04.440
+this so use this as a guide both in this
+
+00:08:04.440 --> 00:08:06.560
+video and also more of the advanced
+
+00:08:06.560 --> 00:08:08.520
+stuff at the bottom if you want to learn
+
+00:08:08.520 --> 00:08:10.240
+other things like dashboard
+
+00:08:10.240 --> 00:08:12.520
+authentication or actually setting up
+
+00:08:12.520 --> 00:08:15.159
+more advanced things like your um yeah
+
+00:08:15.159 --> 00:08:16.720
+email server if you want to configure an
+
+00:08:16.720 --> 00:08:18.680
+email server within local superbase not
+
+00:08:18.680 --> 00:08:20.000
+the stuff I'm going to cover right here
+
+00:08:20.000 --> 00:08:21.680
+so anyway all we're going to do right
+
+00:08:21.680 --> 00:08:23.360
+here I'm going to actually delete this
+
+00:08:23.360 --> 00:08:25.560
+Dov file and start from scratch I'm
+
+00:08:25.560 --> 00:08:27.800
+going to make a brand newv file walk
+
+00:08:27.800 --> 00:08:29.680
+through setting up all of the config
+
+00:08:29.680 --> 00:08:31.120
+ation with you right now and we're going
+
+00:08:31.120 --> 00:08:32.959
+to do it pretty quickly so don't worry
+
+00:08:32.959 --> 00:08:34.279
+I'll walk you through it step by step
+
+00:08:34.279 --> 00:08:36.240
+it's not actually that complicated here
+
+00:08:36.240 --> 00:08:38.479
+so I'm going to copy everything from.
+
+00:08:38.479 --> 00:08:41.640
+example and then paste it into this newv
+
+00:08:41.640 --> 00:08:44.519
+file that I just created here and so the
+
+00:08:44.519 --> 00:08:46.560
+first thing at the top is our n8n
+
+00:08:46.560 --> 00:08:48.519
+credentials and these we can actually
+
+00:08:48.519 --> 00:08:51.279
+set to whatever we want so we Define the
+
+00:08:51.279 --> 00:08:52.640
+secret here and this can just be a
+
+00:08:52.640 --> 00:08:54.800
+random alpha numeric string doesn't
+
+00:08:54.800 --> 00:08:56.680
+really matter what you set here I don't
+
+00:08:56.680 --> 00:08:58.320
+care either what I show you right here
+
+00:08:58.320 --> 00:08:59.680
+just because this is running enti enely
+
+00:08:59.680 --> 00:09:01.760
+locally on my computer and I'm going to
+
+00:09:01.760 --> 00:09:04.079
+reset mymv after I record this video
+
+00:09:04.079 --> 00:09:06.040
+anyway so that's everything for the n8n
+
+00:09:06.040 --> 00:09:08.480
+you just Define your own JWT secret and
+
+00:09:08.480 --> 00:09:10.480
+encryption key and then the rest of what
+
+00:09:10.480 --> 00:09:12.720
+we want to set up is for superbase
+
+00:09:12.720 --> 00:09:14.560
+specifically and so the first thing that
+
+00:09:14.560 --> 00:09:16.640
+we need is our postgress password this
+
+00:09:16.640 --> 00:09:18.839
+is going to be the password for our
+
+00:09:18.839 --> 00:09:21.160
+database and again just like with n8n
+
+00:09:21.160 --> 00:09:22.959
+you define this yourself so I'm just
+
+00:09:22.959 --> 00:09:24.720
+going to do something kind of silly here
+
+00:09:24.720 --> 00:09:26.320
+I'm just going to say test password so
+
+00:09:26.320 --> 00:09:27.800
+again I'll change this later and then we
+
+00:09:27.800 --> 00:09:30.800
+want to set our dashb Bo login as well
+
+00:09:30.800 --> 00:09:33.000
+so just like when you use a hosted
+
+00:09:33.000 --> 00:09:34.800
+version of super base you can log in to
+
+00:09:34.800 --> 00:09:37.680
+see all your tables and your users and
+
+00:09:37.680 --> 00:09:39.600
+your SQL editor and all that you have
+
+00:09:39.600 --> 00:09:41.839
+the exact same setup with local
+
+00:09:41.839 --> 00:09:43.440
+superbase and I'll show that later as
+
+00:09:43.440 --> 00:09:45.399
+well you have your own locally hosted
+
+00:09:45.399 --> 00:09:47.120
+dashboard as well and so this is the
+
+00:09:47.120 --> 00:09:49.040
+login for that so you can set the
+
+00:09:49.040 --> 00:09:50.839
+username to whatever you want the
+
+00:09:50.839 --> 00:09:53.120
+password the same as well just say test
+
+00:09:53.120 --> 00:09:55.360
+dashboard password I don't really care
+
+00:09:55.360 --> 00:09:57.120
+how secure it is right now and then
+
+00:09:57.120 --> 00:09:58.959
+these two values you can leave as the
+
+00:09:58.959 --> 00:10:00.680
+default and then we'll get to these
+
+00:10:00.680 --> 00:10:02.959
+three in a second here the last thing
+
+00:10:02.959 --> 00:10:04.480
+that I'll show you how to set before we
+
+00:10:04.480 --> 00:10:06.920
+go back to the superbase documentation
+
+00:10:06.920 --> 00:10:08.959
+is the Pooler tenant ID and so this is
+
+00:10:08.959 --> 00:10:11.440
+for the transaction Pooler connections
+
+00:10:11.440 --> 00:10:13.920
+to your superbase database and so for
+
+00:10:13.920 --> 00:10:15.480
+this doesn't really matter what you set
+
+00:10:15.480 --> 00:10:17.120
+it to just set it to some number right
+
+00:10:17.120 --> 00:10:19.560
+here that will be your tenant ID that
+
+00:10:19.560 --> 00:10:21.440
+you'll use again for when you are
+
+00:10:21.440 --> 00:10:23.440
+connecting to superbase with the
+
+00:10:23.440 --> 00:10:25.440
+transaction Pooler method and so that is
+
+00:10:25.440 --> 00:10:28.480
+everything besides the JWT secret so
+
+00:10:28.480 --> 00:10:30.480
+let's actually go back back to the guide
+
+00:10:30.480 --> 00:10:32.600
+right here for self-hosting with Docker
+
+00:10:32.600 --> 00:10:33.920
+because they have a really nice little
+
+00:10:33.920 --> 00:10:36.160
+tool here that actually helps us get set
+
+00:10:36.160 --> 00:10:37.760
+up with these last three environment
+
+00:10:37.760 --> 00:10:39.680
+variables we need to configure so if you
+
+00:10:39.680 --> 00:10:41.560
+scroll down a little bit above the
+
+00:10:41.560 --> 00:10:43.800
+halfway point for the documentation
+
+00:10:43.800 --> 00:10:45.519
+you'll see right here it actually
+
+00:10:45.519 --> 00:10:48.800
+generates a JWT secret for you so if I
+
+00:10:48.800 --> 00:10:51.519
+refresh the page watch this we have y1
+
+00:10:51.519 --> 00:10:54.480
+RM if I refresh the page and then come
+
+00:10:54.480 --> 00:10:56.040
+back look at this it changed so we have
+
+00:10:56.040 --> 00:10:58.440
+a brand new JWT secret every time we
+
+00:10:58.440 --> 00:11:00.360
+refresh this page so we can just use
+
+00:11:00.360 --> 00:11:02.120
+this for our secret it's really
+
+00:11:02.120 --> 00:11:03.399
+convenient that we don't even have to
+
+00:11:03.399 --> 00:11:05.480
+bother generating it ourself we just
+
+00:11:05.480 --> 00:11:07.320
+paste this in right here and that is our
+
+00:11:07.320 --> 00:11:09.839
+JWT secret and then for the anonymous
+
+00:11:09.839 --> 00:11:12.040
+key and service roll key we can go back
+
+00:11:12.040 --> 00:11:14.519
+to the documentation and it can generate
+
+00:11:14.519 --> 00:11:16.440
+those for us so you just click on
+
+00:11:16.440 --> 00:11:18.079
+Anonymous key and then you click on
+
+00:11:18.079 --> 00:11:20.040
+generate JWT and then boom we can just
+
+00:11:20.040 --> 00:11:21.800
+copy this and bring it into our
+
+00:11:21.800 --> 00:11:23.519
+environment variable right here so I'll
+
+00:11:23.519 --> 00:11:25.480
+just go ahead and replace what I have
+
+00:11:25.480 --> 00:11:27.279
+right here nice and easy so these are
+
+00:11:27.279 --> 00:11:29.519
+the keys that are usually generated for
+
+00:11:29.519 --> 00:11:31.959
+you when you have the remote superbase
+
+00:11:31.959 --> 00:11:33.240
+instance but now since we're running it
+
+00:11:33.240 --> 00:11:35.120
+locally we have to actually Define these
+
+00:11:35.120 --> 00:11:36.440
+ourselves that's what we're doing right
+
+00:11:36.440 --> 00:11:38.839
+now and then for the service roll key
+
+00:11:38.839 --> 00:11:40.600
+we'll just click on this dropdown switch
+
+00:11:40.600 --> 00:11:42.360
+it to service key and then click on
+
+00:11:42.360 --> 00:11:44.519
+generate JWT again so I'll go ahead and
+
+00:11:44.519 --> 00:11:46.800
+copy that and then replace that service
+
+00:11:46.800 --> 00:11:48.920
+roll key just like I did the anonymous
+
+00:11:48.920 --> 00:11:50.399
+key and then look at that boom we now
+
+00:11:50.399 --> 00:11:52.000
+have everything configured for our
+
+00:11:52.000 --> 00:11:53.760
+environment variables it was actually
+
+00:11:53.760 --> 00:11:55.880
+pretty easy overall and so now we can
+
+00:11:55.880 --> 00:11:58.160
+finally go on to getting everything
+
+00:11:58.160 --> 00:12:00.680
+started with the Docker compos stack now
+
+00:12:00.680 --> 00:12:02.839
+to spin up our local AI stack there are
+
+00:12:02.839 --> 00:12:04.560
+a few different commands that we see
+
+00:12:04.560 --> 00:12:07.120
+here depending on your architecture so
+
+00:12:07.120 --> 00:12:09.560
+if you have an Nvidia GPU like me and
+
+00:12:09.560 --> 00:12:11.720
+you want to use that for your llms in
+
+00:12:11.720 --> 00:12:13.839
+the AMA container you'll use this
+
+00:12:13.839 --> 00:12:15.079
+Command right here and then if you have
+
+00:12:15.079 --> 00:12:17.639
+an AMD GPU on Linux you can use this and
+
+00:12:17.639 --> 00:12:20.360
+then for Mac users you unfortunately
+
+00:12:20.360 --> 00:12:22.160
+can't use a graphics card within a
+
+00:12:22.160 --> 00:12:23.959
+Docker container it's just a limitation
+
+00:12:23.959 --> 00:12:25.959
+of mac and so you can either just run
+
+00:12:25.959 --> 00:12:28.279
+entirely on the CPU which you can still
+
+00:12:28.279 --> 00:12:30.600
+use smaller lm's like less than 8
+
+00:12:30.600 --> 00:12:33.560
+billion parameters with just a CPU or
+
+00:12:33.560 --> 00:12:35.839
+you cannot run olama at all so if you do
+
+00:12:35.839 --> 00:12:38.639
+D- profile none it's actually just going
+
+00:12:38.639 --> 00:12:41.199
+to not run the olama container at all so
+
+00:12:41.199 --> 00:12:43.440
+if you have Ama running outside just on
+
+00:12:43.440 --> 00:12:45.000
+your computer you can still reference
+
+00:12:45.000 --> 00:12:47.240
+that from within your n8n container or
+
+00:12:47.240 --> 00:12:48.880
+your superbase container whatever it
+
+00:12:48.880 --> 00:12:49.920
+might be and then there's some
+
+00:12:49.920 --> 00:12:52.279
+additional instructions for uh using Mac
+
+00:12:52.279 --> 00:12:54.480
+as well so that's everything depending
+
+00:12:54.480 --> 00:12:56.920
+on your architecture also if you just
+
+00:12:56.920 --> 00:12:59.199
+aren't on Mac but don't have a GPU you
+
+00:12:59.199 --> 00:13:02.120
+can run on the CPU as well and so all of
+
+00:13:02.120 --> 00:13:04.360
+these commands together each of them are
+
+00:13:04.360 --> 00:13:07.440
+using this start services dopy and this
+
+00:13:07.440 --> 00:13:09.880
+is a script that I made for you to make
+
+00:13:09.880 --> 00:13:12.160
+it super easy to get everything up and
+
+00:13:12.160 --> 00:13:13.920
+running and the reason it's a little bit
+
+00:13:13.920 --> 00:13:16.440
+more complicated now is because
+
+00:13:16.440 --> 00:13:19.639
+superbase is not just a single container
+
+00:13:19.639 --> 00:13:20.920
+let me show you what I mean it's it's
+
+00:13:20.920 --> 00:13:22.279
+kind of interesting so if you go into
+
+00:13:22.279 --> 00:13:24.760
+the superbase GitHub repository which
+
+00:13:24.760 --> 00:13:26.399
+you'll see in a bit why I actually have
+
+00:13:26.399 --> 00:13:28.199
+this in Source control right now and
+
+00:13:28.199 --> 00:13:29.720
+then you go into the docker folder and
+
+00:13:29.720 --> 00:13:32.440
+go into the docker compose file
+
+00:13:32.440 --> 00:13:35.959
+superbase actually has its entire own
+
+00:13:35.959 --> 00:13:39.040
+stack just like I have for my Docker
+
+00:13:39.040 --> 00:13:42.079
+compose file for the local AI package
+
+00:13:42.079 --> 00:13:44.120
+and the reason they have that is because
+
+00:13:44.120 --> 00:13:46.560
+superbase is actually made up of many
+
+00:13:46.560 --> 00:13:48.360
+different containers combined together
+
+00:13:48.360 --> 00:13:50.240
+like you have the studio which is the
+
+00:13:50.240 --> 00:13:52.079
+interface you're used to seeing when you
+
+00:13:52.079 --> 00:13:54.720
+have a superbase running remotely you've
+
+00:13:54.720 --> 00:13:57.079
+got Kong you've got the authentication
+
+00:13:57.079 --> 00:13:59.560
+container you have the res container
+
+00:13:59.560 --> 00:14:01.440
+real time all the different services
+
+00:14:01.440 --> 00:14:03.079
+that you have like the the object
+
+00:14:03.079 --> 00:14:05.399
+storage in super base are running as
+
+00:14:05.399 --> 00:14:07.279
+individual containers combined together
+
+00:14:07.279 --> 00:14:09.720
+and so I can't really just copy this
+
+00:14:09.720 --> 00:14:11.680
+entire thing and then go into my own
+
+00:14:11.680 --> 00:14:13.959
+Docker compose and just dump it all in
+
+00:14:13.959 --> 00:14:15.839
+here I mean that's going to be a total
+
+00:14:15.839 --> 00:14:17.639
+mess and I don't want to have to
+
+00:14:17.639 --> 00:14:19.800
+manually update the container versions
+
+00:14:19.800 --> 00:14:21.639
+when superbase updates things so I want
+
+00:14:21.639 --> 00:14:23.720
+to actually be able to reference their
+
+00:14:23.720 --> 00:14:26.480
+Docker compos and their GitHub repo and
+
+00:14:26.480 --> 00:14:28.440
+combine that with my own and that is
+
+00:14:28.440 --> 00:14:30.800
+exactly what this python script does for
+
+00:14:30.800 --> 00:14:33.199
+you so it'll actually clone the
+
+00:14:33.199 --> 00:14:35.920
+superbase repository or pull it to
+
+00:14:35.920 --> 00:14:37.320
+update it if you've already run the
+
+00:14:37.320 --> 00:14:40.320
+script before and then it'll combine the
+
+00:14:40.320 --> 00:14:43.440
+superbase docker compose file with our
+
+00:14:43.440 --> 00:14:45.880
+own for the local AI package to bring
+
+00:14:45.880 --> 00:14:47.759
+everything together and this is a little
+
+00:14:47.759 --> 00:14:49.839
+bit more technical um so don't worry if
+
+00:14:49.839 --> 00:14:51.440
+you don't understand this part but it's
+
+00:14:51.440 --> 00:14:53.160
+really important that we also run it on
+
+00:14:53.160 --> 00:14:55.839
+the same Docker Network so that way our
+
+00:14:55.839 --> 00:14:58.160
+n8n instance or whatever other container
+
+00:14:58.160 --> 00:15:00.279
+we have can very easily connect to our
+
+00:15:00.279 --> 00:15:02.880
+superbase containers as well and so this
+
+00:15:02.880 --> 00:15:05.560
+it right here is the um what I pass into
+
+00:15:05.560 --> 00:15:06.959
+the command to make it all run in the
+
+00:15:06.959 --> 00:15:09.519
+same Docker compos Network so that's
+
+00:15:09.519 --> 00:15:11.320
+super important and then another thing
+
+00:15:11.320 --> 00:15:12.560
+that the script does for you is if you
+
+00:15:12.560 --> 00:15:15.079
+ever want to restart everything like
+
+00:15:15.079 --> 00:15:16.639
+maybe you want to shut down your stack
+
+00:15:16.639 --> 00:15:18.720
+for a bit and then turn it on later or
+
+00:15:18.720 --> 00:15:20.360
+you want to update one of your
+
+00:15:20.360 --> 00:15:21.839
+environment variables and have that
+
+00:15:21.839 --> 00:15:23.839
+actually take effect you can just run
+
+00:15:23.839 --> 00:15:25.800
+the script again it is that easy and
+
+00:15:25.800 --> 00:15:27.519
+it'll restart everything for you and
+
+00:15:27.519 --> 00:15:29.319
+then another thing is if you want to to
+
+00:15:29.319 --> 00:15:31.319
+upgrade your containers like maybe
+
+00:15:31.319 --> 00:15:33.160
+there's an update to n8n or an update to
+
+00:15:33.160 --> 00:15:34.720
+superbase whatever it might be you can
+
+00:15:34.720 --> 00:15:36.399
+just follow these commands in the readme
+
+00:15:36.399 --> 00:15:37.959
+right here and that will take care of
+
+00:15:37.959 --> 00:15:40.040
+everything you just spin down everything
+
+00:15:40.040 --> 00:15:42.160
+with this First Command pull the latest
+
+00:15:42.160 --> 00:15:44.440
+updates to all of the containers in both
+
+00:15:44.440 --> 00:15:46.880
+Stacks with this command and then you
+
+00:15:46.880 --> 00:15:49.279
+just run the start services. with your
+
+00:15:49.279 --> 00:15:53.000
+profile like CPU or GPU Nvidia and it'll
+
+00:15:53.000 --> 00:15:54.839
+rerun everything it is that easy to
+
+00:15:54.839 --> 00:15:56.839
+restart things to take new effects with
+
+00:15:56.839 --> 00:15:58.639
+environment variables and to update your
+
+00:15:58.639 --> 00:16:00.639
+container as well so I hope that makes a
+
+00:16:00.639 --> 00:16:02.639
+lot of sense and so right now I'm just
+
+00:16:02.639 --> 00:16:04.480
+going to go ahead since I have an Nvidia
+
+00:16:04.480 --> 00:16:07.519
+GPU I'm going to take that First Command
+
+00:16:07.519 --> 00:16:11.319
+at the top just copy that go over to my
+
+00:16:11.319 --> 00:16:13.000
+terminal and I'm going to go ahead and
+
+00:16:13.000 --> 00:16:14.759
+run this and so for me since I've
+
+00:16:14.759 --> 00:16:16.920
+already run this before it's just going
+
+00:16:16.920 --> 00:16:18.440
+to pull the latest changes from the
+
+00:16:18.440 --> 00:16:20.279
+super based repository it'll actually
+
+00:16:20.279 --> 00:16:22.279
+pull everything for the first time if
+
+00:16:22.279 --> 00:16:23.959
+you haven't run this before and then
+
+00:16:23.959 --> 00:16:26.199
+it's going to tear down all of the
+
+00:16:26.199 --> 00:16:28.240
+existing containers that are running and
+
+00:16:28.240 --> 00:16:30.279
+then reboot them them all back up and
+
+00:16:30.279 --> 00:16:32.720
+that is how I do a full restart here and
+
+00:16:32.720 --> 00:16:35.000
+also really important to note if you
+
+00:16:35.000 --> 00:16:36.720
+already have workflows in an and ORF
+
+00:16:36.720 --> 00:16:38.759
+flow wise or if you have data in your
+
+00:16:38.759 --> 00:16:40.880
+super base tables tearing down the
+
+00:16:40.880 --> 00:16:42.959
+containers will not get rid of that so
+
+00:16:42.959 --> 00:16:44.519
+you don't have to worry about losing
+
+00:16:44.519 --> 00:16:46.040
+anything when you run this script to
+
+00:16:46.040 --> 00:16:48.680
+restart your containers everything will
+
+00:16:48.680 --> 00:16:50.360
+persist so do not worry about that I
+
+00:16:50.360 --> 00:16:52.199
+know that's a big question that I had
+
+00:16:52.199 --> 00:16:54.360
+when I was first covering the local AI
+
+00:16:54.360 --> 00:16:56.480
+package on my channel here and so right
+
+00:16:56.480 --> 00:16:58.639
+now it is yeah it's tore down everything
+
+00:16:58.639 --> 00:17:00.279
+and now it's restarting all the super
+
+00:17:00.279 --> 00:17:02.240
+base stuff and so it takes a little bit
+
+00:17:02.240 --> 00:17:04.559
+here um actually it's basically already
+
+00:17:04.559 --> 00:17:06.360
+almost done you do get a warning right
+
+00:17:06.360 --> 00:17:08.079
+here where it says it found orphan
+
+00:17:08.079 --> 00:17:09.520
+containers for everything that was just
+
+00:17:09.520 --> 00:17:11.319
+started with superbase you can ignore
+
+00:17:11.319 --> 00:17:12.919
+this I don't know exactly how to fix
+
+00:17:12.919 --> 00:17:14.720
+this um if you know just let me know and
+
+00:17:14.720 --> 00:17:16.520
+I'd love to take care of that but anyway
+
+00:17:16.520 --> 00:17:17.959
+yeah everything is up and running now so
+
+00:17:17.959 --> 00:17:20.280
+I can actually go to my Docker desktop
+
+00:17:20.280 --> 00:17:22.240
+here let me show this um by the way
+
+00:17:22.240 --> 00:17:23.760
+these are the settings that you want for
+
+00:17:23.760 --> 00:17:25.559
+your Docker desktop there's a couple of
+
+00:17:25.559 --> 00:17:27.839
+things like exposing the Damon um
+
+00:17:27.839 --> 00:17:29.520
+without TLS that you want to make sure
+
+00:17:29.520 --> 00:17:30.679
+that you have checked if you're using
+
+00:17:30.679 --> 00:17:32.720
+dock or desktop with Windows um just a
+
+00:17:32.720 --> 00:17:34.640
+little tip there a little aside there's
+
+00:17:34.640 --> 00:17:36.400
+a troubleshooting section in the readme
+
+00:17:36.400 --> 00:17:37.880
+as well that I would definitely check
+
+00:17:37.880 --> 00:17:39.679
+out if you're having any problems but
+
+00:17:39.679 --> 00:17:41.360
+yeah I'll close out of the settings here
+
+00:17:41.360 --> 00:17:43.840
+I'll go to my local AI package right
+
+00:17:43.840 --> 00:17:45.760
+here running in Docker desktop and look
+
+00:17:45.760 --> 00:17:47.919
+at this we have all these different
+
+00:17:47.919 --> 00:17:50.440
+Services running here uh which is super
+
+00:17:50.440 --> 00:17:51.960
+neat there's so much that goes into this
+
+00:17:51.960 --> 00:17:53.360
+package now you can literally like go
+
+00:17:53.360 --> 00:17:55.440
+into a llama I can look at the logs for
+
+00:17:55.440 --> 00:17:57.679
+it I can go into the exec Tab and I can
+
+00:17:57.679 --> 00:17:59.000
+actually enter in a command like I I can
+
+00:17:59.000 --> 00:18:03.240
+say AMA pull and I can look or AMA list
+
+00:18:03.240 --> 00:18:04.440
+that's the wrong command there and I can
+
+00:18:04.440 --> 00:18:06.960
+see the models that I have available to
+
+00:18:06.960 --> 00:18:09.840
+me in ama and I could even say AMA run
+
+00:18:09.840 --> 00:18:11.880
+and then I could copy the name of the
+
+00:18:11.880 --> 00:18:13.919
+llm that I have pulled I'll show in a
+
+00:18:13.919 --> 00:18:16.600
+second how I defined this I'll copy this
+
+00:18:16.600 --> 00:18:18.760
+and paste it and then boom I'm now
+
+00:18:18.760 --> 00:18:21.120
+interacting with quen 2.5 instruct and
+
+00:18:21.120 --> 00:18:23.400
+since I'm using the Nvidia GPU profile
+
+00:18:23.400 --> 00:18:27.600
+it is using my Nvidia GPU uh to run quen
+
+00:18:27.600 --> 00:18:29.320
+2.5 right here so look at that super
+
+00:18:29.320 --> 00:18:30.640
+neat so you can interact with all these
+
+00:18:30.640 --> 00:18:32.600
+containers and see the logs as you are
+
+00:18:32.600 --> 00:18:34.919
+running things in your local AI package
+
+00:18:34.919 --> 00:18:36.520
+and by the way let me actually show this
+
+00:18:36.520 --> 00:18:38.840
+really quick here in the docker compose
+
+00:18:38.840 --> 00:18:42.120
+file this Command right here defines the
+
+00:18:42.120 --> 00:18:44.200
+llms and embedding models that are
+
+00:18:44.200 --> 00:18:47.120
+pulled for AMA by default and then the
+
+00:18:47.120 --> 00:18:48.480
+very last thing that I want to hit on
+
+00:18:48.480 --> 00:18:50.120
+before we create an agent together is I
+
+00:18:50.120 --> 00:18:51.880
+have a troubleshooting section in the
+
+00:18:51.880 --> 00:18:54.039
+read me right here with some common
+
+00:18:54.039 --> 00:18:55.320
+problems that I've seen with running
+
+00:18:55.320 --> 00:18:56.919
+superbas locally and some things that
+
+00:18:56.919 --> 00:18:59.200
+I've actually run into myself so so
+
+00:18:59.200 --> 00:19:01.200
+hopefully if you run into any issue
+
+00:19:01.200 --> 00:19:03.360
+it'll be listed here and there's a
+
+00:19:03.360 --> 00:19:04.799
+resource for a lot of these you'll be
+
+00:19:04.799 --> 00:19:06.320
+able to get through everything that I
+
+00:19:06.320 --> 00:19:08.520
+ran into if you did yourself that's kind
+
+00:19:08.520 --> 00:19:10.120
+of the goal of this troubleshooting
+
+00:19:10.120 --> 00:19:12.840
+section here so that is everything for
+
+00:19:12.840 --> 00:19:15.480
+getting the local AI package set up you
+
+00:19:15.480 --> 00:19:17.840
+now have everything up and running so
+
+00:19:17.840 --> 00:19:19.679
+like you can literally go to local
+
+00:19:19.679 --> 00:19:23.200
+hostport 6333 SL dashboard and then boom
+
+00:19:23.200 --> 00:19:24.600
+there's quadrant I know we're not using
+
+00:19:24.600 --> 00:19:26.039
+that in this video right now but I'm
+
+00:19:26.039 --> 00:19:27.000
+just showing like everything is
+
+00:19:27.000 --> 00:19:29.240
+available to you you can go to let's see
+
+00:19:29.240 --> 00:19:31.880
+3000 And1 and then boom there is your
+
+00:19:31.880 --> 00:19:34.480
+flow wise and you can go to
+
+00:19:34.480 --> 00:19:37.280
+8,000 and then you have your super base
+
+00:19:37.280 --> 00:19:39.080
+and if you go into it for the first time
+
+00:19:39.080 --> 00:19:40.880
+it'll ask you to input your username and
+
+00:19:40.880 --> 00:19:43.240
+password which remember you set as the
+
+00:19:43.240 --> 00:19:45.559
+dashboard username and password in the
+
+00:19:45.559 --> 00:19:47.480
+EnV file and this should look very
+
+00:19:47.480 --> 00:19:48.760
+familiar to you everything that you're
+
+00:19:48.760 --> 00:19:50.760
+used to seeing when you go to the remote
+
+00:19:50.760 --> 00:19:52.960
+superbase instance in your browser and
+
+00:19:52.960 --> 00:19:54.679
+then we also have n8n so you're going to
+
+00:19:54.679 --> 00:19:57.080
+go to local hostport
+
+00:19:57.080 --> 00:19:59.679
+5678 and then it'll have you create a
+
+00:19:59.679 --> 00:20:01.760
+local NN account it's not actually a
+
+00:20:01.760 --> 00:20:03.480
+cloud one so it is running locally it'll
+
+00:20:03.480 --> 00:20:04.919
+have you create an account and then
+
+00:20:04.919 --> 00:20:06.679
+you'll have this overview right here
+
+00:20:06.679 --> 00:20:08.840
+where you'll have the local rag AI agent
+
+00:20:08.840 --> 00:20:10.600
+as that one workflow that is imported
+
+00:20:10.600 --> 00:20:11.760
+automatically but we're going to
+
+00:20:11.760 --> 00:20:13.600
+actually create another one here so I'm
+
+00:20:13.600 --> 00:20:15.520
+going to create the superbas rag AI
+
+00:20:15.520 --> 00:20:17.520
+agent I'll have this automatically
+
+00:20:17.520 --> 00:20:20.159
+import into your n8n instance as well so
+
+00:20:20.159 --> 00:20:21.760
+this will immediately be available to
+
+00:20:21.760 --> 00:20:24.600
+you when you go into n8n the only thing
+
+00:20:24.600 --> 00:20:25.880
+that you actually have to set up
+
+00:20:25.880 --> 00:20:28.400
+yourself is your credentials and so I'm
+
+00:20:28.400 --> 00:20:29.760
+going to walk through that right now and
+
+00:20:29.760 --> 00:20:31.640
+just briefly describe how this agent
+
+00:20:31.640 --> 00:20:33.960
+works exactly and so first of all it's
+
+00:20:33.960 --> 00:20:36.760
+just a basic AI agent using the agent
+
+00:20:36.760 --> 00:20:40.080
+node in n8n where we have our olama chat
+
+00:20:40.080 --> 00:20:43.240
+model connected we have superbase for
+
+00:20:43.240 --> 00:20:45.360
+chat memory just using the postgress
+
+00:20:45.360 --> 00:20:47.799
+node and then we have superbase for our
+
+00:20:47.799 --> 00:20:49.720
+Vector retrieval so that we have rag
+
+00:20:49.720 --> 00:20:51.679
+through superbase now instead of
+
+00:20:51.679 --> 00:20:53.520
+quadrant and to get all the credentials
+
+00:20:53.520 --> 00:20:55.679
+set up I'll start with AMA here you'll
+
+00:20:55.679 --> 00:20:58.080
+go to credentials and the drop down here
+
+00:20:58.080 --> 00:21:00.919
+create new credential and then the base
+
+00:21:00.919 --> 00:21:04.640
+URL is going to be o Lama instead of
+
+00:21:04.640 --> 00:21:07.600
+Local Host so it'll be HTTP olama and
+
+00:21:07.600 --> 00:21:08.919
+then the port is
+
+00:21:08.919 --> 00:21:11.440
+11434 and then when you click save it'll
+
+00:21:11.440 --> 00:21:13.200
+automatically test your connection and
+
+00:21:13.200 --> 00:21:14.760
+if the containers are set up and all
+
+00:21:14.760 --> 00:21:17.000
+running properly it'll say connection
+
+00:21:17.000 --> 00:21:18.799
+tested successfully I'm going to switch
+
+00:21:18.799 --> 00:21:20.440
+back to my other credentials here and
+
+00:21:20.440 --> 00:21:22.400
+then it'll load all of the models that
+
+00:21:22.400 --> 00:21:24.520
+you had pulled with AMA when it was
+
+00:21:24.520 --> 00:21:26.279
+first imported so we got our embedding
+
+00:21:26.279 --> 00:21:29.360
+model and then Quin 2.5 7B instruct as
+
+00:21:29.360 --> 00:21:31.600
+well and then for superbase here our
+
+00:21:31.600 --> 00:21:33.640
+connection through postgress I'll create
+
+00:21:33.640 --> 00:21:35.880
+new credentials the host is actually
+
+00:21:35.880 --> 00:21:38.600
+going to be DB and the reason it's like
+
+00:21:38.600 --> 00:21:40.120
+that I'll actually go back over to my
+
+00:21:40.120 --> 00:21:42.360
+IDE here and then go to the docker
+
+00:21:42.360 --> 00:21:46.120
+compose file for superbase look at this
+
+00:21:46.120 --> 00:21:48.240
+the superbase the primary database
+
+00:21:48.240 --> 00:21:51.279
+container in the stack is just called DB
+
+00:21:51.279 --> 00:21:53.600
+and since these containers like n8n and
+
+00:21:53.600 --> 00:21:56.080
+superbase are all in the same Docker
+
+00:21:56.080 --> 00:21:58.559
+Network we can connect to it by just
+
+00:21:58.559 --> 00:22:01.000
+referencing the name of the container as
+
+00:22:01.000 --> 00:22:04.159
+the actual host and so then our database
+
+00:22:04.159 --> 00:22:06.279
+is going to be postgress and then the
+
+00:22:06.279 --> 00:22:08.039
+user name and password is going to be
+
+00:22:08.039 --> 00:22:09.799
+whatever you have set up in your
+
+00:22:09.799 --> 00:22:11.159
+environment variables and then keep the
+
+00:22:11.159 --> 00:22:13.559
+port the same all that is good to go I'm
+
+00:22:13.559 --> 00:22:15.080
+just going to close out of this but if I
+
+00:22:15.080 --> 00:22:16.760
+actually go and edit my other
+
+00:22:16.760 --> 00:22:18.320
+credentials that I have right here and
+
+00:22:18.320 --> 00:22:19.480
+you go ahead and click on I'll just
+
+00:22:19.480 --> 00:22:21.159
+click on retry you can see just like
+
+00:22:21.159 --> 00:22:24.159
+with AMA connection tested successfully
+
+00:22:24.159 --> 00:22:26.720
+so that is everything with AMA and then
+
+00:22:26.720 --> 00:22:28.520
+superbase and then when you connect
+
+00:22:28.520 --> 00:22:30.320
+connect let me just show this there's a
+
+00:22:30.320 --> 00:22:31.880
+slightly different setup when you
+
+00:22:31.880 --> 00:22:34.360
+connect with the superbase vector store
+
+00:22:34.360 --> 00:22:36.760
+versus actually connecting with the
+
+00:22:36.760 --> 00:22:39.480
+postgress node The Host this took a
+
+00:22:39.480 --> 00:22:41.120
+little bit of time for me to figure out
+
+00:22:41.120 --> 00:22:42.679
+so I hope that I save you a headache
+
+00:22:42.679 --> 00:22:45.919
+with this you can't actually say DB
+
+00:22:45.919 --> 00:22:47.720
+right here for some reason this doesn't
+
+00:22:47.720 --> 00:22:50.360
+work if you say DB for the host name
+
+00:22:50.360 --> 00:22:52.919
+here you have to actually say host.
+
+00:22:52.919 --> 00:22:55.480
+doer. internal so essentially that's
+
+00:22:55.480 --> 00:22:59.039
+telling NN to go outside to my machine
+
+00:22:59.039 --> 00:23:02.279
+my local PC and then go back into Port
+
+00:23:02.279 --> 00:23:05.960
+8000 which is mapped onto the super base
+
+00:23:05.960 --> 00:23:07.720
+container so then you just have your
+
+00:23:07.720 --> 00:23:09.559
+service roll secret which you have set
+
+00:23:09.559 --> 00:23:12.080
+in EnV and that is it that is all the
+
+00:23:12.080 --> 00:23:13.360
+credentials that you have to set up you
+
+00:23:13.360 --> 00:23:15.320
+can reuse those credentials for the rest
+
+00:23:15.320 --> 00:23:18.279
+of this workflow as well this is the
+
+00:23:18.279 --> 00:23:20.760
+workflow that actually brings files that
+
+00:23:20.760 --> 00:23:24.440
+we put in a local folder into our local
+
+00:23:24.440 --> 00:23:26.840
+superbase Vector store so let me really
+
+00:23:26.840 --> 00:23:29.240
+quickly show you my rag pipeline right
+
+00:23:29.240 --> 00:23:31.799
+here how I get local files into my local
+
+00:23:31.799 --> 00:23:33.840
+superbase and then we'll test out the
+
+00:23:33.840 --> 00:23:35.799
+rag agent here just a really nice and
+
+00:23:35.799 --> 00:23:38.240
+simple demo you could literally just do
+
+00:23:38.240 --> 00:23:40.240
+this kind of rag setup within open web
+
+00:23:40.240 --> 00:23:42.400
+UI with the rag functionality but I just
+
+00:23:42.400 --> 00:23:43.720
+want to keep things simple here you
+
+00:23:43.720 --> 00:23:45.880
+could definitely take this workflow and
+
+00:23:45.880 --> 00:23:47.919
+extend it to your heart's content in n8n
+
+00:23:47.919 --> 00:23:49.360
+again this is going to be automatically
+
+00:23:49.360 --> 00:23:52.159
+imported into your n8n instance when you
+
+00:23:52.159 --> 00:23:53.679
+pull the repo and run everything like I
+
+00:23:53.679 --> 00:23:55.600
+showed you how to do earlier and so at
+
+00:23:55.600 --> 00:23:57.559
+the start of our pipeline right here as
+
+00:23:57.559 --> 00:24:00.679
+promised it it is a local file trigger
+
+00:24:00.679 --> 00:24:02.279
+and so it's watching for files that are
+
+00:24:02.279 --> 00:24:04.640
+added and changed in this folder
+
+00:24:04.640 --> 00:24:06.600
+specifically and the reason I know to
+
+00:24:06.600 --> 00:24:09.679
+use slata shared is if I go to the
+
+00:24:09.679 --> 00:24:12.240
+docker compos stack and look at the n8n
+
+00:24:12.240 --> 00:24:14.880
+service specifically the shared folder
+
+00:24:14.880 --> 00:24:16.320
+which is this guide right here on the
+
+00:24:16.320 --> 00:24:20.480
+left hand side is mapped to /data Shared
+
+00:24:20.480 --> 00:24:23.279
+in my n8n container and so when I add a
+
+00:24:23.279 --> 00:24:26.840
+file in here like test. text this file
+
+00:24:26.840 --> 00:24:29.799
+is now also in my container right here
+
+00:24:29.799 --> 00:24:33.520
+in SL dat shared and then SL test. text
+
+00:24:33.520 --> 00:24:35.039
+and so I'm using this folder so that I
+
+00:24:35.039 --> 00:24:37.039
+can dump things on my personal computer
+
+00:24:37.039 --> 00:24:38.520
+and have it actually go in my n and end
+
+00:24:38.520 --> 00:24:40.960
+container as well and Trigger this right
+
+00:24:40.960 --> 00:24:42.600
+here so you also want these two options
+
+00:24:42.600 --> 00:24:44.080
+ticked by the way otherwise this won't
+
+00:24:44.080 --> 00:24:45.880
+work but I'll go ahead and click on test
+
+00:24:45.880 --> 00:24:47.720
+step and then I can actually go back
+
+00:24:47.720 --> 00:24:51.440
+into here and let me go back to my test
+
+00:24:51.440 --> 00:24:53.440
+file I'll paste in some content right
+
+00:24:53.440 --> 00:24:54.640
+here that I just want to have in my
+
+00:24:54.640 --> 00:24:57.200
+Vector database so super simple test
+
+00:24:57.200 --> 00:24:59.919
+information right here click on Save and
+
+00:24:59.919 --> 00:25:01.600
+then boom look at that we now triggered
+
+00:25:01.600 --> 00:25:03.880
+with a change event and then the path
+
+00:25:03.880 --> 00:25:05.159
+which we're going to be using as our
+
+00:25:05.159 --> 00:25:06.919
+file ID essentially in the vector
+
+00:25:06.919 --> 00:25:09.440
+database is set right here as well so
+
+00:25:09.440 --> 00:25:10.919
+then I can go on to the next node right
+
+00:25:10.919 --> 00:25:12.799
+here which is basically just determining
+
+00:25:12.799 --> 00:25:15.159
+if it is an add or change event because
+
+00:25:15.159 --> 00:25:17.080
+if it is a change event like it is in
+
+00:25:17.080 --> 00:25:19.640
+this case we want to clean the vector
+
+00:25:19.640 --> 00:25:22.080
+database of any vectors for this file
+
+00:25:22.080 --> 00:25:24.360
+specifically so using this metadata
+
+00:25:24.360 --> 00:25:27.760
+filter again using the path as a file ID
+
+00:25:27.760 --> 00:25:29.480
+we're just cleaning the vector database
+
+00:25:29.480 --> 00:25:31.399
+of anything with this file so that we
+
+00:25:31.399 --> 00:25:33.320
+have a blank slate to make sure what we
+
+00:25:33.320 --> 00:25:34.919
+are inserting is really everything for
+
+00:25:34.919 --> 00:25:36.760
+the updated file we don't want any old
+
+00:25:36.760 --> 00:25:38.760
+vectors hanging around for a previous
+
+00:25:38.760 --> 00:25:41.880
+version of the file and then we pull the
+
+00:25:41.880 --> 00:25:44.520
+file within our NN workflow so now this
+
+00:25:44.520 --> 00:25:46.520
+node right here gives us this data
+
+00:25:46.520 --> 00:25:49.120
+output which is the contents of the file
+
+00:25:49.120 --> 00:25:51.320
+actually really is the file itself and
+
+00:25:51.320 --> 00:25:53.600
+then in the next node we extract the
+
+00:25:53.600 --> 00:25:56.520
+text from the file and so at this point
+
+00:25:56.520 --> 00:25:58.640
+we put a file on our local computer it
+
+00:25:58.640 --> 00:26:00.440
+went onto our n end container into our
+
+00:26:00.440 --> 00:26:02.320
+workflow and now we have the text from
+
+00:26:02.320 --> 00:26:04.600
+it it is nice and simple and then the
+
+00:26:04.600 --> 00:26:06.840
+next thing that we want to do within our
+
+00:26:06.840 --> 00:26:08.720
+superbase node before we actually run
+
+00:26:08.720 --> 00:26:11.240
+this we need to set things up in our
+
+00:26:11.240 --> 00:26:13.279
+database here so if you click on the
+
+00:26:13.279 --> 00:26:16.520
+docs tab right here it'll bring you to
+
+00:26:16.520 --> 00:26:18.159
+this page scroll down a little bit and
+
+00:26:18.159 --> 00:26:19.880
+then click on a quick start for setting
+
+00:26:19.880 --> 00:26:22.360
+up your vector store you want to copy
+
+00:26:22.360 --> 00:26:24.640
+all of this SQL right here because this
+
+00:26:24.640 --> 00:26:27.399
+is how we are going to set up our Vector
+
+00:26:27.399 --> 00:26:30.159
+database here and so I'm going to go to
+
+00:26:30.159 --> 00:26:32.279
+SQL editor and then I'm going to click
+
+00:26:32.279 --> 00:26:35.039
+on the plus icon create new snippet and
+
+00:26:35.039 --> 00:26:36.919
+then paste this in boom there we go and
+
+00:26:36.919 --> 00:26:39.200
+now we can run this right away except
+
+00:26:39.200 --> 00:26:40.880
+there's one change we have to do the
+
+00:26:40.880 --> 00:26:43.760
+size of our vectors is actually 768
+
+00:26:43.760 --> 00:26:45.799
+because we're using the nomic embed text
+
+00:26:45.799 --> 00:26:48.120
+model from AMA that's just the vector
+
+00:26:48.120 --> 00:26:49.880
+size specifically so we'll change it to
+
+00:26:49.880 --> 00:26:51.760
+that this you can set to whatever
+
+00:26:51.760 --> 00:26:53.399
+embedding model you're using what the
+
+00:26:53.399 --> 00:26:55.360
+vector size is and then you can go ahead
+
+00:26:55.360 --> 00:26:56.880
+and just run this by clicking on run in
+
+00:26:56.880 --> 00:26:58.880
+the bottom right and fail for me cuz I
+
+00:26:58.880 --> 00:27:00.640
+already have executed this but for you
+
+00:27:00.640 --> 00:27:02.919
+it'll work and then we'll have this
+
+00:27:02.919 --> 00:27:04.880
+documents table let me scroll down to
+
+00:27:04.880 --> 00:27:07.720
+that right um where is the documents
+
+00:27:07.720 --> 00:27:09.559
+table right here boom there we go so
+
+00:27:09.559 --> 00:27:11.679
+it's an empty documents table right now
+
+00:27:11.679 --> 00:27:14.279
+but what we can actually do is we can
+
+00:27:14.279 --> 00:27:17.360
+run this to insert our vectors and
+
+00:27:17.360 --> 00:27:19.200
+usually I get an error like this it's
+
+00:27:19.200 --> 00:27:20.640
+kind of weird there's not actually a
+
+00:27:20.640 --> 00:27:22.760
+problem with my workflow all I have to
+
+00:27:22.760 --> 00:27:26.440
+do is just save and then refresh so I'll
+
+00:27:26.440 --> 00:27:29.120
+refresh n8n and then I'll just run test
+
+00:27:29.120 --> 00:27:30.880
+step right from the superbase vector
+
+00:27:30.880 --> 00:27:33.039
+store I'll make a change to my file just
+
+00:27:33.039 --> 00:27:35.279
+to trigger things again and then uh it
+
+00:27:35.279 --> 00:27:36.799
+executes and boom there we go so it's a
+
+00:27:36.799 --> 00:27:38.559
+little glitch with n8n where when you
+
+00:27:38.559 --> 00:27:40.799
+going through it step by step it fails
+
+00:27:40.799 --> 00:27:42.679
+at this node for some reason um but
+
+00:27:42.679 --> 00:27:44.279
+anyway I refreshed and ran it right from
+
+00:27:44.279 --> 00:27:46.360
+there and now if I refresh in superbase
+
+00:27:46.360 --> 00:27:48.799
+we have our record here so my to-do list
+
+00:27:48.799 --> 00:27:50.880
+is and then look at that it looks really
+
+00:27:50.880 --> 00:27:52.720
+really nice and we got the file ID for
+
+00:27:52.720 --> 00:27:54.519
+the metadata everything is looking good
+
+00:27:54.519 --> 00:27:56.960
+so now what we can do is go into our
+
+00:27:56.960 --> 00:27:59.200
+chat and it's kind of a weird file so I
+
+00:27:59.200 --> 00:28:00.840
+have to be explicit here telling it to
+
+00:28:00.840 --> 00:28:05.120
+use rag but I can just say uh look at my
+
+00:28:05.120 --> 00:28:08.880
+um test file and tell me what my to-do
+
+00:28:08.880 --> 00:28:10.919
+list is so now I'm chatting with quen
+
+00:28:10.919 --> 00:28:13.880
+2.57 me instruct running locally using
+
+00:28:13.880 --> 00:28:16.919
+my GPU and you can see here that it
+
+00:28:16.919 --> 00:28:19.399
+invoked the superbase vector store tool
+
+00:28:19.399 --> 00:28:21.279
+retrieved my to-do list we can even see
+
+00:28:21.279 --> 00:28:23.039
+the results of that right here from what
+
+00:28:23.039 --> 00:28:25.720
+it pulled from the vector store and look
+
+00:28:25.720 --> 00:28:27.600
+at that based on your test file your
+
+00:28:27.600 --> 00:28:29.519
+to-do list is watch a movie code the
+
+00:28:29.519 --> 00:28:31.480
+next big SASS and learn how to tie my
+
+00:28:31.480 --> 00:28:34.039
+shoes all right it is working perfectly
+
+00:28:34.039 --> 00:28:36.519
+again just a very basic demo example
+
+00:28:36.519 --> 00:28:38.559
+here but we have everything including
+
+00:28:38.559 --> 00:28:40.440
+superbase running entirely locally and
+
+00:28:40.440 --> 00:28:41.960
+you could go and deploy this to the
+
+00:28:41.960 --> 00:28:43.679
+cloud keep it on your machine do
+
+00:28:43.679 --> 00:28:45.559
+anything that you want with this extend
+
+00:28:45.559 --> 00:28:48.559
+it with more services the world is your
+
+00:28:48.559 --> 00:28:51.399
+oyster with this local AI package so
+
+00:28:51.399 --> 00:28:53.240
+there you have it we now have super base
+
+00:28:53.240 --> 00:28:56.440
+running entirely locally in our local AI
+
+00:28:56.440 --> 00:28:58.080
+package which really is starting to sh
+
+00:28:58.080 --> 00:29:00.039
+shape up to be the perfect tool for you
+
+00:29:00.039 --> 00:29:02.480
+to run all your AI locally and build any
+
+00:29:02.480 --> 00:29:04.919
+AI agent that you could dream of and I
+
+00:29:04.919 --> 00:29:06.640
+have a lot of plans like I already
+
+00:29:06.640 --> 00:29:08.559
+mentioned to keep expanding this local
+
+00:29:08.559 --> 00:29:11.039
+AI package but also I want to hear from
+
+00:29:11.039 --> 00:29:12.480
+you so let me know in the comments what
+
+00:29:12.480 --> 00:29:14.640
+other tools or services or Frameworks
+
+00:29:14.640 --> 00:29:16.679
+you think I should include because I
+
+00:29:16.679 --> 00:29:18.159
+really want to build this into the
+
+00:29:18.159 --> 00:29:20.559
+golden standard for local AI but I need
+
+00:29:20.559 --> 00:29:22.279
+your help to make sure I'm including
+
+00:29:22.279 --> 00:29:23.760
+everything that I should and really this
+
+00:29:23.760 --> 00:29:26.720
+is a community-driven project as well so
+
+00:29:26.720 --> 00:29:28.240
+if you appreciated this content you're
+
+00:29:28.240 --> 00:29:30.480
+looking forward to more things local AI
+
+00:29:30.480 --> 00:29:32.200
+I would really appreciate a like and a
+
+00:29:32.200 --> 00:29:34.200
+subscribe and with that I will see you
+
+00:29:34.200 --> 00:29:37.080
+in the next video

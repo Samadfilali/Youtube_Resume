@@ -1,0 +1,7 @@
+La vidéo décrit une implémentation de l'agent Archon, qui utilise la technologie Pantic AI et L Graph pour créer un agent capable de coder. Le présentateur explique les différentes étapes nécessaires à l'implémentation, notamment la configuration du langage de programmation, la définition des dépendances et la création d'un contexte pour le codage.
+
+Il montre comment utiliser L Graph pour visualiser le graphique de l'agent et comment injecter un écrivain personnalisé dans le flux de données. Le présentateur explique également comment utiliser Pantic AI pour créer un agent capable de coder, en utilisant des modèles tels que GBT 40.
+
+La vidéo montre ensuite une démo de l'agent Archon en action, où il crée un agent capable de rechercher des informations sur Internet et d'utiliser ces informations pour coder. Le présentateur souligne les améliorations par rapport à la version précédente d'Archon et exprime son enthousiasme pour continuer à développer l'agent.
+
+La vidéo se termine par une invitation au public à suivre le présentateur sur sa chaîne YouTube, où il publiera des contenus supplémentaires sur Pantic AI et L Graph.

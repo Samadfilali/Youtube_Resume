@@ -1,0 +1,7 @@
+Le résumé de la conversation est le suivant :
+
+* La conversation concerne les agents d'intelligence artificielle (IA) et leur création à l'aide de frameworks tels que PydanticAI et LangGraph.
+* Les participants discutent des avantages et des limites de ces outils, ainsi que de leurs expériences personnelles avec la création d'agents IA.
+* Certains utilisateurs expriment leur gratitude pour les vidéos éducatives de Cole Medin qui expliquent comment créer des agents IA de manière simple et claire.
+* D'autres participants posent des questions sur la création d'agents IA, notamment sur la possibilité de les construire pour exceller ou simplement pour être à niveau avec un ingénieur senior.
+* Finalement, Cole Medin propose une opportunité pour discuter d'un projet en cours avec lui et invite les utilisateurs à partager leurs projets dans sa communauté Think Tank.

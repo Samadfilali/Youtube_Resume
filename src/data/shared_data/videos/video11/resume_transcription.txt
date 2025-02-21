@@ -1,0 +1,14 @@
+L'article décrit l'évolution de Lia, un système d'intelligence artificielle développé par Meta, qui a connu une amélioration significative avec la version 3 (O3). Cette dernière a surpassé les versions précédentes en termes de performance et de capacité à résoudre des problèmes complexes.
+
+Les auteurs expliquent que l'amélioration de Lia est due à plusieurs facteurs :
+
+1. **Apprentissage par renforcement** : Lia a été entraînée avec un algorithme d'apprentissage par renforcement, qui lui permet de s'auto-améliorer en fonction des résultats obtenus.
+2. **Puissance de calcul** : L'amélioration de la puissance de calcul a permis à Lia de traiter plus rapidement et efficacement les données et les problèmes complexes.
+3. **Absence d'intervention humaine** : Les auteurs soulignent que l'O3 n'a pas nécessité d'intervention humaine pour être entraînée, ce qui montre que Lia est capable de s'auto-améliorer sans intervention extérieure.
+
+Les résultats obtenus par O3 sont impressionnants :
+
+* Sur le classement Code Force, O3 a atteint un score de 2724, soit une amélioration significative par rapport aux versions précédentes.
+* O3 a également surpassé les autres systèmes d'intelligence artificielle en termes de capacité à résoudre des problèmes complexes.
+
+Les auteurs concluent que l'O3 est un exemple de la voie claire vers l'AGI (Intelligence Artificielle Générale), et qu'il faudra continuer à améliorer les systèmes d'intelligence artificielle pour atteindre cet objectif.

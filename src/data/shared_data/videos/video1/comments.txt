@@ -1,0 +1,12 @@
+TTS is Text To Speech. Test Time Compute needs to be referred to as something less confusing.
+When discussing new putative architectures for intelligent agents like TTS, I get the distinct impression of Matrochka dolls - infinite recursion into meta-meta-meta etc reasoning
+It&#39;s pretty nice, i just wish the leading AI companies focused less on wasting their money on making products barely better than their previous interations and instead focuses all that money into research we&#39;d probably be making way faster progress than this 😂. The fact the efficiency decreases as the model size increases really says much about the inefficient nature of the current models. I don&#39;t think it&#39;ll be that hard to find out what makes biological neural networks so sample efficient...
+IM curious about the research into the latent space structures, great video!
+Was i the only one who read it right😂
+The next logical step is to perform TTS on top of your TTS trained LLM. Insert Xzibit meme
+was looking for text to speech
+LoL, same here
+There&#39;s recent text to speech news as well, look up Zonos. Very small model that can clone voices and generate text in near real time on 4090. Linux/docker only at the moment.
+I want something a lot better than whisper :(
+LOL me too
+Wonder if this does it work when context is &gt; 4k tokens?

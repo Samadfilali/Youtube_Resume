@@ -1,0 +1,11 @@
+Le discours aborde l'évolution et l'avenir de l'intelligence artificielle (IA), en mettant particulièrement l'accent sur l'apprentissage automatique et les modèles de langue. Après une introduction sur l'impact discret mais croissant des IA dans notre quotidien, il souligne la nécessité de développer des systèmes capables de comprendre le monde au-delà des simples textes, en interagissant directement avec celui-ci.
+
+L'intervenant, éminent scientifique en IA, évoque son parcours inspiré par des figures comme Jean Piaget et des concepts comme le constructivisme. Il se penche ensuite sur l'importance des réseaux de neurones pour l'apprentissage profond et critique la terminologie actuelle, considérant des concepts tels que l'intelligence artificielle générale comme inappropriés.
+
+Il pose la question de comment atteindre une IA au niveau humain, mettant en avant la nécessité d’une intelligence qui puisse planifier et raisonner, de manière à être contrôlable et sécurisée. Les systèmes actuels, comme les modèles de langage, malgré leur puissance, ne suffisent pas à atteindre cet objectif.
+
+L'intervenant propose une approche par inférence par optimisation, couplée à un modèle du monde et des méthodes d'apprentissage non génératives, telles que les architectures de type "Joint Embedding Predictive Architecture" (JEPA), qui consistent à élaborer des représentations abstraites plutôt que de reproduire des données génératives. Cela inclut l'idée d'apprentissage autosupervisé via l'analyse vidéo.
+
+Il souligne également les défis à surmonter pour permettre aux IA de comprendre le monde de manière similaire aux enfants, en acquérant des connaissances par observation et interactions. L'ouverture aux méthodologies open source est jugée essentielle pour un avenir démocratique de l'IA.
+
+Enfin, le futur des systèmes d'IA devrait aboutir à des assistants intelligents servant l'humanité, tout en veillant à ce que leur développement soit diversifié et inclusif culturellement, échappant à la monopolisation par quelques entreprises technologiques. Des questions sur l'intégration des infrastructures nécessaires pour une telle IA ont été posées, avec le besoin de décentralisation et d'accès à des ressources renouvelables pour l'entraînement de ces modèles.

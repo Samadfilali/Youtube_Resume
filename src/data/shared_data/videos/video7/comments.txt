@@ -1,0 +1,64 @@
+Could someone explain the main purposes of those small ones?<br><br>Using on Phone? Using on Mac local? Using on own server for a company to get no issues with GDPR?<br><br>What is the real purpose of them?
+This model runs very well on my RX 7900 XTX and I&#39;m curious whether I could set it up as a local voice assistant in the same style as Alexa, Siri, or Google.<br><br>I&#39;ve already got a pretty robust Home Assistant setup, and the one thing I&#39;d like is a hackable voice assistant to tie everything together.
+I am using Mistral Small 3 on a mini PC ASRock DeskMeet with the Ryzen 5 8600G CPU, 64GB RAM (6,000 MHz), a Samsung 1TB NVMe drive and a 4TB HDD. That system runs LLMs up to 48 GB and has cost me only $900. Its max. power consumption is 65 watts. Inference is not the fastest (with 16 TOPS) but sufficient for my coding and authoring purposes. The coding results are clean and of good quality - saving me a lot of time.
+Is it sufficient with no external GPU?
+The response about the cheese is so disappointing for a french model. The best french cheese is obviously the Saint-Nectaire and it&#39;s not even in the list...
+look like a good candidate for post trainning with R1 techniques
+you&#39;re news are so phenomenally reliable!<br>!
+wow you are amazing especially for showing the screenshots of the questions with answers... not extra time taken , no crap straight up the results.🥰🤩🤩
+The media focusing on the reasoning models like DeepSeek is kinda weird to me. I&#39;m sure they are better at solving math formulas. But most &quot;regular&quot; people want answers to questions that are more straightforward, and could be easily answered by basic 7B or this new model. DeepSeek gets tons of media attention, but what most people actually need, a GPT4 mini they can run locally for free like Mistral Small 3, gets little attention.
+Great video! Do you think cheaper, easier to use dominate, or does 99-100% accuracy still matter?
+For most applications now, models like Small3 are perfectly good for getting things done. You only need the really highly intelligent models for a few things like coding, advanced science etc
+Early impressions are it&#39;s nice for roleplaying, breathes some fresh air into my existing characters. Like ollama 3.1 it gets repeating some sentences after reaching context limit.
+What&#39;s the difference between this and that Lucie?
+Mistral is a private company with an open-source mind, while OpenLLM-France (behind Lucie) is an open community
+Indeed, good to see Mistral is active again.  Thanks Sam.
+Thank you. Does it handle nested structured output?
+I really wish they would design their models to fit into standard GPU memory sizes instead of using weird numbers.. I&#39;ll have to wait till I try it but I bet it&#39;s just slightly too large to run on a 12gb video card at q4 or a 24gb card at q8. 32GB cards exist but they are ridiculously expensive and hard to get atm.
+Now that GEITje is gone, is this a good Dutch model?<br><br>Would be nice as daily driver model.
+mistral moe  is dope
+Great insight in the conclusion
+The small is still big
+Yes!
+Now I&#39;m waiting for a Deepseek-R1-Distill-Mistral-Small. That will be FIRE.
+They already have different sizes for it down to 1B
+This much better than the others distilled models till now
+@@Nik.leonard sad I got a 3080 ti and this model is still too much for it.  Deepseek at 14b works fine though.
+Thanks Sam. I really enjoy your content. You basically distill what you need to know into a nice 10 minute segment, have nice small code examples, explain concepts well, and avoid all of the hyperbole around AI.
+Thanks this is exactly what I am trying to do. I am amazed how much dumb hype there is out there.
+💯 on all above. Also a nice touch: thank you for not having a shocked face on the thumbnail.
+It&#39;s such a joke to talk about this trash
+Can you elaborate
+Wish they didn&#39;t label this as small and leave the small definition for models that can run on edge devices, 3b and smaller.
+Yeah for a second I was excited :&#39;)
+Isn&#39;t that more the &quot;tiny&quot; label?
+@@Gstreng  tiny as far as my experience says is basically 1.5B and lower
+lol I gotta admit when I first thought saw the name small and 24b next to it I thought I had read it wrong. I guess 680b is now the new open large size.
+I will NEVER get tired of the initial &quot;Ok. So...&quot;
+At this point, we expect nothing less than R1&#39;s capabilities.
+I don&#39;t think I can fit DeepSeek&#39;s 650 GB into my VRAM. On the other hand, I am downloading 19 GB Mistral (Q6) right now to test it. DeepSeek-R1 is only available either if you send everything you have directly to the CCP, or from US and EU providers for $8 per million tokens.
+@@thornelderfin You can&#39;t download it on a virtual GPU?
+can you point me to resources on <a href="https://www.youtube.com/watch?v=nCXTdcggwkM&amp;t=143">2:23</a> what is ROPE?
+RoPE is for Rotary Positional Embeddings it allows you to fine tune the model to increase the length of the context window
+No arabic .. this is bad
+yes unfortunately they have a lot of languages missing.
+Thanks for this video!! Just a request if it works for you - could you please create a video on safe, secure use of open source LLMs? Points like data residency, memory Cleaning, etc. It would be really very useful.
+This is an interesting idea. Can you elaborate a bit more? Do you mean like data hygiene?
+@@samwitteveenai Thanks for the reply and finding it an interesting idea. Before we embark on LLM usage, it would be good to know to understand various aspects of data security, privacy like encryption of data transient and at rest, whether LLM saves the data which it has to process to give output, how we can ensure LLM cache memory cleanup, whether data is saved locally or across boundary, region, etc. Looking for general guidance on safe usage of LLMs from data security perspective. Your expert views would really be helpful, Thank You!!
+@@bhushanj If you&#39;re downloading an open source model then all of those factors are exactly the same as building any other application. The LLM itself doesn&#39;t save or cache anything so it&#39;s just the same considerations for securing a server, database etc.
+@@DJ-dh3oe Thank You for clarifying. Appreciate it! 🙏
+This could&#39;nt come at. Better time for me ! 🎉🎉🎉
+I use the &quot;expensive models&quot; to create prompt templates, tools, other functions, example outputs, etc. then use those in calls to free open source models. Makes them even better. ☺
+yes that certainly makes a lot of sense
+how?
+@@rolfjohansen5376 Let&#39;s say you&#39;ve written 20 excellent customer service e-mails. Load them in a chat window or via RAG into your favorite expensive model(s). Ask the expensive model to create a prompt template for writing future excellent customer service e-mails in your voice. The expensive model (eg, Claude, GPT, or whatever) will analyze your e-mails and create a prompt that free open source models can use to write in same style/voice/quality of those 20 excellent e-mails.<br><br>Or, say that you have a kid and they like certain types of bedtime stories. You can feed an expensive model your kid&#39;s 4 favorite bedtime stories, and tell the model which themes, types of characters, prose, and plots your kid likes to listen to. Then ask the expensive model to create a prompt that can be used to instruct free open source models how to write similar stories. And then you can have open source models cranking out new, completely made up stories from an open source AI that your kid loves.  So, you can basically do anything with it. Since the expensive models have more training data and parameters, they&#39;ll typically be better at creating the prompts (than your free open source models usually will).
+Great video, I guess the only annoying thing about Mistral is the fact they&#39;ve their own architecture, can&#39;t really use it as a drop placement API kinda thing, I tend to wish an English-only for small (7b or less) LLMs specially for function calling stuff, whereas large one should definitely be polyglot, feels like users are getting greedy after deepseek-r1, aren&#39;t they?
+Someone usually Llamafies it pretty quickly
+lol yes people want R1 680b quality in 7B models
+what did you mean about the architecture problem? just curious
+As far as I know, in order to use recent versions of Mistral&#39;s models, you&#39;ll need to install their own Mistral library, you can&#39;t just use the huggingface&#39;s API unless you do some hacks to get around that somehow!
+Wow you did it so fast and very thorough and informative<br>Subscribing
+you&#39;re so fast 🏎💨
+it helps when I got it a bit early 😀
+Good. I need a workhorse I can install on my machine.
+Amen to that. Mistral has been a workhorse on my laptop. I use the Mistral NeMo version (12 billion parameters). NeMo is a little dated for 2025, but it works well. I upgraded from Mistral 7B in January 2025.

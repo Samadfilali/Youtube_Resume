@@ -1,0 +1,26 @@
+The top right are not commercials. They are rich infos based on your query. Can be images or YouTube videos etc.
+I really enjoy this tool for every day product research. I&#39;ve given it several queries to find niche products that I&#39;ve already spent time researching myself. The product I eventually ended up choosing has so far always been in the list of recommendations given by perplexity&#39;s deep research. Niches include 3D printing materials, DSPs, robotic actuators, drone parts, tea importers, many different types of software products, open source tools, and so on. I&#39;ve concluded that I no longer have to &quot;Google it&quot; anymore. I&#39;m not sure if this is the best academic research tool, but it&#39;s an incredible personal shopper.
+Great video! It would be super helpful if you could add the links to both Deep Research searches in the description. That way, viewers can explore the results themselves. Thanks for sharing!😜
+Holy crap, thank you! The algorithm recommended this video to me, I had no idea this was a new feature on Perplexity. It SOLVED an obscure SQL problem for me that I&#39;ve been struggling with for over a week. I&#39;ve been using deepseek, chatgpt o3 high, o1, gemini 2.0 flash, claude API, notebook lm, custom gpt, every tool I have access to and I&#39;ve just been chasing my tail.
+Just tried Perplexity deep research on … myself…” who is x (my name), his biography and his public positions”.  The results are … 60% complete bs.  The report made me authors of books and gave me public positions completely made up. The “references” are existing pages/files but not … related to me. <br><br>This is very disappointing, especially from Perplexity that was supposed to be the most “reliable” IA search.
+I just tested it with my pro account. Its still crap compared to OpenAIs version.
+How many words in these reports? curious.  Open AI DR had a 10000 word (dissertation style) output on a different video.
+This morning I got a 10000 word report from this perplexity deep research regarding my maritime system. 90% of the content is useless. And it’s just…a report.
+great video as always! but how is this function doing about hallucinations?
+if you add a file, after the 5 advanced mode it falls back to @anthropic
+i told it;  Give me a comprehensive report on Campi Flegrei Supervolcano, with a focus on more recent activity including the most up to date data.  I had all the sources turned on (WEB, SOCIAL and ACADEMIC) .  It only spat out 610 words. I would expect 1000 words bare minimum.
+Very interesting, as always! CONGRATS!<br>I have a Chemical Engineering background... (not physics) + management and entrepreneurship career (namely with an Austrian company). Now, I am doing a Transport Systems PhD.<br>The funny thing is that a lot of my research has been on how to get help from AI and try to develop something like this perplexity tool, although in a &quot;tailormade version&quot;... <br>The subjects you have been developing are exactly in my area of interest.<br>My next target is to incorporate Knowledge Graphs and a little more maybe.
+hey, sounds really inspiring! what do you mean by tailor-made? in the context i don&#39;t understand it haha - like connecting your PhD to this
+@jlf-ticket  it means that I predefine a structure for my final document (with category topics I consider relevant) and feed it with pre-selected articles - which are supposed to build my knowledge base. Through the &quot;tailor made&quot; approach I am limiting the scope, trying to gain control in the process...
+@ i built something very similar! albeit also specialized for my use-case and i have a pre-defined output
+ITS NOTT FREEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
+Yes it iiiiiiiisssssss
+5 requests a day for free, so yeah, its free (to some extent)
+Hi bro I m Mohammad from Saudi Arabia 🇸🇦 love you’re videos,but if it less academic and more engineering like this video today 👍
+Couldn&#39;t agree more
+I just played around with it a bit.  From what I&#39;m seeing this might be better than the Google and OpenAI versions.  It looks like they are planning on allowing this to be accessed by API in the future which means you could build tools on top of this.
+Nah, its a joke compared to OpenAis version of Deep Research. That one is way more better: more thorough, better content and also longer reports.
+I think that the name KARMA for a multi agent system is a bad decision.
+you mean, it&#39;s bad karma? <br><br>😊
+@@sgttomas Exactly
+Very interesting information!

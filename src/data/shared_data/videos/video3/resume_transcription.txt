@@ -1,0 +1,5 @@
+L'auteur a testé le modèle de langage Gro 3 et a partagé ses premières impressions. Il a constaté que le modèle était rapide et capable de résoudre des problèmes complexes, notamment le puzzle du transport d'un chèvre à l'autre rive d'un fleuve. L'auteur a également comparé les performances de Gro 3 avec celles d'autres modèles de langage, tels que Open AI 03 Pro et Gemini 2 Flash.
+
+L'auteur a également mentionné qu'il n'avait pas encore accès à l'API de Gro 3, mais qu'il était impatient de la tester. Il a également partagé un lien vers une publication Reddit d'un autre utilisateur qui a testé le modèle et a obtenu des résultats similaires.
+
+En résumé, les premières impressions de l'auteur sur Gro 3 sont positives, il pense que le modèle est rapide et capable de résoudre des problèmes complexes. Il est impatient de tester l'API et de voir ce qu'il peut faire avec le modèle.

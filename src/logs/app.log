@@ -1,0 +1,123 @@
+2025-02-20 17:20:20 - INFO - Application démarrée
+2025-02-20 17:20:20 - WARNING - Tentative d'affichage avec une URL vide
+2025-02-20 17:20:21 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-02-20 17:20:21 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-02-20 17:20:21 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-02-20 17:20:40 - INFO - Affichage de la vidéo avec ID : E4k6Z7B3BqA
+2025-02-20 17:20:41 - INFO - Début du processing pour https://www.youtube.com/watch?v=E4k6Z7B3BqA
+2025-02-20 17:20:41 - INFO - Vidéo https://www.youtube.com/watch?v=E4k6Z7B3BqA déjà traitée
+2025-02-20 17:20:42 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=E4k6Z7B3BqA
+2025-02-20 17:20:42 - INFO - Résumé déjà disponible pour https://www.youtube.com/watch?v=E4k6Z7B3BqA
+2025-02-20 17:20:49 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=E4k6Z7B3BqA
+2025-02-20 17:20:49 - INFO - Résumé déjà disponible pour https://www.youtube.com/watch?v=E4k6Z7B3BqA
+2025-02-20 17:22:32 - INFO - Affichage de la vidéo avec ID : HVwXSQHaECA
+2025-02-20 17:22:34 - INFO - Début du processing pour https://www.youtube.com/watch?v=HVwXSQHaECA&t=917s
+2025-02-20 17:22:34 - ERROR - Erreur lors de la transcription : Erreur: Les sous-titres sont désactivés pour cette vidéo.
+2025-02-20 17:23:09 - INFO - Affichage de la vidéo avec ID : -NKTvF_NbBc
+2025-02-20 17:23:11 - INFO - Début du processing pour https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 17:23:12 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-20 17:23:14 - INFO - Processing terminé avec succès pour https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 17:23:17 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 17:23:17 - INFO - Traitement du résumé en cours pour https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 17:23:25 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 17:23:38 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 17:23:38 - INFO - Résumé généré avec succès
+2025-02-20 17:47:37 - INFO - Application démarrée
+2025-02-20 17:47:37 - WARNING - Tentative d'affichage avec une URL vide
+2025-02-20 17:47:38 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-02-20 17:47:38 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-02-20 17:47:38 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-02-20 17:47:51 - INFO - Affichage de la vidéo avec ID : -NKTvF_NbBc
+2025-02-20 17:47:53 - INFO - Début du processing pour https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 17:47:53 - INFO - Vidéo https://www.youtube.com/watch?v=-NKTvF_NbBc déjà traitée
+2025-02-20 17:47:54 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 17:47:54 - INFO - Traitement du résumé en cours pour https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 17:48:58 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-02-20 17:50:56 - INFO - HTTP Request: POST http://127.0.0.1:11434/api/chat "HTTP/1.1 200 OK"
+2025-02-20 17:53:21 - INFO - Résumé généré avec succès
+2025-02-20 18:07:19 - INFO - Application démarrée
+2025-02-20 18:07:19 - WARNING - Tentative d'affichage avec une URL vide
+2025-02-20 18:07:20 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-02-20 18:07:20 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-02-20 18:07:20 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-02-20 18:07:39 - INFO - Affichage de la vidéo avec ID : -NKTvF_NbBc
+2025-02-20 18:07:40 - INFO - Début du processing pour https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 18:07:40 - INFO - Vidéo https://www.youtube.com/watch?v=-NKTvF_NbBc déjà traitée
+2025-02-20 18:07:42 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 18:07:42 - INFO - Résumé déjà disponible pour https://www.youtube.com/watch?v=-NKTvF_NbBc
+2025-02-20 18:20:15 - INFO - Application démarrée
+2025-02-20 18:20:15 - WARNING - Tentative d'affichage avec une URL vide
+2025-02-20 18:20:16 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-02-20 18:20:16 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-02-20 18:20:16 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-02-20 18:26:06 - INFO - Affichage de la vidéo avec ID : XX_9XUSxLFo
+2025-02-20 18:26:08 - INFO - Début du processing pour https://www.youtube.com/watch?v=XX_9XUSxLFo
+2025-02-20 18:26:09 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-20 18:26:11 - INFO - Processing terminé avec succès pour https://www.youtube.com/watch?v=XX_9XUSxLFo
+2025-02-20 18:26:19 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=XX_9XUSxLFo
+2025-02-20 18:26:19 - INFO - Traitement du résumé en cours pour https://www.youtube.com/watch?v=XX_9XUSxLFo
+2025-02-20 18:26:28 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 18:26:33 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 18:26:33 - INFO - Résumé généré avec succès
+2025-02-20 18:38:26 - INFO - Application démarrée
+2025-02-20 18:38:26 - WARNING - Tentative d'affichage avec une URL vide
+2025-02-20 18:38:27 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-02-20 18:38:27 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-02-20 18:38:27 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-02-20 18:39:04 - INFO - Affichage de la vidéo avec ID : eDY9FUT5ces
+2025-02-20 18:39:07 - INFO - Début du processing pour https://www.youtube.com/watch?v=eDY9FUT5ces
+2025-02-20 18:39:07 - INFO - Vidéo https://www.youtube.com/watch?v=eDY9FUT5ces déjà traitée
+2025-02-20 18:41:04 - INFO - Application démarrée
+2025-02-20 18:41:05 - WARNING - Tentative d'affichage avec une URL vide
+2025-02-20 18:41:05 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-02-20 18:41:05 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-02-20 18:41:06 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-02-20 18:41:45 - INFO - Affichage de la vidéo avec ID : eDY9FUT5ces
+2025-02-20 18:41:48 - INFO - Début du processing pour https://www.youtube.com/watch?v=eDY9FUT5ces
+2025-02-20 18:41:50 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-20 18:41:51 - INFO - Processing terminé avec succès pour https://www.youtube.com/watch?v=eDY9FUT5ces
+2025-02-20 18:42:01 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=eDY9FUT5ces
+2025-02-20 18:42:01 - INFO - Traitement du résumé en cours pour https://www.youtube.com/watch?v=eDY9FUT5ces
+2025-02-20 18:42:07 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 18:42:14 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-20 18:42:14 - INFO - Résumé généré avec succès
+2025-02-21 08:49:08 - INFO - Application démarrée
+2025-02-21 08:49:08 - WARNING - Tentative d'affichage avec une URL vide
+2025-02-21 08:49:09 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-02-21 08:49:09 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-02-21 08:49:10 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-02-21 08:51:19 - INFO - Affichage de la vidéo avec ID : 2mSNIX-l_Zc
+2025-02-21 08:51:20 - INFO - Début du processing pour https://www.youtube.com/watch?v=2mSNIX-l_Zc&t=149s
+2025-02-21 08:51:20 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-21 08:51:21 - INFO - Processing terminé avec succès pour https://www.youtube.com/watch?v=2mSNIX-l_Zc&t=149s
+2025-02-21 08:51:30 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=2mSNIX-l_Zc&t=149s
+2025-02-21 08:51:30 - INFO - Traitement du résumé en cours pour https://www.youtube.com/watch?v=2mSNIX-l_Zc&t=149s
+2025-02-21 08:51:35 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 08:51:37 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 08:51:37 - INFO - Résumé généré avec succès
+2025-02-21 09:31:13 - INFO - Affichage de la vidéo avec ID : nnfkEbvwPZ8
+2025-02-21 09:31:15 - INFO - Début du processing pour https://www.youtube.com/watch?v=nnfkEbvwPZ8
+2025-02-21 09:31:15 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-21 09:31:16 - INFO - Processing terminé avec succès pour https://www.youtube.com/watch?v=nnfkEbvwPZ8
+2025-02-21 09:31:19 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=nnfkEbvwPZ8
+2025-02-21 09:31:19 - INFO - Traitement du résumé en cours pour https://www.youtube.com/watch?v=nnfkEbvwPZ8
+2025-02-21 09:31:24 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 09:31:30 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 09:31:30 - INFO - Résumé généré avec succès
+2025-02-21 09:42:43 - INFO - Application démarrée
+2025-02-21 09:42:43 - WARNING - Tentative d'affichage avec une URL vide
+2025-02-21 09:42:44 - INFO - HTTP Request: GET http://127.0.0.1:7860/gradio_api/startup-events "HTTP/1.1 200 OK"
+2025-02-21 09:42:44 - INFO - HTTP Request: HEAD http://127.0.0.1:7860/ "HTTP/1.1 200 OK"
+2025-02-21 09:42:44 - INFO - HTTP Request: GET https://api.gradio.app/pkg-version "HTTP/1.1 200 OK"
+2025-02-21 10:17:21 - INFO - Affichage de la vidéo avec ID : TblclBKgrpI
+2025-02-21 10:17:25 - INFO - Début du processing pour https://www.youtube.com/watch?v=TblclBKgrpI
+2025-02-21 10:17:26 - ERROR - Erreur lors de la transcription : Erreur: Les sous-titres sont désactivés pour cette vidéo.
+2025-02-21 10:18:39 - INFO - Affichage de la vidéo avec ID : J0_oQjhgj94
+2025-02-21 10:18:42 - INFO - Début du processing pour https://www.youtube.com/watch?v=J0_oQjhgj94
+2025-02-21 10:18:45 - INFO - file_cache is only supported with oauth2client<4.0.0
+2025-02-21 10:18:46 - INFO - Processing terminé avec succès pour https://www.youtube.com/watch?v=J0_oQjhgj94
+2025-02-21 10:18:53 - INFO - Tentative de résumé pour l'URL : https://www.youtube.com/watch?v=J0_oQjhgj94
+2025-02-21 10:18:53 - INFO - Traitement du résumé en cours pour https://www.youtube.com/watch?v=J0_oQjhgj94
+2025-02-21 10:18:57 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 10:19:00 - INFO - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-02-21 10:19:00 - INFO - Résumé généré avec succès

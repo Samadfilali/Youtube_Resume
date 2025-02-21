@@ -1,0 +1,7 @@
+L'utilisateur a demandé une vidéo sur l'utilisation sécurisée des LLMs (Large Language Models) et a reçu des réponses détaillées de la part du créateur de la vidéo. Le sujet principal est l'utilisation de modèles LLM ouverts source, comme Mistral, qui peuvent être utilisés pour créer des applications personnalisées.
+
+Le créateur de la vidéo a expliqué comment utiliser les modèles LLM pour créer des prompt templates, des outils et d'autres fonctionnalités, puis les utiliser avec des modèles gratuits. Il a également discuté du problème d'architecture de Mistral, qui nécessite l'installation de leur propre bibliothèque pour utiliser leurs modèles.
+
+Les utilisateurs ont posé des questions sur la sécurité des LLMs, notamment la sauvegarde et le nettoyage de la mémoire cache. Le créateur a répondu que les considérations sont similaires à celles pour sécuriser un serveur ou une base de données.
+
+Enfin, l'utilisateur a demandé une vidéo sur l'utilisation sécurisée des LLMs, ce qui pourrait être réalisé dans le futur.

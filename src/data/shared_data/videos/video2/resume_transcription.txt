@@ -1,0 +1,14 @@
+L'auteur présente une critique de la technologie de recherche profonde (deep research) développée par Open Ey. Il souligne les limites et les biais de cette technologie, notamment :
+
+* La dépendance à des sources non vérifiées
+* Le traitement uniforme de toutes les sources, y compris celles qui peuvent être fausses ou manipulées
+* L'accent mis sur la quantité plutôt que la qualité des citations
+* La possibilité d'influencer le résultat en sélectionnant les sources appropriées
+
+L'auteur propose une formule pour évaluer la crédibilité des sources, basée sur des critères tels que l'autorité, la récence, la pertinence et l'exactitude. Il souligne également l'importance de l'épistémologie (la théorie du savoir) et de l'humbleté épistémologique pour reconnaître les limites de la recherche profonde.
+
+L'auteur conclut que la recherche profonde n'est pas une solution miracle pour résoudre les problèmes de véracité, mais plutôt un outil qui nécessite d'être utilisé avec prudence et en tenant compte des limitations et des biais. Il souligne l'importance de l'intégration avec l'infrastructure académique et la reconnaissance des limites de la recherche profonde.
+
+L'auteur se positionne également contre les systèmes fermés et propriétaires, préférant une approche ouverte et collaborative pour améliorer la technologie de recherche profonde. Il souligne l'importance de la communauté et de la collaboration pour identifier les erreurs et améliorer la technologie.
+
+Enfin, l'auteur rappelle que la véracité est un problème complexe qui nécessite une approche nuancée et multidisciplinaire, et qu'il est important de continuer à produire des contenus éducatifs et explicatifs pour aider les gens à comprendre les problèmes complexes.

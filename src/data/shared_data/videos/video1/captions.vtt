@@ -1,0 +1,3709 @@
+WEBVTT
+
+00:00:00.280 --> 00:00:03.280
+hello community so great that you are
+
+00:00:03.280 --> 00:00:06.160
+back today we talk about three insane
+
+00:00:06.160 --> 00:00:09.559
+test time training ideas because have a
+
+00:00:09.559 --> 00:00:11.960
+look is it possible that we have a 7
+
+00:00:11.960 --> 00:00:15.160
+billion model here that beats deep seek
+
+00:00:15.160 --> 00:00:17.119
+R1 and open
+
+00:00:17.119 --> 00:00:21.000
+ei1 yes absolutely with test time
+
+00:00:21.000 --> 00:00:23.760
+scaling done the intelligent way and
+
+00:00:23.760 --> 00:00:25.560
+it's it possible that we have a 1
+
+00:00:25.560 --> 00:00:28.519
+billion llm a little tiny one does it
+
+00:00:28.519 --> 00:00:32.840
+Sur pass here 400 5 billion llama model
+
+00:00:32.840 --> 00:00:35.120
+well if you apply a 1 billion with an
+
+00:00:35.120 --> 00:00:38.239
+intelligent TTS yes it will be here a
+
+00:00:38.239 --> 00:00:40.280
+performance test a single performance
+
+00:00:40.280 --> 00:00:42.079
+test against a
+
+00:00:42.079 --> 00:00:44.840
+405b so we are talking about some
+
+00:00:44.840 --> 00:00:47.280
+amazing enhancement here for the Deep
+
+00:00:47.280 --> 00:00:48.840
+reasoning capabilities and the
+
+00:00:48.840 --> 00:00:51.680
+computational efficiencies of our llms
+
+00:00:51.680 --> 00:00:54.800
+that go simple Beyond scaling the model
+
+00:00:54.800 --> 00:00:56.800
+parameters so what we're going to have a
+
+00:00:56.800 --> 00:00:59.480
+look we have a look at TTS and then
+
+00:00:59.480 --> 00:01:02.440
+examine in two specific cases of TTS we
+
+00:01:02.440 --> 00:01:04.360
+will build here finally a new
+
+00:01:04.360 --> 00:01:07.360
+Transformer model so TTS will lead us to
+
+00:01:07.360 --> 00:01:10.280
+a new Transformer three new research
+
+00:01:10.280 --> 00:01:13.840
+paper let's go for it so if we open up
+
+00:01:13.840 --> 00:01:16.560
+this video you know what we know in the
+
+00:01:16.560 --> 00:01:19.600
+old times no we have our M pre-trained
+
+00:01:19.600 --> 00:01:22.000
+supervised find you and DPO aligned and
+
+00:01:22.000 --> 00:01:24.479
+the only way we could choose was simply
+
+00:01:24.479 --> 00:01:26.759
+scaling you the model parameters go with
+
+00:01:26.759 --> 00:01:29.560
+a 1 billion model or 45 billion Lama
+
+00:01:29.560 --> 00:01:31.520
+model and this is all we had and we saw
+
+00:01:31.520 --> 00:01:33.680
+the world is
+
+00:01:33.680 --> 00:01:37.280
+beautiful but now now we explore test
+
+00:01:37.280 --> 00:01:40.720
+time scaling as a real Paradigm Shift
+
+00:01:40.720 --> 00:01:42.560
+focusing here on the strategically
+
+00:01:42.560 --> 00:01:45.040
+allocated computational resources during
+
+00:01:45.040 --> 00:01:48.000
+now the inference phase to really really
+
+00:01:48.000 --> 00:01:50.439
+augment the inherent reasoning abilities
+
+00:01:50.439 --> 00:01:53.040
+of a pre-trained and fine-tuned
+
+00:01:53.040 --> 00:01:56.600
+llm so test time scaling is happening
+
+00:01:56.600 --> 00:02:00.159
+now during the inference run and the
+
+00:02:00.159 --> 00:02:02.280
+question is how can we manipulate the
+
+00:02:02.280 --> 00:02:05.119
+interference process to have a superior
+
+00:02:05.119 --> 00:02:07.439
+performance here and what are the
+
+00:02:07.439 --> 00:02:09.879
+optimal strategies for allocating and
+
+00:02:09.879 --> 00:02:12.920
+managing your inference time compute in
+
+00:02:12.920 --> 00:02:16.640
+the best way so that a 1 billion model a
+
+00:02:16.640 --> 00:02:20.560
+tiny small language model will beat a 45
+
+00:02:20.560 --> 00:02:21.959
+billion Lama
+
+00:02:21.959 --> 00:02:24.760
+model now you know it is easy we have a
+
+00:02:24.760 --> 00:02:27.120
+query then we have your pre-trained
+
+00:02:27.120 --> 00:02:29.680
+model and then test time scaling we can
+
+00:02:29.680 --> 00:02:32.519
+get had some different answers now the
+
+00:02:32.519 --> 00:02:34.599
+idea is we build a solution space and we
+
+00:02:34.599 --> 00:02:36.640
+say hey let's think about this in a
+
+00:02:36.640 --> 00:02:37.959
+mathematical way that this is a
+
+00:02:37.959 --> 00:02:40.080
+mathematical space where all the
+
+00:02:40.080 --> 00:02:42.400
+possible solution to this specific qua
+
+00:02:42.400 --> 00:02:45.480
+of mine they live here in this box and
+
+00:02:45.480 --> 00:02:47.840
+this is the solution space and in some
+
+00:02:47.840 --> 00:02:50.440
+Corners they are highly complex solution
+
+00:02:50.440 --> 00:02:52.280
+and in some Corners they are empty in
+
+00:02:52.280 --> 00:02:54.280
+some Corners oh yeah you get the real
+
+00:02:54.280 --> 00:02:58.599
+hint that you need to solve here the
+
+00:02:58.599 --> 00:03:00.959
+puzzle to to search you a complete
+
+00:03:00.959 --> 00:03:03.560
+solution space you can either improve
+
+00:03:03.560 --> 00:03:05.840
+your search time say hey yeah take too
+
+00:03:05.840 --> 00:03:08.400
+many time in the inference run now or we
+
+00:03:08.400 --> 00:03:10.879
+improve the search algorithm or and
+
+00:03:10.879 --> 00:03:11.959
+there other options we're going to
+
+00:03:11.959 --> 00:03:15.360
+explore today so let's come here to the
+
+00:03:15.360 --> 00:03:18.280
+spark of our genius that we have today
+
+00:03:18.280 --> 00:03:20.560
+and we will know and you notice as a
+
+00:03:20.560 --> 00:03:22.720
+subscriber of my channel that we work
+
+00:03:22.720 --> 00:03:25.560
+here with process rewards model to
+
+00:03:25.560 --> 00:03:28.120
+navigate here the search space in order
+
+00:03:28.120 --> 00:03:29.920
+to find here the potentially best
+
+00:03:29.920 --> 00:03:33.040
+solution to this very special query of
+
+00:03:33.040 --> 00:03:37.040
+mine where a deep reasoning needs to be
+
+00:03:37.040 --> 00:03:38.840
+and you know what is the simplest of the
+
+00:03:38.840 --> 00:03:41.519
+search space solution no the best of n
+
+00:03:41.519 --> 00:03:44.640
+sampling simply sampling your n outputs
+
+00:03:44.640 --> 00:03:46.680
+here in parallel from a base language
+
+00:03:46.680 --> 00:03:49.280
+mod and selecting one that scores the
+
+00:03:49.280 --> 00:03:53.560
+highest per a learn verifier or be more
+
+00:03:53.560 --> 00:03:56.560
+specific every word model so we can have
+
+00:03:56.560 --> 00:03:59.280
+maybe another llm a more intelligent llm
+
+00:03:59.280 --> 00:04:02.360
+and tells me hey A3 is the best solution
+
+00:04:02.360 --> 00:04:04.840
+continue with
+
+00:04:04.840 --> 00:04:07.879
+A3 if you want to know the origin and I
+
+00:04:07.879 --> 00:04:10.879
+sit down here the origin of LM to my
+
+00:04:10.879 --> 00:04:14.000
+knowledge is here either by open ey or
+
+00:04:14.000 --> 00:04:17.079
+end of May 2023 where they look at the
+
+00:04:17.079 --> 00:04:18.919
+process supervision which provides
+
+00:04:18.919 --> 00:04:21.799
+feedback for each intermediate reasoning
+
+00:04:21.799 --> 00:04:24.160
+step can you imagine May 23 open in the
+
+00:04:24.160 --> 00:04:27.199
+eye or and I'm looking here at the
+
+00:04:27.199 --> 00:04:29.840
+version three so this is from fabruary
+
+00:04:29.840 --> 00:04:33.320
+2024 but in also in 2023 we had here
+
+00:04:33.320 --> 00:04:35.600
+deep seek AI together with chingua
+
+00:04:35.600 --> 00:04:37.120
+University in the University of Hong
+
+00:04:37.120 --> 00:04:39.680
+Kong on a higho State University they
+
+00:04:39.680 --> 00:04:41.720
+were also here assigning your rewards
+
+00:04:41.720 --> 00:04:44.800
+course to each step of a mathematical
+
+00:04:44.800 --> 00:04:47.840
+problem solution so for my knowledge if
+
+00:04:47.840 --> 00:04:49.759
+you really want to see it origin those
+
+00:04:49.759 --> 00:04:52.520
+are the two papers you should look at
+
+00:04:52.520 --> 00:04:55.280
+but now look at this process reward
+
+00:04:55.280 --> 00:04:58.720
+model what they do they simply evaluate
+
+00:04:58.720 --> 00:05:01.240
+the intermediate reasoning steps
+
+00:05:01.240 --> 00:05:03.199
+creating here a feedback loop that
+
+00:05:03.199 --> 00:05:05.479
+guides here our TTS
+
+00:05:05.479 --> 00:05:08.320
+strategies and the alignment now between
+
+00:05:08.320 --> 00:05:10.199
+on the one hand the policy model what do
+
+00:05:10.199 --> 00:05:12.800
+we have this is an llm that outputs here
+
+00:05:12.800 --> 00:05:15.800
+something and the process reward model
+
+00:05:15.800 --> 00:05:18.840
+this is also an llm the PRM training
+
+00:05:18.840 --> 00:05:22.360
+data this alignment here is critically
+
+00:05:22.360 --> 00:05:25.680
+it impacts here the reward validity and
+
+00:05:25.680 --> 00:05:29.840
+the search efficiency so note the policy
+
+00:05:29.840 --> 00:05:32.520
+model output and the PRM training data
+
+00:05:32.520 --> 00:05:35.160
+they better are really really connected
+
+00:05:35.160 --> 00:05:37.880
+they coherent and you trained your
+
+00:05:37.880 --> 00:05:40.280
+process reward model on those
+
+00:05:40.280 --> 00:05:43.479
+data just a little detail we have on
+
+00:05:43.479 --> 00:05:46.759
+policy prms and off policy prms simple
+
+00:05:46.759 --> 00:05:48.800
+on policy prms are trained on the policy
+
+00:05:48.800 --> 00:05:51.680
+models own outputs and they provide an
+
+00:05:51.680 --> 00:05:54.720
+accurate step level reward but Inc
+
+00:05:54.720 --> 00:05:56.680
+training overhead and with off policy
+
+00:05:56.680 --> 00:05:59.280
+prams you introduce here of course
+
+00:05:59.280 --> 00:06:00.600
+addition distribution shift because
+
+00:06:00.600 --> 00:06:03.840
+you're working here with different llms
+
+00:06:03.840 --> 00:06:05.280
+that have been trained on a different
+
+00:06:05.280 --> 00:06:07.680
+training data distribution and therefore
+
+00:06:07.680 --> 00:06:09.960
+you do have a distributional shift so
+
+00:06:09.960 --> 00:06:11.400
+maybe your PRM was trained on
+
+00:06:11.400 --> 00:06:14.080
+mathematics and my policy model is in
+
+00:06:14.080 --> 00:06:16.000
+theoretical physics so I will have a
+
+00:06:16.000 --> 00:06:17.680
+distribution shift also between
+
+00:06:17.680 --> 00:06:20.520
+mathematics and theortical physics it is
+
+00:06:20.520 --> 00:06:23.120
+okay you can see this very clearly take
+
+00:06:23.120 --> 00:06:26.440
+simply a mystal based PRM and a myal
+
+00:06:26.440 --> 00:06:29.680
+based PRM assigns 83% High rewards to
+
+00:06:29.680 --> 00:06:32.919
+incorrect short answers compared to a
+
+00:06:32.919 --> 00:06:36.360
+properly aligned deep seek PRM nothing
+
+00:06:36.360 --> 00:06:38.680
+against Mist but a mini a real
+
+00:06:38.680 --> 00:06:40.960
+professional model there are still
+
+00:06:40.960 --> 00:06:43.520
+something where you can gain significant
+
+00:06:43.520 --> 00:06:45.360
+performance let's come to the first
+
+00:06:45.360 --> 00:06:48.560
+paper of today can a 1 billion nlm surur
+
+00:06:48.560 --> 00:06:52.000
+a 45 billion llm yes of course if you do
+
+00:06:52.000 --> 00:06:55.919
+the optimal compute test time scaling
+
+00:06:55.919 --> 00:06:58.319
+Shanghai AI laboratory chuai University
+
+00:06:58.319 --> 00:07:01.039
+hin and B
+
+00:07:01.039 --> 00:07:02.800
+isn't this beautiful you know what we
+
+00:07:02.800 --> 00:07:04.560
+have the complete code for this there is
+
+00:07:04.560 --> 00:07:07.039
+a GitHub and it's everything is there
+
+00:07:07.039 --> 00:07:10.000
+it's have a deep dive enjoy
+
+00:07:10.000 --> 00:07:12.639
+this and you know what the idea was
+
+00:07:12.639 --> 00:07:14.840
+simple this is just a week ago February
+
+00:07:14.840 --> 00:07:15.680
+10th
+
+00:07:15.680 --> 00:07:18.160
+2025 they told us hey current studies do
+
+00:07:18.160 --> 00:07:19.879
+not systematically analyze how the
+
+00:07:19.879 --> 00:07:22.560
+policy models how the process reward
+
+00:07:22.560 --> 00:07:25.639
+model and the inherent problem
+
+00:07:25.639 --> 00:07:27.960
+difficulties with what I call the
+
+00:07:27.960 --> 00:07:30.440
+complexity of a mathematical problem
+
+00:07:30.440 --> 00:07:33.599
+influence here our TTS algorithms and
+
+00:07:33.599 --> 00:07:35.479
+they say this lack of analysis limits
+
+00:07:35.479 --> 00:07:37.680
+our understanding and our practical use
+
+00:07:37.680 --> 00:07:39.400
+of TTS
+
+00:07:39.400 --> 00:07:41.960
+methodologies and they set out to
+
+00:07:41.960 --> 00:07:43.720
+examine this in detail and we will have
+
+00:07:43.720 --> 00:07:46.240
+a very short look but please and this is
+
+00:07:46.240 --> 00:07:49.000
+exactly where I took my example for
+
+00:07:49.000 --> 00:07:52.240
+imagine you have your deep seek R1 and
+
+00:07:52.240 --> 00:07:53.840
+your beloved open
+
+00:07:53.840 --> 00:07:57.479
+ey1 and you can have a 7 billion TTS
+
+00:07:57.479 --> 00:08:00.520
+model that beats both of them in logic
+
+00:08:00.520 --> 00:08:04.080
+in mathematical reasoning I'm loving it
+
+00:08:04.080 --> 00:08:05.400
+do you know what this means this means
+
+00:08:05.400 --> 00:08:09.080
+that a 7B model is better than a
+
+00:08:09.080 --> 00:08:11.759
+671 billion free trainable parameter
+
+00:08:11.759 --> 00:08:13.039
+deeps
+
+00:08:13.039 --> 00:08:16.800
+o1 the times are simply amazing and this
+
+00:08:16.800 --> 00:08:18.680
+is done on mat 500
+
+00:08:18.680 --> 00:08:21.280
+Benchmark so let's have a look let's
+
+00:08:21.280 --> 00:08:24.039
+just understand what they are doing here
+
+00:08:24.039 --> 00:08:25.240
+and you're not going to believe it it's
+
+00:08:25.240 --> 00:08:27.039
+going to be a mathematical optimization
+
+00:08:27.039 --> 00:08:29.840
+problem like almost everything else you
+
+00:08:29.840 --> 00:08:31.280
+know there's nothing that you say yeah
+
+00:08:31.280 --> 00:08:33.240
+with common sense I can imagine I just
+
+00:08:33.240 --> 00:08:35.680
+try out for get it it's pure
+
+00:08:35.680 --> 00:08:38.399
+mathematical optimization Theory so
+
+00:08:38.399 --> 00:08:39.919
+let's State the problem the problem
+
+00:08:39.919 --> 00:08:43.959
+formulation according to the ERS here is
+
+00:08:43.959 --> 00:08:45.959
+let's take this in detail say we
+
+00:08:45.959 --> 00:08:47.959
+formulate a reasoning problem as a mark
+
+00:08:47.959 --> 00:08:51.320
+of decision process beautiful so we
+
+00:08:51.320 --> 00:08:53.320
+Define here a specific tble where we
+
+00:08:53.320 --> 00:08:55.600
+have here the state space we have the
+
+00:08:55.600 --> 00:08:58.640
+action space and we have a transition
+
+00:08:58.640 --> 00:09:02.200
+function plus we have here with r our
+
+00:09:02.200 --> 00:09:04.839
+reward function and a specific discount
+
+00:09:04.839 --> 00:09:07.920
+Factor they say now give my prompt X so
+
+00:09:07.920 --> 00:09:11.000
+this is my query X the policy with the
+
+00:09:11.000 --> 00:09:12.800
+parameters Theta generates here an
+
+00:09:12.800 --> 00:09:16.000
+initial action so the very first Alpha
+
+00:09:16.000 --> 00:09:20.480
+One A1 where this is an initial State
+
+00:09:20.480 --> 00:09:23.560
+the policy model now receives a specific
+
+00:09:23.560 --> 00:09:27.079
+reward that depends on S1 and A1 and
+
+00:09:27.079 --> 00:09:29.680
+then we have a state transition to the
+
+00:09:29.680 --> 00:09:32.880
+state S2 where this notes Here the
+
+00:09:32.880 --> 00:09:34.480
+concatenation of the two strings and
+
+00:09:34.480 --> 00:09:36.160
+I'll show you this in a b detail a
+
+00:09:36.160 --> 00:09:38.000
+little bit later on and this process
+
+00:09:38.000 --> 00:09:39.760
+simply continues till the episode
+
+00:09:39.760 --> 00:09:44.079
+terminates and this is it so couldn't be
+
+00:09:44.079 --> 00:09:46.120
+easier you see this is the interplay of
+
+00:09:46.120 --> 00:09:49.160
+our models of our llms policy State
+
+00:09:49.160 --> 00:09:52.240
+space action space reward function we
+
+00:09:52.240 --> 00:09:55.560
+have an initial State S1 then we have an
+
+00:09:55.560 --> 00:09:57.640
+action body llm
+
+00:09:57.640 --> 00:10:00.480
+a then we have a transition from a
+
+00:10:00.480 --> 00:10:04.040
+particular State a S1 to a state s
+
+00:10:04.040 --> 00:10:07.000
+t+1 and we have a specific reward from a
+
+00:10:07.000 --> 00:10:09.720
+reward models given that simply judges
+
+00:10:09.720 --> 00:10:12.839
+here the beneficial of this action if
+
+00:10:12.839 --> 00:10:14.480
+you want to achieve a certain
+
+00:10:14.480 --> 00:10:17.800
+goal now in the classical Theory and
+
+00:10:17.800 --> 00:10:19.560
+this is now here paper I'm going to show
+
+00:10:19.560 --> 00:10:22.079
+you in a minute this will be our second
+
+00:10:22.079 --> 00:10:25.640
+paper of today just remember Snell and
+
+00:10:25.640 --> 00:10:28.160
+now they say hey you know classically
+
+00:10:28.160 --> 00:10:30.360
+the compute the op optimal test time
+
+00:10:30.360 --> 00:10:32.800
+scaling what we do we follow here now
+
+00:10:32.800 --> 00:10:33.480
+from
+
+00:10:33.480 --> 00:10:36.120
+2024 because proposes here test time
+
+00:10:36.120 --> 00:10:39.639
+compute optimal scaling strategy which
+
+00:10:39.639 --> 00:10:41.760
+selects hyperparameter corresponding to
+
+00:10:41.760 --> 00:10:45.279
+a given time test time strategy to
+
+00:10:45.279 --> 00:10:47.320
+maximize the performance benefits on a
+
+00:10:47.320 --> 00:10:50.279
+specific very specific prompt on your
+
+00:10:50.279 --> 00:10:53.600
+prompt so give him a prompt X let Target
+
+00:10:53.600 --> 00:10:55.720
+of theta and an X represented the output
+
+00:10:55.720 --> 00:10:57.560
+distribution overx produced by the
+
+00:10:57.560 --> 00:10:59.040
+policy model with the parameters Theta
+
+00:10:59.040 --> 00:11:00.920
+and compute budget of
+
+00:11:00.920 --> 00:11:04.639
+n we have here now Teta star and this
+
+00:11:04.639 --> 00:11:06.399
+represents now the test time compute
+
+00:11:06.399 --> 00:11:08.399
+optimal scaling strategy for the problem
+
+00:11:08.399 --> 00:11:11.160
+x with the compute budget n and you see
+
+00:11:11.160 --> 00:11:13.680
+it is simple a mathematical optimization
+
+00:11:13.680 --> 00:11:16.639
+problem it is so
+
+00:11:16.639 --> 00:11:19.519
+beautiful it is pure
+
+00:11:19.519 --> 00:11:21.839
+mathematics and now the artist come and
+
+00:11:21.839 --> 00:11:24.279
+say hey wait a minute we will now
+
+00:11:24.279 --> 00:11:27.040
+optimize this no and the aors now say
+
+00:11:27.040 --> 00:11:30.399
+hey based on this findings we propose
+
+00:11:30.399 --> 00:11:33.920
+now that the rewards should be
+
+00:11:33.920 --> 00:11:37.480
+integrated into the computer optimal TTS
+
+00:11:37.480 --> 00:11:40.000
+strategy and again the reward function
+
+00:11:40.000 --> 00:11:43.760
+is or and they have now a new data store
+
+00:11:43.760 --> 00:11:46.519
+and they say our reward aware this is
+
+00:11:46.519 --> 00:11:48.600
+the new part the reward aware compute
+
+00:11:48.600 --> 00:11:51.240
+optimal TTS strategy is now formulated
+
+00:11:51.240 --> 00:11:53.360
+as
+
+00:11:53.360 --> 00:11:56.040
+this again everything more or less the
+
+00:11:56.040 --> 00:11:59.440
+same just adjusted Now by a specific
+
+00:11:59.440 --> 00:12:01.079
+reward function that you choose and the
+
+00:12:01.079 --> 00:12:02.880
+reward model that you choose for your
+
+00:12:02.880 --> 00:12:04.480
+particular
+
+00:12:04.480 --> 00:12:08.360
+topic isn't this beautiful and they say
+
+00:12:08.360 --> 00:12:10.240
+hey this reward aware strategy ensures
+
+00:12:10.240 --> 00:12:13.600
+that a compute optimal scaling adapts to
+
+00:12:13.600 --> 00:12:16.160
+the policy model to your specific prompt
+
+00:12:16.160 --> 00:12:19.680
+to the reward function leading here in
+
+00:12:19.680 --> 00:12:22.199
+total to a general framework for
+
+00:12:22.199 --> 00:12:25.079
+practical TTS test time
+
+00:12:25.079 --> 00:12:27.800
+scaling and with this mathematical
+
+00:12:27.800 --> 00:12:29.800
+optimization
+
+00:12:29.800 --> 00:12:32.320
+we have now that a 1 billion llama 3.2
+
+00:12:32.320 --> 00:12:34.040
+model achieves parity in the performance
+
+00:12:34.040 --> 00:12:36.800
+on a mathematical 500 Benchmark with a
+
+00:12:36.800 --> 00:12:39.920
+llama 3.1
+
+00:12:39.920 --> 00:12:43.600
+45p isn't this impossible I thought it
+
+00:12:43.600 --> 00:12:46.560
+this would never happen I was sure that
+
+00:12:46.560 --> 00:12:49.279
+a 1 billion model how can this little
+
+00:12:49.279 --> 00:12:51.760
+nothing have here the computer
+
+00:12:51.760 --> 00:12:54.240
+performance here in mathematical logic
+
+00:12:54.240 --> 00:12:55.760
+like a llama
+
+00:12:55.760 --> 00:12:59.760
+45b and now mid of February 202 5 we
+
+00:12:59.760 --> 00:13:04.880
+achieved it but it is not not that some
+
+00:13:04.880 --> 00:13:06.760
+people say yeah just give it more time
+
+00:13:06.760 --> 00:13:09.720
+no way it is a mathematical optimization
+
+00:13:09.720 --> 00:13:13.160
+problem that is not trivial because you
+
+00:13:13.160 --> 00:13:15.199
+compute now here the candidate solution
+
+00:13:15.199 --> 00:13:18.360
+under the computer optimal TTS yes you
+
+00:13:18.360 --> 00:13:20.519
+generate 30 times more candidate
+
+00:13:20.519 --> 00:13:23.920
+Solutions here by our little 1B model
+
+00:13:23.920 --> 00:13:26.720
+but you don't just say hey do more or do
+
+00:13:26.720 --> 00:13:30.160
+the same again again no you have a
+
+00:13:30.160 --> 00:13:32.760
+computer optimal strategy that you have
+
+00:13:32.760 --> 00:13:35.560
+to optimize and this is now this
+
+00:13:35.560 --> 00:13:40.120
+beautiful new computer optimal test time
+
+00:13:40.120 --> 00:13:43.399
+scaling strategy for your particular
+
+00:13:43.399 --> 00:13:45.680
+query for your particular
+
+00:13:45.680 --> 00:13:47.920
+model isn't this
+
+00:13:47.920 --> 00:13:50.519
+beautiful now I know that there are more
+
+00:13:50.519 --> 00:13:52.440
+advanced PRM like we going to have a
+
+00:13:52.440 --> 00:13:54.440
+look at and I already showed you some of
+
+00:13:54.440 --> 00:13:57.079
+them you remember the Q value ranking I
+
+00:13:57.079 --> 00:13:58.639
+showed you in my video about I don't
+
+00:13:58.639 --> 00:14:01.560
+know four 5 days back you can go also
+
+00:14:01.560 --> 00:14:03.079
+with entropy
+
+00:14:03.079 --> 00:14:05.920
+regularization there are so many more
+
+00:14:05.920 --> 00:14:08.560
+advanced PM models but you know we go
+
+00:14:08.560 --> 00:14:10.880
+here with a compute efficient
+
+00:14:10.880 --> 00:14:14.120
+model so again if you are completely new
+
+00:14:14.120 --> 00:14:17.920
+to TTS never mind it is easy listen what
+
+00:14:17.920 --> 00:14:21.199
+are the main elements two we have our
+
+00:14:21.199 --> 00:14:25.040
+policy model we call it PM this is an
+
+00:14:25.040 --> 00:14:26.000
+specific
+
+00:14:26.000 --> 00:14:28.720
+llm this if you think about it this is
+
+00:14:28.720 --> 00:14:31.120
+the Reasoner this model is doing you the
+
+00:14:31.120 --> 00:14:32.759
+reasoning step this is the problem
+
+00:14:32.759 --> 00:14:35.440
+solver to my query to my problem that I
+
+00:14:35.440 --> 00:14:38.160
+give to the AI system so the policy
+
+00:14:38.160 --> 00:14:40.839
+model is the core llm responsible for
+
+00:14:40.839 --> 00:14:42.440
+generating solution to the given problem
+
+00:14:42.440 --> 00:14:45.120
+to task it is the primary reason or
+
+00:14:45.120 --> 00:14:47.560
+problem Sol in the system and this
+
+00:14:47.560 --> 00:14:49.279
+embodies now a specific reasoning
+
+00:14:49.279 --> 00:14:51.680
+strategy whether it's standard forward
+
+00:14:51.680 --> 00:14:54.120
+inference or it incorporates here an
+
+00:14:54.120 --> 00:14:56.959
+internal TTS mechanism like recurrent
+
+00:14:56.959 --> 00:14:59.399
+dep we're going to talk at the second of
+
+00:14:59.399 --> 00:15:02.399
+my video and normally we have here the L
+
+00:15:02.399 --> 00:15:06.720
+3 family or the Q 2.5 family and then
+
+00:15:06.720 --> 00:15:09.160
+then we have here the process reward
+
+00:15:09.160 --> 00:15:11.480
+model please note this is not the
+
+00:15:11.480 --> 00:15:15.120
+outcome reward model from 2024 where we
+
+00:15:15.120 --> 00:15:17.199
+said yeah we just wait here till here
+
+00:15:17.199 --> 00:15:20.480
+the complete monol research finishes no
+
+00:15:20.480 --> 00:15:23.560
+we have now a process a dense process
+
+00:15:23.560 --> 00:15:26.399
+reward model and this is our verifier
+
+00:15:26.399 --> 00:15:28.600
+this is our second brain this is here
+
+00:15:28.600 --> 00:15:31.240
+the external coach that gives you here
+
+00:15:31.240 --> 00:15:33.959
+feedback on every step of your logical
+
+00:15:33.959 --> 00:15:36.199
+deductions this is the
+
+00:15:36.199 --> 00:15:39.000
+evaluator so this PRM is an auxiliary
+
+00:15:39.000 --> 00:15:41.399
+llm responsible for evaluating the
+
+00:15:41.399 --> 00:15:42.800
+quality of the reasoning process
+
+00:15:42.800 --> 00:15:45.839
+exhibited by the policy model verify a
+
+00:15:45.839 --> 00:15:47.839
+critique a reward function within the
+
+00:15:47.839 --> 00:15:51.959
+TTS system but they must be coherent
+
+00:15:51.959 --> 00:15:54.279
+they must be trained on the same domain
+
+00:15:54.279 --> 00:15:56.480
+knowledge they must be trained to do
+
+00:15:56.480 --> 00:15:58.399
+more or less here the same task
+
+00:15:58.399 --> 00:16:00.120
+otherwise
+
+00:16:00.120 --> 00:16:02.040
+yeah if this is on a different domain
+
+00:16:02.040 --> 00:16:04.319
+there's not a lot of value in the PRM so
+
+00:16:04.319 --> 00:16:08.079
+careful prms are sensitive topics PRS
+
+00:16:08.079 --> 00:16:09.920
+are trained particular to evaluate
+
+00:16:09.920 --> 00:16:11.279
+individual steps of window the solution
+
+00:16:11.279 --> 00:16:14.279
+trajectory generated by the policy model
+
+00:16:14.279 --> 00:16:16.759
+yet you have a scolar reward signal here
+
+00:16:16.759 --> 00:16:19.120
+for each single step y step providing a
+
+00:16:19.120 --> 00:16:21.079
+dense reward signal for the DDS
+
+00:16:21.079 --> 00:16:24.319
+algorithm and the PRM scores are used to
+
+00:16:24.319 --> 00:16:27.319
+guide now the search based TDS
+
+00:16:27.319 --> 00:16:29.240
+methodology and we already we talked
+
+00:16:29.240 --> 00:16:30.680
+about best of end we will talk about
+
+00:16:30.680 --> 00:16:33.560
+beam search in a second in now selecting
+
+00:16:33.560 --> 00:16:36.160
+the most promising solution puff and
+
+00:16:36.160 --> 00:16:39.759
+ranking here the candidate
+
+00:16:39.759 --> 00:16:42.440
+answers isn't this beautiful in one of
+
+00:16:42.440 --> 00:16:44.000
+my last video I show you here the PRM
+
+00:16:44.000 --> 00:16:47.040
+training based on the mol roll outs but
+
+00:16:47.040 --> 00:16:48.560
+you don't need to go a little bit more
+
+00:16:48.560 --> 00:16:50.399
+advanced you can go with a simple q and
+
+00:16:50.399 --> 00:16:53.759
+2.5 mathematic PRM where do you find it
+
+00:16:53.759 --> 00:16:56.360
+on hugging face here we have it q1 q1
+
+00:16:56.360 --> 00:17:00.240
+2.5 mat PRM 72b
+
+00:17:00.240 --> 00:17:01.839
+here you have in addition here to the
+
+00:17:01.839 --> 00:17:03.880
+mathematical outcome reward model now a
+
+00:17:03.880 --> 00:17:07.319
+process reward model so you can be quite
+
+00:17:07.319 --> 00:17:09.760
+sure that if you go with a Q 2.5 here as
+
+00:17:09.760 --> 00:17:12.319
+your policy model if you take this this
+
+00:17:12.319 --> 00:17:15.799
+might really have a comparable data set
+
+00:17:15.799 --> 00:17:19.360
+training coherence isn't this beautiful
+
+00:17:19.360 --> 00:17:21.199
+yeah and if you're new say hey what is a
+
+00:17:21.199 --> 00:17:22.880
+process now that a process is a
+
+00:17:22.880 --> 00:17:25.480
+three-step process couldn't be
+
+00:17:25.480 --> 00:17:28.199
+easier we have to the policy model our
+
+00:17:28.199 --> 00:17:31.039
+llm generates the candidates so the
+
+00:17:31.039 --> 00:17:33.000
+policy model given now my specific
+
+00:17:33.000 --> 00:17:34.760
+problem generates a set of candidate
+
+00:17:34.760 --> 00:17:38.080
+solution or solution steps in a search
+
+00:17:38.080 --> 00:17:40.360
+based methodology we search here a
+
+00:17:40.360 --> 00:17:42.280
+complete space of all the possible
+
+00:17:42.280 --> 00:17:44.520
+solution given that we have the idea
+
+00:17:44.520 --> 00:17:47.440
+that our solution is in this space and
+
+00:17:47.440 --> 00:17:49.600
+for each solution step that we take here
+
+00:17:49.600 --> 00:17:52.320
+the policy model generates this step we
+
+00:17:52.320 --> 00:17:54.520
+have now here a search
+
+00:17:54.520 --> 00:17:57.320
+step this is evaluated by the processor
+
+00:17:57.320 --> 00:17:59.600
+reward model this processor reward Lo
+
+00:17:59.600 --> 00:18:02.520
+evaluates now everything access a verify
+
+00:18:02.520 --> 00:18:04.280
+evaluating the quality of each kind of
+
+00:18:04.280 --> 00:18:06.640
+solution of each step assigning here the
+
+00:18:06.640 --> 00:18:08.480
+famous reward
+
+00:18:08.480 --> 00:18:10.919
+scores and then and this is the final
+
+00:18:10.919 --> 00:18:14.559
+part the TTS algorithm that we use beam
+
+00:18:14.559 --> 00:18:17.159
+search best of end or whatever the TTS
+
+00:18:17.159 --> 00:18:20.159
+algorithm uses now the PRM course to
+
+00:18:20.159 --> 00:18:22.600
+guide here the selection process the
+
+00:18:22.600 --> 00:18:25.200
+reasoning process choosing now the most
+
+00:18:25.200 --> 00:18:28.480
+promising candidate to explore further I
+
+00:18:28.480 --> 00:18:30.600
+the or in the refinement in the
+
+00:18:30.600 --> 00:18:32.840
+self-reflection OR selecting already the
+
+00:18:32.840 --> 00:18:34.559
+best final answer in the best of ends
+
+00:18:34.559 --> 00:18:37.200
+scenario if you have a TTS algorithm of
+
+00:18:37.200 --> 00:18:40.280
+best of n so you see it's an easy
+
+00:18:40.280 --> 00:18:42.960
+interplay you have two llms of course it
+
+00:18:42.960 --> 00:18:44.400
+could be the same it could be real
+
+00:18:44.400 --> 00:18:46.200
+specialized modes that you train for
+
+00:18:46.200 --> 00:18:48.960
+this particular task it's all up to you
+
+00:18:48.960 --> 00:18:51.960
+how advanced you go with those modes but
+
+00:18:51.960 --> 00:18:55.559
+in general by Ling the prm's guidance
+
+00:18:55.559 --> 00:18:58.039
+the TTS process effectively refines the
+
+00:18:58.039 --> 00:19:00.520
+the poliy model output distribution
+
+00:19:00.520 --> 00:19:02.799
+leading to improved performance compared
+
+00:19:02.799 --> 00:19:05.480
+here to the standard inference of our
+
+00:19:05.480 --> 00:19:09.960
+non TTS models and you see with this
+
+00:19:09.960 --> 00:19:12.000
+optimization that we choose the right
+
+00:19:12.000 --> 00:19:14.440
+policy model the right PM model the
+
+00:19:14.440 --> 00:19:18.320
+perfect TTS algorithm and it is the
+
+00:19:18.320 --> 00:19:20.320
+interplay of those three elements that
+
+00:19:20.320 --> 00:19:23.039
+we can optimize and get a performance
+
+00:19:23.039 --> 00:19:24.720
+that is simply
+
+00:19:24.720 --> 00:19:27.640
+insane if you only know a 1 billion to a
+
+00:19:27.640 --> 00:19:29.400
+45 billion
+
+00:19:29.400 --> 00:19:30.880
+parameter
+
+00:19:30.880 --> 00:19:34.200
+model so what we achieved we achieved we
+
+00:19:34.200 --> 00:19:37.000
+even had a look at a reward aware
+
+00:19:37.000 --> 00:19:40.640
+compute optimal TTS strategy so of this
+
+00:19:40.640 --> 00:19:43.480
+paper fa 10 this reward integration is
+
+00:19:43.480 --> 00:19:45.679
+so beautiful because finally we
+
+00:19:45.679 --> 00:19:47.640
+integrate into optimization to reward
+
+00:19:47.640 --> 00:19:50.120
+model but you know what looking at this
+
+00:19:50.120 --> 00:19:53.760
+and say hey maybe I need a fresh up on
+
+00:19:53.760 --> 00:19:55.720
+what exactly is the definition of a
+
+00:19:55.720 --> 00:19:58.720
+compute optimal scaling strategy in this
+
+00:19:58.720 --> 00:20:02.080
+particular case no so this is now the
+
+00:20:02.080 --> 00:20:04.480
+second paper remember snil this is now
+
+00:20:04.480 --> 00:20:06.200
+paper from Snell UC see Berkeley Google
+
+00:20:06.200 --> 00:20:09.600
+Deep Mind yes unbelievable you say what
+
+00:20:09.600 --> 00:20:12.799
+this is already from August of 2024 yes
+
+00:20:12.799 --> 00:20:14.840
+it's a good one it's an old one but it's
+
+00:20:14.840 --> 00:20:18.000
+a beautiful one you know why because it
+
+00:20:18.000 --> 00:20:20.039
+answers here the formalization of
+
+00:20:20.039 --> 00:20:21.880
+computer optimal scaling strategies and
+
+00:20:21.880 --> 00:20:25.280
+it has so many data let's jump into this
+
+00:20:25.280 --> 00:20:28.640
+so let's come here to the core element
+
+00:20:28.640 --> 00:20:30.120
+and the authors tell us hey we found
+
+00:20:30.120 --> 00:20:32.080
+that the efficacy of a given approach
+
+00:20:32.080 --> 00:20:33.159
+heavily
+
+00:20:33.159 --> 00:20:35.679
+correlates with the difficulty of a
+
+00:20:35.679 --> 00:20:37.799
+specific problem from the perspective of
+
+00:20:37.799 --> 00:20:39.240
+a based llm
+
+00:20:39.240 --> 00:20:42.080
+capabilities so the more difficult my
+
+00:20:42.080 --> 00:20:45.919
+query my prompt is the more challenging
+
+00:20:45.919 --> 00:20:48.640
+it will be to find the perfect TTS
+
+00:20:48.640 --> 00:20:50.679
+optimization and the arst tell us hey
+
+00:20:50.679 --> 00:20:52.159
+this motivated us to introduce the
+
+00:20:52.159 --> 00:20:56.120
+notion of a compute optimal scaling of
+
+00:20:56.120 --> 00:20:59.440
+test time computation which prescribes
+
+00:20:59.440 --> 00:21:02.400
+here an Adaptive prompt dependent
+
+00:21:02.400 --> 00:21:04.400
+strategy to improve the performance
+
+00:21:04.400 --> 00:21:06.960
+under a given test time compute
+
+00:21:06.960 --> 00:21:09.840
+budget you say isn't this beautiful so
+
+00:21:09.840 --> 00:21:12.120
+test time compute budget is clear in the
+
+00:21:12.120 --> 00:21:13.960
+worst case it is just 2 seconds 5
+
+00:21:13.960 --> 00:21:16.320
+seconds minutes 3 minutes 5 minutes 10
+
+00:21:16.320 --> 00:21:18.640
+minutes an hour whatever you like and
+
+00:21:18.640 --> 00:21:20.840
+now find here give them a Time budget or
+
+00:21:20.840 --> 00:21:23.440
+a computational budget find the best
+
+00:21:23.440 --> 00:21:26.360
+adaptive prompt dependent complexity
+
+00:21:26.360 --> 00:21:28.840
+dependent strategy for the TT as
+
+00:21:28.840 --> 00:21:31.799
+algorithm in the combination here of the
+
+00:21:31.799 --> 00:21:33.799
+policy model and the reward model and
+
+00:21:33.799 --> 00:21:36.039
+half a year ago we had not yet the
+
+00:21:36.039 --> 00:21:38.880
+reward model integrated but never mind
+
+00:21:38.880 --> 00:21:41.880
+the results are amazing let's look at
+
+00:21:41.880 --> 00:21:44.600
+this here and it's here you have three
+
+00:21:44.600 --> 00:21:47.360
+option no the best of n okay then the
+
+00:21:47.360 --> 00:21:49.760
+beam search where we selected the top
+
+00:21:49.760 --> 00:21:52.400
+end samples at each step using here the
+
+00:21:52.400 --> 00:21:55.799
+PRM or then even more a look ahead
+
+00:21:55.799 --> 00:21:58.159
+search my goodness this sounds complex
+
+00:21:58.159 --> 00:21:59.720
+and you might said hey this is the best
+
+00:21:59.720 --> 00:22:01.559
+model well you're are going to be
+
+00:22:01.559 --> 00:22:03.360
+surprised I can tell
+
+00:22:03.360 --> 00:22:07.159
+you look at this these are different PRM
+
+00:22:07.159 --> 00:22:08.520
+search
+
+00:22:08.520 --> 00:22:11.120
+methodologies so either you go with best
+
+00:22:11.120 --> 00:22:13.440
+of end here to the full solution and say
+
+00:22:13.440 --> 00:22:15.080
+hey a verifier tells me that this is the
+
+00:22:15.080 --> 00:22:17.480
+correct solution or in beam search we
+
+00:22:17.480 --> 00:22:19.799
+don't go here the complete way to the
+
+00:22:19.799 --> 00:22:22.799
+end but we have intermediate solution
+
+00:22:22.799 --> 00:22:26.039
+steps so again parallel four and you see
+
+00:22:26.039 --> 00:22:29.360
+verify tells us hey step two three four
+
+00:22:29.360 --> 00:22:32.120
+two and four well look interesting
+
+00:22:32.120 --> 00:22:34.320
+continue with those you see one and
+
+00:22:34.320 --> 00:22:39.000
+three and here two goes on Yep this is
+
+00:22:39.000 --> 00:22:41.279
+it this is it and yeah so we reach here
+
+00:22:41.279 --> 00:22:43.360
+then a final destination where the
+
+00:22:43.360 --> 00:22:44.919
+verifier tells us say this is your
+
+00:22:44.919 --> 00:22:47.880
+solution to your specific questions or
+
+00:22:47.880 --> 00:22:50.640
+look ahead now this is like beam search
+
+00:22:50.640 --> 00:22:52.720
+but at each step here you have a roll
+
+00:22:52.720 --> 00:22:55.840
+out for three four five steps in advance
+
+00:22:55.840 --> 00:22:58.240
+using here the PM value at the end of
+
+00:22:58.240 --> 00:22:59.840
+the roller to present you the value for
+
+00:22:59.840 --> 00:23:02.000
+the current step so there's a lot of
+
+00:23:02.000 --> 00:23:05.799
+let's call it guessing into this but can
+
+00:23:05.799 --> 00:23:08.000
+give you here not just this single step
+
+00:23:08.000 --> 00:23:11.520
+trajectory evaluation but if a multistep
+
+00:23:11.520 --> 00:23:13.159
+you know you look a little bit further
+
+00:23:13.159 --> 00:23:16.000
+in the future but the future PM um
+
+00:23:16.000 --> 00:23:19.120
+calculations are rather not as precise
+
+00:23:19.120 --> 00:23:20.880
+as you would like to
+
+00:23:20.880 --> 00:23:24.320
+be and here we have now the data isn't
+
+00:23:24.320 --> 00:23:26.279
+this beautiful so green we have the
+
+00:23:26.279 --> 00:23:29.279
+majority beautiful the best of n here in
+
+00:23:29.279 --> 00:23:32.679
+Orange and in red we have beam search
+
+00:23:32.679 --> 00:23:35.880
+and blue so you see here if we have here
+
+00:23:35.880 --> 00:23:37.840
+an increase in the in the generation
+
+00:23:37.840 --> 00:23:40.640
+budget and on the y- AIS we have to test
+
+00:23:40.640 --> 00:23:42.440
+accuracy of a particular mathematical
+
+00:23:42.440 --> 00:23:45.320
+Benchmark in percentage you see red and
+
+00:23:45.320 --> 00:23:48.240
+blue red and blue the beam search
+
+00:23:48.240 --> 00:23:51.480
+algorithm for TTS those seem to be here
+
+00:23:51.480 --> 00:23:53.840
+at the beginning here the best solution
+
+00:23:53.840 --> 00:23:55.880
+but then you see there then suddenly
+
+00:23:55.880 --> 00:23:58.240
+here we have this s look ahead coming up
+
+00:23:58.240 --> 00:24:00.720
+a little bit but then if we increase
+
+00:24:00.720 --> 00:24:03.000
+again here the generation budget we have
+
+00:24:03.000 --> 00:24:04.840
+still here the blue we have here the
+
+00:24:04.840 --> 00:24:07.200
+beam and now suddenly the best of n
+
+00:24:07.200 --> 00:24:10.000
+weighted methodology shows its real
+
+00:24:10.000 --> 00:24:12.520
+power so you see if you compare those
+
+00:24:12.520 --> 00:24:14.799
+methodology it is not as easy that you
+
+00:24:14.799 --> 00:24:18.080
+have one best model at at a particular
+
+00:24:18.080 --> 00:24:21.080
+generation budget or to generation time
+
+00:24:21.080 --> 00:24:24.240
+but this is a real complex
+
+00:24:24.240 --> 00:24:26.320
+thing in order to understand the
+
+00:24:26.320 --> 00:24:28.960
+dependencies now of the comp lexity
+
+00:24:28.960 --> 00:24:32.520
+level they did a difficulty bin analysis
+
+00:24:32.520 --> 00:24:34.159
+and now they only compare the beam
+
+00:24:34.159 --> 00:24:36.200
+search and against the best of end
+
+00:24:36.200 --> 00:24:37.799
+because those are the two most
+
+00:24:37.799 --> 00:24:40.799
+interesting one now to make a long story
+
+00:24:40.799 --> 00:24:42.279
+short if you look at this and you have
+
+00:24:42.279 --> 00:24:44.679
+your increasing difficulty level to the
+
+00:24:44.679 --> 00:24:47.440
+right and you see you have here TTC
+
+00:24:47.440 --> 00:24:49.200
+budget of four and here you have a TTC
+
+00:24:49.200 --> 00:24:53.120
+budget of 256 my goodness 256
+
+00:24:53.120 --> 00:24:55.760
+Generations you see the performance jump
+
+00:24:55.760 --> 00:24:57.360
+again the same mathematical test
+
+00:24:57.360 --> 00:25:00.200
+accuracy here in the X on the y- AIS you
+
+00:25:00.200 --> 00:25:01.720
+see yeah we're around
+
+00:25:01.720 --> 00:25:05.159
+80% but if you go to a higher complexity
+
+00:25:05.159 --> 00:25:08.440
+you see blue dominates and blue is beam
+
+00:25:08.440 --> 00:25:09.559
+search
+
+00:25:09.559 --> 00:25:12.320
+suddenly so if you have a medium
+
+00:25:12.320 --> 00:25:14.120
+difficulty problems we see that beam
+
+00:25:14.120 --> 00:25:16.120
+search demonstrate here consistent
+
+00:25:16.120 --> 00:25:19.880
+improvement over the best of n so it is
+
+00:25:19.880 --> 00:25:22.039
+not that you go here completely you make
+
+00:25:22.039 --> 00:25:24.520
+the jump here to the final solution but
+
+00:25:24.520 --> 00:25:26.760
+you go segment by segment and you build
+
+00:25:26.760 --> 00:25:29.960
+here a specific beam Sur SE algorithm
+
+00:25:29.960 --> 00:25:32.080
+that seems to be and provide here some
+
+00:25:32.080 --> 00:25:34.679
+good Solutions but you see even here at
+
+00:25:34.679 --> 00:25:38.000
+level five it completely rushes down and
+
+00:25:38.000 --> 00:25:39.840
+yeah
+
+00:25:39.840 --> 00:25:42.840
+great so what we achieved with this
+
+00:25:42.840 --> 00:25:44.360
+paper if you have a deep dive and look
+
+00:25:44.360 --> 00:25:46.720
+at all the formula at first we have a
+
+00:25:46.720 --> 00:25:48.480
+searching you remember we had the search
+
+00:25:48.480 --> 00:25:51.159
+space the box now we are searching
+
+00:25:51.159 --> 00:25:54.919
+against the dens processware verifier
+
+00:25:54.919 --> 00:25:57.039
+reward model our PRM that we always
+
+00:25:57.039 --> 00:26:00.600
+looked at in detail and having it now we
+
+00:26:00.600 --> 00:26:03.279
+also have here a case that we can update
+
+00:26:03.279 --> 00:26:05.120
+now the model distribution over a
+
+00:26:05.120 --> 00:26:08.039
+response
+
+00:26:08.279 --> 00:26:10.799
+adaptively you can then go the next step
+
+00:26:10.799 --> 00:26:14.000
+to have a self-reflective PRM and and
+
+00:26:14.000 --> 00:26:17.120
+end there are endless possibilities but
+
+00:26:17.120 --> 00:26:19.320
+it is so nice you have if you want a
+
+00:26:19.320 --> 00:26:23.640
+pure search PRM or you go here to an
+
+00:26:23.640 --> 00:26:25.159
+Adaptive
+
+00:26:25.159 --> 00:26:27.880
+refinement PRM and I'm going to show you
+
+00:26:27.880 --> 00:26:28.880
+here
+
+00:26:28.880 --> 00:26:31.559
+uh comparison in about 5 minutes
+
+00:26:31.559 --> 00:26:35.200
+time you have seen this before because
+
+00:26:35.200 --> 00:26:37.159
+in the video where I showed your AI
+
+00:26:37.159 --> 00:26:39.720
+agents new interference reasoning with Q
+
+00:26:39.720 --> 00:26:43.440
+the qas we did exactly the same no we
+
+00:26:43.440 --> 00:26:45.919
+had here our interference TTC reasoning
+
+00:26:45.919 --> 00:26:48.720
+is happening we had here we had here the
+
+00:26:48.720 --> 00:26:50.360
+final odds and we said okay if you only
+
+00:26:50.360 --> 00:26:51.919
+have a final reward signal at the end of
+
+00:26:51.919 --> 00:26:54.159
+thinking this is not as great we use the
+
+00:26:54.159 --> 00:26:56.880
+mol research methodology to build your
+
+00:26:56.880 --> 00:26:59.159
+reasoning trees and and then at each
+
+00:26:59.159 --> 00:27:01.279
+step in the reasoning trees we will use
+
+00:27:01.279 --> 00:27:04.159
+here a process reward mod to provide
+
+00:27:04.159 --> 00:27:06.799
+here some hint at the first run of
+
+00:27:06.799 --> 00:27:09.640
+course it was just a p
+
+00:27:09.640 --> 00:27:12.279
+distribution a process reward model that
+
+00:27:12.279 --> 00:27:15.520
+then we can optimize and this will help
+
+00:27:15.520 --> 00:27:18.760
+us in deciding which is the perfect way
+
+00:27:18.760 --> 00:27:22.240
+step one step 8 step 12 step 15 to
+
+00:27:22.240 --> 00:27:24.360
+arrive at the correct
+
+00:27:24.360 --> 00:27:26.960
+solution this is more or less the same
+
+00:27:26.960 --> 00:27:28.840
+we just use different tool tools what to
+
+00:27:28.840 --> 00:27:30.880
+call it research but you see we also
+
+00:27:30.880 --> 00:27:33.600
+used here for the search algorithm but
+
+00:27:33.600 --> 00:27:36.480
+for the process reward mod it was more L
+
+00:27:36.480 --> 00:27:39.799
+the same idea so you see we are circling
+
+00:27:39.799 --> 00:27:41.519
+here in mid-February
+
+00:27:41.519 --> 00:27:44.519
+2025 we are here all about the same
+
+00:27:44.519 --> 00:27:46.840
+topic we are sitting in our helicopters
+
+00:27:46.840 --> 00:27:50.720
+here cruising here over this target
+
+00:27:50.720 --> 00:27:53.640
+area the study had a
+
+00:27:53.640 --> 00:27:55.960
+beautiful takeaway and I want to show
+
+00:27:55.960 --> 00:27:56.679
+you
+
+00:27:56.679 --> 00:28:01.039
+this the last time this one here and the
+
+00:28:01.039 --> 00:28:03.600
+pre-training computer the very beginning
+
+00:28:03.600 --> 00:28:06.919
+of our lrm are not one to one
+
+00:28:06.919 --> 00:28:08.760
+exchangeable and they come to the
+
+00:28:08.760 --> 00:28:10.279
+conclusion that an easy medium
+
+00:28:10.279 --> 00:28:12.559
+mathematical question which are within a
+
+00:28:12.559 --> 00:28:13.600
+M's
+
+00:28:13.600 --> 00:28:16.240
+capabilities the test time compute can
+
+00:28:16.240 --> 00:28:19.679
+easily cover up for some additional
+
+00:28:19.679 --> 00:28:23.000
+pre-training however now on more
+
+00:28:23.000 --> 00:28:25.000
+challenging question if we increase the
+
+00:28:25.000 --> 00:28:28.279
+complexity of our task which are outside
+
+00:28:28.279 --> 00:28:31.600
+of a given base model capabilities a 1
+
+00:28:31.600 --> 00:28:34.760
+billion model the pre-training is likely
+
+00:28:34.760 --> 00:28:37.080
+more effective for improving the
+
+00:28:37.080 --> 00:28:41.120
+performance so we do run into a wall of
+
+00:28:41.120 --> 00:28:44.559
+course but that a 1 billion can
+
+00:28:44.559 --> 00:28:47.480
+outperform a 405 billion I would say the
+
+00:28:47.480 --> 00:28:49.919
+wall is quite far away but it is there
+
+00:28:49.919 --> 00:28:53.320
+of course it is there so we cannot do
+
+00:28:53.320 --> 00:28:56.279
+everything here and the TTC reasoning
+
+00:28:56.279 --> 00:28:59.399
+complexity if the pre-training has not
+
+00:28:59.399 --> 00:29:01.360
+already been at the same level of
+
+00:29:01.360 --> 00:29:03.960
+complexity before we can go maybe a
+
+00:29:03.960 --> 00:29:06.200
+little step further in the complexity
+
+00:29:06.200 --> 00:29:08.960
+but there are
+
+00:29:08.960 --> 00:29:10.640
+limits
+
+00:29:10.640 --> 00:29:14.080
+great you notice we started with this
+
+00:29:14.080 --> 00:29:16.039
+and now we call both methodologies that
+
+00:29:16.039 --> 00:29:20.159
+we looked at more the the real search uh
+
+00:29:20.159 --> 00:29:21.519
+test time scaling and then the
+
+00:29:21.519 --> 00:29:23.799
+refinement test time scaling both of
+
+00:29:23.799 --> 00:29:26.799
+these models will call external TTS test
+
+00:29:26.799 --> 00:29:28.679
+time scaling comp
+
+00:29:28.679 --> 00:29:30.480
+scaling
+
+00:29:30.480 --> 00:29:33.559
+algorithms and now let's come here to a
+
+00:29:33.559 --> 00:29:35.240
+fact that is simply
+
+00:29:35.240 --> 00:29:37.960
+amazing we take this now and we say this
+
+00:29:37.960 --> 00:29:40.360
+is great but you know what we bring it
+
+00:29:40.360 --> 00:29:43.159
+back into the training
+
+00:29:43.159 --> 00:29:46.240
+time we say hey if this is what makes
+
+00:29:46.240 --> 00:29:50.519
+our model reason better reason more we
+
+00:29:50.519 --> 00:29:53.480
+have now understood the algorithms in
+
+00:29:53.480 --> 00:29:55.840
+the test time scaling to optimize the
+
+00:29:55.840 --> 00:29:58.919
+inference reasoning process
+
+00:29:58.919 --> 00:30:01.440
+now we take this and we say great and we
+
+00:30:01.440 --> 00:30:04.799
+build it into the model in the first
+
+00:30:04.799 --> 00:30:08.200
+place so we say let's do here the third
+
+00:30:08.200 --> 00:30:12.240
+test time compute scaling let's build
+
+00:30:12.240 --> 00:30:15.960
+here a latent mathematical space where
+
+00:30:15.960 --> 00:30:19.640
+we can implement this
+
+00:30:19.840 --> 00:30:22.840
+optimization now there's something now
+
+00:30:22.840 --> 00:30:25.279
+going wrong and you clearly see this
+
+00:30:25.279 --> 00:30:28.720
+because this is not test time scaling
+
+00:30:28.720 --> 00:30:34.799
+anymore we are here in the training time
+
+00:30:34.799 --> 00:30:38.120
+compute the latent space is not in a
+
+00:30:38.120 --> 00:30:41.679
+normal Transformer model that we have so
+
+00:30:41.679 --> 00:30:44.799
+we have to modify now the real transform
+
+00:30:44.799 --> 00:30:47.919
+architecture of our llm and the simplest
+
+00:30:47.919 --> 00:30:51.399
+way is we look at recurrent models we
+
+00:30:51.399 --> 00:30:55.960
+look at D DT models deep sing models
+
+00:30:55.960 --> 00:30:58.039
+I'll show you this in a minute so what
+
+00:30:58.039 --> 00:31:01.960
+we do we add the recurrent block to the
+
+00:31:01.960 --> 00:31:05.120
+transform architecture so we modify here
+
+00:31:05.120 --> 00:31:07.120
+the underlying architecture of
+
+00:31:07.120 --> 00:31:09.679
+everything our
+
+00:31:09.679 --> 00:31:12.760
+Transformer and we add a recurrent block
+
+00:31:12.760 --> 00:31:14.679
+and this is the beautiful study February
+
+00:31:14.679 --> 00:31:15.760
+7
+
+00:31:15.760 --> 00:31:18.559
+2025 and you have here this is from
+
+00:31:18.559 --> 00:31:20.799
+Institute Tuan Max plank Institute for
+
+00:31:20.799 --> 00:31:23.399
+intell system Dutchland Germany
+
+00:31:23.399 --> 00:31:25.720
+University of Maryland and the Lawrence
+
+00:31:25.720 --> 00:31:28.200
+limore National Laboratory
+
+00:31:28.200 --> 00:31:29.799
+and they published this and they said
+
+00:31:29.799 --> 00:31:32.799
+hey you know what now they also called
+
+00:31:32.799 --> 00:31:36.039
+it a scaling up the test time compute
+
+00:31:36.039 --> 00:31:37.840
+with latent
+
+00:31:37.840 --> 00:31:42.000
+reasoning a recurring depth approach but
+
+00:31:42.000 --> 00:31:45.240
+it is not really precise because we just
+
+00:31:45.240 --> 00:31:47.840
+take the ideas and the algorithms from
+
+00:31:47.840 --> 00:31:50.240
+the test time compute
+
+00:31:50.240 --> 00:31:53.120
+optimization we build a general
+
+00:31:53.120 --> 00:31:55.080
+recurrent depth
+
+00:31:55.080 --> 00:31:58.039
+architecture and then we apply Latin
+
+00:31:58.039 --> 00:32:01.600
+reasoning in the training time compute
+
+00:32:01.600 --> 00:32:04.760
+and in the test time compute so let's be
+
+00:32:04.760 --> 00:32:07.039
+a little bit more specific we build a
+
+00:32:07.039 --> 00:32:08.760
+complete new architecture for this we
+
+00:32:08.760 --> 00:32:11.279
+build a new Transformer model for this
+
+00:32:11.279 --> 00:32:13.440
+given our insights from
+
+00:32:13.440 --> 00:32:16.399
+TTS embedding here the capacity for
+
+00:32:16.399 --> 00:32:17.960
+iterative computation and compute
+
+00:32:17.960 --> 00:32:21.240
+scaling directly into the language mod
+
+00:32:21.240 --> 00:32:24.519
+core architecture so we modify the
+
+00:32:24.519 --> 00:32:27.240
+transform itself and you say hey finally
+
+00:32:27.240 --> 00:32:30.080
+yes great let's do this now the ERS
+
+00:32:30.080 --> 00:32:33.519
+build a very tiny 3.5 billion feet train
+
+00:32:33.519 --> 00:32:36.919
+parameter small language wall and now
+
+00:32:36.919 --> 00:32:38.480
+they built it this with the new
+
+00:32:38.480 --> 00:32:40.279
+recurrent Block in its
+
+00:32:40.279 --> 00:32:43.919
+architecture and they call it here LM
+
+00:32:43.919 --> 00:32:46.399
+the language model with adapt
+
+00:32:46.399 --> 00:32:49.000
+recurrence and you might say why now
+
+00:32:49.000 --> 00:32:51.960
+adapt will be really easy recurrence if
+
+00:32:51.960 --> 00:32:53.679
+you're not familiar with the latest
+
+00:32:53.679 --> 00:32:55.519
+years in EI and statistics and
+
+00:32:55.519 --> 00:32:59.639
+theoretical physics and computer science
+
+00:32:59.639 --> 00:33:02.919
+it is easy it is easy recurrent simply
+
+00:33:02.919 --> 00:33:06.960
+means we have here kind of a spiral and
+
+00:33:06.960 --> 00:33:09.919
+we spiral deeper and deeper into the
+
+00:33:09.919 --> 00:33:13.080
+reasoning so this is it's not a loop
+
+00:33:13.080 --> 00:33:15.120
+this is more than a loop this is really
+
+00:33:15.120 --> 00:33:17.279
+an improvement you know going down and
+
+00:33:17.279 --> 00:33:19.000
+down and down deeper and deeper into
+
+00:33:19.000 --> 00:33:21.799
+reasoning process but since this is now
+
+00:33:21.799 --> 00:33:24.440
+recurring Block in the architecture this
+
+00:33:24.440 --> 00:33:27.919
+block if you do now the training the the
+
+00:33:27.919 --> 00:33:29.919
+block is here and if we do here a test
+
+00:33:29.919 --> 00:33:32.799
+time scaling the block is here so this
+
+00:33:32.799 --> 00:33:35.159
+is an inherent part of the new
+
+00:33:35.159 --> 00:33:37.360
+Transformer architecture so you can call
+
+00:33:37.360 --> 00:33:39.679
+the block here a test time scaling block
+
+00:33:39.679 --> 00:33:42.120
+no it is an original inherent block it
+
+00:33:42.120 --> 00:33:44.080
+is there full
+
+00:33:44.080 --> 00:33:46.760
+stop so let's forget that this is an
+
+00:33:46.760 --> 00:33:50.039
+internal test time scaling element
+
+00:33:50.039 --> 00:33:52.159
+because test time scaling is this here
+
+00:33:52.159 --> 00:33:55.279
+this here is not test time scaling so
+
+00:33:55.279 --> 00:33:57.320
+yeah there's a little bit of a hiup here
+
+00:33:57.320 --> 00:34:00.639
+with the precise um marketing but you
+
+00:34:00.639 --> 00:34:03.840
+know exactly what we are looking for so
+
+00:34:03.840 --> 00:34:05.519
+having now this recording blog is an
+
+00:34:05.519 --> 00:34:07.080
+inherent part in the architecture at the
+
+00:34:07.080 --> 00:34:09.760
+test time the M can iterate longer to
+
+00:34:09.760 --> 00:34:12.200
+use a more computer and improve its
+
+00:34:12.200 --> 00:34:14.079
+performance and I know what you going to
+
+00:34:14.079 --> 00:34:16.040
+say but this is not a test time
+
+00:34:16.040 --> 00:34:20.480
+algorithm no
+
+00:34:21.040 --> 00:34:24.399
+no let's have a look at it let's clarify
+
+00:34:24.399 --> 00:34:27.399
+this we call this here we train here
+
+00:34:27.399 --> 00:34:30.480
+language model with adapt recurrence
+
+00:34:30.480 --> 00:34:34.320
+module a recurrent block so we modify
+
+00:34:34.320 --> 00:34:37.119
+the transformer in the training time
+
+00:34:37.119 --> 00:34:40.000
+computer already so this means we need a
+
+00:34:40.000 --> 00:34:43.359
+new training algorithm a new training
+
+00:34:43.359 --> 00:34:46.399
+process to train this kind of
+
+00:34:46.399 --> 00:34:49.639
+Transformer for our deep reasoning and
+
+00:34:49.639 --> 00:34:51.440
+then the block is there as an inherent
+
+00:34:51.440 --> 00:34:53.960
+element and we can use it then but
+
+00:34:53.960 --> 00:34:55.639
+instead of scaling here the test time
+
+00:34:55.639 --> 00:34:58.079
+reasoning by verbalizing here long chain
+
+00:34:58.079 --> 00:35:01.320
+of ss the model does something else the
+
+00:35:01.320 --> 00:35:03.240
+model cannot improve
+
+00:35:03.240 --> 00:35:06.040
+entirely by reasoning in a lent
+
+00:35:06.040 --> 00:35:08.400
+mathematical in a pure mathematical
+
+00:35:08.400 --> 00:35:10.880
+State before any
+
+00:35:10.880 --> 00:35:14.280
+verbalization is
+
+00:35:14.280 --> 00:35:17.040
+happening nice you might say because
+
+00:35:17.040 --> 00:35:19.520
+normally our test time scaling is
+
+00:35:19.520 --> 00:35:21.880
+happening when the verbalization has
+
+00:35:21.880 --> 00:35:24.760
+been done when the sentences has have
+
+00:35:24.760 --> 00:35:25.560
+been
+
+00:35:25.560 --> 00:35:30.280
+formed but no we stay in this pure new
+
+00:35:30.280 --> 00:35:34.640
+mathematical compute State and to be
+
+00:35:34.640 --> 00:35:36.760
+precise to a level that you say Hey you
+
+00:35:36.760 --> 00:35:40.160
+are crazy it is not here scaling test
+
+00:35:40.160 --> 00:35:40.960
+time
+
+00:35:40.960 --> 00:35:43.359
+reasoning because I will show you a
+
+00:35:43.359 --> 00:35:45.400
+surprising effect at the end of this
+
+00:35:45.400 --> 00:35:48.920
+video so the one way to unlock all of
+
+00:35:48.920 --> 00:35:51.280
+this and I thought about this for years
+
+00:35:51.280 --> 00:35:53.079
+I'm not like my subscriber who leave me
+
+00:35:53.079 --> 00:35:55.400
+a comment who says hey I thought about
+
+00:35:55.400 --> 00:35:57.480
+the same thing like you showed me that
+
+00:35:57.480 --> 00:35:59.920
+here here stand for our MIT or Howard
+
+00:35:59.920 --> 00:36:03.040
+was doing now I had the same feeling you
+
+00:36:03.040 --> 00:36:05.880
+know there's an unta potential if we
+
+00:36:05.880 --> 00:36:09.960
+just do this in a loop why not go Loop
+
+00:36:09.960 --> 00:36:11.720
+Loop Loop and reasoning deeper and
+
+00:36:11.720 --> 00:36:13.880
+deeper and deeper and this is exactly
+
+00:36:13.880 --> 00:36:16.359
+what they're doing but you don't use
+
+00:36:16.359 --> 00:36:18.920
+here a transform architecture for but
+
+00:36:18.920 --> 00:36:20.920
+they add here a recurring unit here to
+
+00:36:20.920 --> 00:36:23.839
+our llm and this unit runs in a loop
+
+00:36:23.839 --> 00:36:25.680
+which is not really correct it's more a
+
+00:36:25.680 --> 00:36:27.880
+spiral but never mind so we have
+
+00:36:27.880 --> 00:36:29.960
+iteratively processing and updating its
+
+00:36:29.960 --> 00:36:31.800
+hidden State and enabling here
+
+00:36:31.800 --> 00:36:35.319
+computations to be carried on almost
+
+00:36:35.319 --> 00:36:39.160
+indefinitely so this is the main idea in
+
+00:36:39.160 --> 00:36:42.200
+our transform architecture we have a
+
+00:36:42.200 --> 00:36:45.200
+recurring block that is just thinkinking
+
+00:36:45.200 --> 00:36:48.119
+it does nothing else than Sy syn s Sy s
+
+00:36:48.119 --> 00:36:51.800
+s Sy but how do we build this block and
+
+00:36:51.800 --> 00:36:53.440
+what are the elements of this blog this
+
+00:36:53.440 --> 00:36:57.079
+is the interesting thing
+
+00:36:57.680 --> 00:36:59.760
+yeah if we have this plug and we have
+
+00:36:59.760 --> 00:37:02.880
+test time inference time the model canot
+
+00:37:02.880 --> 00:37:04.160
+improve in performance through the
+
+00:37:04.160 --> 00:37:07.359
+recurrent reasoning in the Lattin space
+
+00:37:07.359 --> 00:37:09.079
+and that's it this is an additional
+
+00:37:09.079 --> 00:37:11.280
+feature and this is the reason why with
+
+00:37:11.280 --> 00:37:14.800
+a 3.5 billion with recurring depth
+
+00:37:14.800 --> 00:37:17.960
+module block can now have an equal
+
+00:37:17.960 --> 00:37:19.200
+performance in the mathematical
+
+00:37:19.200 --> 00:37:21.400
+reasoning to a 50 billion
+
+00:37:21.400 --> 00:37:25.480
+model so you see suddenly we bring over
+
+00:37:25.480 --> 00:37:28.720
+all our insights from test time compute
+
+00:37:28.720 --> 00:37:30.480
+scaling
+
+00:37:30.480 --> 00:37:33.079
+into how to optimize the transform
+
+00:37:33.079 --> 00:37:35.640
+architecture
+
+00:37:35.640 --> 00:37:37.880
+itself if you look this is a
+
+00:37:37.880 --> 00:37:40.079
+mathematical space we can analyze here
+
+00:37:40.079 --> 00:37:42.640
+the features in this mathematical space
+
+00:37:42.640 --> 00:37:44.319
+and if you are a little bit on the
+
+00:37:44.319 --> 00:37:46.680
+mathematical side you do this and you
+
+00:37:46.680 --> 00:37:48.280
+see that in this space something
+
+00:37:48.280 --> 00:37:50.400
+happening we have some symmetries
+
+00:37:50.400 --> 00:37:53.119
+developing in the space if we do here
+
+00:37:53.119 --> 00:37:55.839
+deeper and deeper and deeper reasoning
+
+00:37:55.839 --> 00:37:58.119
+and there are now shapes developed in
+
+00:37:58.119 --> 00:38:00.880
+this pure Latin mathematical space here
+
+00:38:00.880 --> 00:38:02.240
+especially if you do numerical
+
+00:38:02.240 --> 00:38:04.119
+computation and there's now a complete
+
+00:38:04.119 --> 00:38:07.040
+new Theory I mean for me because I'm a
+
+00:38:07.040 --> 00:38:10.200
+stupid idiot but if you are have a PhD
+
+00:38:10.200 --> 00:38:12.760
+in mathematics you know that there are
+
+00:38:12.760 --> 00:38:15.599
+elements in the pure mathematical theory
+
+00:38:15.599 --> 00:38:17.839
+that would support this but more about
+
+00:38:17.839 --> 00:38:20.839
+this in a later video great yeah let's
+
+00:38:20.839 --> 00:38:22.560
+look at the model itself how do we build
+
+00:38:22.560 --> 00:38:24.200
+the reiring block ladies and gentlemen
+
+00:38:24.200 --> 00:38:26.640
+this is the way you do it and I have
+
+00:38:26.640 --> 00:38:29.960
+here a screenshot to be as precise as
+
+00:38:29.960 --> 00:38:32.040
+possible the model is primarily
+
+00:38:32.040 --> 00:38:33.560
+structured around the decoder only
+
+00:38:33.560 --> 00:38:36.200
+Transformer block so H GPT model these
+
+00:38:36.200 --> 00:38:37.839
+blocks are structured into three
+
+00:38:37.839 --> 00:38:40.480
+functional groups now like in music you
+
+00:38:40.480 --> 00:38:42.160
+know we have a beginning this is called
+
+00:38:42.160 --> 00:38:44.680
+the prute and then we have the end of
+
+00:38:44.680 --> 00:38:46.480
+the music this is the coder this is the
+
+00:38:46.480 --> 00:38:48.240
+end of the music so we have a beginning
+
+00:38:48.240 --> 00:38:49.920
+and the end and now you're not going to
+
+00:38:49.920 --> 00:38:52.119
+believe it but in the middle there's
+
+00:38:52.119 --> 00:38:53.359
+also something in the middle and we call
+
+00:38:53.359 --> 00:38:56.079
+it a recurrent
+
+00:38:56.079 --> 00:38:59.079
+block the prute is simple it embeds you
+
+00:38:59.079 --> 00:39:01.040
+the input data into this new
+
+00:39:01.040 --> 00:39:03.599
+mathematical space using here our
+
+00:39:03.599 --> 00:39:05.319
+Transformer layers that you
+
+00:39:05.319 --> 00:39:08.280
+know in the recurring block itself so
+
+00:39:08.280 --> 00:39:10.079
+when we have established a mathematical
+
+00:39:10.079 --> 00:39:13.200
+space this is our central unit of
+
+00:39:13.200 --> 00:39:15.560
+computation and we just compute and
+
+00:39:15.560 --> 00:39:17.839
+modify states to the extent I already
+
+00:39:17.839 --> 00:39:19.800
+shown you the
+
+00:39:19.800 --> 00:39:22.560
+formula and if we have done all the
+
+00:39:22.560 --> 00:39:24.800
+calculations we have at the end of the
+
+00:39:24.800 --> 00:39:28.200
+coder we unemed here result from the
+
+00:39:28.200 --> 00:39:30.160
+Lattin space and it bringing it back
+
+00:39:30.160 --> 00:39:34.040
+here with a prediction hat here to the
+
+00:39:34.040 --> 00:39:36.839
+verbalization that's all there is the
+
+00:39:36.839 --> 00:39:38.800
+only special element is that this
+
+00:39:38.800 --> 00:39:42.240
+recurrent block you can have your spiral
+
+00:39:42.240 --> 00:39:44.319
+down in the reasoning so if you want it
+
+00:39:44.319 --> 00:39:47.480
+in a real simple way think about this
+
+00:39:47.480 --> 00:39:50.599
+first step the prut is we embed data in
+
+00:39:50.599 --> 00:39:52.240
+this new mathematical
+
+00:39:52.240 --> 00:39:55.040
+space then we calculate the data in the
+
+00:39:55.040 --> 00:39:57.920
+Latin space with the recurring block and
+
+00:39:57.920 --> 00:40:00.800
+at the end we uned we extract the data
+
+00:40:00.800 --> 00:40:02.960
+from our artificial mathematical space
+
+00:40:02.960 --> 00:40:05.440
+from the Latin space and convert it back
+
+00:40:05.440 --> 00:40:08.400
+into words into sentences that's
+
+00:40:08.400 --> 00:40:10.839
+it yeah each block contains multiple
+
+00:40:10.839 --> 00:40:12.760
+layers and each layer contains here the
+
+00:40:12.760 --> 00:40:15.400
+standard causal self attention block
+
+00:40:15.400 --> 00:40:18.960
+using rope and the a gated MLP plus we
+
+00:40:18.960 --> 00:40:20.920
+use here the classical RMS Norm as our
+
+00:40:20.920 --> 00:40:22.079
+normalization
+
+00:40:22.079 --> 00:40:26.000
+function there is nothing particular
+
+00:40:26.000 --> 00:40:28.480
+interesting to this we have our self
+
+00:40:28.480 --> 00:40:30.880
+attention block we use here positional
+
+00:40:30.880 --> 00:40:33.760
+encoding we have our MLP we have a
+
+00:40:33.760 --> 00:40:39.119
+normalization function everything is as
+
+00:40:39.119 --> 00:40:42.200
+normal but how do you get the idea that
+
+00:40:42.200 --> 00:40:44.079
+you say hey wait a minute I put here
+
+00:40:44.079 --> 00:40:46.920
+recurrent block here in our Transformer
+
+00:40:46.920 --> 00:40:48.440
+where does this come from and you might
+
+00:40:48.440 --> 00:40:51.599
+say hey wow this just happened overnight
+
+00:40:51.599 --> 00:40:53.800
+I'm so sorry to tell you no this took
+
+00:40:53.800 --> 00:40:57.359
+years to develop and hundreds of people
+
+00:40:57.359 --> 00:41:00.560
+so the idea originated according to my
+
+00:41:00.560 --> 00:41:02.200
+humble opinion here in the literature on
+
+00:41:02.200 --> 00:41:04.599
+the recur new networks or what they call
+
+00:41:04.599 --> 00:41:06.880
+here the deep thinking
+
+00:41:06.880 --> 00:41:10.079
+networks it is damn difficult to get an
+
+00:41:10.079 --> 00:41:12.000
+original paper from the time I mean we
+
+00:41:12.000 --> 00:41:14.720
+are talking here about 2023 everything
+
+00:41:14.720 --> 00:41:16.760
+disappeared behind pay Walls by the
+
+00:41:16.760 --> 00:41:20.119
+publishing houses I have here only here
+
+00:41:20.119 --> 00:41:22.319
+as you see uh paper under the double
+
+00:41:22.319 --> 00:41:24.240
+blind review here for the conference
+
+00:41:24.240 --> 00:41:27.520
+paper 2024 but this is the paper by
+
+00:41:27.520 --> 00:41:31.240
+Shield at all from 2023 talking about
+
+00:41:31.240 --> 00:41:33.319
+here the latest development in recurrent
+
+00:41:33.319 --> 00:41:35.680
+neural
+
+00:41:35.680 --> 00:41:38.520
+networks schwat Shield is here one of
+
+00:41:38.520 --> 00:41:40.920
+the main ERS if you want to know about
+
+00:41:40.920 --> 00:41:45.240
+DT Nets about deep thinking
+
+00:41:45.240 --> 00:41:48.319
+networks over there the whole theory of
+
+00:41:48.319 --> 00:41:51.800
+a recurring block more or less
+
+00:41:51.800 --> 00:41:55.079
+originated and I read scheld as staring
+
+00:41:55.079 --> 00:41:59.280
+2020 2021 so this is from 2023 so you
+
+00:41:59.280 --> 00:42:01.560
+got an idea hey there are five years of
+
+00:42:01.560 --> 00:42:04.760
+research here in whatever Consortium
+
+00:42:04.760 --> 00:42:07.440
+where they already prepared here the way
+
+00:42:07.440 --> 00:42:08.640
+for
+
+00:42:08.640 --> 00:42:11.200
+this the prior work makes clear that
+
+00:42:11.200 --> 00:42:13.560
+this DT Nets are capable of learning
+
+00:42:13.560 --> 00:42:16.960
+scalable algorithmic processes that can
+
+00:42:16.960 --> 00:42:19.839
+solve problems of arbitrary size when
+
+00:42:19.839 --> 00:42:22.760
+trained only on small examples this was
+
+00:42:22.760 --> 00:42:25.119
+the fascinating idea this was the hook
+
+00:42:25.119 --> 00:42:26.800
+that they said hey how is this possible
+
+00:42:26.800 --> 00:42:30.880
+that this is working so DT Nets in
+
+00:42:30.880 --> 00:42:32.400
+itself a
+
+00:42:32.400 --> 00:42:34.880
+beautiful theory that you can have a
+
+00:42:34.880 --> 00:42:38.319
+deep dive but gee everything almost is
+
+00:42:38.319 --> 00:42:41.000
+behind here pay wall so if you find here
+
+00:42:41.000 --> 00:42:44.280
+some of schat Shield's archive a PDF
+
+00:42:44.280 --> 00:42:45.720
+link please put a link here in the
+
+00:42:45.720 --> 00:42:47.520
+description for the community to find it
+
+00:42:47.520 --> 00:42:49.720
+because otherwise you see I have to go
+
+00:42:49.720 --> 00:42:53.319
+here with double PL
+
+00:42:53.319 --> 00:42:56.520
+refuse this recurring design here was
+
+00:42:56.520 --> 00:42:58.400
+here kind of minimal seot required to
+
+00:42:58.400 --> 00:43:01.079
+learn here stable iterative operators
+
+00:43:01.079 --> 00:43:02.720
+and they give us here a beautiful
+
+00:43:02.720 --> 00:43:04.800
+example here for the recurrent design
+
+00:43:04.800 --> 00:43:06.760
+why they took care this recurrent block
+
+00:43:06.760 --> 00:43:08.480
+as the main element of the new
+
+00:43:08.480 --> 00:43:10.920
+Transformer think of this as a gradient
+
+00:43:10.920 --> 00:43:13.520
+Descent of a function X may be a
+
+00:43:13.520 --> 00:43:16.280
+variable of interest and Y is not a data
+
+00:43:16.280 --> 00:43:17.640
+now the gradient Descent of this
+
+00:43:17.640 --> 00:43:19.559
+function starts here from initial random
+
+00:43:19.559 --> 00:43:23.119
+State xcore ser and repeatedly applies
+
+00:43:23.119 --> 00:43:24.839
+here simple mathematical operation the
+
+00:43:24.839 --> 00:43:26.839
+gradient of the function it optimizes
+
+00:43:26.839 --> 00:43:29.440
+and it depend on the previous dat xcore
+
+00:43:29.440 --> 00:43:31.359
+K and the data
+
+00:43:31.359 --> 00:43:34.720
+y note that we need to use Y in every
+
+00:43:34.720 --> 00:43:37.800
+single step to actually optimize our
+
+00:43:37.800 --> 00:43:40.240
+function similarly we repeatedly
+
+00:43:40.240 --> 00:43:42.160
+injected the data e and our setup in
+
+00:43:42.160 --> 00:43:43.599
+every step of the
+
+00:43:43.599 --> 00:43:45.720
+recurrence so given here from the
+
+00:43:45.720 --> 00:43:48.400
+example of a gradient descent they found
+
+00:43:48.400 --> 00:43:51.680
+out if they use this recurrent block
+
+00:43:51.680 --> 00:43:55.119
+they have to feed the input continuously
+
+00:43:55.119 --> 00:43:57.640
+into this block which is in interesting
+
+00:43:57.640 --> 00:43:59.800
+itself so if you want to have a little
+
+00:43:59.800 --> 00:44:01.440
+bit of a deep dive into the recurring
+
+00:44:01.440 --> 00:44:05.559
+block or you have an adapter Matrix here
+
+00:44:05.559 --> 00:44:07.440
+so the current block first uses an
+
+00:44:07.440 --> 00:44:09.640
+adapter Matrix that takes here the
+
+00:44:09.640 --> 00:44:13.520
+concatenation of the current state s IUS
+
+00:44:13.520 --> 00:44:17.119
+one and the input embedding e and this
+
+00:44:17.119 --> 00:44:19.640
+operation Maps you the combined Vector
+
+00:44:19.640 --> 00:44:21.800
+into the model hidden
+
+00:44:21.800 --> 00:44:24.240
+Dimension and this concatenation as
+
+00:44:24.240 --> 00:44:27.160
+opposed to addition or whatever have the
+
+00:44:27.160 --> 00:44:29.000
+just tell us we have found that this
+
+00:44:29.000 --> 00:44:33.240
+works best and if we have this after the
+
+00:44:33.240 --> 00:44:34.920
+adapt the output passes through several
+
+00:44:34.920 --> 00:44:37.079
+Transformer layers these layers are
+
+00:44:37.079 --> 00:44:39.440
+organized now in a specific sandwich
+
+00:44:39.440 --> 00:44:42.240
+format you have the classical attention
+
+00:44:42.240 --> 00:44:44.160
+sub layer with the caal self attention
+
+00:44:44.160 --> 00:44:46.440
+using ropia for positional encoding then
+
+00:44:46.440 --> 00:44:48.760
+you have your MLP and you have here the
+
+00:44:48.760 --> 00:44:51.119
+norm for stabilization there's nothing
+
+00:44:51.119 --> 00:44:52.720
+particular to this here at the end you
+
+00:44:52.720 --> 00:44:55.720
+have another layer of the normalization
+
+00:44:55.720 --> 00:44:58.000
+beautiful if if you are not sure about
+
+00:44:58.000 --> 00:45:01.559
+rope go to my channel put in rope you
+
+00:45:01.559 --> 00:45:03.760
+have two videos rope positional and
+
+00:45:03.760 --> 00:45:06.079
+batting up to 100K Contex length when up
+
+00:45:06.079 --> 00:45:08.599
+to 1 million
+
+00:45:08.599 --> 00:45:11.319
+token and now this recurring blog as I
+
+00:45:11.319 --> 00:45:13.079
+told you it is an inherent part of the
+
+00:45:13.079 --> 00:45:16.400
+Transformer so we use this now the recar
+
+00:45:16.400 --> 00:45:19.640
+Block in the training phase and then if
+
+00:45:19.640 --> 00:45:22.559
+it is trained this is now the beauty in
+
+00:45:22.559 --> 00:45:25.119
+the test time scaling we can also use
+
+00:45:25.119 --> 00:45:26.720
+another recordon block so let's have a
+
+00:45:26.720 --> 00:45:29.119
+look at this so in the training phase
+
+00:45:29.119 --> 00:45:31.240
+they integrated requir blog is build on
+
+00:45:31.240 --> 00:45:32.880
+Transformers computational graph it is
+
+00:45:32.880 --> 00:45:35.640
+used to itly update the Latin State s by
+
+00:45:35.640 --> 00:45:37.240
+combining here the input embeding e with
+
+00:45:37.240 --> 00:45:39.520
+the previous state beautiful and during
+
+00:45:39.520 --> 00:45:41.640
+the training the number of iteration you
+
+00:45:41.640 --> 00:45:44.280
+know the number of spiring down is
+
+00:45:44.280 --> 00:45:46.000
+randomly sampled from a log normal
+
+00:45:46.000 --> 00:45:46.960
+personone
+
+00:45:46.960 --> 00:45:49.079
+distribution and this variability
+
+00:45:49.079 --> 00:45:51.200
+ensures that the model learns to have to
+
+00:45:51.200 --> 00:45:53.960
+handle different computational depths
+
+00:45:53.960 --> 00:45:56.040
+effectively teaching it to sync with
+
+00:45:56.040 --> 00:45:59.280
+various amount of compute deeper and
+
+00:45:59.280 --> 00:46:01.920
+deeper and then a test time scaling at
+
+00:46:01.920 --> 00:46:05.839
+the inference run we unroll this the
+
+00:46:05.839 --> 00:46:08.440
+same learned Recon block is now applied
+
+00:46:08.440 --> 00:46:10.280
+but you can choose to run more iteration
+
+00:46:10.280 --> 00:46:11.800
+that we typically used during the
+
+00:46:11.800 --> 00:46:14.400
+training if you add here I don't know 20
+
+00:46:14.400 --> 00:46:17.680
+or 25 go with 30 so this extended
+
+00:46:17.680 --> 00:46:19.720
+unrolling allows the model to allocate
+
+00:46:19.720 --> 00:46:22.440
+additional compute for deeper
+
+00:46:22.440 --> 00:46:24.480
+reasoning because the com block is
+
+00:46:24.480 --> 00:46:25.720
+active during the training the model
+
+00:46:25.720 --> 00:46:27.240
+becomes more robust to the change in the
+
+00:46:27.240 --> 00:46:29.800
+number of iteration when you scale test
+
+00:46:29.800 --> 00:46:31.880
+time compute it behaves like a standard
+
+00:46:31.880 --> 00:46:34.680
+Transformer module but with an extended
+
+00:46:34.680 --> 00:46:37.520
+Dept of thinking of reasoning of
+
+00:46:37.520 --> 00:46:40.319
+computation that was learned during
+
+00:46:40.319 --> 00:46:43.319
+training so again the training
+
+00:46:43.319 --> 00:46:45.920
+performance is one of the dominant
+
+00:46:45.920 --> 00:46:48.040
+factors if you have a good training you
+
+00:46:48.040 --> 00:46:50.559
+will got get a good inference
+
+00:46:50.559 --> 00:46:54.720
+run test time scaling might be again not
+
+00:46:54.720 --> 00:46:57.480
+the right wording because TTS is not
+
+00:46:57.480 --> 00:46:59.359
+really what's Happening Here we just use
+
+00:46:59.359 --> 00:47:02.280
+here a architecture element of a
+
+00:47:02.280 --> 00:47:04.599
+transformer where we can say okay go
+
+00:47:04.599 --> 00:47:07.280
+down this spiral 30 times this is if you
+
+00:47:07.280 --> 00:47:11.720
+want this is a kind of scaling okay but
+
+00:47:11.720 --> 00:47:13.920
+yeah so be aware we have now three
+
+00:47:13.920 --> 00:47:16.319
+different times of
+
+00:47:16.319 --> 00:47:19.280
+TTS the a showed us here for the
+
+00:47:19.280 --> 00:47:21.319
+training data they give us everything
+
+00:47:21.319 --> 00:47:23.440
+they make it open source they give us
+
+00:47:23.440 --> 00:47:25.240
+the pre-training data everything and
+
+00:47:25.240 --> 00:47:27.119
+they are able to schedule here close to
+
+00:47:27.119 --> 00:47:30.359
+800 billion tokens of pre-training here
+
+00:47:30.359 --> 00:47:32.880
+for the main model you just go there
+
+00:47:32.880 --> 00:47:34.640
+here to the GitHub REO beautiful you
+
+00:47:34.640 --> 00:47:37.079
+have Apache 2 license great all the data
+
+00:47:37.079 --> 00:47:39.480
+is there all the recipes are there all
+
+00:47:39.480 --> 00:47:42.240
+the training routines are there they
+
+00:47:42.240 --> 00:47:44.920
+give you the details to really
+
+00:47:44.920 --> 00:47:46.520
+beautifully write out everything that
+
+00:47:46.520 --> 00:47:48.839
+you should use for the tokenizer the
+
+00:47:48.839 --> 00:47:51.079
+downloads the script the par files
+
+00:47:51.079 --> 00:47:54.480
+everything it is beautifully
+
+00:47:54.480 --> 00:47:57.599
+documented and they say now find model
+
+00:47:57.599 --> 00:48:00.359
+is now here the hugging
+
+00:48:00.359 --> 00:48:02.800
+0125 beautiful and of course you find it
+
+00:48:02.800 --> 00:48:04.640
+on hugging
+
+00:48:04.640 --> 00:48:07.760
+face isn't this beautiful what I
+
+00:48:07.760 --> 00:48:09.960
+personally found interesting is not that
+
+00:48:09.960 --> 00:48:12.800
+it was trained to 800 billion tokens but
+
+00:48:12.800 --> 00:48:15.079
+it was trained on
+
+00:48:15.079 --> 00:48:18.599
+amd's AI machine the Mi
+
+00:48:18.599 --> 00:48:22.280
+250X not the 300 the new 300 but the the
+
+00:48:22.280 --> 00:48:25.200
+old old on the quotation mark the old
+
+00:48:25.200 --> 00:48:26.880
+250X
+
+00:48:26.880 --> 00:48:29.440
+so real interesting to see that now
+
+00:48:29.440 --> 00:48:31.359
+people start here to train the new
+
+00:48:31.359 --> 00:48:34.480
+Transformer models under AMD AI machine
+
+00:48:34.480 --> 00:48:37.920
+and not just on Nvidia
+
+00:48:38.040 --> 00:48:41.119
+gpus okay so this was quite a an
+
+00:48:41.119 --> 00:48:43.000
+interesting thing to learn and to
+
+00:48:43.000 --> 00:48:44.880
+prepare this video for you and I have to
+
+00:48:44.880 --> 00:48:47.559
+tell you I learned quite a lot of this
+
+00:48:47.559 --> 00:48:49.839
+so if we talk about three different axes
+
+00:48:49.839 --> 00:48:52.599
+of TTS three different model of TTS so
+
+00:48:52.599 --> 00:48:54.079
+let's have a look at the simplest one
+
+00:48:54.079 --> 00:48:56.839
+the first two we have as I told you here
+
+00:48:56.839 --> 00:48:59.119
+in the box we have a search based TTS
+
+00:48:59.119 --> 00:49:01.280
+with our prms and then we have a
+
+00:49:01.280 --> 00:49:04.280
+revision based TTS with our prms and
+
+00:49:04.280 --> 00:49:05.720
+here you see the different mechanism
+
+00:49:05.720 --> 00:49:08.400
+role process and
+
+00:49:08.400 --> 00:49:11.040
+analogy search is simple you just
+
+00:49:11.040 --> 00:49:13.000
+explore here multiple in parall
+
+00:49:13.000 --> 00:49:15.599
+independent candidate solution revision
+
+00:49:15.599 --> 00:49:18.720
+based you iteratively refine here single
+
+00:49:18.720 --> 00:49:22.720
+solution through self correction self
+
+00:49:22.720 --> 00:49:25.240
+refinement beautifully done but you need
+
+00:49:25.240 --> 00:49:28.559
+of course a PRM so the PRM here picks if
+
+00:49:28.559 --> 00:49:31.319
+you want the best revision model from
+
+00:49:31.319 --> 00:49:33.000
+all the revisions that are offered to
+
+00:49:33.000 --> 00:49:36.280
+you and the PRM chooses here this is the
+
+00:49:36.280 --> 00:49:38.960
+golden way to go if you would like to
+
+00:49:38.960 --> 00:49:41.920
+sing this about a map and analogy here
+
+00:49:41.920 --> 00:49:43.960
+so here with the search based TTS with
+
+00:49:43.960 --> 00:49:46.599
+the prms you explore multiple routes on
+
+00:49:46.599 --> 00:49:49.079
+a map guided here by the expert feedback
+
+00:49:49.079 --> 00:49:52.119
+off of your PRM and weion based you
+
+00:49:52.119 --> 00:49:55.640
+iteratively refine here a single root
+
+00:49:55.640 --> 00:49:58.079
+but guided con instantly here step by
+
+00:49:58.079 --> 00:50:00.720
+step by the expert feedback of a PRM
+
+00:50:00.720 --> 00:50:02.920
+where you revise here and you say huh
+
+00:50:02.920 --> 00:50:05.000
+maybe you can come back here another
+
+00:50:05.000 --> 00:50:07.640
+step if you're not successful and find
+
+00:50:07.640 --> 00:50:10.280
+another way it is completely up to you
+
+00:50:10.280 --> 00:50:12.880
+which of these two TTS to choose but be
+
+00:50:12.880 --> 00:50:15.799
+careful now you know the prms for this
+
+00:50:15.799 --> 00:50:18.119
+particular task you must use carefully
+
+00:50:18.119 --> 00:50:19.760
+from hugging
+
+00:50:19.760 --> 00:50:23.319
+face and the thir axis of our if you
+
+00:50:23.319 --> 00:50:26.720
+want TTS the third methodology the
+
+00:50:26.720 --> 00:50:30.559
+induced methodology now is latent
+
+00:50:30.559 --> 00:50:32.799
+reasoning it really dramatically
+
+00:50:32.799 --> 00:50:34.640
+improves performance on the reasoning t
+
+00:50:34.640 --> 00:50:36.720
+on the Deep reasoning the complex
+
+00:50:36.720 --> 00:50:38.520
+reasoning task by expanding here the
+
+00:50:38.520 --> 00:50:41.720
+test time computation but not by TTS
+
+00:50:41.720 --> 00:50:45.440
+algorithm itself but because we activate
+
+00:50:45.440 --> 00:50:47.960
+the recurrent block which is an inherent
+
+00:50:47.960 --> 00:50:50.559
+architectural element of the new
+
+00:50:50.559 --> 00:50:52.400
+Transformer
+
+00:50:52.400 --> 00:50:55.000
+beautiful and let's finish here this
+
+00:50:55.000 --> 00:50:57.280
+video with the original wordings here
+
+00:50:57.280 --> 00:50:59.280
+from the orst and they say you know this
+
+00:50:59.280 --> 00:51:01.480
+leads us to believe that this Latin
+
+00:51:01.480 --> 00:51:04.079
+reasoning is a promising research
+
+00:51:04.079 --> 00:51:06.839
+direction to complement existing
+
+00:51:06.839 --> 00:51:09.720
+approaches for test time compute scaling
+
+00:51:09.720 --> 00:51:12.520
+and there you have it this is
+
+00:51:12.520 --> 00:51:14.280
+complimentary to the other two
+
+00:51:14.280 --> 00:51:16.839
+methodologies I just showed you so we
+
+00:51:16.839 --> 00:51:19.240
+really have if you want three different
+
+00:51:19.240 --> 00:51:22.200
+versions so pure search based revision
+
+00:51:22.200 --> 00:51:24.520
+based you can have even some hybrid
+
+00:51:24.520 --> 00:51:27.240
+version of this but then this this opens
+
+00:51:27.240 --> 00:51:30.400
+up now again if you do the training
+
+00:51:30.400 --> 00:51:33.520
+phase right for the recurrent block this
+
+00:51:33.520 --> 00:51:36.119
+opens up a third optimization problem
+
+00:51:36.119 --> 00:51:39.280
+for you so you can gain additional
+
+00:51:39.280 --> 00:51:42.559
+performance for your model but hey this
+
+00:51:42.559 --> 00:51:44.799
+just to tell you this was just more or
+
+00:51:44.799 --> 00:51:48.359
+less a mathematical proof of concept a
+
+00:51:48.359 --> 00:51:51.520
+model is 3.5 billion parameter model
+
+00:51:51.520 --> 00:51:55.599
+they built was just in my simple wording
+
+00:51:55.599 --> 00:51:59.680
+a proof of concept it is not really
+
+00:51:59.680 --> 00:52:02.359
+established knowledge we just started to
+
+00:52:02.359 --> 00:52:06.079
+explore this we don't know about the
+
+00:52:06.079 --> 00:52:08.000
+problems we're going to encounter but it
+
+00:52:08.000 --> 00:52:11.200
+seems that this methodology is real
+
+00:52:11.200 --> 00:52:14.119
+interest this new transform architecture
+
+00:52:14.119 --> 00:52:17.599
+has really some interesting aspects to
+
+00:52:17.599 --> 00:52:19.920
+this but of course the negative side is
+
+00:52:19.920 --> 00:52:23.119
+we have to start here the training phase
+
+00:52:23.119 --> 00:52:27.200
+of all these miles again but we can
+
+00:52:27.200 --> 00:52:29.520
+reduce the complexity in the pure
+
+00:52:29.520 --> 00:52:32.520
+training data but now here the first
+
+00:52:32.520 --> 00:52:35.400
+problem how far can we reduce the
+
+00:52:35.400 --> 00:52:38.119
+complexity the or argue that you can
+
+00:52:38.119 --> 00:52:39.599
+reduce the complexity in the training
+
+00:52:39.599 --> 00:52:41.040
+phase quite
+
+00:52:41.040 --> 00:52:44.599
+significantly but I do not think so I
+
+00:52:44.599 --> 00:52:46.880
+think there's somewhere threshold if you
+
+00:52:46.880 --> 00:52:49.520
+are make it too simple the model cannot
+
+00:52:49.520 --> 00:52:52.920
+simply start some discover how to have
+
+00:52:52.920 --> 00:52:55.599
+here an integral form or solve here some
+
+00:52:55.599 --> 00:52:58.000
+differentiation equation suddenly if you
+
+00:52:58.000 --> 00:53:00.599
+know just plus minus
+
+00:53:00.599 --> 00:53:03.480
+so this will be absolutely fascinating
+
+00:53:03.480 --> 00:53:06.319
+in the future so why don't have you a
+
+00:53:06.319 --> 00:53:08.480
+look at these topics why don't you read
+
+00:53:08.480 --> 00:53:10.839
+these papers and I'm sure this just
+
+00:53:10.839 --> 00:53:13.000
+happened this week so maybe next week we
+
+00:53:13.000 --> 00:53:15.160
+will have the next paper on this but for
+
+00:53:15.160 --> 00:53:16.839
+you to know we have more or less three
+
+00:53:16.839 --> 00:53:19.520
+different axes of this test time compute
+
+00:53:19.520 --> 00:53:21.960
+scaling two that are established and the
+
+00:53:21.960 --> 00:53:24.079
+third one that is brand new new
+
+00:53:24.079 --> 00:53:27.000
+Transformer new proof of concept
+
+00:53:27.000 --> 00:53:29.280
+and my goodness the future is absolutely
+
+00:53:29.280 --> 00:53:31.760
+interested and if you are interested to
+
+00:53:31.760 --> 00:53:33.880
+see more of this video hey why not
+
+00:53:33.880 --> 00:53:36.720
+subscribe

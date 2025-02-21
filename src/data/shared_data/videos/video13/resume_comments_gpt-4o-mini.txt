@@ -1,0 +1,13 @@
+Les commentaires traitent de divers aspects de l'intelligence artificielle (IA) et de ses implications sur l'humanité et la technologie. Plusieurs points saillants émergent :
+
+1. **Débat sur l'IA et ses capacités** : Les ID évoquent les succès de l'IA, tels que sa victoire contre un champion de Go, tout en soulignant que lors de ses débuts, l'IA pouvait aussi perdre face à des joueurs de niveau moyen. Cela soulève des questions sur la relation entre machines et humains, notamment en ce qui concerne la compréhension et la souffrance morale.
+
+2. **Consommation énergétique et impacts économiques** : Un point récurrent est la consommation d'énergie nécessaire pour faire fonctionner l'IA, ce qui pourrait atteindre des niveaux très élevés. La préoccupation est également exprimée concernant la possible perte de millions d'emplois due à l'automatisation.
+
+3. **Relation entre entropie et information** : Un parallèle est établi entre l'entropie, la consommation d'énergie, et la production d'information par des systèmes comme ChatGPT. Des critiques sont émises sur le fait que ces systèmes pourraient augmenter l'entropie dans des systèmes ouverts, nuisant ainsi à l'environnement.
+
+4. **Innovation et curiosité** : Le besoin de former les étudiants à des compétences telles que le hacking est également mentionné, dans le but de cultiver une curiosité pour la technologie.
+
+5. **Critique des algorithmes** : Certains commentaires affirment que les algorithmes, indépendamment de leur sophistication, ne peuvent pas véritablement créer, mais plutôt reproduire des informations existantes.
+
+En résumé, les échanges illustrent une vision critique et nuancée des avancées technologiques, soulignant à la fois leurs potentiels bénéfices et les préoccupations éthiques, économiques et environnementales qu'elles engendrent.

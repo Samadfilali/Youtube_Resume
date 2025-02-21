@@ -1,0 +1,9 @@
+Voici un résumé de l'article :
+
+Mistra a récemment publié un nouveau modèle d'intelligence artificielle appelé Mistral, qui est une base de modèle open-source. Ce modèle est conçu pour être utilisé comme "travailleur" pour remplacer les appels à des modèles plus coûteux tels que GPT-40 mini ou Flash.
+
+Le modèle a été testé et il semble prometteur, capable de répondre rapidement et précisément aux questions, même complexes. Il est également capable de produire des sorties structurées et d'appeler des fonctions avec succès.
+
+L'auteur du vidéo suggère que ce modèle pourrait être utilisé pour créer des systèmes de chatbots ou de RAG (Reinforcement Learning from Human Feedback) locaux, et qu'il a beaucoup de potentiel pour la fine-tuning.
+
+Il est également mentionné que Mistra continue à soutenir le mouvement open-source en publiant des modèles de base qui peuvent être utilisés par les autres développeurs pour la fine-tuning.

@@ -1,0 +1,1981 @@
+WEBVTT
+
+00:00:00.040 --> 00:00:02.080
+open ai la plus grande entreprise
+
+00:00:02.080 --> 00:00:03.840
+d'intelligence artificielle au monde
+
+00:00:03.840 --> 00:00:05.879
+vient tout juste de publier un article
+
+00:00:05.879 --> 00:00:08.719
+qui révèle ce qu'il faudra pour que lia
+
+00:00:08.719 --> 00:00:10.519
+devienne le meilleur développeur au
+
+00:00:10.519 --> 00:00:13.080
+monde mais voilà le truc c'est que les
+
+00:00:13.080 --> 00:00:15.080
+stratégies qu'openheid dévoilent dans ce
+
+00:00:15.080 --> 00:00:17.119
+papier scientifique dans cet article ne
+
+00:00:17.119 --> 00:00:19.359
+se limite pas à la programmation ils
+
+00:00:19.359 --> 00:00:21.359
+sont en train de nous prouver par A + B
+
+00:00:21.359 --> 00:00:23.240
+que l'apprentissage par renforcement à
+
+00:00:23.240 --> 00:00:26.400
+grande échelle et selon eux la voix très
+
+00:00:26.400 --> 00:00:28.800
+claire vers l'agi et au-delà je vais
+
+00:00:28.800 --> 00:00:30.840
+donc décortiquer cette article cette
+
+00:00:30.840 --> 00:00:32.680
+nouvelle recherche pour vous et pour
+
+00:00:32.680 --> 00:00:34.520
+vous montrer qu'avec l'apprentissage par
+
+00:00:34.520 --> 00:00:36.760
+renforcement et la puissance de calcul
+
+00:00:36.760 --> 00:00:39.040
+en phase de test ici et bien les
+
+00:00:39.040 --> 00:00:41.280
+possibilités sont juste infinies et
+
+00:00:41.280 --> 00:00:42.960
+juste avant de rentrer dans le sujet je
+
+00:00:42.960 --> 00:00:45.000
+voulais vous montrer cette courte vidéo
+
+00:00:45.000 --> 00:00:47.559
+d'il y a quelques semaine où Sam aldm
+
+00:00:47.559 --> 00:00:50.559
+lui-même PDG de open donc donner une
+
+00:00:50.559 --> 00:00:53.160
+interview au Japon écoutez ça 3 dont
+
+00:00:53.160 --> 00:00:54.440
+nous avons parlé publiquement en
+
+00:00:54.440 --> 00:00:57.640
+décembre et le 175e meilleur programmeur
+
+00:00:57.640 --> 00:00:59.960
+compétitif au monde notre référence
+
+00:00:59.960 --> 00:01:02.280
+Inter est maintenant autour de 50 et
+
+00:01:02.280 --> 00:01:04.000
+nous atteindrons peut-être la première
+
+00:01:04.000 --> 00:01:06.240
+place d'ici la fin de l'année vous voyez
+
+00:01:06.240 --> 00:01:08.280
+maintenant où la barre est placée et
+
+00:01:08.280 --> 00:01:10.439
+jusqu'à où Open est confiant d'aller
+
+00:01:10.439 --> 00:01:11.880
+jusqu'à la fin de l'année vous allez
+
+00:01:11.880 --> 00:01:13.200
+très vite comprendre pourquoi est-ce
+
+00:01:13.200 --> 00:01:14.880
+qu'il place la barre aussi haute voici
+
+00:01:14.880 --> 00:01:16.600
+donc l'article qui s'intitule La
+
+00:01:16.600 --> 00:01:18.439
+programmation compétitive avec les
+
+00:01:18.439 --> 00:01:20.320
+grands modèles de raisonnement publié
+
+00:01:20.320 --> 00:01:23.000
+donc par open eux-même si vous suivez
+
+00:01:23.000 --> 00:01:25.159
+cette chaîne depuis la sortie de dipsic
+
+00:01:25.159 --> 00:01:26.840
+et la publication de l'article
+
+00:01:26.840 --> 00:01:28.360
+scientifique sur dipsic que j'avais
+
+00:01:28.360 --> 00:01:30.040
+couvert dans une vidéo d'ailleurs vous
+
+00:01:30.040 --> 00:01:31.720
+savez très probablement déjà où est-ce
+
+00:01:31.720 --> 00:01:33.840
+que l'on se dirige l'apprentissage par
+
+00:01:33.840 --> 00:01:36.799
+renforcement avec récompense vérifiable
+
+00:01:36.799 --> 00:01:38.720
+plus maintenant l'ajoue à tout cela de
+
+00:01:38.720 --> 00:01:40.600
+la puissance de calcul et vous allez
+
+00:01:40.600 --> 00:01:42.240
+voir que ce sont les deux leviers
+
+00:01:42.240 --> 00:01:43.439
+nécessaires pour atteindre
+
+00:01:43.439 --> 00:01:46.119
+l'intelligence exponentielle dans ces
+
+00:01:46.119 --> 00:01:48.680
+modèlesl donc dit en terme simple et
+
+00:01:48.680 --> 00:01:50.960
+sans utiliser de grand mot ce qu'ils ont
+
+00:01:50.960 --> 00:01:52.920
+découvert depuis dipsic c'est que
+
+00:01:52.920 --> 00:01:55.240
+retirer lettre humain de l'équation
+
+00:01:55.240 --> 00:01:57.560
+intelligence artificielle semble être la
+
+00:01:57.560 --> 00:01:59.880
+clé pour débloquer l'avancée ex
+
+00:01:59.880 --> 00:02:01.799
+ponentiel de l'intelligence ou autrement
+
+00:02:01.799 --> 00:02:03.479
+connu sous le nom de l'explosion de
+
+00:02:03.479 --> 00:02:05.600
+l'intelligence comme l' a décrit l'un
+
+00:02:05.600 --> 00:02:07.600
+des perfondateurs de Lia dans le très
+
+00:02:07.600 --> 00:02:09.840
+très fameux article la conscience
+
+00:02:09.840 --> 00:02:12.080
+situationnelle qui est donc un article
+
+00:02:12.080 --> 00:02:14.319
+phare dans le domaine de Lia et si vous
+
+00:02:14.319 --> 00:02:16.000
+connaissez ce domaine je pense que vous
+
+00:02:16.000 --> 00:02:17.760
+connaissez ce papier qui est donc le
+
+00:02:17.760 --> 00:02:20.239
+papier où l'on y décrit les plusieurs
+
+00:02:20.239 --> 00:02:22.239
+phases de l'intelligence jusqu'à
+
+00:02:22.239 --> 00:02:24.400
+l'intelligence ultime qui serait l'Asie
+
+00:02:24.400 --> 00:02:25.879
+et avant de vraiment rentrer dans les
+
+00:02:25.879 --> 00:02:27.760
+détails juste une petite piqûure de
+
+00:02:27.760 --> 00:02:30.319
+rappel rapidement dipsic donc ce modèle
+
+00:02:30.319 --> 00:02:33.160
+dial la chinois rappelez-vous dipsi a
+
+00:02:33.160 --> 00:02:34.959
+fait sensation il y a quelques semaines
+
+00:02:34.959 --> 00:02:36.080
+je pense que vous le savez dans tous les
+
+00:02:36.080 --> 00:02:37.959
+cas mais beaucoup se sont focalisés en
+
+00:02:37.959 --> 00:02:40.000
+fait sur son coût et son efficacité il
+
+00:02:40.000 --> 00:02:41.879
+n'a coûté que 5 millions de dollars à
+
+00:02:41.879 --> 00:02:43.319
+entraîner même si bon ce n'est pas
+
+00:02:43.319 --> 00:02:45.280
+vraiment une comparaison équitable mais
+
+00:02:45.280 --> 00:02:47.560
+ce qu'ils ont fait était incroyable le
+
+00:02:47.560 --> 00:02:49.640
+point essentiel de l'article sur dipsic
+
+00:02:49.640 --> 00:02:51.319
+c'est qu'ils ont montré au monde que
+
+00:02:51.319 --> 00:02:53.080
+l'apprentissage par renforcement c'était
+
+00:02:53.080 --> 00:02:55.599
+la clé majeur de la performance d'un
+
+00:02:55.599 --> 00:02:57.640
+modèle et que l'on pouvait réduire les
+
+00:02:57.640 --> 00:02:59.840
+coûts drastiquement en utilisant cette
+
+00:02:59.840 --> 00:03:02.239
+méthode là depuis nous avons vu plein
+
+00:03:02.239 --> 00:03:03.840
+d'exemples d'apprentissage par
+
+00:03:03.840 --> 00:03:05.799
+renforcement avec des récompenses
+
+00:03:05.799 --> 00:03:07.920
+vérifiables qui sont donc capables de
+
+00:03:07.920 --> 00:03:10.319
+susciter un comportement réflexif même
+
+00:03:10.319 --> 00:03:12.640
+dans des très petits modèles ce que nous
+
+00:03:12.640 --> 00:03:14.440
+n'avions jamais réussi à faire jusqu'à
+
+00:03:14.440 --> 00:03:16.159
+présent il y a une semaine j'avais même
+
+00:03:16.159 --> 00:03:18.040
+fait même publi une vidéo sur une équipe
+
+00:03:18.040 --> 00:03:20.000
+de doctorant à Berkley qui avait réussi
+
+00:03:20.000 --> 00:03:22.400
+à reproduire un modèle tel que celui-là
+
+00:03:22.400 --> 00:03:24.319
+pour 30 dollars seulement et donc avait
+
+00:03:24.319 --> 00:03:26.519
+réussi à obtenir un comportement
+
+00:03:26.519 --> 00:03:28.879
+réflexif un comportement de réflexion
+
+00:03:28.879 --> 00:03:31.200
+d'Unia euh pour un modèle de seulement
+
+00:03:31.200 --> 00:03:33.080
+1,5 milliards de paramètres et qui avait
+
+00:03:33.080 --> 00:03:34.480
+coûté donc vous l'aurez compris 30
+
+00:03:34.480 --> 00:03:36.200
+dollars et si vous voulez mon avis c'est
+
+00:03:36.200 --> 00:03:37.760
+clairement la stratégie qui va nous
+
+00:03:37.760 --> 00:03:38.959
+mener au prochain niveau de
+
+00:03:38.959 --> 00:03:40.680
+l'intelligence artificielle et c'est
+
+00:03:40.680 --> 00:03:43.040
+aussi la vie de open ey c'est là que
+
+00:03:43.040 --> 00:03:44.879
+tout se joue bien alors laissez-moi
+
+00:03:44.879 --> 00:03:46.439
+vraiment vous expliquer ce qu'est
+
+00:03:46.439 --> 00:03:48.560
+l'apprentissage par renforcement avec
+
+00:03:48.560 --> 00:03:51.040
+récompense vérifiable c'est la même
+
+00:03:51.040 --> 00:03:53.799
+méthode qui a permis à Alpha Go donc de
+
+00:03:53.799 --> 00:03:55.879
+devenir le meilleur joueur de go au
+
+00:03:55.879 --> 00:03:57.400
+monde et même de découvrir des
+
+00:03:57.400 --> 00:03:59.879
+stratégies dans le jeu de Go donc que
+
+00:03:59.879 --> 00:04:02.159
+aucun être humain n'avait jamais imaginé
+
+00:04:02.159 --> 00:04:04.000
+ou cru possible comme par exemple le
+
+00:04:04.000 --> 00:04:06.640
+fameux coup 37 qui avait choqué
+
+00:04:06.640 --> 00:04:08.560
+énormément de monde lorsqu'il l'avait
+
+00:04:08.560 --> 00:04:10.079
+fait c'était il y a quelques années déjà
+
+00:04:10.079 --> 00:04:12.439
+alpago mais mais le bruit qui avait fait
+
+00:04:12.439 --> 00:04:14.840
+cet événement était juste gigantesque et
+
+00:04:14.840 --> 00:04:17.160
+a raison en gros on peut voir ça comme
+
+00:04:17.160 --> 00:04:19.880
+une façon pour lia de s'entraîner toute
+
+00:04:19.880 --> 00:04:22.040
+seule elle va essayer plein de choses
+
+00:04:22.040 --> 00:04:23.800
+différentes et le plus fou c'est que
+
+00:04:23.800 --> 00:04:25.440
+l'on peut augmenter ça autant que l'on
+
+00:04:25.440 --> 00:04:27.240
+veut et à chaque fois elle reçoit une
+
+00:04:27.240 --> 00:04:28.919
+récompense si elle trouve la bonne
+
+00:04:28.919 --> 00:04:30.560
+réponse et elle elle ne reçoit rien si
+
+00:04:30.560 --> 00:04:32.400
+elle se trompe et bien sûr c'est une
+
+00:04:32.400 --> 00:04:35.000
+énorme simplification du processus réel
+
+00:04:35.000 --> 00:04:36.440
+de ce qu'il se passe vraiment de comment
+
+00:04:36.440 --> 00:04:38.240
+nous le faisons vraiment mais pour que
+
+00:04:38.240 --> 00:04:39.680
+vous compreniez reprenons juste
+
+00:04:39.680 --> 00:04:42.000
+l'exemple du jeu de Go imaginez donc
+
+00:04:42.000 --> 00:04:44.039
+deux za qui jouent l'une contre l'autre
+
+00:04:44.039 --> 00:04:45.720
+au Go ou même aux échecs vous pouvez
+
+00:04:45.720 --> 00:04:47.280
+imaginer c'est la même chose pour notre
+
+00:04:47.280 --> 00:04:48.720
+exemple car je sais que les échecs et le
+
+00:04:48.720 --> 00:04:50.039
+GO n'est pas la même chose mais quoi
+
+00:04:50.039 --> 00:04:51.440
+qu'il en soit lorsque vous mettez donc
+
+00:04:51.440 --> 00:04:53.160
+deux intelligences artificielles face- à
+
+00:04:53.160 --> 00:04:54.600
+faceace qui vont jouer une partie de Go
+
+00:04:54.600 --> 00:04:56.120
+et bien celle qui gagne c'est celle qui
+
+00:04:56.120 --> 00:04:57.919
+a la meilleure stratégie on peut donc
+
+00:04:57.919 --> 00:04:59.720
+lui donner une récompense pour sa
+
+00:04:59.720 --> 00:05:01.639
+victoire maintenant imaginez faire ça
+
+00:05:01.639 --> 00:05:04.199
+des dizaines des centaines des milliers
+
+00:05:04.199 --> 00:05:06.440
+voire des millions de fois donc il va
+
+00:05:06.440 --> 00:05:08.440
+jouer des millions de parties à la suite
+
+00:05:08.440 --> 00:05:10.560
+et à chaque fois on prend lia qui a été
+
+00:05:10.560 --> 00:05:12.039
+la plus intelligente elle va apprendre
+
+00:05:12.039 --> 00:05:14.360
+comme ça en itérant sur la meilleure
+
+00:05:14.360 --> 00:05:16.600
+stratégie à chaque fois au final donc et
+
+00:05:16.600 --> 00:05:18.440
+bien cette a elle va apprendre la
+
+00:05:18.440 --> 00:05:20.960
+stratégie optimale pour jouer au Go dans
+
+00:05:20.960 --> 00:05:22.639
+n'importe quelle situation donc je le
+
+00:05:22.639 --> 00:05:24.280
+redis cette approche est spécial pour
+
+00:05:24.280 --> 00:05:25.880
+plusieurs raisons premièrement on peut
+
+00:05:25.880 --> 00:05:28.080
+théoriquement la développer à l'infini
+
+00:05:28.080 --> 00:05:29.960
+on peut continuer à laisser ces système
+
+00:05:29.960 --> 00:05:31.680
+dia jouer l'un contre l'autre
+
+00:05:31.680 --> 00:05:34.280
+indéfiniment et le rythme du progrès est
+
+00:05:34.280 --> 00:05:36.120
+théoriquement infini et ça bien sûr vous
+
+00:05:36.120 --> 00:05:37.759
+l'aurez compris c'est possible parce que
+
+00:05:37.759 --> 00:05:39.560
+en fait il n'y a pas d'humain dans la
+
+00:05:39.560 --> 00:05:41.120
+boucle il n'y a pas d'intervention
+
+00:05:41.120 --> 00:05:43.680
+humaine alphago n'a pas été nourri de
+
+00:05:43.680 --> 00:05:45.720
+partie existante on lui a simplement
+
+00:05:45.720 --> 00:05:48.520
+donner les règles expliquer que s'il
+
+00:05:48.520 --> 00:05:51.000
+gagne et bien il gagne une récompense
+
+00:05:51.000 --> 00:05:53.000
+c'est dans son intérêt mais que s'il
+
+00:05:53.000 --> 00:05:54.440
+perd et bien il a tout simplement perdu
+
+00:05:54.440 --> 00:05:56.240
+et qu'il ne gagne rien mais derrière il
+
+00:05:56.240 --> 00:05:58.120
+n'y aura aucun humain pour évaluer sa
+
+00:05:58.120 --> 00:05:59.360
+performance on va le laisser tourner
+
+00:05:59.360 --> 00:06:01.039
+sans sans supervision humaine donc en
+
+00:06:01.039 --> 00:06:02.639
+fait à l'époque on faisait déjà ça
+
+00:06:02.639 --> 00:06:04.199
+ensuite est venu chat GPT
+
+00:06:04.199 --> 00:06:06.360
+l'apprentissage par renforcement sous
+
+00:06:06.360 --> 00:06:07.919
+supervision humaine c'est-à-dire que
+
+00:06:07.919 --> 00:06:09.360
+c'était les humains qui notaient les
+
+00:06:09.360 --> 00:06:11.360
+réponses de chat GPT par exemple et on a
+
+00:06:11.360 --> 00:06:13.000
+remarqué donc que chat GPT devenait de
+
+00:06:13.000 --> 00:06:14.360
+plus en plus intelligent comme ça sauf
+
+00:06:14.360 --> 00:06:15.960
+qu'il y avait une certaine limite et
+
+00:06:15.960 --> 00:06:17.680
+maintenant depuis la sortie de dipsic on
+
+00:06:17.680 --> 00:06:20.160
+a on a redécouvert que finalement la
+
+00:06:20.160 --> 00:06:21.720
+supervision humaine n'est peut-être pas
+
+00:06:21.720 --> 00:06:24.000
+si bonne que ça maintenant dipsi a été
+
+00:06:24.000 --> 00:06:25.720
+entraîné sans supervision humaine elle a
+
+00:06:25.720 --> 00:06:27.680
+été juste entraînée par elle-même donc
+
+00:06:27.680 --> 00:06:29.639
+de la façon dont je viens d'expliquer
+
+00:06:29.639 --> 00:06:32.039
+ici ils ont fait de même avec O3
+
+00:06:32.039 --> 00:06:33.840
+résultat on est revenu à l'ancienne
+
+00:06:33.840 --> 00:06:35.000
+méthode c'est juste qu'on le fait
+
+00:06:35.000 --> 00:06:36.599
+beaucoup mieux maintenant pour revenir à
+
+00:06:36.599 --> 00:06:38.960
+l'exemple sur Alpha c'est comme si alpha
+
+00:06:38.960 --> 00:06:41.080
+go a pu battre le meilleur joueur de go
+
+00:06:41.080 --> 00:06:43.960
+au monde sans sans humain on parle ici
+
+00:06:43.960 --> 00:06:46.759
+de récompense vérifiable et quand je dis
+
+00:06:46.759 --> 00:06:49.080
+l'apprentissage par renforcement avec
+
+00:06:49.080 --> 00:06:51.360
+récompense vérifiable et bien ce terme
+
+00:06:51.360 --> 00:06:53.599
+est important récompense vérifiable
+
+00:06:53.599 --> 00:06:55.520
+parce que par exemple dans le jeu de Go
+
+00:06:55.520 --> 00:06:58.039
+il y a une seule solution définie on
+
+00:06:58.039 --> 00:07:00.080
+sait quand on gagne et on sa quand on
+
+00:07:00.080 --> 00:07:02.879
+perd c'est ça l'aspect vérifiable mais
+
+00:07:02.879 --> 00:07:04.560
+ça s'applique aussi à d'autres domaines
+
+00:07:04.560 --> 00:07:06.680
+particulièrement le stem donc vous savez
+
+00:07:06.680 --> 00:07:08.800
+c'est l'abréviation de Scien technologie
+
+00:07:08.800 --> 00:07:10.840
+ingénierie et mathématiques et toutes
+
+00:07:10.840 --> 00:07:11.960
+les questions qui rentrent dans ces
+
+00:07:11.960 --> 00:07:13.440
+domaines là et bien ont toutes des
+
+00:07:13.440 --> 00:07:15.639
+récompenses vérifiables 1 + 1 fait
+
+00:07:15.639 --> 00:07:17.639
+toujours de donc si le modèle dit que 1
+
+00:07:17.639 --> 00:07:19.479
++ 1 fait 3 on sait que c'est faux en
+
+00:07:19.479 --> 00:07:21.680
+programmation c'est pareil on peut avoir
+
+00:07:21.680 --> 00:07:23.440
+des récompenses vérifiables quand on a
+
+00:07:23.440 --> 00:07:25.199
+un problème de programmation et bien on
+
+00:07:25.199 --> 00:07:27.280
+connaît la réponse même si le code peut
+
+00:07:27.280 --> 00:07:29.560
+varier ici et là le résultat final du
+
+00:07:29.560 --> 00:07:31.360
+code doit donc fonctionner peu importe
+
+00:07:31.360 --> 00:07:32.840
+la manière dont le code a été écrit si
+
+00:07:32.840 --> 00:07:34.039
+par exemple vous avez un problème qui
+
+00:07:34.039 --> 00:07:36.319
+vous demande de créer un tableau de
+
+00:07:36.319 --> 00:07:39.000
+nombre allant de 1 à 10 par exemple et
+
+00:07:39.000 --> 00:07:40.840
+bien on connaît le résultat attendu mais
+
+00:07:40.840 --> 00:07:43.080
+la façon dont ce tableau est généré et
+
+00:07:43.080 --> 00:07:45.039
+bien peut varier par contre la réponse
+
+00:07:45.039 --> 00:07:46.680
+reste correcte ou alors par exemple on
+
+00:07:46.680 --> 00:07:48.680
+peut aussi exécuter un code et s'il y a
+
+00:07:48.680 --> 00:07:51.479
+une erreur si vous savez vous savez
+
+00:07:51.479 --> 00:07:52.599
+lorsque vous lancez le programme et
+
+00:07:52.599 --> 00:07:54.360
+qu'il y a une erreur et bien évidemment
+
+00:07:54.360 --> 00:07:56.159
+c'est une réponse fausse et on va punir
+
+00:07:56.159 --> 00:07:58.039
+liya dans ce cas-là donc gardez bien
+
+00:07:58.039 --> 00:07:59.479
+tout cela à l'esprit pendant qu'on
+
+00:07:59.479 --> 00:08:01.479
+examine cet article car c'est de cela
+
+00:08:01.479 --> 00:08:03.440
+qu'il s'agit exactement l'apprentissage
+
+00:08:03.440 --> 00:08:05.280
+par renforcement avec récompense
+
+00:08:05.280 --> 00:08:06.599
+vérifiable vous l'aurez compris donc
+
+00:08:06.599 --> 00:08:07.800
+cette méthode d'entraînement qui a fait
+
+00:08:07.800 --> 00:08:09.680
+que les IA deviennent si si bonnes dans
+
+00:08:09.680 --> 00:08:11.919
+les domaines stem va être un petit peu
+
+00:08:11.919 --> 00:08:13.520
+compliqué à ce jour à reproduire pour
+
+00:08:13.520 --> 00:08:15.120
+des domaines un peu plus créatifs pour
+
+00:08:15.120 --> 00:08:16.680
+des questions qui n'ont pas vraiment de
+
+00:08:16.680 --> 00:08:18.680
+solution définie mais ça on y reviendra
+
+00:08:18.680 --> 00:08:20.599
+en fin de vidéo et en gros donc dans ce
+
+00:08:20.599 --> 00:08:22.199
+papier ils vont comparer plusieurs
+
+00:08:22.199 --> 00:08:23.960
+approches mais principalement en deux
+
+00:08:23.960 --> 00:08:25.720
+d'abord comme référence et bien sachez
+
+00:08:25.720 --> 00:08:28.000
+qu'ils utilisent chat gpt4 euh dans une
+
+00:08:28.000 --> 00:08:29.919
+compétition de programmation et il faut
+
+00:08:29.919 --> 00:08:31.280
+dire qu'ils s'en sort plutôt bien
+
+00:08:31.280 --> 00:08:32.680
+ensuite ils vont passer au modèles de
+
+00:08:32.680 --> 00:08:34.120
+raisonnement donc les modèles vous savez
+
+00:08:34.120 --> 00:08:36.959
+O1 et O3 qui utilisent la puissance de
+
+00:08:36.959 --> 00:08:39.240
+calcul donc en phase de test euh la
+
+00:08:39.240 --> 00:08:40.839
+capacité du modèle à réfléchir pendant
+
+00:08:40.839 --> 00:08:43.320
+l'inférence et cela améliore grandement
+
+00:08:43.320 --> 00:08:45.640
+la qualité du code ici et c'est là le
+
+00:08:45.640 --> 00:08:47.360
+but du papier euh l'utilisation de
+
+00:08:47.360 --> 00:08:49.200
+stratégies d'inférence écrite
+
+00:08:49.200 --> 00:08:51.160
+manuellement donc euh avec la mise à
+
+00:08:51.160 --> 00:08:52.800
+l'échelle du modèle plus généralisé en
+
+00:08:52.800 --> 00:08:54.200
+fait il y a deux approches qui sont
+
+00:08:54.200 --> 00:08:55.880
+comparés ici la première approche
+
+00:08:55.880 --> 00:08:57.680
+utilise des humains donc qui écrivent
+
+00:08:57.680 --> 00:09:00.000
+des recettes ou des instructions précise
+
+00:09:00.000 --> 00:09:01.640
+pour guider liya dans son raisonnement
+
+00:09:01.640 --> 00:09:02.839
+c'est comme si on donnait un mode
+
+00:09:02.839 --> 00:09:04.880
+d'emploi détaillé à lia pour résoudre
+
+00:09:04.880 --> 00:09:06.560
+des problèmes et la deuxième approche
+
+00:09:06.560 --> 00:09:08.519
+donc consiste simplement à utiliser une
+
+00:09:08.519 --> 00:09:11.120
+nia plus grande plus puissante sans ses
+
+00:09:11.120 --> 00:09:12.800
+instructions spécifiques et l'idée
+
+00:09:12.800 --> 00:09:14.320
+principale c'est de voir qu'est-ce qui
+
+00:09:14.320 --> 00:09:15.880
+fonctionne le mieux est-ce qu'il vaut
+
+00:09:15.880 --> 00:09:17.440
+mieux avoir une a guidée par des
+
+00:09:17.440 --> 00:09:19.240
+instructions écrites par les humains ou
+
+00:09:19.240 --> 00:09:20.720
+est-ce qu'il suffit d'avoir une a plus
+
+00:09:20.720 --> 00:09:22.279
+performante de la même manière que
+
+00:09:22.279 --> 00:09:24.480
+alfago a appris tout seul à jouer au Go
+
+00:09:24.480 --> 00:09:26.200
+c'est un peu comme comparer deux
+
+00:09:26.200 --> 00:09:27.640
+méthodes pour apprendre à quelqu'un à
+
+00:09:27.640 --> 00:09:29.680
+cuisiner soit on lui donne des recette
+
+00:09:29.680 --> 00:09:31.200
+très détaillée donc ce qui serait
+
+00:09:31.200 --> 00:09:33.160
+l'approche avec intervention humaine
+
+00:09:33.160 --> 00:09:34.760
+soit on lui donne accès à beaucoup plus
+
+00:09:34.760 --> 00:09:36.839
+d'expérience et de connaissance générale
+
+00:09:36.839 --> 00:09:38.959
+donc l'approche de l'autoapprentissage
+
+00:09:38.959 --> 00:09:40.440
+de lien et laissez-moi vous lire un
+
+00:09:40.440 --> 00:09:41.920
+extrait de cet article donc on peut y
+
+00:09:41.920 --> 00:09:43.839
+lire la résolution de problèmes
+
+00:09:43.839 --> 00:09:46.040
+algorithmiqu complexes exige une pensée
+
+00:09:46.040 --> 00:09:48.120
+computationnelle et une résolution de
+
+00:09:48.120 --> 00:09:49.800
+problème de compéten en résolution de
+
+00:09:49.800 --> 00:09:51.600
+problèmes ces problèmes sont aussi
+
+00:09:51.600 --> 00:09:53.720
+objectivement évaluables et c'est là la
+
+00:09:53.720 --> 00:09:55.079
+clé ce que je vous expliquais tout à
+
+00:09:55.079 --> 00:09:57.160
+l'heure les récompenses vérifiables
+
+00:09:57.160 --> 00:09:59.760
+objectivement évaluables ce qui ont fait
+
+00:09:59.760 --> 00:10:01.600
+un terrain d'ESS idéal pour évaluer les
+
+00:10:01.600 --> 00:10:02.839
+capacités de raisonnement des modèles
+
+00:10:02.839 --> 00:10:05.760
+Dia et là ils expliquent ensuite comment
+
+00:10:05.760 --> 00:10:07.440
+initialement ils avaient donc des
+
+00:10:07.440 --> 00:10:09.040
+modèles standard les modèles non
+
+00:10:09.040 --> 00:10:11.760
+pensants donc les chatpt3 chatpt 4o
+
+00:10:11.760 --> 00:10:14.880
+allant donc de 244 millions à 137
+
+00:10:14.880 --> 00:10:16.600
+milliards de paramètres et qui pouvait
+
+00:10:16.600 --> 00:10:18.920
+générer du code plutôt bien mais ils
+
+00:10:18.920 --> 00:10:20.480
+disent on a vu que la performance
+
+00:10:20.480 --> 00:10:23.000
+s'améliore de façon log linéaire avec la
+
+00:10:23.000 --> 00:10:25.040
+taille du modèle et que le fine tuning
+
+00:10:25.040 --> 00:10:27.079
+améliore significativement la précision
+
+00:10:27.079 --> 00:10:29.600
+et quand vous entendez le terme alpha et
+
+00:10:29.600 --> 00:10:31.320
+bien penser apprentissage par
+
+00:10:31.320 --> 00:10:32.720
+renforcement c'est ce que je vous disais
+
+00:10:32.720 --> 00:10:34.279
+c'est la technique qu'ils utilisent ici
+
+00:10:34.279 --> 00:10:36.279
+donc dans alphha code c'est là que tout
+
+00:10:36.279 --> 00:10:38.480
+se joue et j'aimeraai vous parler 20
+
+00:10:38.480 --> 00:10:41.240
+secondes très rapidement de vision Ia la
+
+00:10:41.240 --> 00:10:43.320
+formation que j'ai créée si vous voulez
+
+00:10:43.320 --> 00:10:44.720
+aller beaucoup plus loin dans votre
+
+00:10:44.720 --> 00:10:47.120
+compréhension et surtout à apprendre à
+
+00:10:47.120 --> 00:10:49.000
+intégrer lia dans votre quotidien dans
+
+00:10:49.000 --> 00:10:50.720
+votre vie de tous les jours et bien je
+
+00:10:50.720 --> 00:10:52.600
+vous montre tout que vous soyez
+
+00:10:52.600 --> 00:10:54.600
+complètement débutant ou que vous
+
+00:10:54.600 --> 00:10:57.079
+utilisiez déjà chat GPT et bien j'ai
+
+00:10:57.079 --> 00:10:59.440
+conçu cette formation pour être clair
+
+00:10:59.440 --> 00:11:00.839
+cible et surtout adapté à tous les
+
+00:11:00.839 --> 00:11:02.079
+niveaux alors je vous remercie pour
+
+00:11:02.079 --> 00:11:03.480
+l'accueil qu'elle a reçu nous sommes
+
+00:11:03.480 --> 00:11:05.279
+déjà plus de 600 et franchement les
+
+00:11:05.279 --> 00:11:07.399
+retours sont incroyables donc merci et
+
+00:11:07.399 --> 00:11:08.760
+bien sachez que l'intelligence
+
+00:11:08.760 --> 00:11:10.880
+artificielle ne va pas ralentir dans 6
+
+00:11:10.880 --> 00:11:12.600
+mois il sera sans doute déjà trop tard
+
+00:11:12.600 --> 00:11:14.120
+pour rattraper ceux qui auront pris de
+
+00:11:14.120 --> 00:11:15.639
+l'avance aujourd'hui donc si cela vous
+
+00:11:15.639 --> 00:11:16.920
+intéresse vous trouverez le lien en
+
+00:11:16.920 --> 00:11:18.959
+commentaire sous la vidéo n'hésitez donc
+
+00:11:18.959 --> 00:11:20.600
+pas à y aller faire un tour allez
+
+00:11:20.600 --> 00:11:22.600
+reprenons la vidéo et ils disent il
+
+00:11:22.600 --> 00:11:23.760
+s'est attaqué au tâagees de
+
+00:11:23.760 --> 00:11:25.800
+programmation compétitive en utilisant
+
+00:11:25.800 --> 00:11:27.600
+la génération de codes à grande échelle
+
+00:11:27.600 --> 00:11:31.000
+et le risti en différence alphacode 2
+
+00:11:31.000 --> 00:11:32.760
+dont les améliorations ont presque
+
+00:11:32.760 --> 00:11:34.079
+doublé les problèmes résolus par
+
+00:11:34.079 --> 00:11:36.399
+alphacode c'est classé dans le 85e
+
+00:11:36.399 --> 00:11:38.959
+percenle du code force donc c'est cet
+
+00:11:38.959 --> 00:11:41.000
+examen c'est c'est ce benchmark ces
+
+00:11:41.000 --> 00:11:42.399
+preuves que l'on fait passer aux Ia pour
+
+00:11:42.399 --> 00:11:44.279
+savoir si elles savent coder et les deux
+
+00:11:44.279 --> 00:11:46.040
+systèmes alpha code utilise un
+
+00:11:46.040 --> 00:11:47.720
+échantillonnage à grande échelle allant
+
+00:11:47.720 --> 00:11:50.040
+jusqu'à 1 million de solutions candidat
+
+00:11:50.040 --> 00:11:52.160
+par problème avant de sélectionner leurs
+
+00:11:52.160 --> 00:11:54.160
+10 meilleures souousmissions avec et
+
+00:11:54.160 --> 00:11:56.279
+attention c'est une autre des clés une
+
+00:11:56.279 --> 00:11:57.959
+stratégie d'inférence conçue
+
+00:11:57.959 --> 00:11:59.800
+manuellement avec l'humain dans la
+
+00:11:59.800 --> 00:12:01.880
+boucle ok donc tout cela c'était encore
+
+00:12:01.880 --> 00:12:03.800
+avec de l'intervention humaine ensuite
+
+00:12:03.800 --> 00:12:05.399
+ils ont les grands modèles de
+
+00:12:05.399 --> 00:12:07.480
+raisonnement O1 et O3 et on peut
+
+00:12:07.480 --> 00:12:09.240
+continuer d'y lire la chose suivante ces
+
+00:12:09.240 --> 00:12:10.560
+modèles utilisent le raisonnement en
+
+00:12:10.560 --> 00:12:12.240
+chaîne de pensé donc pour s'attaquer à
+
+00:12:12.240 --> 00:12:13.839
+des problèmes complexes comme les
+
+00:12:13.839 --> 00:12:15.720
+mathématiques et la programmation les
+
+00:12:15.720 --> 00:12:19.760
+travaux de dipsic R1 et de Kimy 1,5 qui
+
+00:12:19.760 --> 00:12:21.519
+soit-disant passant est un peu passé
+
+00:12:21.519 --> 00:12:24.079
+sous le radar ce modèle là donc Kimy 1,5
+
+00:12:24.079 --> 00:12:25.760
+mais qui a accompli beaucoup de choses
+
+00:12:25.760 --> 00:12:27.600
+que dipsic avait fait aussi c'est vrai
+
+00:12:27.600 --> 00:12:28.680
+que j'en ai pas parlé j'aurais pu en
+
+00:12:28.680 --> 00:12:29.959
+faire une vidéo mais peut-être à
+
+00:12:29.959 --> 00:12:32.079
+l'occasion et ils disent donc que au 3
+
+00:12:32.079 --> 00:12:34.519
+donc a aussi accompli indépendamment
+
+00:12:34.519 --> 00:12:36.279
+montrant comment l'apprentissage de la
+
+00:12:36.279 --> 00:12:37.680
+chaîne de pensée améliore les
+
+00:12:37.680 --> 00:12:39.920
+performances sur les défis mathématiques
+
+00:12:39.920 --> 00:12:41.399
+et de programmation et cette chaîne de
+
+00:12:41.399 --> 00:12:43.120
+pensée est vraiment puissante mais il
+
+00:12:43.120 --> 00:12:44.560
+reste une question ouverte à ce jour
+
+00:12:44.560 --> 00:12:45.600
+est-ce que c'estes stratégies
+
+00:12:45.600 --> 00:12:47.040
+d'inférence donc conçu manuellement
+
+00:12:47.040 --> 00:12:48.360
+sont-elles la meilleure approche
+
+00:12:48.360 --> 00:12:50.000
+sont-elles vraiment nécessaires pour
+
+00:12:50.000 --> 00:12:51.959
+atteindre la première place en ni a de
+
+00:12:51.959 --> 00:12:53.440
+programmation et bien c'est là qu'il
+
+00:12:53.440 --> 00:12:55.040
+nous disent avoir trois systèmes
+
+00:12:55.040 --> 00:12:56.839
+disponibles pour éclairer cette question
+
+00:12:56.839 --> 00:12:58.760
+il y a le modèle O1 qui est juste un
+
+00:12:58.760 --> 00:13:00.399
+modèle de raisonnement nous avons aussi
+
+00:13:00.399 --> 00:13:03.600
+le modèle o i oi qui est un modèle de
+
+00:13:03.600 --> 00:13:05.440
+raisonnement mais avec des critères
+
+00:13:05.440 --> 00:13:07.839
+d'inférence et de la sélection un peu
+
+00:13:07.839 --> 00:13:10.760
+plus sophistiquée on y reviendra et
+
+00:13:10.760 --> 00:13:12.519
+également ils ont les premières versions
+
+00:13:12.519 --> 00:13:14.800
+de O3 et vous devinez probablement déjà
+
+00:13:14.800 --> 00:13:16.480
+où est-ce que je veux en venir mais
+
+00:13:16.480 --> 00:13:17.480
+j'aimerais vous donner une autre
+
+00:13:17.480 --> 00:13:19.959
+analogie pensez à la conduite autonome
+
+00:13:19.959 --> 00:13:21.560
+de Tesla par exemple il y a quelques
+
+00:13:21.560 --> 00:13:23.160
+années et bien la conduite autonome de
+
+00:13:23.160 --> 00:13:25.440
+Tesla était une approche hybride oui
+
+00:13:25.440 --> 00:13:26.959
+c'était une approche hybride entre un
+
+00:13:26.959 --> 00:13:29.279
+réseau neuronal donc uneia et des règles
+
+00:13:29.279 --> 00:13:30.639
+écrite manuellement par des humains donc
+
+00:13:30.639 --> 00:13:32.720
+un algorithme à l'ancienne avec des
+
+00:13:32.720 --> 00:13:34.120
+règles écrites par des humains donc
+
+00:13:34.120 --> 00:13:35.880
+c'est-à-dire je sais pas si la caméra
+
+00:13:35.880 --> 00:13:37.279
+voit un feu rouge et bien la voiture
+
+00:13:37.279 --> 00:13:39.160
+s'arrête voilà ça c'est un algorithme
+
+00:13:39.160 --> 00:13:41.399
+bien carré qui n'utilise pas dia ce sont
+
+00:13:41.399 --> 00:13:43.320
+des règles bien écrites et donc Tesla
+
+00:13:43.320 --> 00:13:45.199
+mêlé ces deux approches elle utilisaiit
+
+00:13:45.199 --> 00:13:46.560
+un petit peu d'IA et un petit peu de
+
+00:13:46.560 --> 00:13:48.160
+règles écrites par les humains mais ils
+
+00:13:48.160 --> 00:13:50.600
+ont atteint un plafond de performance et
+
+00:13:50.600 --> 00:13:52.279
+et ils n'arrivaient plus à progresser il
+
+00:13:52.279 --> 00:13:53.839
+y a quelques années donc ils ont
+
+00:13:53.839 --> 00:13:56.240
+essentiellement démantelé ce système et
+
+00:13:56.240 --> 00:13:57.839
+ils ont décidé de passer à un réseau
+
+00:13:57.839 --> 00:14:00.759
+neuronal complet donc de lia pur de bout
+
+00:14:00.759 --> 00:14:02.680
+en bout utilisant justement
+
+00:14:02.680 --> 00:14:04.519
+l'apprentissage par renforcement ce que
+
+00:14:04.519 --> 00:14:06.199
+je vous expliquais tout à l'heure cela
+
+00:14:06.199 --> 00:14:08.279
+signifie qu'il n'y a plus d'humain dans
+
+00:14:08.279 --> 00:14:09.839
+la boucle d'apprentissage des voitures
+
+00:14:09.839 --> 00:14:12.600
+Tesla et depuis lors ils ont pulvérisé
+
+00:14:12.600 --> 00:14:14.279
+ce plafond et les performances sont
+
+00:14:14.279 --> 00:14:16.800
+vraiment incroyable maintenant le point
+
+00:14:16.800 --> 00:14:19.000
+important ici donc c'est que lui-même et
+
+00:14:19.000 --> 00:14:20.440
+bien non seulement il n'était pas
+
+00:14:20.440 --> 00:14:22.279
+vraiment nécessaire mais en fait c'était
+
+00:14:22.279 --> 00:14:24.079
+un facteur limitant pour leur
+
+00:14:24.079 --> 00:14:26.240
+performance et devinez quoi c'est
+
+00:14:26.240 --> 00:14:28.600
+exactement ce que open constate aussi
+
+00:14:28.600 --> 00:14:30.920
+avec li a de programmation et c'est ce
+
+00:14:30.920 --> 00:14:32.320
+qu'ils expliquent dans ce papier alors
+
+00:14:32.320 --> 00:14:34.800
+commençons par open e O1 c'est le modèle
+
+00:14:34.800 --> 00:14:37.120
+de raisonnement mais sans stratégie
+
+00:14:37.120 --> 00:14:39.040
+sophistiqué de prompting un temps
+
+00:14:39.040 --> 00:14:40.440
+d'inférence qui est ce que fait au 3
+
+00:14:40.440 --> 00:14:42.000
+mais on y reviendra et on peut y lire la
+
+00:14:42.000 --> 00:14:43.759
+chose suivante en générant une chaîne de
+
+00:14:43.759 --> 00:14:45.399
+pensée interne étendue avant de répondre
+
+00:14:45.399 --> 00:14:47.360
+au un ressemble à un humain qui résout
+
+00:14:47.360 --> 00:14:49.120
+méthodiquement un problème complexe
+
+00:14:49.120 --> 00:14:50.839
+étape par étape l'apprentissage par
+
+00:14:50.839 --> 00:14:52.680
+renforcement a affiné ce processus de la
+
+00:14:52.680 --> 00:14:54.680
+chaîne de pensée et dans le modèle à
+
+00:14:54.680 --> 00:14:56.199
+identifier et corriger les erreurs
+
+00:14:56.199 --> 00:14:57.680
+décomposer les tâches complexes en
+
+00:14:57.680 --> 00:14:59.959
+partie gérable et explorer des chemins
+
+00:14:59.959 --> 00:15:01.920
+alternatifs quand une réponse ou une
+
+00:15:01.920 --> 00:15:03.639
+approche échoue on a tous vu à quel
+
+00:15:03.639 --> 00:15:05.600
+point la chaîne de pensée est efficace
+
+00:15:05.600 --> 00:15:07.120
+c'est fondamentalement comme ça que ça
+
+00:15:07.120 --> 00:15:09.600
+marche non seulement ça mais O est
+
+00:15:09.600 --> 00:15:11.199
+entraîné à utiliser des outils externes
+
+00:15:11.199 --> 00:15:12.279
+comme par exemple l'écriture et
+
+00:15:12.279 --> 00:15:14.000
+l'exécution du code dans un
+
+00:15:14.000 --> 00:15:16.120
+environnement sécurisé c'est ce qui lui
+
+00:15:16.120 --> 00:15:18.160
+permet je pense de vérifier aussi que le
+
+00:15:18.160 --> 00:15:19.839
+code qu'il génère est correct ou non en
+
+00:15:19.839 --> 00:15:21.440
+fait il teste en direct avant de vous
+
+00:15:21.440 --> 00:15:23.079
+donner le code et regardons maintenant
+
+00:15:23.079 --> 00:15:25.320
+le benchmark code force on y lit bien
+
+00:15:25.320 --> 00:15:26.800
+sûr code force est un site de
+
+00:15:26.800 --> 00:15:28.480
+compétition de programmation qui héberge
+
+00:15:28.480 --> 00:15:29.959
+des concours en direct c'est une
+
+00:15:29.959 --> 00:15:31.759
+compétition internationale fréquentée
+
+00:15:31.759 --> 00:15:33.199
+par certains des meilleurs programmeurs
+
+00:15:33.199 --> 00:15:35.199
+compétitifs au monde et en descendant
+
+00:15:35.199 --> 00:15:37.199
+regardons ce graphique sur l'AX gre nous
+
+00:15:37.199 --> 00:15:38.920
+avons donc le classement sur ce sur ce
+
+00:15:38.920 --> 00:15:41.040
+benchmark et les différents modèles sur
+
+00:15:41.040 --> 00:15:43.519
+l'axe x nous avons donc chat GPT 4 avec
+
+00:15:43.519 --> 00:15:47.759
+un ho de 808 puis O1 preview avec 1258
+
+00:15:47.759 --> 00:15:50.600
+et O1 à 1673 franchement on peut déjà
+
+00:15:50.600 --> 00:15:52.399
+voir une amélioration assez drastique
+
+00:15:52.399 --> 00:15:54.600
+euh à chaque mise à niveau du modèle ce
+
+00:15:54.600 --> 00:15:56.279
+qui montre vraiment l'efficacité de cet
+
+00:15:56.279 --> 00:15:58.120
+apprentissage là donc le RL le
+
+00:15:58.120 --> 00:15:59.800
+l'apprentissage par renforcement pour le
+
+00:15:59.800 --> 00:16:01.319
+raisonnement complexe et voici quelque
+
+00:16:01.319 --> 00:16:02.639
+chose de vraiment important à noter
+
+00:16:02.639 --> 00:16:05.720
+c'est le modèle O1 avec IOI alors je
+
+00:16:05.720 --> 00:16:07.639
+vais vous expliquer exactement comment
+
+00:16:07.639 --> 00:16:10.319
+IOI fonctionne dans un instant et mais
+
+00:16:10.319 --> 00:16:12.399
+en gros pendant le développement de O1
+
+00:16:12.399 --> 00:16:14.240
+ils ont découvert ils ont découvert que
+
+00:16:14.240 --> 00:16:16.040
+l'augmentation à la fois de la puissance
+
+00:16:16.040 --> 00:16:17.800
+de calcul donc pour l'apprentissage par
+
+00:16:17.800 --> 00:16:19.920
+renforcement et du temps d'inférence
+
+00:16:19.920 --> 00:16:22.160
+améliorer constamment les performances
+
+00:16:22.160 --> 00:16:23.880
+du modèle donc en gros ils ont découvert
+
+00:16:23.880 --> 00:16:25.199
+qu'il vaut mieux non seulement le
+
+00:16:25.199 --> 00:16:27.399
+laisser faire ce jeu en solo avec
+
+00:16:27.399 --> 00:16:29.160
+l'apprentissage par renforcement mais
+
+00:16:29.160 --> 00:16:31.040
+aussi au moment de l'inférence donc au
+
+00:16:31.040 --> 00:16:33.079
+moment où il répond lui permettre de
+
+00:16:33.079 --> 00:16:35.360
+réfléchir encore plus longtemps utiliser
+
+00:16:35.360 --> 00:16:37.920
+plus de token faire cette chaîne de
+
+00:16:37.920 --> 00:16:39.920
+pensée que je viens de décrire dans ma
+
+00:16:39.920 --> 00:16:41.399
+dernière vidéo d'analyse de papierers
+
+00:16:41.399 --> 00:16:42.680
+scientifique je parlais justement de
+
+00:16:42.680 --> 00:16:44.680
+cela qu'en fait ont laissait au modèle
+
+00:16:44.680 --> 00:16:46.519
+la capacité de générer plus de token de
+
+00:16:46.519 --> 00:16:48.279
+réfléchir à lui-même donc avant de vous
+
+00:16:48.279 --> 00:16:49.880
+répondre il va réfléchir et réfléchir et
+
+00:16:49.880 --> 00:16:51.480
+réfléchir et se parler à lui-même pour
+
+00:16:51.480 --> 00:16:52.839
+savoir si la réponse qu'il va donner à
+
+00:16:52.839 --> 00:16:54.319
+la fin est correcte et comme vous pouvez
+
+00:16:54.319 --> 00:16:55.720
+le voir ici à mesure qu'ils augmentent
+
+00:16:55.720 --> 00:16:57.079
+donc le temps de calcul d'entraînement
+
+00:16:57.079 --> 00:16:59.279
+et bien les performances s'améliore a
+
+00:16:59.279 --> 00:17:01.399
+sur le côté droit même chose avec le
+
+00:17:01.399 --> 00:17:03.079
+temps de calcul en test donc c'est
+
+00:17:03.079 --> 00:17:04.319
+l'apprentissage par renforcement à
+
+00:17:04.319 --> 00:17:05.640
+gauche et le temps de test
+
+00:17:05.640 --> 00:17:07.520
+post-entraînement à droite maintenant
+
+00:17:07.520 --> 00:17:09.280
+très rapidement pour vous expliquer en
+
+00:17:09.280 --> 00:17:11.280
+fait IOI et bien ça incorpore des
+
+00:17:11.280 --> 00:17:13.640
+stratégies d'inférence spécialisées et
+
+00:17:13.640 --> 00:17:15.039
+conçu donc pour la programmation
+
+00:17:15.039 --> 00:17:16.559
+compétitive uniquement mais encore une
+
+00:17:16.559 --> 00:17:18.240
+fois rappelez-vous cela est écrit
+
+00:17:18.240 --> 00:17:19.880
+manuellement par des humains donc et
+
+00:17:19.880 --> 00:17:21.240
+voici comment ça fonctionne en fait il
+
+00:17:21.240 --> 00:17:23.120
+divise chaque problème en sous-tache il
+
+00:17:23.120 --> 00:17:25.360
+vont échantillonner 10000 solutions de
+
+00:17:25.360 --> 00:17:28.600
+om pour pour chaque sous-tâche puis il
+
+00:17:28.600 --> 00:17:30.320
+vont utiliser une approche basée sur le
+
+00:17:30.320 --> 00:17:31.679
+clustering et le reclassement pour
+
+00:17:31.679 --> 00:17:33.440
+décider quelle solution soumettre et si
+
+00:17:33.440 --> 00:17:35.600
+vous pensez déjà waouh ça a l'air
+
+00:17:35.600 --> 00:17:37.520
+vraiment compliqué et bien oui vous avez
+
+00:17:37.520 --> 00:17:39.440
+raison c'est un peu compliqué je vais je
+
+00:17:39.440 --> 00:17:40.360
+vais pas passer plus de temps à
+
+00:17:40.360 --> 00:17:41.400
+expliquer cela mais en gros c'est pour
+
+00:17:41.400 --> 00:17:42.960
+que vous sachiez Queen fait entre O1 et
+
+00:17:42.960 --> 00:17:44.679
+O3 il y avait un petit modèle comme ça
+
+00:17:44.679 --> 00:17:46.200
+et qui seront peut-être des méthodes à
+
+00:17:46.200 --> 00:17:48.000
+réutiliser plus tard qui sait maintenant
+
+00:17:48.000 --> 00:17:50.720
+nous passons donc à O3 le modèle sans
+
+00:17:50.720 --> 00:17:52.480
+aucune stratégie écrite manuellement
+
+00:17:52.480 --> 00:17:54.240
+c'est là le grand changement entre O1 et
+
+00:17:54.240 --> 00:17:56.720
+O3 c'est là ce qu' a permis dipsic se
+
+00:17:56.720 --> 00:17:59.080
+passer donc de l'apprentissage humain il
+
+00:17:59.080 --> 00:18:00.799
+n'y a plus d'humain dans la B et donc
+
+00:18:00.799 --> 00:18:03.840
+voilà bien que o IOI ait obtenu de bons
+
+00:18:03.840 --> 00:18:05.480
+résultats en combinant donc le le le
+
+00:18:05.480 --> 00:18:08.000
+fine tuning par renforcement humain avec
+
+00:18:08.000 --> 00:18:09.440
+ce que je viens de vous expliquer tout à
+
+00:18:09.440 --> 00:18:12.159
+l'heure et bien ça n'a pas suffi au 3 au
+
+00:18:12.159 --> 00:18:14.159
+3 a littéralement explosé les deux
+
+00:18:14.159 --> 00:18:16.600
+modèles précédent et il a fait et il l'a
+
+00:18:16.600 --> 00:18:18.919
+fait exactement de la même manière que
+
+00:18:18.919 --> 00:18:20.520
+Tesla a retiré les humains de leur
+
+00:18:20.520 --> 00:18:22.280
+réseau neuronal donc de bout en bout et
+
+00:18:22.280 --> 00:18:24.400
+a vu des améliorations massives
+
+00:18:24.400 --> 00:18:26.120
+également de la même manière et de la
+
+00:18:26.120 --> 00:18:28.360
+même façon qu'alphaag fonctionne ils ont
+
+00:18:28.360 --> 00:18:30.159
+retiré et les humains de la boucle et
+
+00:18:30.159 --> 00:18:31.919
+ils ont simplement laissé lia jouer avec
+
+00:18:31.919 --> 00:18:34.120
+elle-même donc s'auto améliorer c'est ce
+
+00:18:34.120 --> 00:18:35.520
+que vous allez voir maintenant voilà au
+
+00:18:35.520 --> 00:18:37.280
+3 donc sur le classement code force qui
+
+00:18:37.280 --> 00:18:38.720
+abondit au
+
+00:18:38.720 --> 00:18:43.200
+99,8 percentile avec un score ho de
+
+00:18:43.200 --> 00:18:47.880
+2724 c'est un saut énorme depuis o 1 IOI
+
+00:18:47.880 --> 00:18:50.280
+et vous pensez peut-être que passer du
+
+00:18:50.280 --> 00:18:53.480
+98e à 99,8 n'est pas beaucoup mais
+
+00:18:53.480 --> 00:18:55.159
+franchement détrompez-vous regardez la
+
+00:18:55.159 --> 00:18:57.720
+différence des lot on passe de 2200 à
+
+00:18:57.720 --> 00:19:00.080
+2700 c'est complètement dingue donc vous
+
+00:19:00.080 --> 00:19:03.320
+le voyez alors que O1 IOI s'appuyait sur
+
+00:19:03.320 --> 00:19:05.320
+une stratégie de test super complexe
+
+00:19:05.320 --> 00:19:07.559
+définie par lui-même et bien O3 il a
+
+00:19:07.559 --> 00:19:09.000
+simplement suivi une approche beaucoup
+
+00:19:09.000 --> 00:19:11.679
+plus simple et O3 a largement surpassé
+
+00:19:11.679 --> 00:19:14.000
+om donc simplement augmenter
+
+00:19:14.000 --> 00:19:16.039
+l'apprentissage par renforcement et le
+
+00:19:16.039 --> 00:19:17.520
+temps de calcul ou la puissance de
+
+00:19:17.520 --> 00:19:20.000
+calcul sur cet apprentissage là sans
+
+00:19:20.000 --> 00:19:22.039
+avoir besoin de prompe spécifique ou
+
+00:19:22.039 --> 00:19:24.440
+d'intervention humaine et bien en gros
+
+00:19:24.440 --> 00:19:27.440
+ça fait évoluer lia encore une fois il
+
+00:19:27.440 --> 00:19:29.400
+semble que simplement faire évoluer ses
+
+00:19:29.400 --> 00:19:31.159
+modèles et la chose qu'il faudra pour
+
+00:19:31.159 --> 00:19:32.880
+que lia devienne le meilleur programmeur
+
+00:19:32.880 --> 00:19:35.200
+au monde et au-delà de ça d'ailleurs le
+
+00:19:35.200 --> 00:19:37.760
+meilleur raisonneur le meilleur en
+
+00:19:37.760 --> 00:19:39.240
+mathématiqu le meilleur en sciences le
+
+00:19:39.240 --> 00:19:42.039
+meilleur en technologie h puis puis
+
+00:19:42.039 --> 00:19:44.320
+viendra laagi et enfin un beau jour
+
+00:19:44.320 --> 00:19:47.000
+apparaîtra l'Asie le stade ultime de Lia
+
+00:19:47.000 --> 00:19:49.080
+c'est ce que cet article illustre et
+
+00:19:49.080 --> 00:19:50.440
+c'est ce que nous savons déjà si vous
+
+00:19:50.440 --> 00:19:51.799
+suivez la chaîne depuis ces dernières
+
+00:19:51.799 --> 00:19:53.200
+semaines l'apprentissage par
+
+00:19:53.200 --> 00:19:55.480
+renforcement et la puissance de calcul
+
+00:19:55.480 --> 00:19:57.880
+sont la voie claire vers l'AG Sam
+
+00:19:57.880 --> 00:19:59.760
+malemande l' d'ailleurs le déjà dit il a
+
+00:19:59.760 --> 00:20:01.480
+dit qu'ils ont la voix très claire sur
+
+00:20:01.480 --> 00:20:03.400
+comment y arriver mais qu'ils ont juste
+
+00:20:03.400 --> 00:20:05.080
+besoin de la construire d'où les méga
+
+00:20:05.080 --> 00:20:06.360
+projets qu'ils avaient annoncé donc le
+
+00:20:06.360 --> 00:20:08.000
+Stargate à 500 milliards de dollars et
+
+00:20:08.000 --> 00:20:09.720
+cetera ce sont des centres de calcul qui
+
+00:20:09.720 --> 00:20:11.960
+vont servir à faire justement ça ce que
+
+00:20:11.960 --> 00:20:13.080
+je viens de vous expliquer dans cette
+
+00:20:13.080 --> 00:20:15.400
+vidéo et c'est de ça qu'il parle ils ont
+
+00:20:15.400 --> 00:20:17.559
+les algorithmes ils ont l'approche mais
+
+00:20:17.559 --> 00:20:19.039
+il faut juste la faire évoluer
+
+00:20:19.039 --> 00:20:20.320
+maintenant voilà donc si vous avez
+
+00:20:20.320 --> 00:20:22.280
+apprécié cette vidéo pensez à laisser un
+
+00:20:22.280 --> 00:20:24.200
+petit like à vous abonner si ce n'est
+
+00:20:24.200 --> 00:20:25.679
+pas déjà fait ici on sort ce genre
+
+00:20:25.679 --> 00:20:27.400
+d'actu tous les jours donc n'hésitez pas
+
+00:20:27.400 --> 00:20:29.200
+à vous abonner pour ne rien ' loupé de
+
+00:20:29.200 --> 00:20:30.960
+tout cela je vous rappelle également que
+
+00:20:30.960 --> 00:20:32.520
+vous trouverez en commentaire épinglé
+
+00:20:32.520 --> 00:20:34.520
+sous la vidéo le lien vers ma formation
+
+00:20:34.520 --> 00:20:36.400
+je vous y apprends lia aujourd'hui on a
+
+00:20:36.400 --> 00:20:37.720
+parlé de concepts un peu compliqués
+
+00:20:37.720 --> 00:20:39.919
+peut-être mais dedans nous reprenons
+
+00:20:39.919 --> 00:20:41.280
+tout depuis les bases donc même si vous
+
+00:20:41.280 --> 00:20:43.559
+n'y connaissez pas trop en nia ne vous
+
+00:20:43.559 --> 00:20:45.400
+inquiétez pas on reprend tout on monte
+
+00:20:45.400 --> 00:20:47.000
+crchendo jusqu'à des concepts comme
+
+00:20:47.000 --> 00:20:48.480
+celui-ci par exemple donc n'hésitez pas
+
+00:20:48.480 --> 00:20:50.240
+à y venir faire un tour c'est tout pour
+
+00:20:50.240 --> 00:20:51.880
+moi je vous remercie d'avoir regardé la
+
+00:20:51.880 --> 00:20:53.600
+vidéo jusqu'ici et je vous donne
+
+00:20:53.600 --> 00:20:54.919
+rendez-vous très vite c'est-à-dire
+
+00:20:54.919 --> 00:20:56.840
+demain pour la prochaine vidéo si cette
+
+00:20:56.840 --> 00:20:58.919
+analyse vous a intéressé et et que vous
+
+00:20:58.919 --> 00:21:00.640
+voulez aller encore plus loin dans la
+
+00:21:00.640 --> 00:21:02.520
+compréhension des enjeux géopolitiques
+
+00:21:02.520 --> 00:21:04.679
+actuels je vous invite à découvrir ma
+
+00:21:04.679 --> 00:21:07.280
+nouvelle chaîne vision actu vous y
+
+00:21:07.280 --> 00:21:09.280
+trouverez des analyses approfondies sur
+
+00:21:09.280 --> 00:21:11.559
+ce sujet et bien d'autres qui façonnent
+
+00:21:11.559 --> 00:21:13.880
+notre présent et notre futur n'oubliez
+
+00:21:13.880 --> 00:21:15.559
+pas de vous abonner aux deux chaînes
+
+00:21:15.559 --> 00:21:17.520
+pour ne rien manquer à très bientôt pour
+
+00:21:17.520 --> 00:21:21.080
+de nouvelles analyses
